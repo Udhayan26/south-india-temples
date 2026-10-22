@@ -3,607 +3,792 @@
   "IN-AP": [
    {
     "name": "Alluri Sitharama Raju",
-    "rel_id": 13999461
+    "rel_id": 13999461,
+    "wikidata": "Q110714850"
    },
    {
     "name": "Anakapalli",
-    "rel_id": 13999884
+    "rel_id": 13999884,
+    "wikidata": "Q110714857"
    },
    {
     "name": "Anantapuramu",
-    "rel_id": 2022303
+    "rel_id": 2022303,
+    "wikidata": "Q15212"
    },
    {
     "name": "Annamayya",
-    "rel_id": 13997864
+    "rel_id": 13997864,
+    "wikidata": "Q110714854"
    },
    {
     "name": "Bapatla",
-    "rel_id": 13998258
+    "rel_id": 13998258,
+    "wikidata": "Q110876712"
    },
    {
     "name": "Chittoor",
-    "rel_id": 2022304
+    "rel_id": 2022304,
+    "wikidata": "Q15213"
    },
    {
     "name": "Dr. B.R. Ambedkar Konaseema",
-    "rel_id": 13999603
+    "rel_id": 13999603,
+    "wikidata": "Q110714859"
    },
    {
     "name": "East Godavari",
-    "rel_id": 2022126
+    "rel_id": 2022126,
+    "wikidata": "Q15338"
    },
    {
     "name": "Eluru",
-    "rel_id": 13999189
+    "rel_id": 13999189,
+    "wikidata": "Q110714851"
    },
    {
     "name": "Guntur",
-    "rel_id": 2022220
+    "rel_id": 2022220,
+    "wikidata": "Q15341"
    },
    {
     "name": "Kakinada",
-    "rel_id": 13999862
+    "rel_id": 13999862,
+    "wikidata": "Q110714860"
    },
    {
     "name": "Krishna district",
-    "rel_id": 2022135
+    "rel_id": 2022135,
+    "wikidata": "Q15382"
    },
    {
     "name": "Kurnool",
-    "rel_id": 2022277
+    "rel_id": 2022277,
+    "wikidata": "Q15381"
    },
    {
     "name": "Markapuram",
-    "rel_id": 20182419
+    "rel_id": 20182419,
+    "wikidata": "Q137785857"
    },
    {
     "name": "NTR",
-    "rel_id": 14000341
+    "rel_id": 14000341,
+    "wikidata": "Q110876763"
    },
    {
     "name": "Nandyal",
-    "rel_id": 14000280
+    "rel_id": 14000280,
+    "wikidata": "Q110714861"
    },
    {
     "name": "Palnadu",
-    "rel_id": 14000417
+    "rel_id": 14000417,
+    "wikidata": "Q110714862"
    },
    {
     "name": "Parvathipuram Manyam",
-    "rel_id": 13998425
+    "rel_id": 13998425,
+    "wikidata": "Q110714856"
    },
    {
     "name": "Polavaram",
-    "rel_id": 20181344
+    "rel_id": 20181344,
+    "wikidata": "Q137785865"
    },
    {
     "name": "Prakasam",
-    "rel_id": 2022278
+    "rel_id": 2022278,
+    "wikidata": "Q15390"
    },
    {
     "name": "Sri Potti Sriramulu Nellore",
-    "rel_id": 2022291
+    "rel_id": 2022291,
+    "wikidata": "Q15383"
    },
    {
     "name": "Sri Sathya Sai",
-    "rel_id": 13997968
+    "rel_id": 13997968,
+    "wikidata": "Q110714863"
    },
    {
     "name": "Srikakulam",
-    "rel_id": 2022096
+    "rel_id": 2022096,
+    "wikidata": "Q15395"
    },
    {
     "name": "Tirupati",
-    "rel_id": 13997802
+    "rel_id": 13997802,
+    "wikidata": "Q110714853"
    },
    {
     "name": "Visakhapatnam",
-    "rel_id": 2022111
+    "rel_id": 2022111,
+    "wikidata": "Q15394"
    },
    {
     "name": "Vizianagaram",
-    "rel_id": 2022097
+    "rel_id": 2022097,
+    "wikidata": "Q15392"
    },
    {
     "name": "West Godavari",
-    "rel_id": 2022127
+    "rel_id": 2022127,
+    "wikidata": "Q15404"
    },
    {
     "name": "YSR Kadapa",
-    "rel_id": 2022290
+    "rel_id": 2022290,
+    "wikidata": "Q15342"
    }
   ],
   "IN-KA": [
    {
     "name": "Bagalkote",
-    "rel_id": 2020666
+    "rel_id": 2020666,
+    "wikidata": "Q1910231"
    },
    {
     "name": "Ballari",
-    "rel_id": 2020692
+    "rel_id": 2020692,
+    "wikidata": "Q1791926"
    },
    {
     "name": "Belagavi",
-    "rel_id": 2020648
+    "rel_id": 2020648,
+    "wikidata": "Q815464"
    },
    {
     "name": "Bengaluru North",
-    "rel_id": 2020588
+    "rel_id": 2020588,
+    "wikidata": "Q806464"
    },
    {
     "name": "Bengaluru South",
-    "rel_id": 4458921
+    "rel_id": 4458921,
+    "wikidata": "Q427679"
    },
    {
     "name": "Bengaluru Urban",
-    "rel_id": 2020589
+    "rel_id": 2020589,
+    "wikidata": "Q806463"
    },
    {
     "name": "Bidar",
-    "rel_id": 2020723
+    "rel_id": 2020723,
+    "wikidata": "Q1790568"
    },
    {
     "name": "Chamarajanagar",
-    "rel_id": 2019940
+    "rel_id": 2019940,
+    "wikidata": "Q862912"
    },
    {
     "name": "Chikkaballapura",
-    "rel_id": 4452723
+    "rel_id": 4452723,
+    "wikidata": "Q1072629"
    },
    {
     "name": "Chikkamagaluru",
-    "rel_id": 2020603
+    "rel_id": 2020603,
+    "wikidata": "Q743077"
    },
    {
     "name": "Chitradurga",
-    "rel_id": 2020623
+    "rel_id": 2020623,
+    "wikidata": "Q165264"
    },
    {
     "name": "Coorg",
-    "rel_id": 2020511
+    "rel_id": 2020511,
+    "wikidata": "Q1553185"
    },
    {
     "name": "Dakshina Kannada",
-    "rel_id": 2020528
+    "rel_id": 2020528,
+    "wikidata": "Q950571"
    },
    {
     "name": "Davanagere",
-    "rel_id": 4210083
+    "rel_id": 4210083,
+    "wikidata": "Q1863214"
    },
    {
     "name": "Dharwad",
-    "rel_id": 2020668
+    "rel_id": 2020668,
+    "wikidata": "Q1790904"
    },
    {
     "name": "Gadag",
-    "rel_id": 2020669
+    "rel_id": 2020669,
+    "wikidata": "Q2353931"
    },
    {
     "name": "Hassan",
-    "rel_id": 2020605
+    "rel_id": 2020605,
+    "wikidata": "Q956732"
    },
    {
     "name": "Haveri",
-    "rel_id": 2020670
+    "rel_id": 2020670,
+    "wikidata": "Q765481"
    },
    {
     "name": "Kalaburagi",
-    "rel_id": 2020713
+    "rel_id": 2020713,
+    "wikidata": "Q2641873"
    },
    {
     "name": "Kolar",
-    "rel_id": 2020590
+    "rel_id": 2020590,
+    "wikidata": "Q2509866"
    },
    {
     "name": "Koppal",
-    "rel_id": 2020693
+    "rel_id": 2020693,
+    "wikidata": "Q956387"
    },
    {
     "name": "Mandya",
-    "rel_id": 2020591
+    "rel_id": 2020591,
+    "wikidata": "Q2768290"
    },
    {
     "name": "Mysuru",
-    "rel_id": 2020510
+    "rel_id": 2020510,
+    "wikidata": "Q591781"
    },
    {
     "name": "Raichur",
-    "rel_id": 2020694
+    "rel_id": 2020694,
+    "wikidata": "Q1430830"
    },
    {
     "name": "Shimoga",
-    "rel_id": 2020649
+    "rel_id": 2020649,
+    "wikidata": "Q2981389"
    },
    {
     "name": "Tumakuru",
-    "rel_id": 2020624
+    "rel_id": 2020624,
+    "wikidata": "Q1301635"
    },
    {
     "name": "Udupi",
-    "rel_id": 2020529
+    "rel_id": 2020529,
+    "wikidata": "Q1483337"
    },
    {
     "name": "Uttara Kannada",
-    "rel_id": 2020650
+    "rel_id": 2020650,
+    "wikidata": "Q579205"
    },
    {
     "name": "Vijayanagara",
-    "rel_id": 12255259
+    "rel_id": 12255259,
+    "wikidata": "Q104876850"
    },
    {
     "name": "Vijayapura",
-    "rel_id": 2020667
+    "rel_id": 2020667,
+    "wikidata": "Q83108"
    },
    {
     "name": "Yadgir",
-    "rel_id": 3686856
+    "rel_id": 3686856,
+    "wikidata": "Q1786949"
    }
   ],
   "IN-KL": [
    {
     "name": "Alappuzha",
-    "rel_id": 3743889
+    "rel_id": 3743889,
+    "wikidata": "Q928959"
    },
    {
     "name": "Ernakulam",
-    "rel_id": 3740342
+    "rel_id": 3740342,
+    "wikidata": "Q1356097"
    },
    {
     "name": "Idukki",
-    "rel_id": 1819274
+    "rel_id": 1819274,
+    "wikidata": "Q301821"
    },
    {
     "name": "Kannur",
-    "rel_id": 2018247
+    "rel_id": 2018247,
+    "wikidata": "Q2980652"
    },
    {
     "name": "Kasaragod",
-    "rel_id": 2018248
+    "rel_id": 2018248,
+    "wikidata": "Q1419703"
    },
    {
     "name": "Kollam",
-    "rel_id": 2018154
+    "rel_id": 2018154,
+    "wikidata": "Q1356124"
    },
    {
     "name": "Kottayam",
-    "rel_id": 3743996
+    "rel_id": 3743996,
+    "wikidata": "Q1353354"
    },
    {
     "name": "Kozhikode",
-    "rel_id": 2018249
+    "rel_id": 2018249,
+    "wikidata": "Q1142979"
    },
    {
     "name": "Malappuram",
-    "rel_id": 2018186
+    "rel_id": 2018186,
+    "wikidata": "Q1030918"
    },
    {
     "name": "Palakkad",
-    "rel_id": 1819321
+    "rel_id": 1819321,
+    "wikidata": "Q1535742"
    },
    {
     "name": "Pathanamthitta",
-    "rel_id": 2018176
+    "rel_id": 2018176,
+    "wikidata": "Q634935"
    },
    {
     "name": "Thiruvananthapuram",
-    "rel_id": 1818784
+    "rel_id": 1818784,
+    "wikidata": "Q162612"
    },
    {
     "name": "Thrissur",
-    "rel_id": 2018177
+    "rel_id": 2018177,
+    "wikidata": "Q2429655"
    },
    {
     "name": "Wayanad",
-    "rel_id": 2018203
+    "rel_id": 2018203,
+    "wikidata": "Q1364427"
    }
   ],
   "IN-PY": [
    {
     "name": "Karaikal",
-    "rel_id": 1819590
+    "rel_id": 1819590,
+    "wikidata": "Q639264"
    },
    {
     "name": "Puducherry",
-    "rel_id": 5335580
+    "rel_id": 5335580,
+    "wikidata": "Q984035"
    }
   ],
   "IN-TG": [
    {
     "name": "Adilabad",
-    "rel_id": 2022179
+    "rel_id": 2022179,
+    "wikidata": "Q15211"
    },
    {
     "name": "Bhadradri Kothagudem",
-    "rel_id": 7698599
+    "rel_id": 7698599,
+    "wikidata": "Q28169767"
    },
    {
     "name": "Hanumakonda",
-    "rel_id": 2022181
+    "rel_id": 2022181,
+    "wikidata": "Q213077"
    },
    {
     "name": "Hyderabad",
-    "rel_id": 7255986
+    "rel_id": 7255986,
+    "wikidata": "Q15340"
    },
    {
     "name": "Jagtial",
-    "rel_id": 7691427
+    "rel_id": 7691427,
+    "wikidata": "Q28169780"
    },
    {
     "name": "Jangaon",
-    "rel_id": 7666379
+    "rel_id": 7666379,
+    "wikidata": "Q28170170"
    },
    {
     "name": "Jayashankar Bhupalapally",
-    "rel_id": 7698600
+    "rel_id": 7698600,
+    "wikidata": "Q28169775"
    },
    {
     "name": "Jogulamba Gadwal",
-    "rel_id": 7666146
+    "rel_id": 7666146,
+    "wikidata": "Q27897618"
    },
    {
     "name": "Kamareddy",
-    "rel_id": 7701043
+    "rel_id": 7701043,
+    "wikidata": "Q27956125"
    },
    {
     "name": "Karimnagar",
-    "rel_id": 2022180
+    "rel_id": 2022180,
+    "wikidata": "Q15373"
    },
    {
     "name": "Khammam",
-    "rel_id": 2022134
+    "rel_id": 2022134,
+    "wikidata": "Q15371"
    },
    {
     "name": "Kumuram Bheem Asifabad",
-    "rel_id": 7686917
+    "rel_id": 7686917,
+    "wikidata": "Q28170184"
    },
    {
     "name": "Mahabubabad",
-    "rel_id": 7699117
+    "rel_id": 7699117,
+    "wikidata": "Q28169761"
    },
    {
     "name": "Mahabubnagar",
-    "rel_id": 2022227
+    "rel_id": 2022227,
+    "wikidata": "Q15380"
    },
    {
     "name": "Mancherial",
-    "rel_id": 7686916
+    "rel_id": 7686916,
+    "wikidata": "Q28169747"
    },
    {
     "name": "Medak",
-    "rel_id": 2022212
+    "rel_id": 2022212,
+    "wikidata": "Q15386"
    },
    {
     "name": "Medchal–Malkajgiri",
-    "rel_id": 7664883
+    "rel_id": 7664883,
+    "wikidata": "Q27614841"
    },
    {
     "name": "Mulugu",
-    "rel_id": 9502792
+    "rel_id": 9502792,
+    "wikidata": "Q61746006"
    },
    {
     "name": "Nagarkurnool",
-    "rel_id": 7700442
+    "rel_id": 7700442,
+    "wikidata": "Q28169773"
    },
    {
     "name": "Nalgonda",
-    "rel_id": 2022221
+    "rel_id": 2022221,
+    "wikidata": "Q15384"
    },
    {
     "name": "Narayanpet",
-    "rel_id": 9502953
+    "rel_id": 9502953,
+    "wikidata": "Q61746013"
    },
    {
     "name": "Nirmal",
-    "rel_id": 7686918
+    "rel_id": 7686918,
+    "wikidata": "Q28169750"
    },
    {
     "name": "Nizamabad",
-    "rel_id": 2022213
+    "rel_id": 2022213,
+    "wikidata": "Q15391"
    },
    {
     "name": "Peddapalli",
-    "rel_id": 7691426
+    "rel_id": 7691426,
+    "wikidata": "Q27614797"
    },
    {
     "name": "Rajanna Sircilla",
-    "rel_id": 7691428
+    "rel_id": 7691428,
+    "wikidata": "Q28172781"
    },
    {
     "name": "Ranga Reddy",
-    "rel_id": 2022214
+    "rel_id": 2022214,
+    "wikidata": "Q15388"
    },
    {
     "name": "Sangareddy",
-    "rel_id": 7663387
+    "rel_id": 7663387,
+    "wikidata": "Q28169753"
    },
    {
     "name": "Siddipet",
-    "rel_id": 7665824
+    "rel_id": 7665824,
+    "wikidata": "Q28169756"
    },
    {
     "name": "Suryapet",
-    "rel_id": 7699215
+    "rel_id": 7699215,
+    "wikidata": "Q28169770"
    },
    {
     "name": "Vikarabad",
-    "rel_id": 7685040
+    "rel_id": 7685040,
+    "wikidata": "Q28170173"
    },
    {
     "name": "Wanaparthy",
-    "rel_id": 7700765
+    "rel_id": 7700765,
+    "wikidata": "Q28172504"
    },
    {
     "name": "Warangal",
-    "rel_id": 7666378
+    "rel_id": 7666378,
+    "wikidata": "Q15399"
    },
    {
     "name": "Yadadri Bhuvanagiri",
-    "rel_id": 7700443
+    "rel_id": 7700443,
+    "wikidata": "Q28169764"
    }
   ],
   "IN-TN": [
    {
     "name": "Ariyalur",
-    "rel_id": 1819586
+    "rel_id": 1819586,
+    "wikidata": "Q15112"
    },
    {
     "name": "Chengalpattu",
-    "rel_id": 10329991
+    "rel_id": 10329991,
+    "wikidata": "Q65976177"
    },
    {
     "name": "Chennai",
-    "rel_id": 7910817
+    "rel_id": 7910817,
+    "wikidata": "Q15116"
    },
    {
     "name": "Coimbatore",
-    "rel_id": 1819317
+    "rel_id": 1819317,
+    "wikidata": "Q15136"
    },
    {
     "name": "Cuddalore",
-    "rel_id": 1819588
+    "rel_id": 1819588,
+    "wikidata": "Q15150"
    },
    {
     "name": "Dharmapuri",
-    "rel_id": 1819362
+    "rel_id": 1819362,
+    "wikidata": "Q15152"
    },
    {
     "name": "Dindigul",
-    "rel_id": 1819273
+    "rel_id": 1819273,
+    "wikidata": "Q15154"
    },
    {
     "name": "Erode",
-    "rel_id": 1819318
+    "rel_id": 1819318,
+    "wikidata": "Q15155"
    },
    {
     "name": "Kallakurichi",
-    "rel_id": 9602893
+    "rel_id": 9602893,
+    "wikidata": "Q60493360"
    },
    {
     "name": "Kanchipuram",
-    "rel_id": 1819589
+    "rel_id": 1819589,
+    "wikidata": "Q15157"
    },
    {
     "name": "Kanniyakumari",
-    "rel_id": 1818782
+    "rel_id": 1818782,
+    "wikidata": "Q15158"
    },
    {
     "name": "Karur",
-    "rel_id": 1819319
+    "rel_id": 1819319,
+    "wikidata": "Q15182"
    },
    {
     "name": "Krishnagiri",
-    "rel_id": 9537174
+    "rel_id": 9537174,
+    "wikidata": "Q15183"
    },
    {
     "name": "Madurai",
-    "rel_id": 1819275
+    "rel_id": 1819275,
+    "wikidata": "Q15184"
    },
    {
     "name": "Mayiladuthurai",
-    "rel_id": 11698709
+    "rel_id": 11698709,
+    "wikidata": "Q89918869"
    },
    {
     "name": "Nagapattinam",
-    "rel_id": 1819591
+    "rel_id": 1819591,
+    "wikidata": "Q15185"
    },
    {
     "name": "Namakkal",
-    "rel_id": 1819320
+    "rel_id": 1819320,
+    "wikidata": "Q15187"
    },
    {
     "name": "Nilgiris",
-    "rel_id": 448985
+    "rel_id": 448985,
+    "wikidata": "Q15188"
    },
    {
     "name": "Perambalur",
-    "rel_id": 1819592
+    "rel_id": 1819592,
+    "wikidata": "Q15186"
    },
    {
     "name": "Pudukkottai",
-    "rel_id": 1819211
+    "rel_id": 1819211,
+    "wikidata": "Q15190"
    },
    {
     "name": "Ramanathapuram",
-    "rel_id": 1819773
+    "rel_id": 1819773,
+    "wikidata": "Q15191"
    },
    {
     "name": "Ranipet",
-    "rel_id": 10330032
+    "rel_id": 10330032,
+    "wikidata": "Q66659623"
    },
    {
     "name": "Salem",
-    "rel_id": 1819322
+    "rel_id": 1819322,
+    "wikidata": "Q15192"
    },
    {
     "name": "Sivagangai",
-    "rel_id": 1819212
+    "rel_id": 1819212,
+    "wikidata": "Q15195"
    },
    {
     "name": "Tenkasi",
-    "rel_id": 10303764
+    "rel_id": 10303764,
+    "wikidata": "Q75094121"
    },
    {
     "name": "Thanjavur",
-    "rel_id": 1819594
+    "rel_id": 1819594,
+    "wikidata": "Q15194"
    },
    {
     "name": "Theni",
-    "rel_id": 1819276
+    "rel_id": 1819276,
+    "wikidata": "Q15196"
    },
    {
     "name": "Thiruvallur",
-    "rel_id": 1819595
+    "rel_id": 1819595,
+    "wikidata": "Q15204"
    },
    {
     "name": "Thiruvarur",
-    "rel_id": 1819596
+    "rel_id": 1819596,
+    "wikidata": "Q15197"
    },
    {
     "name": "Thoothukudi",
-    "rel_id": 1819774
+    "rel_id": 1819774,
+    "wikidata": "Q15198"
    },
    {
     "name": "Tiruchirappalli",
-    "rel_id": 1819323
+    "rel_id": 1819323,
+    "wikidata": "Q15201"
    },
    {
     "name": "Tirunelveli",
-    "rel_id": 1818783
+    "rel_id": 1818783,
+    "wikidata": "Q15200"
    },
    {
     "name": "Tirupattur",
-    "rel_id": 10330031
+    "rel_id": 10330031,
+    "wikidata": "Q66659621"
    },
    {
     "name": "Tiruppur",
-    "rel_id": 9538519
+    "rel_id": 9538519,
+    "wikidata": "Q15202"
    },
    {
     "name": "Tiruvannamalai",
-    "rel_id": 1819597
+    "rel_id": 1819597,
+    "wikidata": "Q15207"
    },
    {
     "name": "Vellore",
-    "rel_id": 1819598
+    "rel_id": 1819598,
+    "wikidata": "Q15206"
    },
    {
     "name": "Viluppuram",
-    "rel_id": 1819599
+    "rel_id": 1819599,
+    "wikidata": "Q15205"
    },
    {
     "name": "Virudhunagar",
-    "rel_id": 1819213
+    "rel_id": 1819213,
+    "wikidata": "Q15209"
    }
   ]
  },
  "done": {
-  "districts:IN-AP": "2026-10-22T17:05:50",
-  "districts:IN-KA": "2026-10-22T17:04:49",
-  "districts:IN-KL": "2026-10-22T17:04:11",
-  "districts:IN-PY": "2026-10-22T17:08:02",
-  "districts:IN-TG": "2026-10-22T17:06:54",
-  "districts:IN-TN": "2026-10-22T17:03:10"
+  "districts:IN-AP": "2026-10-22T18:12:18",
+  "districts:IN-KA": "2026-10-22T18:11:32",
+  "districts:IN-KL": "2026-10-22T18:09:57",
+  "districts:IN-PY": "2026-10-22T18:13:53",
+  "districts:IN-TG": "2026-10-22T18:13:07",
+  "districts:IN-TN": "2026-10-22T18:09:11",
+  "osm:IN-KL:3743889": "2026-10-22T18:52:47",
+  "osm:IN-TN:10303764": "2026-10-22T18:39:58",
+  "osm:IN-TN:10329991": "2026-10-22T18:16:24",
+  "osm:IN-TN:10330031": "2026-10-22T18:47:12",
+  "osm:IN-TN:10330032": "2026-10-22T18:37:42",
+  "osm:IN-TN:11698709": "2026-10-22T18:30:01",
+  "osm:IN-TN:1818782": "2026-10-22T18:26:04",
+  "osm:IN-TN:1818783": "2026-10-22T18:45:41",
+  "osm:IN-TN:1819211": "2026-10-22T18:36:02",
+  "osm:IN-TN:1819212": "2026-10-22T18:39:18",
+  "osm:IN-TN:1819213": "2026-10-22T18:51:42",
+  "osm:IN-TN:1819273": "2026-10-22T18:21:00",
+  "osm:IN-TN:1819275": "2026-10-22T18:29:03",
+  "osm:IN-TN:1819276": "2026-10-22T18:41:40",
+  "osm:IN-TN:1819317": "2026-10-22T18:18:15",
+  "osm:IN-TN:1819318": "2026-10-22T18:21:50",
+  "osm:IN-TN:1819319": "2026-10-22T18:27:05",
+  "osm:IN-TN:1819320": "2026-10-22T18:32:35",
+  "osm:IN-TN:1819322": "2026-10-22T18:38:28",
+  "osm:IN-TN:1819323": "2026-10-22T18:44:54",
+  "osm:IN-TN:1819362": "2026-10-22T18:20:02",
+  "osm:IN-TN:1819586": "2026-10-22T18:14:37",
+  "osm:IN-TN:1819588": "2026-10-22T18:18:59",
+  "osm:IN-TN:1819589": "2026-10-22T18:25:04",
+  "osm:IN-TN:1819591": "2026-10-22T18:31:04",
+  "osm:IN-TN:1819592": "2026-10-22T18:35:14",
+  "osm:IN-TN:1819594": "2026-10-22T18:40:43",
+  "osm:IN-TN:1819595": "2026-10-22T18:42:18",
+  "osm:IN-TN:1819596": "2026-10-22T18:43:11",
+  "osm:IN-TN:1819597": "2026-10-22T18:49:30",
+  "osm:IN-TN:1819598": "2026-10-22T18:50:06",
+  "osm:IN-TN:1819599": "2026-10-22T18:51:02",
+  "osm:IN-TN:1819773": "2026-10-22T18:36:55",
+  "osm:IN-TN:1819774": "2026-10-22T18:44:05",
+  "osm:IN-TN:448985": "2026-10-22T18:33:45",
+  "osm:IN-TN:7910817": "2026-10-22T18:17:10",
+  "osm:IN-TN:9537174": "2026-10-22T18:28:03",
+  "osm:IN-TN:9538519": "2026-10-22T18:48:04",
+  "osm:IN-TN:9602893": "2026-10-22T18:23:24"
  },
  "failed": {
   "wikidata:IN-KA": "2026-10-22T17:26:48",
