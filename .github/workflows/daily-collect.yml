@@ -1,0 +1,66 @@
+name: Daily temple data collection
+
+on:
+  schedule:
+    # 20:47 UTC = 02:17 AM IST — night, low-traffic window. Runs every day.
+    - cron: "47 20 * * *"
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: "Time budget in minutes (max 55)"
+        default: "50"
+      states:
+        description: "States (comma list) e.g. IN-TN,IN-KL — blank = all"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: temple-collector
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60          # hard stop at 1 hour
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Collect (time-boxed)
+        env:
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}   # optional
+          GOOGLE_MAX_REQUESTS: ${{ vars.GOOGLE_MAX_REQUESTS || '150' }}
+        run: |
+          STATES="${{ github.event.inputs.states }}"
+          python -m temples.run --minutes "${{ github.event.inputs.minutes || '50' }}" ${STATES:+--states "$STATES"}
+
+      - name: Commit data
+        run: |
+          git config user.name  "temple-bot"
+          git config user.email "temple-bot@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "data: daily update $(date -u +%F)"
+          git push
+
+      - name: Publish Excel to the "latest" release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view latest >/dev/null 2>&1 || \
+            gh release create latest --title "Latest temple data" --notes "Updated automatically every night."
+          gh release upload latest output/south_india_temples.xlsx data/temples_master.csv --clobber
+          gh release edit latest --notes "Updated $(date -u '+%d %b %Y %H:%M') UTC — $(($(wc -l < data/temples_master.csv) - 1)) temples."
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: south_india_temples_${{ github.run_number }}
+          path: output/south_india_temples.xlsx
+          retention-days: 14
