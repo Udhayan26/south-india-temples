@@ -1,0 +1,613 @@
+{
+ "districts": {
+  "IN-AP": [
+   {
+    "name": "Alluri Sitharama Raju",
+    "rel_id": 13999461
+   },
+   {
+    "name": "Anakapalli",
+    "rel_id": 13999884
+   },
+   {
+    "name": "Anantapuramu",
+    "rel_id": 2022303
+   },
+   {
+    "name": "Annamayya",
+    "rel_id": 13997864
+   },
+   {
+    "name": "Bapatla",
+    "rel_id": 13998258
+   },
+   {
+    "name": "Chittoor",
+    "rel_id": 2022304
+   },
+   {
+    "name": "Dr. B.R. Ambedkar Konaseema",
+    "rel_id": 13999603
+   },
+   {
+    "name": "East Godavari",
+    "rel_id": 2022126
+   },
+   {
+    "name": "Eluru",
+    "rel_id": 13999189
+   },
+   {
+    "name": "Guntur",
+    "rel_id": 2022220
+   },
+   {
+    "name": "Kakinada",
+    "rel_id": 13999862
+   },
+   {
+    "name": "Krishna district",
+    "rel_id": 2022135
+   },
+   {
+    "name": "Kurnool",
+    "rel_id": 2022277
+   },
+   {
+    "name": "Markapuram",
+    "rel_id": 20182419
+   },
+   {
+    "name": "NTR",
+    "rel_id": 14000341
+   },
+   {
+    "name": "Nandyal",
+    "rel_id": 14000280
+   },
+   {
+    "name": "Palnadu",
+    "rel_id": 14000417
+   },
+   {
+    "name": "Parvathipuram Manyam",
+    "rel_id": 13998425
+   },
+   {
+    "name": "Polavaram",
+    "rel_id": 20181344
+   },
+   {
+    "name": "Prakasam",
+    "rel_id": 2022278
+   },
+   {
+    "name": "Sri Potti Sriramulu Nellore",
+    "rel_id": 2022291
+   },
+   {
+    "name": "Sri Sathya Sai",
+    "rel_id": 13997968
+   },
+   {
+    "name": "Srikakulam",
+    "rel_id": 2022096
+   },
+   {
+    "name": "Tirupati",
+    "rel_id": 13997802
+   },
+   {
+    "name": "Visakhapatnam",
+    "rel_id": 2022111
+   },
+   {
+    "name": "Vizianagaram",
+    "rel_id": 2022097
+   },
+   {
+    "name": "West Godavari",
+    "rel_id": 2022127
+   },
+   {
+    "name": "YSR Kadapa",
+    "rel_id": 2022290
+   }
+  ],
+  "IN-KA": [
+   {
+    "name": "Bagalkote",
+    "rel_id": 2020666
+   },
+   {
+    "name": "Ballari",
+    "rel_id": 2020692
+   },
+   {
+    "name": "Belagavi",
+    "rel_id": 2020648
+   },
+   {
+    "name": "Bengaluru North",
+    "rel_id": 2020588
+   },
+   {
+    "name": "Bengaluru South",
+    "rel_id": 4458921
+   },
+   {
+    "name": "Bengaluru Urban",
+    "rel_id": 2020589
+   },
+   {
+    "name": "Bidar",
+    "rel_id": 2020723
+   },
+   {
+    "name": "Chamarajanagar",
+    "rel_id": 2019940
+   },
+   {
+    "name": "Chikkaballapura",
+    "rel_id": 4452723
+   },
+   {
+    "name": "Chikkamagaluru",
+    "rel_id": 2020603
+   },
+   {
+    "name": "Chitradurga",
+    "rel_id": 2020623
+   },
+   {
+    "name": "Coorg",
+    "rel_id": 2020511
+   },
+   {
+    "name": "Dakshina Kannada",
+    "rel_id": 2020528
+   },
+   {
+    "name": "Davanagere",
+    "rel_id": 4210083
+   },
+   {
+    "name": "Dharwad",
+    "rel_id": 2020668
+   },
+   {
+    "name": "Gadag",
+    "rel_id": 2020669
+   },
+   {
+    "name": "Hassan",
+    "rel_id": 2020605
+   },
+   {
+    "name": "Haveri",
+    "rel_id": 2020670
+   },
+   {
+    "name": "Kalaburagi",
+    "rel_id": 2020713
+   },
+   {
+    "name": "Kolar",
+    "rel_id": 2020590
+   },
+   {
+    "name": "Koppal",
+    "rel_id": 2020693
+   },
+   {
+    "name": "Mandya",
+    "rel_id": 2020591
+   },
+   {
+    "name": "Mysuru",
+    "rel_id": 2020510
+   },
+   {
+    "name": "Raichur",
+    "rel_id": 2020694
+   },
+   {
+    "name": "Shimoga",
+    "rel_id": 2020649
+   },
+   {
+    "name": "Tumakuru",
+    "rel_id": 2020624
+   },
+   {
+    "name": "Udupi",
+    "rel_id": 2020529
+   },
+   {
+    "name": "Uttara Kannada",
+    "rel_id": 2020650
+   },
+   {
+    "name": "Vijayanagara",
+    "rel_id": 12255259
+   },
+   {
+    "name": "Vijayapura",
+    "rel_id": 2020667
+   },
+   {
+    "name": "Yadgir",
+    "rel_id": 3686856
+   }
+  ],
+  "IN-KL": [
+   {
+    "name": "Alappuzha",
+    "rel_id": 3743889
+   },
+   {
+    "name": "Ernakulam",
+    "rel_id": 3740342
+   },
+   {
+    "name": "Idukki",
+    "rel_id": 1819274
+   },
+   {
+    "name": "Kannur",
+    "rel_id": 2018247
+   },
+   {
+    "name": "Kasaragod",
+    "rel_id": 2018248
+   },
+   {
+    "name": "Kollam",
+    "rel_id": 2018154
+   },
+   {
+    "name": "Kottayam",
+    "rel_id": 3743996
+   },
+   {
+    "name": "Kozhikode",
+    "rel_id": 2018249
+   },
+   {
+    "name": "Malappuram",
+    "rel_id": 2018186
+   },
+   {
+    "name": "Palakkad",
+    "rel_id": 1819321
+   },
+   {
+    "name": "Pathanamthitta",
+    "rel_id": 2018176
+   },
+   {
+    "name": "Thiruvananthapuram",
+    "rel_id": 1818784
+   },
+   {
+    "name": "Thrissur",
+    "rel_id": 2018177
+   },
+   {
+    "name": "Wayanad",
+    "rel_id": 2018203
+   }
+  ],
+  "IN-PY": [
+   {
+    "name": "Karaikal",
+    "rel_id": 1819590
+   },
+   {
+    "name": "Puducherry",
+    "rel_id": 5335580
+   }
+  ],
+  "IN-TG": [
+   {
+    "name": "Adilabad",
+    "rel_id": 2022179
+   },
+   {
+    "name": "Bhadradri Kothagudem",
+    "rel_id": 7698599
+   },
+   {
+    "name": "Hanumakonda",
+    "rel_id": 2022181
+   },
+   {
+    "name": "Hyderabad",
+    "rel_id": 7255986
+   },
+   {
+    "name": "Jagtial",
+    "rel_id": 7691427
+   },
+   {
+    "name": "Jangaon",
+    "rel_id": 7666379
+   },
+   {
+    "name": "Jayashankar Bhupalapally",
+    "rel_id": 7698600
+   },
+   {
+    "name": "Jogulamba Gadwal",
+    "rel_id": 7666146
+   },
+   {
+    "name": "Kamareddy",
+    "rel_id": 7701043
+   },
+   {
+    "name": "Karimnagar",
+    "rel_id": 2022180
+   },
+   {
+    "name": "Khammam",
+    "rel_id": 2022134
+   },
+   {
+    "name": "Kumuram Bheem Asifabad",
+    "rel_id": 7686917
+   },
+   {
+    "name": "Mahabubabad",
+    "rel_id": 7699117
+   },
+   {
+    "name": "Mahabubnagar",
+    "rel_id": 2022227
+   },
+   {
+    "name": "Mancherial",
+    "rel_id": 7686916
+   },
+   {
+    "name": "Medak",
+    "rel_id": 2022212
+   },
+   {
+    "name": "Medchal–Malkajgiri",
+    "rel_id": 7664883
+   },
+   {
+    "name": "Mulugu",
+    "rel_id": 9502792
+   },
+   {
+    "name": "Nagarkurnool",
+    "rel_id": 7700442
+   },
+   {
+    "name": "Nalgonda",
+    "rel_id": 2022221
+   },
+   {
+    "name": "Narayanpet",
+    "rel_id": 9502953
+   },
+   {
+    "name": "Nirmal",
+    "rel_id": 7686918
+   },
+   {
+    "name": "Nizamabad",
+    "rel_id": 2022213
+   },
+   {
+    "name": "Peddapalli",
+    "rel_id": 7691426
+   },
+   {
+    "name": "Rajanna Sircilla",
+    "rel_id": 7691428
+   },
+   {
+    "name": "Ranga Reddy",
+    "rel_id": 2022214
+   },
+   {
+    "name": "Sangareddy",
+    "rel_id": 7663387
+   },
+   {
+    "name": "Siddipet",
+    "rel_id": 7665824
+   },
+   {
+    "name": "Suryapet",
+    "rel_id": 7699215
+   },
+   {
+    "name": "Vikarabad",
+    "rel_id": 7685040
+   },
+   {
+    "name": "Wanaparthy",
+    "rel_id": 7700765
+   },
+   {
+    "name": "Warangal",
+    "rel_id": 7666378
+   },
+   {
+    "name": "Yadadri Bhuvanagiri",
+    "rel_id": 7700443
+   }
+  ],
+  "IN-TN": [
+   {
+    "name": "Ariyalur",
+    "rel_id": 1819586
+   },
+   {
+    "name": "Chengalpattu",
+    "rel_id": 10329991
+   },
+   {
+    "name": "Chennai",
+    "rel_id": 7910817
+   },
+   {
+    "name": "Coimbatore",
+    "rel_id": 1819317
+   },
+   {
+    "name": "Cuddalore",
+    "rel_id": 1819588
+   },
+   {
+    "name": "Dharmapuri",
+    "rel_id": 1819362
+   },
+   {
+    "name": "Dindigul",
+    "rel_id": 1819273
+   },
+   {
+    "name": "Erode",
+    "rel_id": 1819318
+   },
+   {
+    "name": "Kallakurichi",
+    "rel_id": 9602893
+   },
+   {
+    "name": "Kanchipuram",
+    "rel_id": 1819589
+   },
+   {
+    "name": "Kanniyakumari",
+    "rel_id": 1818782
+   },
+   {
+    "name": "Karur",
+    "rel_id": 1819319
+   },
+   {
+    "name": "Krishnagiri",
+    "rel_id": 9537174
+   },
+   {
+    "name": "Madurai",
+    "rel_id": 1819275
+   },
+   {
+    "name": "Mayiladuthurai",
+    "rel_id": 11698709
+   },
+   {
+    "name": "Nagapattinam",
+    "rel_id": 1819591
+   },
+   {
+    "name": "Namakkal",
+    "rel_id": 1819320
+   },
+   {
+    "name": "Nilgiris",
+    "rel_id": 448985
+   },
+   {
+    "name": "Perambalur",
+    "rel_id": 1819592
+   },
+   {
+    "name": "Pudukkottai",
+    "rel_id": 1819211
+   },
+   {
+    "name": "Ramanathapuram",
+    "rel_id": 1819773
+   },
+   {
+    "name": "Ranipet",
+    "rel_id": 10330032
+   },
+   {
+    "name": "Salem",
+    "rel_id": 1819322
+   },
+   {
+    "name": "Sivagangai",
+    "rel_id": 1819212
+   },
+   {
+    "name": "Tenkasi",
+    "rel_id": 10303764
+   },
+   {
+    "name": "Thanjavur",
+    "rel_id": 1819594
+   },
+   {
+    "name": "Theni",
+    "rel_id": 1819276
+   },
+   {
+    "name": "Thiruvallur",
+    "rel_id": 1819595
+   },
+   {
+    "name": "Thiruvarur",
+    "rel_id": 1819596
+   },
+   {
+    "name": "Thoothukudi",
+    "rel_id": 1819774
+   },
+   {
+    "name": "Tiruchirappalli",
+    "rel_id": 1819323
+   },
+   {
+    "name": "Tirunelveli",
+    "rel_id": 1818783
+   },
+   {
+    "name": "Tirupattur",
+    "rel_id": 10330031
+   },
+   {
+    "name": "Tiruppur",
+    "rel_id": 9538519
+   },
+   {
+    "name": "Tiruvannamalai",
+    "rel_id": 1819597
+   },
+   {
+    "name": "Vellore",
+    "rel_id": 1819598
+   },
+   {
+    "name": "Viluppuram",
+    "rel_id": 1819599
+   },
+   {
+    "name": "Virudhunagar",
+    "rel_id": 1819213
+   }
+  ]
+ },
+ "done": {
+  "districts:IN-AP": "2026-10-22T17:05:50",
+  "districts:IN-KA": "2026-10-22T17:04:49",
+  "districts:IN-KL": "2026-10-22T17:04:11",
+  "districts:IN-PY": "2026-10-22T17:08:02",
+  "districts:IN-TG": "2026-10-22T17:06:54",
+  "districts:IN-TN": "2026-10-22T17:03:10"
+ },
+ "failed": {
+  "wikidata:IN-KA": "2026-10-22T17:26:48",
+  "wikidata:IN-KL": "2026-10-22T17:20:32",
+  "wikidata:IN-TN": "2026-10-22T17:14:17"
+ }
+}
