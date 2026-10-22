@@ -42,7 +42,8 @@ out tags;
     for el in data.get("elements", []):
         t = el.get("tags", {})
         name = t.get("name:en") or t.get("name") or str(el["id"])
-        out.append({"rel_id": el["id"], "name": name.replace(" District", "").strip()})
+        out.append({"rel_id": el["id"], "name": name.replace(" District", "").strip(),
+                    "wikidata": t.get("wikidata", "")})
     return sorted(out, key=lambda d: d["name"])
 
 

@@ -159,6 +159,8 @@ def request_with_retry(s: requests.Session, method: str, url: str, tries: int = 
     for attempt in range(1, tries + 1):
         try:
             r = s.request(method, url, timeout=timeout, **kw)
+            if r.status_code >= 400:
+                print(f"   HTTP {r.status_code}: {r.text[:200]!r}")
             if r.status_code in (429, 502, 503, 504):
                 raise requests.HTTPError(f"{r.status_code} from {url}")
             r.raise_for_status()

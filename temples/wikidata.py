@@ -1,7 +1,8 @@
 """Wikidata (SPARQL) source — free, CC0. Adds deity, heritage status,
 inception, images and famous groupings (Divya Desam, Paadal Petra Sthalam...).
 
-One job = one state. Writes data/raw/wikidata/<STATE>.csv
+One job = one district (small query, avoids Wikidata's 60-second limit).
+Writes data/raw/wikidata/<STATE>/<district_rel_id>.csv
 """
 from __future__ import annotations
 
@@ -9,7 +10,7 @@ import re
 from collections import defaultdict
 from datetime import date
 
-from .common import RAW, STATE_QIDS, STATES, blank_row, finish_row, request_with_retry, session, write_rows
+from .common import RAW, STATES, blank_row, finish_row, request_with_retry, session, write_rows
 
 ENDPOINT = "https://query.wikidata.org/sparql"
 LOCAL_LANG = {"IN-TN": "ta", "IN-PY": "ta", "IN-KL": "ml", "IN-KA": "kn", "IN-AP": "te", "IN-TG": "te"}
@@ -47,10 +48,10 @@ SELECT ?item ?itemLabel ?local ?coord ?deityLabel ?adminLabel ?inception ?image
 """
 
 
-def fetch_state(state_code: str) -> int:
-    q = QUERY.format(qid=STATE_QIDS[state_code], lang=LOCAL_LANG[state_code])
+def fetch_district(state_code: str, district: dict) -> int:
+    q = QUERY.format(qid=district["wikidata"], lang=LOCAL_LANG[state_code])
     r = request_with_retry(session(), "GET", ENDPOINT, params={"query": q, "format": "json"},
-                           headers={"Accept": "application/sparql-results+json"}, timeout=300)
+                           headers={"Accept": "application/sparql-results+json"}, timeout=120, tries=2)
     items: dict[str, dict] = {}
     multi: dict[str, dict[str, set]] = defaultdict(lambda: defaultdict(set))
     for b in r.json()["results"]["bindings"]:
@@ -75,7 +76,7 @@ def fetch_state(state_code: str) -> int:
     for qid, it in items.items():
         groups_text = " ".join(multi[qid]["groupLabel"] | multi[qid]["heritageLabel"]) + " " + it["desc"]
         special = sorted({label for rx, label in SPECIAL_GROUPS if re.search(rx, groups_text, re.I)})
-        district = it["admin"] if "district" in it["admin"].lower() else ""
+        admin_is_district = "district" in it["admin"].lower()
         row = blank_row(
             name=it["name"] if not re.fullmatch(r"Q\d+", it["name"]) else "",
             name_local=it["local"],
@@ -84,8 +85,8 @@ def fetch_state(state_code: str) -> int:
                      "buddhist" if "buddhist" in it["desc"].lower() else "hindu",
             special_group="; ".join(special),
             state=STATES[state_code],
-            district=district.replace(" district", "").replace(" District", ""),
-            city="" if district else it["admin"],
+            district=district["name"],
+            city="" if admin_is_district else it["admin"],
             latitude=it["lat"], longitude=it["lon"],
             wikidata_id=qid,
             operator=it["operator"], website=it["website"],
@@ -95,5 +96,5 @@ def fetch_state(state_code: str) -> int:
         )
         if row["name"]:
             rows.append(finish_row(row))
-    write_rows(RAW / "wikidata" / f"{state_code}.csv", rows)
+    write_rows(RAW / "wikidata" / state_code / f"{district['rel_id']}.csv", rows)
     return len(rows)

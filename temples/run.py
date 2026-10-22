@@ -46,24 +46,26 @@ def _due(st, key, kind) -> bool:
     return not last or datetime.fromisoformat(last) < datetime.now() - timedelta(days=REFRESH_DAYS[kind])
 
 
-def build_queue(st: dict, states: list[str]) -> list[tuple]:
+def build_queue(st: dict, states: list[str], skip_kinds: frozenset = frozenset()) -> list[tuple]:
     jobs = []
     for sc in states:
-        if _due(st, f"districts:{sc}", "districts") or sc not in st["districts"]:
+        dl = st["districts"].get(sc)
+        # re-list districts when stale, missing, or saved before Wikidata IDs were kept
+        if _due(st, f"districts:{sc}", "districts") or not dl or "wikidata" not in dl[0]:
             jobs.append(("districts", sc, None))
-        if _due(st, f"wikidata:{sc}", "wikidata"):
-            jobs.append(("wikidata", sc, None))
-        for d in st["districts"].get(sc, []):
+        for d in dl or []:
             if _due(st, f"osm:{sc}:{d['rel_id']}", "osm"):
                 jobs.append(("osm", sc, d))
+            if d.get("wikidata") and _due(st, f"wikidata:{sc}:{d['rel_id']}", "wikidata"):
+                jobs.append(("wikidata", sc, d))
             if google_places.enabled() and google_places.budget_left() > 0 and _due(st, f"google:{sc}:{d['rel_id']}", "google"):
                 jobs.append(("google", sc, d))
     # a job that failed in the last 12 h waits until the next run
     recent = (datetime.now() - timedelta(hours=12)).isoformat()
-    jobs = [j for j in jobs if st.get("failed", {}).get(_key(j), "") < recent]
-    order = {"districts": 0, "wikidata": 1, "osm": 2, "google": 3}
+    jobs = [j for j in jobs if st.get("failed", {}).get(_key(j), "") < recent and j[0] not in skip_kinds]
+    order = {"districts": 0, "osm": 1, "wikidata": 2, "google": 3}
     # never-done jobs first, then oldest refresh first
-    return sorted(jobs, key=lambda j: (st["done"].get(_key(j), ""), order[j[0]]))
+    return sorted(jobs, key=lambda j: (j[0] != "districts", st["done"].get(_key(j), ""), order[j[0]]))
 
 
 def _key(job) -> str:
@@ -76,10 +78,11 @@ def run(minutes: float, states: list[str], export_only: bool = False) -> None:
     deadline = start + max(1.0, minutes - EXPORT_RESERVE_MIN) * 60
     st = load_state()
     done_jobs, found, errors = 0, 0, 0
-    consecutive_fail = 0
+    consecutive_fail: dict[str, int] = {}
+    skip: set[str] = set()   # a source that keeps failing is paused for the rest of this run
 
     while not export_only and time.monotonic() < deadline:
-        queue = build_queue(st, states)
+        queue = build_queue(st, states, frozenset(skip))
         if not queue:
             print("All data is fresh — nothing due today.")
             break
@@ -93,7 +96,7 @@ def run(minutes: float, states: list[str], export_only: bool = False) -> None:
                 n = len(st["districts"][sc])
                 print(f"   {n} districts")
             elif kind == "wikidata":
-                n = wikidata.fetch_state(sc)
+                n = wikidata.fetch_district(sc, d)
             elif kind == "osm":
                 n = osm.fetch_district(sc, d)
             else:
@@ -103,18 +106,21 @@ def run(minutes: float, states: list[str], export_only: bool = False) -> None:
                 print(f"   {n} temples")
             st["done"][_key(job)] = datetime.now().isoformat(timespec="seconds")
             done_jobs += 1
-            consecutive_fail = 0
+            consecutive_fail[kind] = 0
+            st.get("failed", {}).pop(_key(job), None)
+            st.get("errors", {}).pop(_key(job), None)
             save_state(st)
         except Exception as e:  # keep going; the job stays due and is retried later
             errors += 1
-            consecutive_fail += 1
+            consecutive_fail[kind] = consecutive_fail.get(kind, 0) + 1
             print(f"   FAILED: {e}")
             traceback.print_exc(limit=1)
             st.setdefault("failed", {})[_key(job)] = datetime.now().isoformat(timespec="seconds")
+            st.setdefault("errors", {})[_key(job)] = str(e)[:300]   # visible in the repo
             save_state(st)
-            if consecutive_fail >= 3:
-                print("3 failures in a row — stopping collection for today.")
-                break
+            if consecutive_fail[kind] >= 3:
+                print(f"{kind}: 3 failures in a row — skipping this source for the rest of today.")
+                skip.add(kind)
         time.sleep(PAUSE_BETWEEN_CALLS)
 
     save_state(st)
