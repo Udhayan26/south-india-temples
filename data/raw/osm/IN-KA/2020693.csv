@@ -1,0 +1,36 @@
+temple_id,name,name_local,deity,category,religion,special_group,state,district,city,address,pincode,latitude,longitude,google_maps_url,osm_id,wikidata_id,google_place_id,govt_id,operator,phone,website,opening_hours,heritage,inception,image,description,sources,source_count,last_updated
+,Gavi Matha,ಗವಿಮಠ,,,hindu,,Karnataka,Koppal,,,,15.339345,76.15973,"https://www.google.com/maps/search/?api=1&query=15.339345,76.159730",node/1242837985,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Basadi,ಬಸದಿ,,Jain,jain,,Karnataka,Koppal,,,,15.350914,76.491203,"https://www.google.com/maps/search/?api=1&query=15.350914,76.491203",node/1813644865,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Somanatha Temple,ಸೋಮನಾಥ ದೇವಸ್ಥಾನ,,Shaivam,hindu,,Karnataka,Koppal,,,,15.344251,76.359609,"https://www.google.com/maps/search/?api=1&query=15.344251,76.359609",node/2072718459,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Somanata temple,ಸೋಮನಾಥ ದೇವಾಸ್ತಾನ,,Shaivam,hindu,,Karnataka,Koppal,,,,15.34698,76.358356,"https://www.google.com/maps/search/?api=1&query=15.346980,76.358356",node/2072949826,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Huligi temple,ಹುಲಿಗೆಮ್ಮ ದೇವಸ್ಥಾನ,,,hindu,,Karnataka,Koppal,,,,15.304129,76.34599,"https://www.google.com/maps/search/?api=1&query=15.304129,76.345990",node/2072949928,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Hanuman Temple,ಹನುಮಂತ ದೇವಸ್ಥಾನ,Hanuman,Vaishnavam,hindu,,Karnataka,Koppal,,,,15.362934,76.449076,"https://www.google.com/maps/search/?api=1&query=15.362934,76.449076",node/2195424884,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Chintamani Math Anegundi,,,,hindu,,Karnataka,Koppal,Anegundi,"Anegundi, Koppal",,15.347792,76.492737,"https://www.google.com/maps/search/?api=1&query=15.347792,76.492737",node/2620887283,,,,,,https://chintamanimath.org/,,,,,,OpenStreetMap,,2026-10-23
+,Durga Temple,ದುರ್ಗಾ ದೇವಸ್ಥಾನ,Devi (Amman / Shakti),Shaktam,hindu,,Karnataka,Koppal,,,,15.354429,76.483101,"https://www.google.com/maps/search/?api=1&query=15.354429,76.483101",node/3921529448,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.60175,76.686683,"https://www.google.com/maps/search/?api=1&query=15.601750,76.686683",node/5776966031,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Sri Gudneshwara Temple,,,,hindu,,Karnataka,Koppal,Gudneppana Math,"Kuknoor Gudneppana Math Road, Gudneppana Math",583232,15.501513,76.008522,"https://www.google.com/maps/search/?api=1&query=15.501513,76.008522",node/9199686220,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Gavi Ranganatha temple,,Vishnu (Perumal),Vaishnavam,hindu,,Karnataka,Koppal,,,,15.357374,76.483125,"https://www.google.com/maps/search/?api=1&query=15.357374,76.483125",node/10213479017,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,ABHINAVA  TIRUPATI TEMPLE,,Venkateswara,Vaishnavam,hindu,,Karnataka,Koppal,HANAMASGAR,"HANAMASGAR, KOPPAL",583281,15.876923,76.046832,"https://www.google.com/maps/search/?api=1&query=15.876923,76.046832",node/13644970417,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.356637,76.47224,"https://www.google.com/maps/search/?api=1&query=15.356637,76.472240",node/14079933916,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.352064,76.4939,"https://www.google.com/maps/search/?api=1&query=15.352064,76.493900",node/14080436589,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.595686,76.230981,"https://www.google.com/maps/search/?api=1&query=15.595686,76.230981",node/14081373553,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.571863,76.420084,"https://www.google.com/maps/search/?api=1&query=15.571863,76.420084",way/229957161,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Somanatheshwara Temple,ಸೋಮನಾಥೇಶ್ವರ ದೇವಾಲಯ,,,hindu,,Karnataka,Koppal,,,,15.712395,76.463306,"https://www.google.com/maps/search/?api=1&query=15.712395,76.463306",way/441287466,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.350409,76.491517,"https://www.google.com/maps/search/?api=1&query=15.350409,76.491517",way/686392259,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.353088,76.501281,"https://www.google.com/maps/search/?api=1&query=15.353088,76.501281",way/762571533,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Hanuman temple,,Hanuman,Vaishnavam,hindu,,Karnataka,Koppal,,,,15.354594,76.469741,"https://www.google.com/maps/search/?api=1&query=15.354594,76.469741",way/1128222505,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.348555,76.466195,"https://www.google.com/maps/search/?api=1&query=15.348555,76.466195",way/1245171147,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Jayalakshmi Temple,ಜಯಲಕ್ಷ್ಮಿ,Devi (Amman / Shakti),Shaktam,hindu,,Karnataka,Koppal,,,,15.35406,76.47695,"https://www.google.com/maps/search/?api=1&query=15.354060,76.476950",way/1245171152,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Chintamani Math Anegundi,ಚಿಂತಾಮಣಿ ಮಠ,,,hindu,,Karnataka,Koppal,,,,15.347727,76.492689,"https://www.google.com/maps/search/?api=1&query=15.347727,76.492689",way/1299322218,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Uramma Temple,ಊರಮ್ಮ,,,hindu,,Karnataka,Koppal,,,,15.354758,76.492019,"https://www.google.com/maps/search/?api=1&query=15.354758,76.492019",way/1364608886,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Ruined Temple,,,,hindu,,Karnataka,Koppal,,,,15.355224,76.492198,"https://www.google.com/maps/search/?api=1&query=15.355224,76.492198",way/1364608887,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.356204,76.492353,"https://www.google.com/maps/search/?api=1&query=15.356204,76.492353",way/1364608888,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Malledavara Gudi,ಮಲ್ಲೆದೇವರ ಗುಡಿ,,,hindu,,Karnataka,Koppal,,,,15.356968,76.492732,"https://www.google.com/maps/search/?api=1&query=15.356968,76.492732",way/1364608889,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.359266,76.494268,"https://www.google.com/maps/search/?api=1&query=15.359266,76.494268",way/1364608890,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.361656,76.495939,"https://www.google.com/maps/search/?api=1&query=15.361656,76.495939",way/1364608891,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.347806,76.492734,"https://www.google.com/maps/search/?api=1&query=15.347806,76.492734",way/1364608895,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.347493,76.492745,"https://www.google.com/maps/search/?api=1&query=15.347493,76.492745",way/1364608896,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.347647,76.492695,"https://www.google.com/maps/search/?api=1&query=15.347647,76.492695",way/1364608897,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.3475,76.492486,"https://www.google.com/maps/search/?api=1&query=15.347500,76.492486",way/1364608898,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,,,,,hindu,,Karnataka,Koppal,,,,15.348218,76.49284,"https://www.google.com/maps/search/?api=1&query=15.348218,76.492840",way/1364608899,,,,,,,,,,,,OpenStreetMap,,2026-10-23
+,Honuman Temple,,,,hindu,,Karnataka,Koppal,,,,15.35028,76.493467,"https://www.google.com/maps/search/?api=1&query=15.350280,76.493467",way/1548094254,,,,,,,,,,,,OpenStreetMap,,2026-10-23
