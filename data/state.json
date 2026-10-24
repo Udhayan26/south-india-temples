@@ -899,15 +899,15 @@
  },
  "errors": {
   "wikidata:IN-TN:10329991": "504 from https://query.wikidata.org/sparql",
-  "wikidata:IN-TN:1819586": "429 from https://query.wikidata.org/sparql",
+  "wikidata:IN-TN:1819586": "504 from https://query.wikidata.org/sparql",
   "wikidata:IN-TN:7910817": "504 from https://query.wikidata.org/sparql"
  },
  "failed": {
   "wikidata:IN-KA": "2026-10-22T17:26:48",
   "wikidata:IN-KL": "2026-10-22T17:20:32",
   "wikidata:IN-TN": "2026-10-22T17:14:17",
-  "wikidata:IN-TN:10329991": "2026-10-24T00:15:54",
-  "wikidata:IN-TN:1819586": "2026-10-24T00:13:19",
-  "wikidata:IN-TN:7910817": "2026-10-24T00:18:29"
+  "wikidata:IN-TN:10329991": "2026-10-24T22:49:56",
+  "wikidata:IN-TN:1819586": "2026-10-24T22:47:21",
+  "wikidata:IN-TN:7910817": "2026-10-24T22:52:31"
  }
 }
