@@ -898,8 +898,7 @@
   "osm:IN-TN:9602893": "2026-10-22T18:23:24",
   "places:IN-PY:1819590": "2026-10-28T03:48:56",
   "places:IN-PY:5335580": "2026-10-28T03:49:47",
-  "wikidata:IN-PY:1819590": "2026-10-28T03:47:53",
-  "wikidata:IN-PY:5335580": "2026-10-28T03:48:23"
+  "wikidata:IN-PY:1819590": "2026-10-28T03:47:53"
  },
  "errors": {
   "wikidata:IN-TN:10329991": "504 from https://query.wikidata.org/sparql",

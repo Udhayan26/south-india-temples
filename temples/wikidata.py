@@ -31,6 +31,8 @@ SPECIAL_GROUPS = [
     (r"monument of national importance", "ASI – Monument of National Importance"),
 ]
 
+NOT_TEMPLE = re.compile(r"church|cathedral|chapel|basilica|mosque|masjid|dargah|gurudwara|synagogue", re.I)
+
 BOX_QUERY = """
 SELECT DISTINCT ?item WHERE {{
   hint:Query hint:optimizer "None" .
@@ -68,16 +70,34 @@ def _sparql(query: str) -> list[dict]:
     return [{k: x["value"] for k, x in b.items()} for b in r.json()["results"]["bindings"]]
 
 
-def district_bbox(state_code: str, district: dict, pad: float = 0.02):
-    """Bounding box of the district, taken from the OSM temples already collected there."""
+def district_boxes(state_code: str, district: dict, pad: float = 0.02) -> list[tuple]:
+    """Bounding boxes around the OSM temples already collected in the district.
+    Districts in separate pieces (Puducherry = Puducherry + Karaikal + Mahe + Yanam)
+    get one box per piece, so the search never spans other states."""
     p = RAW / "osm" / state_code / f"{district['rel_id']}.csv"
     if not p.exists():
-        return None
-    pts = [(float(r["latitude"]), float(r["longitude"])) for r in read_rows(p) if r.get("latitude")]
-    if not pts:
-        return None
-    lats, lons = [a for a, _ in pts], [b for _, b in pts]
-    return min(lats) - pad, min(lons) - pad, max(lats) + pad, max(lons) + pad
+        return []
+    cells: dict[tuple, list] = defaultdict(list)
+    for r in read_rows(p):
+        if r.get("latitude"):
+            lat, lon = float(r["latitude"]), float(r["longitude"])
+            cells[(int(lat / 0.25), int(lon / 0.25))].append((lat, lon))
+    boxes, seen = [], set()
+    for start in cells:                       # connected groups of occupied 0.25° cells
+        if start in seen:
+            continue
+        stack, pts = [start], []
+        seen.add(start)
+        while stack:
+            ci, cj = stack.pop()
+            pts += cells[(ci, cj)]
+            for nb in ((ci + a, cj + b) for a in (-1, 0, 1) for b in (-1, 0, 1)):
+                if nb in cells and nb not in seen:
+                    seen.add(nb)
+                    stack.append(nb)
+        lats, lons = [a for a, _ in pts], [b for _, b in pts]
+        boxes.append((min(lats) - pad, min(lons) - pad, max(lats) + pad, max(lons) + pad))
+    return boxes
 
 
 def _items_in_box(box, depth: int = 0) -> set[str]:
@@ -98,8 +118,10 @@ def _items_in_box(box, depth: int = 0) -> set[str]:
 
 
 def fetch_district(state_code: str, district: dict) -> int:
-    box = district_bbox(state_code, district)
-    qids = sorted(_items_in_box(box)) if box else []
+    found: set[str] = set()
+    for box in district_boxes(state_code, district):
+        found |= _items_in_box(box)
+    qids = sorted(found)
     bindings = []
     for i in range(0, len(qids), 150):
         chunk = " ".join(f"wd:{q}" for q in qids[i:i + 150])
@@ -128,7 +150,11 @@ def fetch_district(state_code: str, district: dict) -> int:
     for qid, it in items.items():
         groups_text = " ".join(multi[qid]["groupLabel"] | multi[qid]["heritageLabel"]) + " " + it["desc"]
         special = sorted({label for rx, label in SPECIAL_GROUPS if re.search(rx, groups_text, re.I)})
+        if NOT_TEMPLE.search(it["name"]):
+            continue
         admin_is_district = "district" in it["admin"].lower()
+        if it["admin"] in STATES.values() or it["admin"] in ("India", ""):
+            admin_is_district = True          # admin is only the state -> no city
         row = blank_row(
             name=it["name"] if not re.fullmatch(r"Q\d+", it["name"]) else "",
             name_local=it["local"],

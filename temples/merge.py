@@ -233,13 +233,14 @@ def _fill_places(records: list[dict]) -> None:
 
 def _refine_wikidata_only(records: list[dict]) -> None:
     """Wikidata rows are fetched by bounding box, so their district can be a neighbour's.
-    Take district/state from the nearest OSM temple instead (within 8 km)."""
+    Take district/state from the nearest OSM temple instead (within 8 km, else 25 km)."""
     pts = [(float(r["latitude"]), float(r["longitude"]), (r["district"], r["state"]))
            for r in records if "OpenStreetMap" in r["sources"] and r["latitude"] != "" and r["district"]]
-    idx = Nearest(pts, cell=0.08)
+    near, wide = Nearest(pts, cell=0.08), Nearest(pts, cell=0.25)
     for r in records:
         if r["sources"] == "Wikidata" and r["latitude"] != "":
-            hit = idx.find(float(r["latitude"]), float(r["longitude"]), 8000)
+            lat, lon = float(r["latitude"]), float(r["longitude"])
+            hit = near.find(lat, lon, 8000) or wide.find(lat, lon, 25000)
             if hit:
                 r["district"], r["state"] = hit
 
