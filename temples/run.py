@@ -21,12 +21,12 @@ from datetime import datetime, timedelta
 
 from . import google_places, osm, wikidata
 from .common import DATA, STATES
-from .export import write_excel
+from .export import write_excel, write_geojson
 from .merge import build_master
 
 STATE_FILE = DATA / "state.json"
 LOG_FILE = DATA / "run_log.csv"
-REFRESH_DAYS = {"districts": 60, "osm": 30, "wikidata": 14, "google": 90}
+REFRESH_DAYS = {"districts": 60, "osm": 30, "wikidata": 14, "places": 90, "google": 90}
 EXPORT_RESERVE_MIN = 6       # keep time for merge + Excel
 PAUSE_BETWEEN_CALLS = 10     # seconds; be polite to free public APIs
 
@@ -56,16 +56,21 @@ def build_queue(st: dict, states: list[str], skip_kinds: frozenset = frozenset()
         for d in dl or []:
             if _due(st, f"osm:{sc}:{d['rel_id']}", "osm"):
                 jobs.append(("osm", sc, d))
-            if d.get("wikidata") and _due(st, f"wikidata:{sc}:{d['rel_id']}", "wikidata"):
+            if _due(st, f"wikidata:{sc}:{d['rel_id']}", "wikidata"):
                 jobs.append(("wikidata", sc, d))
+            if _due(st, f"places:{sc}:{d['rel_id']}", "places"):
+                jobs.append(("places", sc, d))
             if google_places.enabled() and google_places.budget_left() > 0 and _due(st, f"google:{sc}:{d['rel_id']}", "google"):
                 jobs.append(("google", sc, d))
     # a job that failed in the last 12 h waits until the next run
     recent = (datetime.now() - timedelta(hours=12)).isoformat()
     jobs = [j for j in jobs if st.get("failed", {}).get(_key(j), "") < recent and j[0] not in skip_kinds]
-    order = {"districts": 0, "osm": 1, "wikidata": 2, "google": 3}
-    # never-done jobs first, then oldest refresh first
-    return sorted(jobs, key=lambda j: (j[0] != "districts", st["done"].get(_key(j), ""), order[j[0]]))
+    order = {"districts": 0, "osm": 1, "wikidata": 2, "places": 3, "google": 4}
+    fails = st.get("fail_count", {})
+    # districts first; jobs that keep failing go to the back so they can't block the rest;
+    # then never-done jobs, then oldest refresh first
+    return sorted(jobs, key=lambda j: (j[0] != "districts", fails.get(_key(j), 0),
+                                       st["done"].get(_key(j), ""), order[j[0]]))
 
 
 def _key(job) -> str:
@@ -99,16 +104,19 @@ def run(minutes: float, states: list[str], export_only: bool = False) -> None:
                 n = wikidata.fetch_district(sc, d)
             elif kind == "osm":
                 n = osm.fetch_district(sc, d)
+            elif kind == "places":
+                n = osm.fetch_places(sc, d)
             else:
                 n = google_places.fetch_district(sc, d)
             if kind != "districts":
-                found += n
-                print(f"   {n} temples")
+                found += n if kind != "places" else 0
+                print(f"   {n} {'villages/towns' if kind == 'places' else 'temples'}")
             st["done"][_key(job)] = datetime.now().isoformat(timespec="seconds")
             done_jobs += 1
             consecutive_fail[kind] = 0
             st.get("failed", {}).pop(_key(job), None)
             st.get("errors", {}).pop(_key(job), None)
+            st.get("fail_count", {}).pop(_key(job), None)
             save_state(st)
         except Exception as e:  # keep going; the job stays due and is retried later
             errors += 1
@@ -117,9 +125,10 @@ def run(minutes: float, states: list[str], export_only: bool = False) -> None:
             traceback.print_exc(limit=1)
             st.setdefault("failed", {})[_key(job)] = datetime.now().isoformat(timespec="seconds")
             st.setdefault("errors", {})[_key(job)] = str(e)[:300]   # visible in the repo
+            st.setdefault("fail_count", {})[_key(job)] = st["fail_count"].get(_key(job), 0) + 1
             save_state(st)
-            if consecutive_fail[kind] >= 3:
-                print(f"{kind}: 3 failures in a row — skipping this source for the rest of today.")
+            if consecutive_fail[kind] >= 5:
+                print(f"{kind}: 5 failures in a row — skipping this source for the rest of today.")
                 skip.add(kind)
         time.sleep(PAUSE_BETWEEN_CALLS)
 
@@ -127,6 +136,7 @@ def run(minutes: float, states: list[str], export_only: bool = False) -> None:
     print("Merging sources…")
     records = build_master()
     path = write_excel(records)
+    write_geojson(records)
     remaining = len(build_queue(st, list(STATES)))
     print(f"Excel: {path}  ({len(records):,} temples)  jobs done today: {done_jobs}, still due: {remaining}")
 

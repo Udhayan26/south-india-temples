@@ -3,22 +3,29 @@
 Collects every temple in **Tamil Nadu, Kerala, Karnataka, Andhra Pradesh, Telangana and Puducherry** with
 name, local-language name, deity, category, metadata, address and **GPS location**, and keeps an Excel sheet up to date.
 
-It runs automatically on GitHub **every night at 02:17 AM IST for at most 1 hour** (off-peak, when the free
+It runs automatically on GitHub **every night (about 02:00–03:30 AM IST) for at most 1 hour** (off-peak, when the free
 public map servers are least busy). Each night continues where the previous one stopped; once everything is
 collected it keeps refreshing the oldest data.
 
 **Download the latest Excel:** Releases → `latest` → `south_india_temples.xlsx`
+
+**View on a map (no download):** open any file in [`data/map/`](data/map) — GitHub shows every temple as a
+clickable pin: [Tamil Nadu](data/map/Tamil_Nadu.geojson) · [Kerala](data/map/Kerala.geojson) ·
+[Karnataka](data/map/Karnataka.geojson) · [Andhra Pradesh](data/map/Andhra_Pradesh.geojson) ·
+[Telangana](data/map/Telangana.geojson) · [Puducherry](data/map/Puducherry.geojson)
 
 ## What's in the Excel
 
 | Sheet | Contents |
 |---|---|
 | Summary | Totals by state, category, top deities, special groups (Divya Desam, Paadal Petra Sthalam…), per-source counts |
+| By District | Temples per district, how many have a name / deity / village, most common deity |
 | All Temples | One row per temple, filterable |
 | Tamil Nadu, Kerala, … | Same columns, one sheet per state |
 | About | Sources, licences, category key |
 
-Columns: Temple ID · Temple Name · Local Name · Deity (Moolavar) · Category / Tradition · Special Group · Religion ·
+Columns: Temple ID · Temple Name · Local Name · Deity (Moolavar) · Category / Tradition · Deity From (source data or
+guessed from name) · Special Group · Religion ·
 State · District · City/Village · Address · PIN · **Latitude · Longitude · Google Maps link** · Managed By · Phone ·
 Website · Timings · Heritage Status · Built/Inception · Description · Image · OSM / Wikidata / Google / Govt IDs ·
 Sources · No. of Sources · Last Updated
@@ -28,7 +35,8 @@ Sources · No. of Sources · Last Updated
 | Source | How | Cost |
 |---|---|---|
 | **OpenStreetMap** (Overpass API) | every `place_of_worship` with religion hindu / jain / buddhist, district by district | free |
-| **Wikidata** | temples per state + deity, heritage status, inception, images, Divya Desam / Paadal Petra / Jyotirlinga… | free |
+| **Wikidata** | temples per district (fast map-box search) + deity, heritage status, inception, images, Divya Desam / Paadal Petra / Jyotirlinga… | free |
+| **OSM villages / towns** | nearest village or town (within 4 km) fills *City / Village* for temples without an address | free |
 | **Google Maps** (Places API, optional) | adds Google place ID & map link; set secret `GOOGLE_MAPS_API_KEY` | paid API (has monthly free usage) |
 | **Government data** | drop `.csv` / `.xlsx` files into `data/sources/govt/` (e.g. TN HR&CE list, data.gov.in, ASI monuments) | — |
 | **Private collection** | drop your own survey files into `data/sources/private/` | — |
@@ -74,7 +82,8 @@ temples/            collector code (osm, wikidata, google_places, manual, merge,
 data/raw/           per-district raw downloads (committed, so changes are visible in git history)
 data/sources/       your govt / private files
 data/temples_master.csv   merged list (same as the Excel)
-data/state.json     progress — which district was fetched when
+data/map/*.geojson  one map file per state (GitHub renders these as a map)
+data/state.json     progress — which district was fetched when; "errors" shows anything that failed
 data/run_log.csv    one line per nightly run
 ```
 

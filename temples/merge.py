@@ -14,7 +14,7 @@ from datetime import date
 from difflib import SequenceMatcher
 
 from . import manual
-from .common import DATA, FIELDS, RAW, maps_url, read_rows, write_rows
+from .common import DATA, FIELDS, RAW, infer_deity, maps_url, read_rows, write_rows
 
 MASTER = DATA / "temples_master.csv"
 
@@ -64,7 +64,7 @@ class Merger:
         self.groups: list[list[dict]] = []
         self.by_id: dict[str, int] = {}
         self.grid: dict[tuple, list[int]] = defaultdict(list)
-        self.by_district: dict[str, list[int]] = defaultdict(list)
+        self.by_district: dict[str, set[int]] = defaultdict(set)
 
     def _coords(self, row):
         try:
@@ -98,9 +98,11 @@ class Merger:
                 return best
         # no GPS (typical for govt lists): same district + very similar name
         key = (row.get("district") or "").lower()
-        if key and row["name"]:
-            hits = {gi for gi in self.by_district.get(key, [])
-                    for o in self.groups[gi] if similar(row["name"], o["name"]) >= 0.88}
+        if not c and key and norm_name(row["name"]):
+            target = norm_name(row["name"])
+            hits = {gi for gi in self.by_district.get(key, ())
+                    for o in self.groups[gi] if o.get("_norm") and o["_norm"][:2] == target[:2]
+                    and similar(row["name"], o["name"]) >= 0.88}
             if len(hits) == 1:
                 return hits.pop()
         return None
@@ -119,8 +121,9 @@ class Merger:
         c = self._coords(row)
         if c and gi not in self.grid[_cell(*c)]:
             self.grid[_cell(*c)].append(gi)
+        row["_norm"] = norm_name(row["name"])
         if row.get("district"):
-            self.by_district[row["district"].lower()].append(gi)
+            self.by_district[row["district"].lower()].add(gi)
 
 
 def _combine(rows: list[dict]) -> dict:
@@ -137,6 +140,11 @@ def _combine(rows: list[dict]) -> dict:
             out[f] = "; ".join(vals)
         else:
             out[f] = next((r[f] for r in ordered if str(r.get(f, "")).strip()), "")
+    best = sorted(rows, key=lambda r: (r.get("deity_basis") != "Source data", rank(PRIORITY_DEFAULT)(r)))
+    pick = next((r for r in best if r.get("deity")), None)
+    if pick:
+        out["deity"], out["deity_basis"] = pick["deity"], pick.get("deity_basis", "")
+        out["category"] = pick.get("category") or out["category"]
     gps = next((r for r in sorted(rows, key=rank(PRIORITY_GPS)) if str(r.get("latitude", "")).strip()), None)
     if gps:
         out["latitude"], out["longitude"] = gps["latitude"], gps["longitude"]
@@ -177,22 +185,83 @@ def _fill_districts(records: list[dict]) -> None:
                 r["state"] = r["state"] or st
 
 
+def _upgrade(row: dict) -> dict:
+    """Raw files saved before 'deity_basis' existed had their deity guessed with older,
+    weaker rules — guess again with the current rules."""
+    if "deity_basis" not in row:
+        d, c = infer_deity(row.get("name", ""), row.get("name_local", ""))
+        if d or c:
+            row["deity"], row["category"] = d, c or row.get("category", "")
+        row["deity_basis"] = "Guessed from name" if row.get("deity") else ""
+    return row
+
+
+class Nearest:
+    """Grid index for 'nearest point within X km' lookups."""
+    def __init__(self, points, cell=0.05):
+        self.cell, self.grid = cell, defaultdict(list)
+        for lat, lon, val in points:
+            self.grid[(int(lat / cell), int(lon / cell))].append((lat, lon, val))
+
+    def find(self, lat, lon, max_m):
+        ci, cj, best = int(lat / self.cell), int(lon / self.cell), (max_m, None)
+        for di in (-1, 0, 1):
+            for dj in (-1, 0, 1):
+                for plat, plon, val in self.grid.get((ci + di, cj + dj), []):
+                    d = dist_m((lat, lon), (plat, plon))
+                    if d < best[0]:
+                        best = (d, val)
+        return best[1]
+
+
+PLACE_RANK = {"city": 0, "town": 1, "suburb": 2, "village": 3, "neighbourhood": 4, "locality": 5, "hamlet": 6}
+
+
+def _fill_places(records: list[dict]) -> None:
+    """City / Village for every temple from the nearest OSM village/town (within 4 km)."""
+    pts = []
+    for p in (RAW / "places").rglob("*.csv"):
+        for r in read_rows(p):
+            pts.append((float(r["lat"]), float(r["lon"]), r["name"]))
+    if not pts:
+        return
+    idx = Nearest(pts)
+    for r in records:
+        if not r["city"] and r["latitude"] != "":
+            r["city"] = idx.find(float(r["latitude"]), float(r["longitude"]), 4000) or ""
+
+
+def _refine_wikidata_only(records: list[dict]) -> None:
+    """Wikidata rows are fetched by bounding box, so their district can be a neighbour's.
+    Take district/state from the nearest OSM temple instead (within 8 km)."""
+    pts = [(float(r["latitude"]), float(r["longitude"]), (r["district"], r["state"]))
+           for r in records if "OpenStreetMap" in r["sources"] and r["latitude"] != "" and r["district"]]
+    idx = Nearest(pts, cell=0.08)
+    for r in records:
+        if r["sources"] == "Wikidata" and r["latitude"] != "":
+            hit = idx.find(float(r["latitude"]), float(r["longitude"]), 8000)
+            if hit:
+                r["district"], r["state"] = hit
+
+
 def build_master() -> list[dict]:
     m = Merger()
     for src in ("osm", "wikidata"):
         for p in sorted((RAW / src).rglob("*.csv")):
             for row in read_rows(p):
-                m.add(row)
+                m.add(_upgrade(row))
     for kind in ("govt", "private"):
         for row in manual.load(kind):
             m.add(row)
     add_new_google = os.environ.get("GOOGLE_ADD_NEW") == "1"
     for p in sorted((RAW / "google").rglob("*.csv")):
         for row in read_rows(p):
-            m.add(row, allow_new=add_new_google)
+            m.add(_upgrade(row), allow_new=add_new_google)
 
     records = [_combine(g) for g in m.groups if g]
+    _refine_wikidata_only(records)
     _fill_districts(records)
+    _fill_places(records)
     records.sort(key=lambda r: (r["state"], r["district"], r["name"] == "(unnamed temple)", r["name"]))
     write_rows(MASTER, records)
     return records

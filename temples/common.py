@@ -41,7 +41,7 @@ STATE_QIDS = {
 
 # Every source writes rows with exactly these columns.
 FIELDS = [
-    "temple_id", "name", "name_local", "deity", "category", "religion",
+    "temple_id", "name", "name_local", "deity", "category", "deity_basis", "religion",
     "special_group", "state", "district", "city", "address", "pincode",
     "latitude", "longitude", "google_maps_url",
     "osm_id", "wikidata_id", "google_place_id", "govt_id",
@@ -51,22 +51,32 @@ FIELDS = [
 ]
 
 # (regex on name/deity text, deity, category)
-DEITY_RULES = [
-    (r"murug|subrama|subbara|karthike|kartike|skanda|kumaraswam|velava|dandayudha|shanmuk|arumuga", "Murugan (Kartikeya)", "Kaumaram"),
-    (r"vinay|ganapat|ganesh|pillaiyar|pillayar|vigneshwar|vighnesh", "Ganesha", "Ganapatyam"),
-    (r"ayyapp|sastha|sasta|dharma ?sastha", "Ayyappan (Sastha)", "Shaivam/Vaishnavam"),
-    (r"anjane|hanuman|maruti|maruthi|anjaneya", "Hanuman", "Vaishnavam"),
-    (r"venkate|balaji|srinivas|tirupati|govindaraj", "Venkateswara", "Vaishnavam"),
-    (r"narasimh|narasimm|lakshmi ?narasim", "Narasimha", "Vaishnavam"),
-    (r"krishna|guruvayur|parthasarath|gopal|venugopal|rajagopal|udupi", "Krishna", "Vaishnavam"),
-    (r"\brama\b|ramar|ramaswam|kodandaram|seetharam|sitaram|raghunath", "Rama", "Vaishnavam"),
+DEITY_RULES = [  # first match wins, so the order matters
+    (r"\bjain|basadi|basti\b|parshwanath|parsvanath|mahaveer|mahavir|tirthankar|neminath|adinath|chandraprabh|bahubali|gommat", "Jain Tirthankara", "Jain"),
+    (r"buddha|buddhist|vihar|stupa", "Buddha", "Buddhist"),
+    (r"sai ?baba|saibaba|shirdi|sathya sai|satya sai|raghavendra|narayana ?guru|\bsndp\b|gurudev|guru ?mandir|\bguru\b|swami samarth|ramanuja|ramana maharshi|vallalar|aurobindo|meher baba|basavanna", "Guru / Saint", "Guru / Saint"),
+    (r"murug|subram|subrahm|subhram|subbara|karthike|kartike|skanda|kumaraswam|velava|velan\b|dandayudha|shanmuk|arumuga|swaminath|palani", "Murugan (Kartikeya)", "Kaumaram"),
+    (r"vinay|ganapat|ganesh|pillaiyar|pillayar|vigneshwar|vighnesh|vinayak", "Ganesha", "Ganapatyam"),
+    (r"ayyap|ayap|aiyapp|sastha|shastha|sasta\b|shasta\b|dharmasast|dharmashast", "Ayyappan (Sastha)", "Shaivam/Vaishnavam"),
+    (r"anjane|hanuman|maruti|maruthi|anjaneya|abhayanjaneya", "Hanuman", "Vaishnavam"),
+    (r"venkate|venkata|balaji|srinivas|tirupati|govindaraj|thimmappa|timmappa", "Venkateswara", "Vaishnavam"),
+    (r"narasimh|narasimm|narasinh|lakshmi ?narasim", "Narasimha", "Vaishnavam"),
+    (r"krishna|guruvayur|parthasarath|gopal|venugopal|rajagopal|udupi|iskcon|hare krishna|radha", "Krishna", "Vaishnavam"),
+    (r"\brama\b|\bram\b|ramar\b|ramaswam|ramalay|kodandaram|seetharam|sitaram|raghunath|ramachandra", "Rama", "Vaishnavam"),
     (r"jagannath", "Jagannath", "Vaishnavam"),
-    (r"perumal|vishnu|narayan|ranganath|varadaraj|padmanabh|sowriraj|aravamudh|kesava|vittal|panduranga|ananta", "Vishnu (Perumal)", "Vaishnavam"),
-    (r"amman|ammavaru|devi|durga|kali|mariamm|mariyamm|bhagavathi|bagavathi|bhagavati|meenakshi|kamakshi|parvathi|parvati|chamund|yellamm|renuka|shakti|sakthi|lakshmi|saraswathi|saraswati|gangamm|pochamma|bhavani|kanaka ?durga", "Devi (Amman / Shakti)", "Shaktam"),
-    (r"shiva|siva|eswar|eeswar|ishwar|iswar|lingeswar|natar|nataraj|mahadev|someshwar|someswar|mallikarjun|ramalinga|nageshwar|nageswar|bhimeshwar|kasi ?visw|vishwanath|jambukeswar|arunachal|kapaleesh|ekambar|thyagaraj|tyagaraj|mahalinga|sankara|shankar|rudra|bhairav|dakshinamurth|vadakkunnath|ernakulathappan|thirunakkara", "Shiva", "Shaivam"),
-    (r"navagraha|sani\b|shani|surya|suryanar", "Navagraha", "Smartam"),
-    (r"nagar|naga\b|subbaraya", "Naga", "Folk"),
-    (r"ayyanar|karuppa|muniswar|munisw|madasam|sudalai|veerabhadr|aiyanar", "Village deity (Ayyanar / Karuppasamy)", "Folk / Grama Devata"),
+    (r"dattatre|\bdatta\b", "Dattatreya", "Smartam"),
+    (r"perumal|vishnu|narayan|ranganath|varadaraj|padmanabh|sowriraj|aravamudh|kesava|keshava|chennakesh|vittal|vithoba|panduranga|ananta|azhagar|alagar|mahavishnu|varaha", "Vishnu (Perumal)", "Vaishnavam"),
+    (r"navagraha|sani\b|shani|shanee|shanish|shanesh|surya|sooryanar|suryanar", "Navagraha", "Smartam"),
+    (r"ayyanar|aiyanar|karupp|muniswar|munishwar|muneshwar|muneeshwar|muniyapp|madasam|madaswam|sudalai|muthappan|madappura|vettakkorumakan|vettakorumakan|pechi|sangili|kateri|chathan|kandakarnan", "Village deity (Ayyanar / Karuppasamy / Muthappan)", "Folk / Grama Devata"),
+    (r"amman|ammavar|ammavaru|\bamma\b|devi|durga|kali|mariamm|mariyamm|maramma|maremma|bhagavath|bagavath|bhagavat|meenakshi|kamakshi|parvathi|parvati|chamund|yellamm|ellamm|renuka|shakti|sakthi|lakshmi|laxmi|saraswat|gangamm|ganganamm|pochamma|bhavani|eshwari|eswari|ishwari|iswari|thalli|talli\b|muthyalamm|peddamm|poleramm|paradevat|mookambik|kurumba|bhadrakal|bhadrakaal|sharada|sharadamb|vasavi|kanyaka|annapoorn|annapurn|banashankar|huligemm|chowdamm|\bmata\b|\bmaa\b|pidari|selliamm|angalamm|angala ?param|kanakadurg", "Devi (Amman / Shakti)", "Shaktam"),
+    (r"shiva|siva|\bshiv\b|eswar|eeswar|eshwar|ishwar|iswar|lingeswar|lingam|\blinga\b|natar|nathar\b|nataraj|mahadev|someshwar|someswar|mallikarjun|ramalinga|nageshwar|nageswar|bhimeshwar|kasi ?visw|vishwanath|jambukeswar|arunachal|kapaleesh|ekambar|thyagaraj|tyagaraj|mahalinga|sankara|shankar|rudra|bhairav|dakshinamurth|vadakkunnath|ernakulathappan|thirunakkara|kailasanath|maheshwar|maheswar|mahadeshwar|manjunath|mahabaleshwar|mallesh|veerabhadr|virabhadr|basavesh|nandi\b|udaiyar|tirumalesh", "Shiva", "Shaivam"),
+    (r"\bnaga\b|nagaraj|nagamma|naga ?devat|sarpa", "Naga", "Folk / Grama Devata"),
+    # no deity in the name, but the kind of shrine is clear
+    (r"\bkavu\b|\bkaavu\b", "", "Kavu (Sacred Grove, Kerala)"),
+    (r"tharavad|kudumba|family", "", "Family shrine"),
+    (r"bhajan", "", "Bhajana Mandir"),
+    (r"\bkalari\b", "", "Kalari shrine"),
+    (r"\bmutt\b|\bmath\b|ashram|\bmadom\b|\bmadam\b|\bmatam\b", "", "Mutt / Ashram"),
 ]
 _COMPILED = [(re.compile(p, re.I), d, c) for p, d, c in DEITY_RULES]
 
@@ -82,6 +92,12 @@ DEITY_NORMALISE = {  # common OSM / Wikidata labels -> canonical
 def infer_deity(*texts: str) -> tuple[str, str]:
     """Return (deity, category) from name/deity text; ('', '') if unknown."""
     blob = " ".join(t for t in texts if t)
+    # "Visalakshi Amman sametha Viswanathar" -> the main (moolavar) deity comes after "sametha"
+    m = re.search(r"\b(samedha|sametha|samet|sametham)\b(.*)", blob, re.I)
+    if m:
+        d, c = infer_deity(m.group(2))
+        if d:
+            return d, c
     for rx, deity, cat in _COMPILED:
         if rx.search(blob):
             return deity, cat
@@ -115,9 +131,11 @@ def finish_row(row: dict) -> dict:
     """Fill derived columns (deity/category guess, maps link)."""
     if row.get("deity"):
         row["deity"] = normalise_deity(row["deity"])
+        row["deity_basis"] = "Source data"
     if not row.get("deity") or not row.get("category"):
         d, c = infer_deity(row.get("deity", ""), row.get("name", ""), row.get("name_local", ""))
-        row["deity"] = row.get("deity") or d
+        if not row.get("deity") and d:
+            row["deity"], row["deity_basis"] = d, "Guessed from name"
         if not row.get("category"):
             if row.get("religion") == "jain":
                 c = "Jain"

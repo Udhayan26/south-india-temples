@@ -1,16 +1,19 @@
 """Wikidata (SPARQL) source — free, CC0. Adds deity, heritage status,
 inception, images and famous groupings (Divya Desam, Paadal Petra Sthalam...).
 
-One job = one district (small query, avoids Wikidata's 60-second limit).
+One job = one district. Searches the district's bounding box (taken from the OSM
+temples) with Wikidata's fast geo index; a box that times out is split in 4.
+District/state are refined from nearby OSM temples during merge.
 Writes data/raw/wikidata/<STATE>/<district_rel_id>.csv
 """
 from __future__ import annotations
 
 import re
+import time
 from collections import defaultdict
 from datetime import date
 
-from .common import RAW, STATES, blank_row, finish_row, request_with_retry, session, write_rows
+from .common import RAW, STATES, blank_row, finish_row, read_rows, request_with_retry, session, write_rows
 
 ENDPOINT = "https://query.wikidata.org/sparql"
 LOCAL_LANG = {"IN-TN": "ta", "IN-PY": "ta", "IN-KL": "ml", "IN-KA": "kn", "IN-AP": "te", "IN-TG": "te"}
@@ -28,12 +31,23 @@ SPECIAL_GROUPS = [
     (r"monument of national importance", "ASI – Monument of National Importance"),
 ]
 
-QUERY = """
+BOX_QUERY = """
+SELECT DISTINCT ?item WHERE {{
+  hint:Query hint:optimizer "None" .
+  SERVICE wikibase:box {{
+    ?item wdt:P625 ?coord .
+    bd:serviceParam wikibase:cornerSouthWest "Point({w} {s})"^^geo:wktLiteral ;
+                    wikibase:cornerNorthEast "Point({e} {n})"^^geo:wktLiteral .
+  }}
+  ?item wdt:P31/wdt:P279* wd:Q44539 .
+}}
+"""
+
+DETAIL_QUERY = """
 SELECT ?item ?itemLabel ?local ?coord ?deityLabel ?adminLabel ?inception ?image
        ?heritageLabel ?groupLabel ?website ?operatorLabel ?itemDescription WHERE {{
-  ?item wdt:P31/wdt:P279* wd:Q44539 ;
-        wdt:P131* wd:{qid} ;
-        wdt:P625 ?coord .
+  VALUES ?item {{ {items} }}
+  ?item wdt:P625 ?coord .
   OPTIONAL {{ ?item wdt:P825 ?deity }}
   OPTIONAL {{ ?item wdt:P131 ?admin }}
   OPTIONAL {{ ?item wdt:P571 ?inception }}
@@ -48,14 +62,52 @@ SELECT ?item ?itemLabel ?local ?coord ?deityLabel ?adminLabel ?inception ?image
 """
 
 
+def _sparql(query: str) -> list[dict]:
+    r = request_with_retry(session(), "POST", ENDPOINT, data={"query": query, "format": "json"},
+                           headers={"Accept": "application/sparql-results+json"}, timeout=90, tries=2)
+    return [{k: x["value"] for k, x in b.items()} for b in r.json()["results"]["bindings"]]
+
+
+def district_bbox(state_code: str, district: dict, pad: float = 0.02):
+    """Bounding box of the district, taken from the OSM temples already collected there."""
+    p = RAW / "osm" / state_code / f"{district['rel_id']}.csv"
+    if not p.exists():
+        return None
+    pts = [(float(r["latitude"]), float(r["longitude"])) for r in read_rows(p) if r.get("latitude")]
+    if not pts:
+        return None
+    lats, lons = [a for a, _ in pts], [b for _, b in pts]
+    return min(lats) - pad, min(lons) - pad, max(lats) + pad, max(lons) + pad
+
+
+def _items_in_box(box, depth: int = 0) -> set[str]:
+    s, w, n, e = box
+    try:
+        rows = _sparql(BOX_QUERY.format(s=s, w=w, n=n, e=e))
+        return {r["item"].rsplit("/", 1)[-1] for r in rows}
+    except Exception as ex:
+        if depth >= 2:
+            raise
+        print(f"   box too heavy ({ex}); splitting into 4")
+        mlat, mlon = (s + n) / 2, (w + e) / 2
+        out: set[str] = set()
+        for q in ((s, w, mlat, mlon), (s, mlon, mlat, e), (mlat, w, n, mlon), (mlat, mlon, n, e)):
+            out |= _items_in_box(q, depth + 1)
+            time.sleep(2)
+        return out
+
+
 def fetch_district(state_code: str, district: dict) -> int:
-    q = QUERY.format(qid=district["wikidata"], lang=LOCAL_LANG[state_code])
-    r = request_with_retry(session(), "GET", ENDPOINT, params={"query": q, "format": "json"},
-                           headers={"Accept": "application/sparql-results+json"}, timeout=120, tries=2)
+    box = district_bbox(state_code, district)
+    qids = sorted(_items_in_box(box)) if box else []
+    bindings = []
+    for i in range(0, len(qids), 150):
+        chunk = " ".join(f"wd:{q}" for q in qids[i:i + 150])
+        bindings += _sparql(DETAIL_QUERY.format(items=chunk, lang=LOCAL_LANG[state_code]))
+        time.sleep(2)
     items: dict[str, dict] = {}
     multi: dict[str, dict[str, set]] = defaultdict(lambda: defaultdict(set))
-    for b in r.json()["results"]["bindings"]:
-        v = {k: x["value"] for k, x in b.items()}
+    for v in bindings:
         qid = v["item"].rsplit("/", 1)[-1]
         m = re.match(r"Point\(([-\d.]+) ([-\d.]+)\)", v.get("coord", ""))
         if not m:

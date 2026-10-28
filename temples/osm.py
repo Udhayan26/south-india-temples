@@ -4,6 +4,7 @@ One job = one district. Each job writes data/raw/osm/<STATE>/<district_rel_id>.c
 """
 from __future__ import annotations
 
+import csv
 import os
 from datetime import date
 
@@ -104,4 +105,30 @@ out center tags;
         )
         rows.append(finish_row(row))
     write_rows(RAW / "osm" / state_code / f"{district['rel_id']}.csv", rows)
+    return len(rows)
+
+
+PLACE_TYPES = "city|town|village|hamlet|suburb|neighbourhood|locality"
+
+
+def fetch_places(state_code: str, district: dict) -> int:
+    """Villages / towns of the district, used to give every temple a City / Village."""
+    area_id = 3600000000 + int(district["rel_id"])
+    q = f"""
+[out:json][timeout:600];
+area(id:{area_id})->.d;
+node["place"~"^({PLACE_TYPES})$"]["name"](area.d);
+out body;
+"""
+    rows = []
+    for el in _overpass(q).get("elements", []):
+        t = el.get("tags", {})
+        rows.append({"name": t.get("name:en") or t["name"], "place": t["place"],
+                     "lat": round(el["lat"], 5), "lon": round(el["lon"], 5)})
+    path = RAW / "places" / state_code / f"{district['rel_id']}.csv"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=["name", "place", "lat", "lon"])
+        w.writeheader()
+        w.writerows(rows)
     return len(rows)

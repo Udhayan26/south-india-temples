@@ -15,6 +15,7 @@ XLSX = OUTPUT / "south_india_temples.xlsx"
 COLUMNS = [  # (field, header, width)
     ("temple_id", "Temple ID", 16), ("name", "Temple Name", 38), ("name_local", "Local Name", 30),
     ("deity", "Deity (Moolavar)", 24), ("category", "Category / Tradition", 18),
+    ("deity_basis", "Deity From", 16),
     ("special_group", "Special Group", 24), ("religion", "Religion", 10),
     ("state", "State", 15), ("district", "District", 18), ("city", "City / Village", 18),
     ("address", "Address", 40), ("pincode", "PIN", 9),
@@ -126,6 +127,24 @@ def _summary(wb, records):
         ws.append([s, n])
 
 
+def _districts(wb, records):
+    ws = wb.create_sheet("By District", 1)
+    for c, w in zip("ABCDEFGH", (16, 22, 10, 10, 10, 12, 12, 30)):
+        ws.column_dimensions[c].width = w
+    ws.freeze_panes = "C2"
+    _header(ws, ["State", "District", "Temples", "Named", "Deity known", "Village known",
+                 "Multi-source", "Most common deity"])
+    groups = defaultdict(list)
+    for r in records:
+        groups[(r["state"] or "(unknown)", r["district"] or "(unknown)")].append(r)
+    for (st, d), rs in sorted(groups.items()):
+        top = Counter(r["deity"] for r in rs if r["deity"]).most_common(1)
+        ws.append([st, d, len(rs), sum(r["name"] != "(unnamed temple)" for r in rs),
+                   sum(bool(r["deity"]) for r in rs), sum(bool(r["city"]) for r in rs),
+                   sum(int(r["source_count"] or 0) > 1 for r in rs), top[0][0] if top else ""])
+    ws.auto_filter.ref = f"A1:H{len(groups) + 1}"
+
+
 def _notes(wb):
     ws = wb.create_sheet("About")
     ws.column_dimensions["A"].width = 120
@@ -137,7 +156,8 @@ def _notes(wb):
         "Government — files in data/sources/govt (e.g. HR&CE, data.gov.in, ASI). Check each dataset's licence.",
         "Private collection — files in data/sources/private.",
         "",
-        "Deity and Category are taken from the source when given, otherwise guessed from the temple name — verify important rows.",
+        "Deity and Category are taken from the source when given, otherwise guessed from the temple name — the 'Deity From' column says which. Verify guessed rows that matter.",
+        "City / Village: from the address when given, otherwise the nearest OpenStreetMap village or town (within 4 km).",
         "Category: Shaivam (Shiva), Vaishnavam (Vishnu), Shaktam (Devi/Amman), Kaumaram (Murugan), Ganapatyam (Ganesha), Folk / Grama Devata, Jain, Buddhist.",
         "Google Maps column opens the exact GPS point.",
     ]:
@@ -148,6 +168,7 @@ def write_excel(records: list[dict]) -> str:
     OUTPUT.mkdir(parents=True, exist_ok=True)
     wb = Workbook(write_only=True)
     _summary(wb, records)
+    _districts(wb, records)
     _temple_sheet(wb, "All Temples", records)
     for st in STATES.values():
         rs = [r for r in records if r["state"] == st]
@@ -158,3 +179,29 @@ def write_excel(records: list[dict]) -> str:
     wb.save(tmp)
     tmp.replace(XLSX)
     return str(XLSX)
+
+
+def write_geojson(records: list[dict]) -> list[str]:
+    """One GeoJSON file per state in data/map/ — GitHub shows these as an interactive map."""
+    import json
+    from pathlib import Path
+    out_dir = Path(__file__).resolve().parent.parent / "data" / "map"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    written = []
+    for st in STATES.values():
+        feats = []
+        for r in records:
+            if r["state"] != st or r["latitude"] == "":
+                continue
+            props = {"name": r["name"], "local name": r["name_local"], "deity": r["deity"],
+                     "category": r["category"], "village / town": r["city"], "district": r["district"],
+                     "special group": r["special_group"], "google maps": r["google_maps_url"],
+                     "id": r["temple_id"]}
+            feats.append({"type": "Feature",
+                          "geometry": {"type": "Point", "coordinates": [float(r["longitude"]), float(r["latitude"])]},
+                          "properties": {k: v for k, v in props.items() if v}})
+        path = out_dir / f"{st.replace(' ', '_')}.geojson"
+        path.write_text(json.dumps({"type": "FeatureCollection", "features": feats},
+                                   ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        written.append(str(path))
+    return written

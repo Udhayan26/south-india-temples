@@ -2,8 +2,9 @@ name: Daily temple data collection
 
 on:
   schedule:
-    # 20:47 UTC = 02:17 AM IST — night, low-traffic window. Runs every day.
-    - cron: "47 20 * * *"
+    # 18:47 UTC = 00:17 AM IST. GitHub usually starts scheduled jobs 2–3 hours late,
+    # so the real run lands around 02:00–03:30 AM IST — the low-traffic night window.
+    - cron: "47 18 * * *"
   workflow_dispatch:
     inputs:
       minutes:
