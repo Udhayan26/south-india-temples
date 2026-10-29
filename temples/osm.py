@@ -6,9 +6,11 @@ from __future__ import annotations
 
 import csv
 import os
+import re
 from datetime import date
 
 from .common import RAW, STATES, blank_row, finish_row, request_with_retry, session, write_rows
+from .inscriptions import INS_RX, INSCRIPTION_WORDS, blank_ins, ins_type, write_ins
 
 OVERPASS_URL = os.environ.get("OVERPASS_URL", "https://overpass-api.de/api/interpreter")
 RELIGIONS = os.environ.get("TEMPLE_RELIGIONS", "hindu|jain|buddhist")
@@ -56,23 +58,73 @@ def _address(t: dict) -> str:
     return ", ".join(p for p in parts if p)
 
 
+# names that mark a temple when OSM has no religion tag
+TEMPLE_WORDS = ("temple|kovil|koil|gudi|devasthan|devalay|kshetr|mandir|amman|perumal|eswarar|easwarar|"
+                "iswarar|alayam|basadi|kavu|ambalam|thirukoil|swamy temple|matha temple")
+NOT_TEMPLE = re.compile(r"church|cathedral|chapel|mosque|masjid|dargah|juma|gurudwara|gurdwara|synagogue|"
+                        r"school|college|hospital|hotel|lodge|bus stop|road|street|nagar\b|layout|colony", re.I)
+
+
+def _is_inscription(t: dict) -> bool:
+    h, m = t.get("historic", ""), t.get("memorial", "")
+    if t.get("amenity") == "place_of_worship":
+        return False
+    return (h in ("epigraph", "inscription", "hero_stone") or m in ("stele", "hero_stone")
+            or bool(INS_RX.search(t.get("name", "") + " " + t.get("name:en", ""))))
+
+
+def _inscription_row(el, t, lat, lon, state_code, district, today) -> dict:
+    name = t.get("name:en") or t.get("name") or ""
+    kind_text = " ".join([name, t.get("historic", ""), t.get("memorial", ""), t.get("description", "")])
+    return blank_ins(
+        title=name or ("Inscription" if "inscription" in t else "Hero stone / inscription"),
+        type=ins_type(kind_text),
+        location_detail=t.get("description", ""),
+        village=t.get("addr:village") or t.get("addr:city") or "",
+        district=district["name"], state=STATES[state_code],
+        latitude=round(lat, 6), longitude=round(lon, 6), location_basis="Exact (mapped)",
+        date_text=t.get("start_date", ""), language=t.get("inscription:language") or t.get("language", ""),
+        script=t.get("script", ""), dynasty=t.get("historic:civilization") or t.get("historic:period", ""),
+        text=(t.get("inscription") or "")[:500], image=t.get("image") or t.get("wikimedia_commons") or "",
+        source="OpenStreetMap", source_url=f"https://www.openstreetmap.org/{el['type']}/{el['id']}",
+        osm_id=f"{el['type']}/{el['id']}", wikidata_id=t.get("wikidata", ""), last_updated=today,
+    )
+
+
 def fetch_district(state_code: str, district: dict) -> int:
     area_id = 3600000000 + int(district["rel_id"])
     q = f"""
 [out:json][timeout:900];
 area(id:{area_id})->.d;
-nwr["amenity"="place_of_worship"]["religion"~"^({RELIGIONS})$"](area.d);
+(
+  nwr["amenity"="place_of_worship"]["religion"~"^({RELIGIONS})$"](area.d);
+  nwr["amenity"="place_of_worship"][!"religion"]["name"~"{TEMPLE_WORDS}",i](area.d);
+  nwr["building"="temple"][!"amenity"](area.d);
+  nwr["historic"~"^(temple|archaeological_site|ruins|monument)$"]["name"~"{TEMPLE_WORDS}",i](area.d);
+  nwr["historic"~"^(epigraph|inscription|hero_stone)$"](area.d);
+  nwr["memorial"~"^(stele|hero_stone)$"](area.d);
+  nwr["name"~"{INSCRIPTION_WORDS}",i](area.d);
+);
 out center tags;
 """
     data = _overpass(q)
     today = date.today().isoformat()
-    rows = []
+    rows, ins_rows = [], []
     for el in data.get("elements", []):
         t = el.get("tags", {})
         lat = el.get("lat") or el.get("center", {}).get("lat")
         lon = el.get("lon") or el.get("center", {}).get("lon")
         if lat is None:
             continue
+        if _is_inscription(t):
+            ins_rows.append(_inscription_row(el, t, lat, lon, state_code, district, today))
+            continue
+        if t.get("religion") and t["religion"] not in RELIGIONS.split("|"):
+            continue
+        if not t.get("religion") and NOT_TEMPLE.search(t.get("name", "") + " " + t.get("name:en", "")):
+            continue
+        if "inscription" in t or t.get("historic") in ("epigraph",):
+            ins_rows.append(_inscription_row(el, t, lat, lon, state_code, district, today))
         local = next((t[k] for k in LOCAL_NAME_KEYS if t.get(k)), "")
         name = t.get("name:en") or t.get("name") or local or ""
         if local == name:
@@ -81,7 +133,7 @@ out center tags;
             name=name,
             name_local=local,
             deity=t.get("deity") or t.get("subject") or "",
-            religion=t.get("religion", ""),
+            religion=t.get("religion") or ("jain" if re.search(r"basadi|jain", t.get("name", ""), re.I) else "hindu"),
             category=DENOMINATION.get(t.get("denomination", "").lower(), ""),
             state=STATES[state_code],
             district=district["name"],
@@ -105,6 +157,7 @@ out center tags;
         )
         rows.append(finish_row(row))
     write_rows(RAW / "osm" / state_code / f"{district['rel_id']}.csv", rows)
+    write_ins(RAW / "ins_osm" / state_code / f"{district['rel_id']}.csv", ins_rows)
     return len(rows)
 
 

@@ -46,6 +46,7 @@ FIELDS = [
     "latitude", "longitude", "google_maps_url",
     "osm_id", "wikidata_id", "google_place_id", "govt_id",
     "operator", "phone", "website", "opening_hours", "heritage",
+    "inscription_count", "inscription_refs",
     "inception", "image", "description",
     "sources", "source_count", "last_updated",
 ]

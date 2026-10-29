@@ -21,7 +21,8 @@ COLUMNS = [  # (field, header, width)
     ("address", "Address", 40), ("pincode", "PIN", 9),
     ("latitude", "Latitude", 11), ("longitude", "Longitude", 11), ("google_maps_url", "Google Maps", 13),
     ("operator", "Managed By", 22), ("phone", "Phone", 15), ("website", "Website", 26),
-    ("opening_hours", "Timings", 20), ("heritage", "Heritage Status", 22), ("inception", "Built / Inception", 12),
+    ("opening_hours", "Timings", 20), ("heritage", "Heritage Status", 22),
+    ("inscription_count", "Inscriptions", 11), ("inscription_refs", "Inscription Refs", 30), ("inception", "Built / Inception", 12),
     ("description", "Description", 36), ("image", "Image", 20),
     ("osm_id", "OSM ID", 16), ("wikidata_id", "Wikidata ID", 12), ("google_place_id", "Google Place ID", 20),
     ("govt_id", "Govt ID", 12), ("sources", "Sources", 30), ("source_count", "No. of Sources", 9),
@@ -145,6 +146,76 @@ def _districts(wb, records):
     ws.auto_filter.ref = f"A1:H{len(groups) + 1}"
 
 
+INS_COLUMNS = [
+    ("inscription_id", "Inscription ID", 16), ("title", "Title", 34), ("type", "Type", 20),
+    ("temple_name", "Temple", 32), ("temple_id", "Temple ID", 16), ("link_method", "How Linked", 24),
+    ("location_detail", "Place in Temple", 36), ("village", "Village", 18), ("taluk", "Taluk", 14),
+    ("district", "District", 16), ("district_old", "District (as printed)", 16), ("state", "State", 14),
+    ("latitude", "Latitude", 11), ("longitude", "Longitude", 11), ("location_basis", "Location Accuracy", 22),
+    ("google_maps_url", "Google Maps", 13), ("king", "King", 22), ("dynasty", "Dynasty", 14),
+    ("year_ce", "Year (CE)", 9), ("date_text", "Date (as printed)", 26), ("language", "Language", 11),
+    ("script", "Script", 11), ("reference", "Reference (A.R. No.)", 20), ("volume", "SII Vol.", 8),
+    ("number", "No.", 6), ("summary", "Summary", 50), ("text", "Text", 30), ("image", "Image", 18),
+    ("source", "Source", 24), ("source_url", "Source Link", 14),
+]
+
+
+def _inscription_sheet(wb, ins):
+    ws = wb.create_sheet("Inscriptions")
+    for i, (_, _, w) in enumerate(INS_COLUMNS, start=1):
+        ws.column_dimensions[_col(i)].width = w
+    ws.freeze_panes = "C2"
+    _header(ws, [h for _, h, _ in INS_COLUMNS])
+    for r in ins:
+        row = []
+        for f, _, _ in INS_COLUMNS:
+            v = r.get(f, "")
+            if f in ("latitude", "longitude") and v != "":
+                v = float(v)
+            elif f == "year_ce" and str(v).isdigit():
+                v = int(v)
+            elif f in ("google_maps_url", "source_url") and v:
+                c = WriteOnlyCell(ws, value=f'=HYPERLINK("{v}","{"Open map" if f == "google_maps_url" else "Open"}")')
+                c.font = LINK_FONT
+                row.append(c)
+                continue
+            row.append(v)
+        ws.append(row)
+    ws.auto_filter.ref = f"A1:{_col(len(INS_COLUMNS))}{len(ins) + 1}"
+
+
+def _ins_summary(wb, ins):
+    ws = wb.create_sheet("Inscription Summary")
+    ws.column_dimensions["A"].width = 34
+    ws.column_dimensions["B"].width = 12
+    for title, key in (("By state", "state"), ("By dynasty", "dynasty"), ("By type", "type"),
+                       ("By language", "language"), ("By source", "source"), ("Location accuracy", "location_basis")):
+        c = WriteOnlyCell(ws, value=title)
+        c.font = Font(bold=True, size=13)
+        ws.append([c])
+        _header(ws, [title.replace("By ", "").title(), "Inscriptions"])
+        for k, n in Counter(r.get(key) or "(not known)" for r in ins).most_common(25):
+            ws.append([k, n])
+        ws.append([])
+    linked = sum(bool(r.get("temple_id")) for r in ins)
+    ws.append([f"Linked to a temple: {linked:,} of {len(ins):,}"])
+    by_century = Counter((int(r["year_ce"]) // 100 + 1) for r in ins if str(r.get("year_ce", "")).isdigit())
+    if by_century:
+        c = WriteOnlyCell(ws, value="By century (CE)")
+        c.font = Font(bold=True, size=13)
+        ws.append([])
+        ws.append([c])
+        _header(ws, ["Century", "Inscriptions"])
+        for cen in sorted(by_century):
+            ws.append([f"{cen}th century", by_century[cen]])
+
+
+def _load_ins():
+    from .inscriptions import INS_MASTER
+    from .common import read_rows
+    return read_rows(INS_MASTER) if INS_MASTER.exists() else []
+
+
 def _notes(wb):
     ws = wb.create_sheet("About")
     ws.column_dimensions["A"].width = 120
@@ -158,6 +229,13 @@ def _notes(wb):
         "",
         "Deity and Category are taken from the source when given, otherwise guessed from the temple name — the 'Deity From' column says which. Verify guessed rows that matter.",
         "City / Village: from the address when given, otherwise the nearest OpenStreetMap village or town (within 4 km).",
+        "",
+        "Inscriptions",
+        "South Indian Inscriptions (SII) volumes, Archaeological Survey of India — index fields (number, A.R. reference, village, district, place in temple, king, date) and a one-line summary, read from the online edition at whatisindia.com. Open the Source Link for the full text.",
+        "OpenStreetMap epigraphs / hero stones and Wikidata inscription items — mapped positions.",
+        "Your collections — files in data/sources/inscriptions (ARIE lists, TN Archaeology district volumes, field notes).",
+        "How Linked / Location Accuracy: 'Exact' = mapped point; 'Temple (matched by name in village)' = SII temple name matched a temple in that village; 'Village (approximate)' = only the village was found — the temple still needs confirming.",
+        "District (as printed) is the old district name used in the volume (e.g. Tanjore, South Arcot, Cuddapah).",
         "Category: Shaivam (Shiva), Vaishnavam (Vishnu), Shaktam (Devi/Amman), Kaumaram (Murugan), Ganapatyam (Ganesha), Folk / Grama Devata, Jain, Buddhist.",
         "Google Maps column opens the exact GPS point.",
     ]:
@@ -174,6 +252,10 @@ def write_excel(records: list[dict]) -> str:
         rs = [r for r in records if r["state"] == st]
         if rs:
             _temple_sheet(wb, st, rs)
+    ins = _load_ins()
+    if ins:
+        _ins_summary(wb, ins)
+        _inscription_sheet(wb, ins)
     _notes(wb)
     tmp = XLSX.with_suffix(".tmp.xlsx")
     wb.save(tmp)
@@ -194,6 +276,7 @@ def write_geojson(records: list[dict]) -> list[str]:
             if r["state"] != st or r["latitude"] == "":
                 continue
             props = {"name": r["name"], "local name": r["name_local"], "deity": r["deity"],
+                     "inscriptions": r.get("inscription_count", ""),
                      "category": r["category"], "village / town": r["city"], "district": r["district"],
                      "special group": r["special_group"], "google maps": r["google_maps_url"],
                      "id": r["temple_id"]}
@@ -204,4 +287,18 @@ def write_geojson(records: list[dict]) -> list[str]:
         path.write_text(json.dumps({"type": "FeatureCollection", "features": feats},
                                    ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         written.append(str(path))
+    ins = _load_ins()
+    for st in STATES.values():
+        feats = [{"type": "Feature",
+                  "geometry": {"type": "Point", "coordinates": [float(r["longitude"]), float(r["latitude"])]},
+                  "properties": {k: v for k, v in {
+                      "title": r["title"], "type": r["type"], "temple": r["temple_name"], "king": r["king"],
+                      "dynasty": r["dynasty"], "year": r["year_ce"], "reference": r["reference"],
+                      "accuracy": r["location_basis"], "source": r["source_url"]}.items() if v}}
+                 for r in ins if r.get("state") == st and str(r.get("latitude", "")).strip()]
+        if feats:
+            path = out_dir / f"Inscriptions_{st.replace(' ', '_')}.geojson"
+            path.write_text(json.dumps({"type": "FeatureCollection", "features": feats},
+                                       ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+            written.append(str(path))
     return written

@@ -11,7 +11,7 @@ on:
         description: "Time budget in minutes (max 55)"
         default: "50"
       states:
-        description: "States (comma list) e.g. IN-TN,IN-KL — blank = all"
+        description: "Comma list e.g. IN-TN,IN-KL, SII (inscriptions), GOV (data.gov.in) — blank = all"
         default: ""
 
 permissions:
@@ -39,6 +39,7 @@ jobs:
         env:
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}   # optional
           GOOGLE_MAX_REQUESTS: ${{ vars.GOOGLE_MAX_REQUESTS || '150' }}
+          DATA_GOV_IN_API_KEY: ${{ secrets.DATA_GOV_IN_API_KEY }}        # optional
         run: |
           STATES="${{ github.event.inputs.states }}"
           python -m temples.run --minutes "${{ github.event.inputs.minutes || '50' }}" ${STATES:+--states "$STATES"}
@@ -58,6 +59,7 @@ jobs:
           gh release view latest >/dev/null 2>&1 || \
             gh release create latest --title "Latest temple data" --notes "Updated automatically every night."
           gh release upload latest output/south_india_temples.xlsx data/temples_master.csv --clobber
+          [ -f data/inscriptions_master.csv ] && gh release upload latest data/inscriptions_master.csv --clobber || true
           gh release edit latest --notes "Updated $(date -u '+%d %b %Y %H:%M') UTC — $(($(wc -l < data/temples_master.csv) - 1)) temples."
 
       - uses: actions/upload-artifact@v4

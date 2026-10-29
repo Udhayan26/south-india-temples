@@ -263,6 +263,8 @@ def build_master() -> list[dict]:
     _refine_wikidata_only(records)
     _fill_districts(records)
     _fill_places(records)
+    from . import inscriptions
+    inscriptions.build(records)        # links inscriptions, adds counts to temples
     records.sort(key=lambda r: (r["state"], r["district"], r["name"] == "(unnamed temple)", r["name"]))
     write_rows(MASTER, records)
     return records

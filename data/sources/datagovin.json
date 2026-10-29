@@ -1,0 +1,4 @@
+{
+  "_help": "Add data.gov.in resources to download (needs GitHub secret DATA_GOV_IN_API_KEY). Copy the resource ID from the dataset page's API link.",
+  "resources": []
+}

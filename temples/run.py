@@ -16,19 +16,32 @@ import argparse
 import csv
 import json
 import time
+import threading
 import traceback
 from datetime import datetime, timedelta
 
-from . import google_places, osm, wikidata
+from . import datagovin, google_places, osm, sii, wikidata
 from .common import DATA, STATES
 from .export import write_excel, write_geojson
 from .merge import build_master
 
 STATE_FILE = DATA / "state.json"
 LOG_FILE = DATA / "run_log.csv"
-REFRESH_DAYS = {"districts": 60, "osm": 30, "wikidata": 14, "places": 90, "google": 90}
+REFRESH_DAYS = {"districts": 60, "osm": 30, "wikidata": 14, "places": 90, "google": 90,
+                "sii_index": 90, "sii": 365, "datagovin": 30}
 EXPORT_RESERVE_MIN = 6       # keep time for merge + Excel
-PAUSE_BETWEEN_CALLS = 10     # seconds; be polite to free public APIs
+PAUSE_BETWEEN_CALLS = 10     # seconds between two requests to the SAME server
+
+# one worker per server, so each server still sees one polite request at a time
+WORKERS = {
+    "overpass": ("districts", "osm", "places"),
+    "wikidata": ("wikidata",),
+    "sii": ("sii_index", "sii"),
+    "other": ("datagovin", "google"),
+}
+ORDER = {"districts": 0, "osm": 1, "wikidata": 2, "sii_index": 3, "sii": 4, "places": 5,
+         "datagovin": 6, "google": 7}
+GLOBAL = ("SII", "GOV")   # pseudo "states" for jobs not tied to a state
 
 
 def load_state() -> dict:
@@ -38,7 +51,9 @@ def load_state() -> dict:
 
 
 def save_state(st: dict) -> None:
-    STATE_FILE.write_text(json.dumps(st, indent=1, ensure_ascii=False, sort_keys=True))
+    tmp = STATE_FILE.with_suffix(".tmp")
+    tmp.write_text(json.dumps(st, indent=1, ensure_ascii=False, sort_keys=True))
+    tmp.replace(STATE_FILE)
 
 
 def _due(st, key, kind) -> bool:
@@ -46,98 +61,162 @@ def _due(st, key, kind) -> bool:
     return not last or datetime.fromisoformat(last) < datetime.now() - timedelta(days=REFRESH_DAYS[kind])
 
 
-def build_queue(st: dict, states: list[str], skip_kinds: frozenset = frozenset()) -> list[tuple]:
+def build_queue(st: dict, states: list[str], skip_kinds: frozenset = frozenset(),
+                only_kinds: tuple | None = None) -> list[tuple]:
     jobs = []
     for sc in states:
+        if sc == "SII":
+            if _due(st, "sii_index:SII", "sii_index") or not st.get("sii_pages"):
+                jobs.append(("sii_index", "SII", None))
+            for pg in st.get("sii_pages", []):
+                if _due(st, f"sii:{pg['path']}", "sii"):
+                    jobs.append(("sii", "SII", pg))
+            continue
+        if sc == "GOV":
+            for res in datagovin.resources():
+                if _due(st, f"datagovin:{res['id']}", "datagovin"):
+                    jobs.append(("datagovin", "GOV", res))
+            continue
         dl = st["districts"].get(sc)
         # re-list districts when stale, missing, or saved before Wikidata IDs were kept
         if _due(st, f"districts:{sc}", "districts") or not dl or "wikidata" not in dl[0]:
             jobs.append(("districts", sc, None))
         for d in dl or []:
-            if _due(st, f"osm:{sc}:{d['rel_id']}", "osm"):
-                jobs.append(("osm", sc, d))
-            if _due(st, f"wikidata:{sc}:{d['rel_id']}", "wikidata"):
-                jobs.append(("wikidata", sc, d))
-            if _due(st, f"places:{sc}:{d['rel_id']}", "places"):
-                jobs.append(("places", sc, d))
+            for kind in ("osm", "wikidata", "places"):
+                # Wikidata's search box is built from the district's OSM temples, so OSM comes first
+                if kind == "wikidata" and f"osm:{sc}:{d['rel_id']}" not in st["done"]:
+                    continue
+                if _due(st, f"{kind}:{sc}:{d['rel_id']}", kind):
+                    jobs.append((kind, sc, d))
             if google_places.enabled() and google_places.budget_left() > 0 and _due(st, f"google:{sc}:{d['rel_id']}", "google"):
                 jobs.append(("google", sc, d))
     # a job that failed in the last 12 h waits until the next run
     recent = (datetime.now() - timedelta(hours=12)).isoformat()
-    jobs = [j for j in jobs if st.get("failed", {}).get(_key(j), "") < recent and j[0] not in skip_kinds]
-    order = {"districts": 0, "osm": 1, "wikidata": 2, "places": 3, "google": 4}
+    jobs = [j for j in jobs if st.get("failed", {}).get(_key(j), "") < recent and j[0] not in skip_kinds
+            and (only_kinds is None or j[0] in only_kinds)]
     fails = st.get("fail_count", {})
-    # districts first; jobs that keep failing go to the back so they can't block the rest;
+    # district lists first; jobs that keep failing go to the back so they can't block the rest;
     # then never-done jobs, then oldest refresh first
-    return sorted(jobs, key=lambda j: (j[0] != "districts", fails.get(_key(j), 0),
-                                       st["done"].get(_key(j), ""), order[j[0]]))
+    return sorted(jobs, key=lambda j: (j[0] not in ("districts", "sii_index"), fails.get(_key(j), 0),
+                                       st["done"].get(_key(j), ""), ORDER[j[0]]))
 
 
 def _key(job) -> str:
     kind, sc, d = job
+    if kind == "sii":
+        return f"sii:{d['path']}"
+    if kind == "datagovin":
+        return f"datagovin:{d['id']}"
     return f"{kind}:{sc}" + (f":{d['rel_id']}" if d else "")
+
+
+def _label(job) -> str:
+    kind, sc, d = job
+    where = STATES.get(sc, sc)
+    extra = (d.get("name") or d.get("path") or d.get("id")) if d else ""
+    return f"{kind:9} {where}" + (f" / {extra}" if extra else "")
+
+
+def _do(job, st) -> tuple[int, str]:
+    kind, sc, d = job
+    if kind == "districts":
+        st["districts"][sc] = osm.list_districts(sc)
+        return len(st["districts"][sc]), "districts"
+    if kind == "wikidata":
+        return wikidata.fetch_district(sc, d), "temples"
+    if kind == "osm":
+        return osm.fetch_district(sc, d), "temples"
+    if kind == "places":
+        return osm.fetch_places(sc, d), "villages/towns"
+    if kind == "sii_index":
+        st["sii_pages"] = sii.discover()
+        return len(st["sii_pages"]), "inscription pages found"
+    if kind == "sii":
+        return sii.fetch_page(d), "inscriptions"
+    if kind == "datagovin":
+        return datagovin.fetch(d), "records"
+    return google_places.fetch_district(sc, d), "temples"
 
 
 def run(minutes: float, states: list[str], export_only: bool = False) -> None:
     start = time.monotonic()
     deadline = start + max(1.0, minutes - EXPORT_RESERVE_MIN) * 60
     st = load_state()
-    done_jobs, found, errors = 0, 0, 0
-    consecutive_fail: dict[str, int] = {}
-    skip: set[str] = set()   # a source that keeps failing is paused for the rest of this run
+    lock = threading.Lock()
+    stats = {"done": 0, "found": 0, "errors": 0}
+    running: set[str] = set()
+    alive, idle = set(WORKERS), set()
 
-    while not export_only and time.monotonic() < deadline:
-        queue = build_queue(st, states, frozenset(skip))
-        if not queue:
-            print("All data is fresh — nothing due today.")
-            break
-        job = queue[0]
-        kind, sc, d = job
-        label = f"{kind:9} {STATES[sc]}" + (f" / {d['name']}" if d else "")
-        print(f"[{(time.monotonic() - start) / 60:5.1f} min] {label}", flush=True)
+    def worker(name, kinds):
+        fails_in_a_row = 0
         try:
-            if kind == "districts":
-                st["districts"][sc] = osm.list_districts(sc)
-                n = len(st["districts"][sc])
-                print(f"   {n} districts")
-            elif kind == "wikidata":
-                n = wikidata.fetch_district(sc, d)
-            elif kind == "osm":
-                n = osm.fetch_district(sc, d)
-            elif kind == "places":
-                n = osm.fetch_places(sc, d)
-            else:
-                n = google_places.fetch_district(sc, d)
-            if kind != "districts":
-                found += n if kind != "places" else 0
-                print(f"   {n} {'villages/towns' if kind == 'places' else 'temples'}")
-            st["done"][_key(job)] = datetime.now().isoformat(timespec="seconds")
-            done_jobs += 1
-            consecutive_fail[kind] = 0
-            st.get("failed", {}).pop(_key(job), None)
-            st.get("errors", {}).pop(_key(job), None)
-            st.get("fail_count", {}).pop(_key(job), None)
-            save_state(st)
+            while time.monotonic() < deadline:
+                with lock:
+                    queue = [j for j in build_queue(st, states, only_kinds=kinds) if _key(j) not in running]
+                    job = queue[0] if queue else None
+                    if job:
+                        running.add(_key(job))
+                        idle.discard(name)
+                    else:
+                        idle.add(name)
+                        if alive <= idle:
+                            return      # every server is out of work -> nobody can add more
+                if job is None:         # other servers may still unlock work (e.g. OSM -> Wikidata)
+                    time.sleep(5)
+                    continue
+                fails_in_a_row = _run_one(job, name, fails_in_a_row)
+                if fails_in_a_row >= 5:
+                    print(f"{name}: 5 failures in a row — pausing this server for today.", flush=True)
+                    return
+                time.sleep(PAUSE_BETWEEN_CALLS)
+        finally:
+            with lock:
+                alive.discard(name)
+                idle.discard(name)
+
+    def _run_one(job, name, fails_in_a_row):
+        print(f"[{(time.monotonic() - start) / 60:5.1f} min] {_label(job)}", flush=True)
+        try:
+            n, what = _do(job, st)
+            print(f"   {n} {what}  ({_label(job).split()[0]})", flush=True)
+            with lock:
+                if what in ("temples", "inscriptions", "records"):
+                    stats["found"] += n
+                stats["done"] += 1
+                st["done"][_key(job)] = datetime.now().isoformat(timespec="seconds")
+                for k in ("failed", "errors", "fail_count"):
+                    st.get(k, {}).pop(_key(job), None)
+                save_state(st)
+            return 0
         except Exception as e:  # keep going; the job stays due and is retried later
-            errors += 1
-            consecutive_fail[kind] = consecutive_fail.get(kind, 0) + 1
-            print(f"   FAILED: {e}")
+            print(f"   FAILED {_key(job)}: {e}", flush=True)
             traceback.print_exc(limit=1)
-            st.setdefault("failed", {})[_key(job)] = datetime.now().isoformat(timespec="seconds")
-            st.setdefault("errors", {})[_key(job)] = str(e)[:300]   # visible in the repo
-            st.setdefault("fail_count", {})[_key(job)] = st["fail_count"].get(_key(job), 0) + 1
-            save_state(st)
-            if consecutive_fail[kind] >= 5:
-                print(f"{kind}: 5 failures in a row — skipping this source for the rest of today.")
-                skip.add(kind)
-        time.sleep(PAUSE_BETWEEN_CALLS)
+            with lock:
+                stats["errors"] += 1
+                now = datetime.now().isoformat(timespec="seconds")
+                st.setdefault("failed", {})[_key(job)] = now
+                st.setdefault("errors", {})[_key(job)] = str(e)[:300]   # visible in the repo
+                st.setdefault("fail_count", {})[_key(job)] = st["fail_count"].get(_key(job), 0) + 1
+                save_state(st)
+            return fails_in_a_row + 1
+        finally:
+            with lock:
+                running.discard(_key(job))
+
+    if not export_only:
+        threads = [threading.Thread(target=worker, args=(n, k), daemon=True) for n, k in WORKERS.items()]
+        for t in threads:
+            t.start()
+        for t in threads:
+            t.join(timeout=max(0, deadline - time.monotonic()) + 120)
+    done_jobs, found, errors = stats["done"], stats["found"], stats["errors"]
 
     save_state(st)
     print("Merging sources…")
     records = build_master()
     path = write_excel(records)
     write_geojson(records)
-    remaining = len(build_queue(st, list(STATES)))
+    remaining = len(build_queue(st, list(STATES) + list(GLOBAL)))
     print(f"Excel: {path}  ({len(records):,} temples)  jobs done today: {done_jobs}, still due: {remaining}")
 
     new = not LOG_FILE.exists()
@@ -152,10 +231,11 @@ def run(minutes: float, states: list[str], export_only: bool = False) -> None:
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--minutes", type=float, default=50, help="time budget for this run (default 50)")
-    ap.add_argument("--states", default=",".join(STATES), help="comma list, e.g. IN-TN,IN-KL")
+    ap.add_argument("--states", default=",".join(list(STATES) + list(GLOBAL)),
+                    help="comma list, e.g. IN-TN,IN-KL (SII = inscription volumes, GOV = data.gov.in)")
     ap.add_argument("--export-only", action="store_true", help="skip collection, rebuild master + Excel")
     a = ap.parse_args()
-    states = [s.strip() for s in a.states.split(",") if s.strip() in STATES]
+    states = [s.strip() for s in a.states.split(",") if s.strip() in STATES or s.strip() in GLOBAL]
     run(a.minutes, states, a.export_only)
 
 
