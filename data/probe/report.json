@@ -1,1953 +1,6 @@
 {
- "checked_at": "2026-10-29T16:50:52",
+ "checked_at": "2026-10-29T16:52:12",
  "results": [
-  {
-   "url": "https://itms.kar.nic.in/hrcehome/temple_list.php",
-   "post": null,
-   "robots_allows": true,
-   "robots_txt": "",
-   "status": 200,
-   "final_url": "https://itms.kar.nic.in/hrcehome/temple_list.php",
-   "content_type": "text/html; charset=UTF-8",
-   "bytes": 488735,
-   "title": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department",
-   "headings": [],
-   "forms": [
-    {
-     "action": "https://itms.kar.nic.in/hrcehome/temple_list.php",
-     "method": "POST",
-     "fields": [
-      {
-       "tag": "select",
-       "name": "district_code",
-       "type": null,
-       "options": 32,
-       "sample_options": [
-        [
-         "",
-         "-- ಜಿಲ್ಲೆ --"
-        ],
-        [
-         "10",
-         "ಬಾಗಲಕೋಟೆ"
-        ],
-        [
-         "17",
-         "ಬಳ್ಳಾರಿ"
-        ],
-        [
-         "11",
-         "ಬೆಳಗಾವಿ"
-        ],
-        [
-         "02",
-         "ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ"
-        ],
-        [
-         "01",
-         "ಬೆಂಗಳೂರು"
-        ],
-        [
-         "18",
-         "ಬೀದರ್‌"
-        ],
-        [
-         "23",
-         "ಚಾಮರಾಜನಗರ"
-        ],
-        [
-         "08",
-         "ಚಿಕ್ಕಬಳ್ಳಾಪುರ"
-        ],
-        [
-         "24",
-         "ಚಿಕ್ಕಮಗಳೂರು"
-        ],
-        [
-         "03",
-         "ಚಿತ್ರದುರ್ಗ"
-        ],
-        [
-         "25",
-         "ದಕ್ಷಿಣ ಕನ್ನಡ"
-        ],
-        [
-         "04",
-         "ದಾವಣಗೆರೆ"
-        ],
-        [
-         "13",
-         "ಧಾರವಾಡ"
-        ],
-        [
-         "14",
-         "ಗದಗ"
-        ],
-        [
-         "26",
-         "ಹಾಸನ"
-        ],
-        [
-         "15",
-         "ಹಾವೇರಿ"
-        ],
-        [
-         "19",
-         "ಕಲಬುರಗಿ"
-        ],
-        [
-         "27",
-         "ಕೊಡಗು"
-        ],
-        [
-         "05",
-         "ಕೋಲಾರ"
-        ],
-        [
-         "20",
-         "ಕೊಪ್ಪಳ"
-        ],
-        [
-         "28",
-         "ಮಂಡ್ಯ"
-        ],
-        [
-         "29",
-         "ಮೈಸೂರು"
-        ],
-        [
-         "21",
-         "ರಾಯಚೂರು"
-        ],
-        [
-         "09",
-         "ರಾಮನಗರ"
-        ],
-        [
-         "06",
-         "ಶಿವಮೊಗ್ಗ"
-        ],
-        [
-         "07",
-         "ತುಮಕೂರು"
-        ],
-        [
-         "30",
-         "ಉಡುಪಿ"
-        ],
-        [
-         "16",
-         "ಉತ್ತರ ಕನ್ನಡ"
-        ],
-        [
-         "12",
-         "ವಿಜಯಾಪುರ"
-        ],
-        [
-         "35",
-         "ವಿಜಯನಗರ"
-        ],
-        [
-         "22",
-         "ಯಾದಗಿರಿ"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "Submit",
-       "type": "button"
-      },
-      {
-       "tag": "select",
-       "name": "jc_code",
-       "type": null,
-       "options": 357,
-       "sample_options": [
-        [
-         "",
-         "-- ಜಂಟಿ ಆಯುಕ್ತರು --"
-        ],
-        [
-         "2",
-         "Joint Commissioner"
-        ],
-        [
-         "13",
-         "JC YEDEYUR REGIONAL LEVEL"
-        ],
-        [
-         "18",
-         "ಆರ್ ವಿದ್ಯುಲ್ಲತಾ"
-        ],
-        [
-         "23",
-         "ನಾಮದೇವ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "27",
-         "ಕೆ ಪದ್ಮ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "31",
-         "ಲಕ್ಷ್ಮೀನಾರಾಯಣ ಎಸ್ ರಾಜ್ಯ  ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "35",
-         "ಎಂ ಹೆಚ್ ರವೀಂದ್ರ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "40",
-         "ಪದ್ಮ  ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "44",
-         "ಕೆ ಪದ್ಮ  ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "48",
-         "ಮೋಹನ್ ಕುಮಾರ್ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "52",
-         "ರುಕ್ಮಿಣಿ.ಕೆ.ಕೆ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "56",
-         "ಸೋಮೇಶ ಸಿಎ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "60",
-         "ಕಾನಿ ಕೋಟೆ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "64",
-         "ಕಾನಿ ಕುಮಾರಸ್ವಾಮಿ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "67",
-         "ಕಾನಿ ಸೋಮೇಶ್ವರ ರಾಜ್ಯ"
-        ],
-        [
-         "68",
-         "ಕಾನಿ ಸೋಮೇಶ್ವರ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "72",
-         "ಕಾನಿ ಸುಬ್ರಹ್ಮಣ್ಯಸ್ವಾಮಿ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "76",
-         "ಕಾನಿ ವೇಣುಗೋಪಾಲ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "80",
-         "ಕಾನಿ ಲಕ್ಮೀನರಸಿಂಹ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "85",
-         "ಕಾನಿ ಬಳೆಪೇಟೆ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "89",
-         "ಕಾನಿ ಕಾಡು ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "93",
-         "ಕಾನಿ ಕುಕ್ಕೆ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "97",
-         "ಕಾನಿ ಮಹಾಗಣಪತಿ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "101",
-         "ಕಾನಿ ರಾಘವೇಂದ್ರ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "105",
-         "ಕಾನಿ ಚಂಪಕ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "109",
-         "ಕಾನಿ ಬನಶಂಕರಿ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "113",
-         "ಕಾನಿ ಮಿಂಟೋ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "117",
-         "ಕಾನಿ ದತ್ತಾತ್ರೇಯ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "121",
-         "ಕಾನಿ ಝರಣಿ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "125",
-         "ಕಾನಿ ಮಹಾಲಿಂಗೇಶ್ವರ  ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "129",
-         "ಕಾನಿ ವೀರಭದ್ರೇಶ್ವರ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "133",
-         "ಕಾನಿ ಮೈಲಾರ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "137",
-         "ಕಾನಿ ಸಿದ್ದೇಶ್ವರ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "141",
-         "ಕಾನಿ ಮಲ್ಲಿಕಾರ್ಜುನ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "146",
-         "ಕಾನಿ ಪುತ್ತೂರು ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "150",
-         "ಕಾನಿ ಕಟೀಲು  ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "154",
-         "ಕಾನಿ ಮಂದಾರ್ತಿ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "158",
-         "ಕಾನಿ ರೇವಣ ಪ್ರಾದೇಶಿಕ"
-        ],
-        [
-         "162",
-         "ಕಾನಿ ಬಪ್ಪನಾಡು ಪ್ರಾದೇಶಿಕ"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "Submit",
-       "type": "button"
-      },
-      {
-       "tag": "select",
-       "name": "ac_code",
-       "type": null,
-       "options": 355,
-       "sample_options": [
-        [
-         "",
-         "-- ಸಹಾಯಕ ಆಯುಕ್ತ --"
-        ],
-        [
-         "3",
-         "Assistant Commissioner"
-        ],
-        [
-         "14",
-         "JC YEDEYR DIVISIONAL LEVEL"
-        ],
-        [
-         "19",
-         "ಆರ್.ವಿದ್ಯುಲ್ಲತಾ"
-        ],
-        [
-         "24",
-         "ನಾಮದೇವ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "28",
-         "ಕೆ ಪದ್ಮ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "32",
-         "ಲಕ್ಷ್ಮೀನಾರಾಯಣ ಎಸ್ ರಾಜ್ಯ  ವಿಭಾಗೀಯ"
-        ],
-        [
-         "36",
-         "ಎಂ ಹೆಚ್ ರವೀಂದ್ರ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "41",
-         "ಪದ್ಮ  ವಿಭಾಗೀಯ"
-        ],
-        [
-         "45",
-         "ಕೆ ಪದ್ಮ  ವಿಭಾಗೀಯ"
-        ],
-        [
-         "49",
-         "ಮೋಹನ್ ಕುಮಾರ್ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "53",
-         "ರುಕ್ಮಿಣಿ.ಕೆ.ಕೆ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "57",
-         "ಸೋಮೇಶ ಸಿಎ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "61",
-         "ಕಾನಿ ಕೋಟೆ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "65",
-         "ಕಾನಿ ಕುಮಾರಸ್ವಾಮಿ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "69",
-         "ಕಾನಿ ಸೋಮೇಶ್ವರ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "73",
-         "ಕಾನಿ ಸುಬ್ರಹ್ಮಣ್ಯಸ್ವಾಮಿ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "77",
-         "ಕಾನಿ ವೇಣುಗೋಪಾಲ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "81",
-         "ಕಾನಿ ಲಕ್ಮೀನರಸಿಂಹ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "86",
-         "ಕಾನಿ ಬಳೆಪೇಟೆ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "90",
-         "ಕಾನಿ ಕಾಡು ವಿಭಾಗೀಯ"
-        ],
-        [
-         "94",
-         "ಕಾನಿ ಕುಕ್ಕೆ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "98",
-         "ಕಾನಿ ಮಹಾಗಣಪತಿ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "102",
-         "ಕಾನಿ ರಾಘವೇಂದ್ರ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "106",
-         "ಕಾನಿ ಚಂಪಕ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "110",
-         "ಕಾನಿ ಬನಶಂಕರಿ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "114",
-         "ಕಾನಿ ಮಿಂಟೋ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "118",
-         "ಕಾನಿ ದತ್ತಾತ್ರೇಯ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "122",
-         "ಕಾನಿ ಝರಣಿ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "126",
-         "ಕಾನಿ ಮಹಾಲಿಂಗೇಶ್ವರ  ವಿಭಾಗೀಯ"
-        ],
-        [
-         "130",
-         "ಕಾನಿ ವೀರಭದ್ರೇಶ್ವರ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "134",
-         "ಕಾನಿ ಮೈಲಾರ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "138",
-         "ಕಾನಿ ಸಿದ್ದೇಶ್ವರ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "142",
-         "ಕಾನಿ ಮಲ್ಲಿಕಾರ್ಜುನ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "147",
-         "ಕಾನಿ ಪುತ್ತೂರು ವಿಭಾಗೀಯ"
-        ],
-        [
-         "151",
-         "ಕಾನಿ ಕಟೀಲು  ವಿಭಾಗೀಯ"
-        ],
-        [
-         "155",
-         "ಕಾನಿ ಮಂದಾರ್ತಿ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "159",
-         "ಕಾನಿ ರೇವಣ ವಿಭಾಗೀಯ"
-        ],
-        [
-         "163",
-         "ಕಾನಿ ಬಪ್ಪನಾಡು ವಿಭಾಗೀಯ"
-        ],
-        [
-         "167",
-         "ಕಾನಿ ನಿಮಿಷಾಂಬ ವಿಭಾಗೀಯ"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "Submit",
-       "type": "button"
-      }
-     ]
-    }
-   ],
-   "links": [
-    {
-     "text": "ನಮ್ಮ ಬಗ್ಗೆ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
-    },
-    {
-     "text": "ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
-    },
-    {
-     "text": "ಆಡಳಿತ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
-    },
-    {
-     "text": "ದೇವಾಲಯಗಳು",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
-    },
-    {
-     "text": "ದೇವಾಲಯದ ಪಟ್ಟಿ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
-    },
-    {
-     "text": "Temple Valuables Details",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_actrules.php?action=18"
-    },
-    {
-     "text": "ಆಯುಕ್ತರ ಪಟ್ಟಿ",
-     "href": "https://itms.kar.nic.in/hrcehome/commissioners_list.php"
-    },
-    {
-     "text": "ಗ್ಯಾಲರಿ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
-    },
-    {
-     "text": "ಯೋಜನೆಗಳು",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
-    },
-    {
-     "text": "ಆಗಮ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
-    },
-    {
-     "text": "ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
-    },
-    {
-     "text": "ಅಧಿಸೂಚನೆ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
-    },
-    {
-     "text": "ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ",
-     "href": "https://itms.kar.nic.in/temples/login.php"
-    },
-    {
-     "text": "Department Login",
-     "href": "https://itms.kar.nic.in/temples/login.php"
-    },
-    {
-     "text": "Portal Policies",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
-    }
-   ],
-   "tables": [
-    {
-     "rows": 3,
-     "sample": [
-      [
-       "S.No",
-       "Temple Id",
-       "Temples`s Name",
-       "District Name",
-       "Jurisdiction Officer"
-      ],
-      [],
-      [
-       "No matching records found"
-      ]
-     ],
-     "row_links": []
-    }
-   ],
-   "script_srcs": [
-    "https://itms.kar.nic.in/resources/library/js/jquery-3.7.1.min.js",
-    "https://itms.kar.nic.in/resources/library/js/jquery-ui.min_1.13.2.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/bootstrap.bundle.min.js",
-    "https://itms.kar.nic.in/resources/library/js/jquery-confirm.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/bootstrap-datepicker.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/jquery.dataTables.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/dataTables.bootstrap4.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/dataTables.buttons.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/jszip.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.html5.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.print.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.colVis.min.js",
-    "https://itms.kar.nic.in/resources/library/label.js",
-    "https://itms.kar.nic.in/js/req_common.js",
-    "https://itms.kar.nic.in/temples/js/login_script.js",
-    "https://itms.kar.nic.in/eservices/js/ajax_epayment.js",
-    "https://itms.kar.nic.in/resources/qrcode/qrcode-js/jquery.qrcode.min.js",
-    "https://itms.kar.nic.in/resources/qrcode/qrcode-js/qrcode.js",
-    "https://itms.kar.nic.in/resources/texttospeech/text_to_speech.js",
-    "https://itms.kar.nic.in/js/session_out.js",
-    "https://itms.kar.nic.in/js/script.js",
-    "https://itms.kar.nic.in/masters/js/master_validate.js"
-   ],
-   "script_endpoints": [
-    "../budget/ajax/budget_app_master.php",
-    "../budget/ajax/budgetinfo_view_new.php",
-    "../courtcases/ajax/courtinfo_view.php",
-    "../dcbs/ajax/dcbinfo_view_new.php",
-    "../department/ajax/deptinfo_view_new.php",
-    "../eservices/ajax/epayinfo_view_new.php",
-    "../hrcehome/ajax/home_appmaster.php",
-    "../hrcehome/ajax/homepage_view.php",
-    "../hrcehome/index_temple.php?tid=",
-    "../hrcehome/landrpt_view.php",
-    "../hrcehome/reports/landrpt_view.php",
-    "../hrcehome/reports/temple_list_rpt.php",
-    "../hundi/ajax/hundi_infoview.php",
-    "../includes/color_blindness_page.php",
-    "../includes/model_appmaster.php",
-    "../includes/officialhome.php",
-    "../includes/officialhome_others.php",
-    "../includes/set_session.php",
-    "../institute/ajax/instituteinfo_view_new.php",
-    "../lands/ajax/landinfo_view_new.php",
-    "../magazine/ajax/magazineinfo_view.php",
-    "../property/ajax/property_app_master.php",
-    "../property/ajax/propertyinfo_view_new.php",
-    "../renovate/ajax/renovateinfo_view_new.php",
-    "../resources/library/audio/string_audio.php?aud=1793292654",
-    "../resources/library/esign/index.php",
-    "../temples/ajax/ajax_page.php",
-    "../temples/ajax/app_master.php",
-    "../temples/ajax/mapping_screen.php",
-    "../temples/ajax/module_redir.php?module_id=",
-    "../temples/ajax/redir.php",
-    "../temples/ajax/templeinfo_view_new.php",
-    "../temples/menuasign.php?uid=",
-    "../temples/reports/temple_reports_rpt.php",
-    "../temples/temple_festival.php?activity_desc=Tracking-",
-    "../temples/temple_festivaldetail.php?festivalparam=",
-    "../temples/templeview.php",
-    "../ticketing/ajax/ticketing_infoview.php",
-    "../trustee/ajax/trusteeinfo_view_new.php",
-    "../webservice/youtubevideo_update.php",
-    "../welfare/ajax/welfareinfo_view_new.php",
-    "ajax/getdata.php",
-    "ajax/mapping_screen.php",
-    "templeinfo.php"
-   ],
-   "script_snippets": [
-    "false; }); }); $(document).ready(function(){ var table = $('#myTable,#myTable1,#myTable2,#subTable,#myTable3,#myTable4,#myTable5').DataTable({ retrieve: true, stateSave: false, language: { searchPlaceholder: \"Search...\", search:\"\" } }); $('a.toggle-vis').on( 'click', function (e) { e.preventDefault(); var column = table.column( $(this).attr('data-column') ); column.visible( ! column.visible() ); }); }); $(window).on('load', function(){ $(\".se-pre-con\").fadeOut(\"slow\"); }); $(document).rea",
-    "==========*/ $(\".colorblindness_page\").click(function(){ $(\"span[data-id]\").css('border','none'); var color = $(this).data('id'); $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:color, tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); }); /*================================ colorblindness_page end =================================*/ /*================",
-    "s_page\").click(function(){ $(\"span[data-id]\").css('border','none'); var color = $(this).data('id'); $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:color, tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); }); /*================================ colorblindness_page end =================================*/ /*================================ Onload ===========",
-    "/****logo image color end ****/ } $(document).ready(function(){ var mobile_color=''; if(mobile_color=='910101') { $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:'#910101', tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); } }); $(document).ready(function() { $(\".templeform_grid_view\").click(function(){ var formname = $(this).par",
-    "**/ } $(document).ready(function(){ var mobile_color=''; if(mobile_color=='910101') { $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:'#910101', tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); } }); $(document).ready(function() { $(\".templeform_grid_view\").click(function(){ var formname = $(this).parents(\"form\").attr(\"id\"); var",
-    "><img src=\"../resources/library/images/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function",
-    "ges/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function changelanguage() { // alert(",
-    "(thrownError); } }); }); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ mya",
-    "}); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } });",
-    "r, ajaxOptions, thrownError){ myalert(thrownError); } }); } function setcookie(temple_id) { var token = ''; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = ''; var service_code= $('#service_code')",
-    "myalert(thrownError); } }); } function setcookie(temple_id) { var token = ''; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = ''; var service_code= $('#service_code').val(); $('#ack_no').val('')",
-    "_no) { var token = ''; var service_code= $('#service_code').val(); $('#ack_no').val(''); jQuery.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { transstatus: transstatus, mobileno:mobile_no, service_code:service_code, pg:'epayment_ackid', tokenp:token }, success:function(result) { $('#ack_no').html(result); $('#ack_no').val(''); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function getParameter"
-   ],
-   "text_start": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Session timeout in : 1200 sec Screen Reader Access A - A A + English Government of Karnataka Hindu Religious Institutions & Charitable Endowments Department × Details Save ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Temple List State List District List Heritage Temple List(Listed) Heritage Temple List(Non-Listed) Religious Institute (without Kattalai) Religious Endowment"
-  },
-  {
-   "url": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search",
-   "post": null,
-   "robots_allows": true,
-   "robots_txt": "",
-   "status": 200,
-   "final_url": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search",
-   "content_type": "text/html; charset=UTF-8",
-   "bytes": 444479,
-   "title": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department",
-   "headings": [],
-   "forms": [
-    {
-     "action": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search",
-     "method": "POST",
-     "fields": [
-      {
-       "tag": "select",
-       "name": "temple_name",
-       "type": null,
-       "options": 1,
-       "sample_options": [
-        [
-         null,
-         ""
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "TI-district_code",
-       "type": "dropdown",
-       "options": 29,
-       "sample_options": [
-        [
-         "",
-         "-- ಜಿಲ್ಲೆ --"
-        ],
-        [
-         "10",
-         "ಬಾಗಲಕೋಟೆ"
-        ],
-        [
-         "17",
-         "ಬಳ್ಳಾರಿ"
-        ],
-        [
-         "11",
-         "ಬೆಳಗಾವಿ"
-        ],
-        [
-         "02",
-         "ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ"
-        ],
-        [
-         "01",
-         "ಬೆಂಗಳೂರು"
-        ],
-        [
-         "18",
-         "ಬೀದರ್‌"
-        ],
-        [
-         "23",
-         "ಚಾಮರಾಜನಗರ"
-        ],
-        [
-         "08",
-         "ಚಿಕ್ಕಬಳ್ಳಾಪುರ"
-        ],
-        [
-         "24",
-         "ಚಿಕ್ಕಮಗಳೂರು"
-        ],
-        [
-         "03",
-         "ಚಿತ್ರದುರ್ಗ"
-        ],
-        [
-         "25",
-         "ದಕ್ಷಿಣ ಕನ್ನಡ"
-        ],
-        [
-         "04",
-         "ದಾವಣಗೆರೆ"
-        ],
-        [
-         "26",
-         "ಹಾಸನ"
-        ],
-        [
-         "15",
-         "ಹಾವೇರಿ"
-        ],
-        [
-         "19",
-         "ಕಲಬುರಗಿ"
-        ],
-        [
-         "27",
-         "ಕೊಡಗು"
-        ],
-        [
-         "05",
-         "ಕೋಲಾರ"
-        ],
-        [
-         "20",
-         "ಕೊಪ್ಪಳ"
-        ],
-        [
-         "28",
-         "ಮಂಡ್ಯ"
-        ],
-        [
-         "29",
-         "ಮೈಸೂರು"
-        ],
-        [
-         "21",
-         "ರಾಯಚೂರು"
-        ],
-        [
-         "09",
-         "ರಾಮನಗರ"
-        ],
-        [
-         "06",
-         "ಶಿವಮೊಗ್ಗ"
-        ],
-        [
-         "07",
-         "ತುಮಕೂರು"
-        ],
-        [
-         "30",
-         "ಉಡುಪಿ"
-        ],
-        [
-         "16",
-         "ಉತ್ತರ ಕನ್ನಡ"
-        ],
-        [
-         "12",
-         "ವಿಜಯಾಪುರ"
-        ],
-        [
-         "22",
-         "ಯಾದಗಿರಿ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "TI-taluk_code",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ತಾಲ್ಲೂಕು --"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "TI-village_code",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ಕಂದಾಯ ಗ್ರಾಮ --"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "pincode",
-       "type": "text"
-      },
-      {
-       "tag": "input",
-       "name": "TF-temple_location",
-       "type": "text"
-      },
-      {
-       "tag": "input",
-       "name": "TI-temple_id",
-       "type": "text"
-      },
-      {
-       "tag": "select",
-       "name": "TI-temple_subcategory_code",
-       "type": "dropdown",
-       "options": 4,
-       "sample_options": [
-        [
-         "",
-         "-- ದೇವಾಲಯ ಉಪ ವರ್ಗ --"
-        ],
-        [
-         "3",
-         "ಗುಂಪು"
-        ],
-        [
-         "1",
-         "ಮುಖ್ಯ"
-        ],
-        [
-         "2",
-         "ಉಪ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "TI-temple_category_code",
-       "type": "dropdown",
-       "options": 7,
-       "sample_options": [
-        [
-         "",
-         "-- ವರ್ಗ --"
-        ],
-        [
-         "1",
-         "ದೇವಾಲಯಗಳು"
-        ],
-        [
-         "2",
-         "ಜೈನ ದೇವಾಲಯಗಳು"
-        ],
-        [
-         "3",
-         "ಮಠಗಳು"
-        ],
-        [
-         "4",
-         "ಮಠಗಳಿಗೆ ಹೊಂದಿಕೊಂಡ ದೇವಾಲಯಗಳು"
-        ],
-        [
-         "5",
-         "ದತ್ತಿಗಳು"
-        ],
-        [
-         "6",
-         "ನಿರ್ದಿಷ್ಟ ದತ್ತಿಗಳು"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "TF-pradhana_moolavar",
-       "type": "dropdown",
-       "options": 4,
-       "sample_options": [
-        [
-         "",
-         "-- ಪ್ರಧಾನ ದೇವರು --"
-        ],
-        [
-         "1",
-         "ಸ್ವಾಮಿ"
-        ],
-        [
-         "2",
-         "ಅಮ್ಮನವರು"
-        ],
-        [
-         "3",
-         "ಎರಡೂ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "moolavar_type_code",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ದೇವಾಲಯ ಪೂಜೆ ವಿಧ --"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "moolavar_subtype_code",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ದೇವಾಲಯ ಪೂಜೆ ಉಪ ವಿಧ --"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "moolavar_swami_name",
-       "type": "text"
-      },
-      {
-       "tag": "input",
-       "name": "moolavar_ambal_name",
-       "type": "text"
-      },
-      {
-       "tag": "select",
-       "name": "TF-vimana_type",
-       "type": "dropdown",
-       "options": 9,
-       "sample_options": [
-        [
-         "",
-         "-- ವಿಮಾನದ ವಿಧ --"
-        ],
-        [
-         "1",
-         "ಆನಂದ ವಿಮಾನ"
-        ],
-        [
-         "3",
-         "ಅಷ್ಟಂಕ ವಿಮಾನ"
-        ],
-        [
-         "33",
-         "ಚತುಷ್ಟ"
-        ],
-        [
-         "2",
-         "ಗಜಮುಖ ವಿಮಾನ"
-        ],
-        [
-         "34",
-         "ಸಾಮಾನ್ಯ ಗೋಪುರ"
-        ],
-        [
-         "32",
-         "ಇಲ್ಲ"
-        ],
-        [
-         "999",
-         "ಇತರ ವಿಮಾನಗಳು"
-        ],
-        [
-         "31",
-         "ರಾಜಗೋಪುರ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "TF-sanctorum_structure",
-       "type": "dropdown",
-       "options": 9,
-       "sample_options": [
-        [
-         "",
-         "-- ಗರ್ಭಗುಡಿಯಲ್ಲಿ ಆಕಾರ --"
-        ],
-        [
-         "1",
-         "ವೃತ್ತದ ಆಕಾರ"
-        ],
-        [
-         "6",
-         "ಶಂಖ"
-        ],
-        [
-         "3",
-         "ಶಂಖದ ಆಕಾರ"
-        ],
-        [
-         "9",
-         "ಗಜಬೃಷ್ಠ"
-        ],
-        [
-         "7",
-         "ಷಟ್ಕೋನ"
-        ],
-        [
-         "8",
-         "ಪಂಚಭುಜ"
-        ],
-        [
-         "2",
-         "ಚದರ ಆಕಾರ"
-        ],
-        [
-         "5",
-         "ತ್ರಿಕೋನ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "agamam_code",
-       "type": "dropdown",
-       "options": 33,
-       "sample_options": [
-        [
-         "",
-         "-- ಆಗಮ --"
-        ],
-        [
-         "9",
-         "ಅಮ್ಮೀಮತ್ ಆಗಮ"
-        ],
-        [
-         "14",
-         "ಅನಲ ಆಗಮ"
-        ],
-        [
-         "19",
-         "ಚಂದ್ರಜ್ಞಾನ (ಚಂದ್ರಹಾಸ) ಆಗಮ"
-        ],
-        [
-         "23",
-         "ಸಿದ್ಧ ಆಗಮ"
-        ],
-        [
-         "6",
-         "ದೀಪ್ತ ಆಗಮ"
-        ],
-        [
-         "1",
-         "ಕಾಮಿಕ ಆಗಮ"
-        ],
-        [
-         "32",
-         "ಕರ್ಣ ಕಾಮಿಗ ಆಗಮ"
-        ],
-        [
-         "27",
-         "ಕರ್ಣ ಆಗಮ"
-        ],
-        [
-         "31",
-         "ಕುಮಾರ ತರ"
-        ],
-        [
-         "22",
-         "ಲಲಿತ ಆಗಮ"
-        ],
-        [
-         "17",
-         "ಮಕುಡ ಆಗಮ"
-        ],
-        [
-         "20",
-         "ಮುಖಬಿಂಬ ಆಗಮ"
-        ],
-        [
-         "12",
-         "ನಿಶ್ವಾರ ಆಗಮ"
-        ],
-        [
-         "999",
-         "ಇತರೆ ಪ್ರಕಾರ"
-        ],
-        [
-         "29",
-         "ಪಾಂಚರಾತ್ರ"
-        ],
-        [
-         "26",
-         "ಪರಮೇಶ್ವರ ಆಗಮ"
-        ],
-        [
-         "21",
-         "ಪುರೋಹಿತ (ಆಂತರಿಕ) ಅಗಮ"
-        ],
-        [
-         "16",
-         "ರಾರವ ಆಗಮ"
-        ],
-        [
-         "8",
-         "ಸಹಸ್ರಕ ಅಗಮ"
-        ],
-        [
-         "24",
-         "ಸಂತಾನ ಆಗಮ"
-        ],
-        [
-         "3",
-         "ಸಿಂಥಿಯಾ ಅಗಮ"
-        ],
-        [
-         "10",
-         "ಸುಪ್ರಬಾತ ಆಗಮ"
-        ],
-        [
-         "25",
-         "ಸರ್ವೋತ್ಕ (ನರಸಿಂಹ) ಆಗಮ"
-        ],
-        [
-         "7",
-         "ಸೂತ್ಸುಮ ಅಗಮ"
-        ],
-        [
-         "13",
-         "ಸುಯಾಂಬುವ ಆಗಮ"
-        ],
-        [
-         "33",
-         "ತಂದರಸಾರ"
-        ],
-        [
-         "30",
-         "ವೈಖಾನಸ"
-        ],
-        [
-         "28",
-         "ವಡುಲ (ಹರಡುವ) ಆಗಮ"
-        ],
-        [
-         "15",
-         "ವೀರ (ಭದ್ರ) ಆಗಮ"
-        ],
-        [
-         "11",
-         "ವಿಜಯ ಆಗಮ"
-        ],
-        [
-         "18",
-         "ವಿಮಲಾ ಆಗಮ"
-        ],
-        [
-         "2",
-         "ಯೋಗಜ ಆಗಮ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "mangalasanam_code",
-       "type": "dropdown",
-       "options": 34,
-       "sample_options": [
-        [
-         "",
-         "-- ಹಾಡು ಸ್ವೀಕರಿಸಲಾಗಿದೆ --"
-        ],
-        [
-         "30",
-         "-"
-        ],
-        [
-         "10",
-         "ಆಳ್ವಾರರು"
-        ],
-        [
-         "14",
-         "ಬಹುಮನಿ"
-        ],
-        [
-         "24",
-         "ಆಂಗ್ಲರ ಕಾಲದಿಂದ ಬೆಳಕಿಗೆ ಬಂದಿರುತ್ತದೆ"
-        ],
-        [
-         "11",
-         "ಚಾಲುಕ್ಯ"
-        ],
-        [
-         "18",
-         "ಚೋಳರು"
-        ],
-        [
-         "25",
-         "ದುರ್ಗಾಪರಮೇಶ್ವರಿ"
-        ],
-        [
-         "32",
-         "ಈರಪ್ಪಯ್ಯ"
-        ],
-        [
-         "28",
-         "ಗೋಪುರ ಮತ್ತು ಸುತ್ತುಪೌಳಿ"
-        ],
-        [
-         "13",
-         "ಹೊಯ್ಸಳರು"
-        ],
-        [
-         "9",
-         "ಕದಂಬ"
-        ],
-        [
-         "22",
-         "ಮಧ್ವಾಚಾರ್ಯ"
-        ],
-        [
-         "17",
-         "ಮೈಸೂರು ಒಡೆಯರು"
-        ],
-        [
-         "29",
-         "ಅನ್ವಯಿಸುವುದಿಲ್ಲ"
-        ],
-        [
-         "16",
-         "ನಾಯಕ್"
-        ],
-        [
-         "31",
-         "ಅನ್ವಯಿಸುವುದಿಲ್ಲ"
-        ],
-        [
-         "8",
-         "ಇತರೆ ಸಂತ"
-        ],
-        [
-         "4",
-         "ಇತರೆ ಕನ್ಕಡ ಕವಿಗಳು"
-        ],
-        [
-         "20",
-         "ಪಲ್ಲರು"
-        ],
-        [
-         "26",
-         "ಪಾಂಚರಾತ್ರ"
-        ],
-        [
-         "19",
-         "ಪಾಂಡಿಯರು"
-        ],
-        [
-         "12",
-         "ರಾಷ್ಟ್ರಕೂಟ"
-        ],
-        [
-         "27",
-         "ಗೌತಮ ಋಷಿ"
-        ],
-        [
-         "5",
-         "ಶೀವ ನಾಲ್ವರು"
-        ],
-        [
-         "1",
-         "ಶೀವ ನಾಯನ್ಮಾರ್ಸ್"
-        ],
-        [
-         "6",
-         "ಶೀವ ಸಂತ"
-        ],
-        [
-         "7",
-         "ಸಂತಾನ ಕುರವರ್ಗಲ್"
-        ],
-        [
-         "33",
-         "ಶಾಕ್ತ ಸಾಧು ಸಂತರೂ"
-        ],
-        [
-         "23",
-         "ಶ್ರೀ ಶ್ರೀ ವಾದಿರಾಜ ತೀರ್ಥರು"
-        ],
-        [
-         "15",
-         "ಸುಲ್ತಾನ್"
-        ],
-        [
-         "2",
-         "ವೈನವ ಆಳ್ವರು"
-        ],
-        [
-         "3",
-         "ವೈಷ್ಣವ ಸಂತರು"
-        ],
-        [
-         "21",
-         "ವಿಜಯನಗರ ಅರಸರು"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "subshrine_name",
-       "type": "text"
-      },
-      {
-       "tag": "select",
-       "name": "speciality_code",
-       "type": "dropdown",
-       "options": 11,
-       "sample_options": [
-        [
-         "",
-         "-- ದೇವಾಲಯ ವಿಶೇಷ --"
-        ],
-        [
-         "6",
-         "ತಲೆ ಮರ"
-        ],
-        [
-         "5",
-         "ಐತಿಹಾಸಿಕ"
-        ],
-        [
-         "999",
-         "ಇತರೆ"
-        ],
-        [
-         "9",
-         "ಪ್ರಸಾದ"
-        ],
-        [
-         "2",
-         "ಪ್ರಾರ್ಥನೆ"
-        ],
-        [
-         "3",
-         "ಪುರಾತನ"
-        ],
-        [
-         "1",
-         "ಪರಿಹಾರ"
-        ],
-        [
-         "8",
-         "ಪವಿತ್ರ ನೀರು"
-        ],
-        [
-         "7",
-         "ರಚನೆ"
-        ],
-        [
-         "4",
-         "ಪ್ರವಾಸಿ"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "temple_popular_name",
-       "type": "text"
-      },
-      {
-       "tag": "input",
-       "name": "moolavar_popular_name",
-       "type": "text"
-      },
-      {
-       "tag": "input",
-       "name": "ambal_popular_name",
-       "type": "text"
-      },
-      {
-       "tag": "select",
-       "name": "poet_saint",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ಕವಿಗಳು, ಸಂತರು --"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "sthalam_type",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ಸ್ಥಳ ವಿಶೇಷ ವಿಧ --"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "institute_code",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ಸಂಸ್ಥೆಗಳು --"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "inspector_office_code",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ಇನ್ಸ್ಪೆಕ್ಟರ್ ವಿಭಾಗ --"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "parliament_code",
-       "type": "dropdown",
-       "options": 29,
-       "sample_options": [
-        [
-         "",
-         "-- ಸಂಸತ್ತಿನ ಕ್ಷೇತ್ರ --"
-        ],
-        [
-         "3",
-         "ಬಾಗಲಕೋಟೆ"
-        ],
-        [
-         "24",
-         "ಬೆಂಗಳೂರು ಕೇಂದ್ರ"
-        ],
-        [
-         "15",
-         "ಬೆಂಗಳೂರು ಉತ್ತರ"
-        ],
-        [
-         "23",
-         "ಬೆಂಗಳೂರು ಗ್ರಾಮೀಣ"
-        ],
-        [
-         "25",
-         "ಬೆಂಗಳೂರು ದಕ್ಷಿಣ"
-        ],
-        [
-         "2",
-         "ಬೆಳಗಾವಿ"
-        ],
-        [
-         "9",
-         "ಬಳ್ಳಾರಿ"
-        ],
-        [
-         "7",
-         "ಬೀದರ್"
-        ],
-        [
-         "4",
-         "ಬಿಜಾಪುರ"
-        ],
-        [
-         "22",
-         "ಚಾಮರಾಜನಗರ"
-        ],
-        [
-         "26",
-         "ಚಿಕ್ಕಬಳ್ಳಾಪುರ"
-        ],
-        [
-         "1",
-         "ಚಿಕ್ಕೋಡಿ"
-        ],
-        [
-         "18",
-         "ಚಿತ್ರದುರ್ಗ"
-        ],
-        [
-         "17",
-         "ದಕ್ಷಿಣ ಕನ್ನಡ"
-        ],
-        [
-         "13",
-         "ದಾವಣಗೆರೆ"
-        ],
-        [
-         "11",
-         "ಧಾರವಾಡ"
-        ],
-        [
-         "5",
-         "ಗುಲ್ಬರ್ಗ"
-        ],
-        [
-         "16",
-         "ಹಾಸನ"
-        ],
-        [
-         "10",
-         "ಹಾವೇರಿ"
-        ],
-        [
-         "27",
-         "ಕೋಲಾರ"
-        ],
-        [
-         "8",
-         "ಕೊಪ್ಪಳ"
-        ],
-        [
-         "20",
-         "ಮಂಡ್ಯ"
-        ],
-        [
-         "21",
-         "ಮೈಸೂರು"
-        ],
-        [
-         "6",
-         "ರಾಯಚೂರು"
-        ],
-        [
-         "14",
-         "ಶಿವಮೊಗ್ಗ"
-        ],
-        [
-         "19",
-         "ತುಮಕೂರು"
-        ],
-        [
-         "28",
-         "ಉಡುಪಿ ಚಿಕ್ಕಮಗಳೂರು"
-        ],
-        [
-         "12",
-         "ಉತ್ತರ ಕನ್ನಡ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "assembly_code",
-       "type": "dropdown",
-       "options": 226,
-       "sample_options": [
-        [
-         "",
-         "-- ವಿಧಾನಸಭಾ ಕ್ಷೇತ್ರ --"
-        ],
-        [
-         "33",
-         "ಅಫಜಲಪುರ"
-        ],
-        [
-         "50",
-         "ಆಳಂದ"
-        ],
-        [
-         "172",
-         "ಆನೇಕಲ್"
-        ],
-        [
-         "9",
-         "ಅರಭಾವಿ"
-        ],
-        [
-         "119",
-         "ಅರಕಲಗೂಡು"
-        ],
-        [
-         "115",
-         "ಅರಸೀಕೆರೆ"
-        ],
-        [
-         "3",
-         "ಅಥಣಿ"
-        ],
-        [
-         "56",
-         "ಔರಾದ್"
-        ],
-        [
-         "20",
-         "ಬಬಲೇಶ್ವರ"
-        ],
-        [
-         "29",
-         "ಬದಾಮಿ"
-        ],
-        [
-         "30",
-         "ಬಾಗಲಕೋಟೆ"
-        ],
-        [
-         "202",
-         "ಬಾಗೇಪಲ್ಲಿ"
-        ],
-        [
-         "14",
-         "ಬೈಲಹೊಂಗಲ"
-        ],
-        [
-         "112",
-         "ಬೈಂದೂರು"
-        ],
-        [
-         "171",
-         "ಬೆಂಗಳೂರು ದಕ್ಷಿಣ"
-        ],
-        [
-         "214",
-         "ಬಂಗಾರಪೇಟೆ"
-        ],
-        [
-         "126",
-         "ಬಂಟ್ವಾಳ"
-        ],
-        [
-         "51",
-         "ಬಸವಕಲ್ಯಾಣ"
-        ],
-        [
-         "19",
-         "ಬಸವನ ಬಾಗೆವಾಡಿ"
-        ],
-        [
-         "196",
-         "ಬಸವನಗುಡಿ"
-        ],
-        [
-         "12",
-         "ಬೆಳಗಾವಿ ದಕ್ಷಿಣ"
-        ],
-        [
-         "13",
-         "ಬೆಳಗಾವಿ ಗ್ರಾಮೀಣ"
-        ],
-        [
-         "11",
-         "ಬೆಳಗಾವಿ ಉತ್ತರ"
-        ],
-        [
-         "69",
-         "ಬಳ್ಳಾರಿ"
-        ],
-        [
-         "70",
-         "ಬಳ್ಳಾರಿ ನಗರ"
-        ],
-        [
-         "121",
-         "ಬೆಳ್ತಂಗಡಿ"
-        ],
-        [
-         "116",
-         "ಬೇಲೂರು"
-        ],
-        [
-         "106",
-         "ಭದ್ರಾವತಿ"
-        ],
-        [
-         "55",
-         "ಭಾಲ್ಕಿ"
-        ],
-        [
-         "94",
-         "ಭಟ್ಕಳ"
-        ],
-        [
-         "54",
-         "ಬೀದರ್"
-        ],
-        [
-         "53",
-         "ಬೀದರ್ ದಕ್ಷಿಣ"
-        ],
-        [
-         "21",
-         "ಬಿಜಾಪುರ ನಗರ"
-        ],
-        [
-         "28",
-         "ಬಿಲ್ಗಿ"
-        ],
-        [
-         "200",
-         "ಬೊಮ್ಮನಹಳ್ಳಿ"
-        ],
-        [
-         "198",
-         "ಬಿಟಿಎಂ ಲೇಔಟ್"
-        ],
-        [
-         "78",
-         "ಬ್ಯಾಡಗಿ"
-        ],
-        [
-         "178",
-         "ಬ್ಯಾಟರಾಯನಪುರ"
-        ],
-        [
-         "130",
-         "ಚಳ್ಳಕೆರೆ"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "captchatxt",
-       "type": "text"
-      }
-     ]
-    },
-    {
-     "action": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search",
-     "method": "POST",
-     "fields": []
-    }
-   ],
-   "links": [
-    {
-     "text": "ನಮ್ಮ ಬಗ್ಗೆ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
-    },
-    {
-     "text": "ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
-    },
-    {
-     "text": "ಆಡಳಿತ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
-    },
-    {
-     "text": "ದೇವಾಲಯಗಳು",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
-    },
-    {
-     "text": "ದೇವಾಲಯದ ಪಟ್ಟಿ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
-    },
-    {
-     "text": "Temple Valuables Details",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_actrules.php?action=18"
-    },
-    {
-     "text": "ಆಯುಕ್ತರ ಪಟ್ಟಿ",
-     "href": "https://itms.kar.nic.in/hrcehome/commissioners_list.php"
-    },
-    {
-     "text": "ಗ್ಯಾಲರಿ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
-    },
-    {
-     "text": "ಯೋಜನೆಗಳು",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
-    },
-    {
-     "text": "ಆಗಮ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
-    },
-    {
-     "text": "ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
-    },
-    {
-     "text": "ಅಧಿಸೂಚನೆ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
-    },
-    {
-     "text": "ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ",
-     "href": "https://itms.kar.nic.in/temples/login.php"
-    },
-    {
-     "text": "Department Login",
-     "href": "https://itms.kar.nic.in/temples/login.php"
-    },
-    {
-     "text": "Portal Policies",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
-    }
-   ],
-   "tables": [
-    {
-     "rows": 3,
-     "sample": [
-      [
-       "S.No.",
-       "Temple Id",
-       "Temple Name",
-       "District",
-       "Action"
-      ],
-      [],
-      [
-       "Loading..."
-      ]
-     ],
-     "row_links": []
-    }
-   ],
-   "script_srcs": [
-    "https://itms.kar.nic.in/resources/library/js/jquery-3.7.1.min.js",
-    "https://itms.kar.nic.in/resources/library/js/jquery-ui.min_1.13.2.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/bootstrap.bundle.min.js",
-    "https://itms.kar.nic.in/resources/library/js/jquery-confirm.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/bootstrap-datepicker.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/jquery.dataTables.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/dataTables.bootstrap4.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/dataTables.buttons.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/jszip.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.html5.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.print.min.js",
-    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.colVis.min.js",
-    "https://itms.kar.nic.in/resources/library/label.js",
-    "https://itms.kar.nic.in/js/req_common.js",
-    "https://itms.kar.nic.in/temples/js/login_script.js",
-    "https://itms.kar.nic.in/eservices/js/ajax_epayment.js",
-    "https://itms.kar.nic.in/resources/qrcode/qrcode-js/jquery.qrcode.min.js",
-    "https://itms.kar.nic.in/resources/qrcode/qrcode-js/qrcode.js",
-    "https://itms.kar.nic.in/resources/texttospeech/text_to_speech.js",
-    "https://itms.kar.nic.in/js/session_out.js",
-    "https://itms.kar.nic.in/js/script.js",
-    "https://itms.kar.nic.in/js/temple_autosearch.js",
-    "https://itms.kar.nic.in/masters/js/master_validate.js"
-   ],
-   "script_endpoints": [
-    "../budget/ajax/budget_app_master.php",
-    "../budget/ajax/budgetinfo_view_new.php",
-    "../courtcases/ajax/courtinfo_view.php",
-    "../dcbs/ajax/dcbinfo_view_new.php",
-    "../department/ajax/deptinfo_view_new.php",
-    "../eservices/ajax/epayinfo_view_new.php",
-    "../hrcehome/ajax/home_appmaster.php",
-    "../hrcehome/ajax/homepage_view.php",
-    "../hrcehome/index_temple.php?tid=",
-    "../hrcehome/landrpt_view.php",
-    "../hrcehome/reports/landrpt_view.php",
-    "../hundi/ajax/hundi_infoview.php",
-    "../includes/color_blindness_page.php",
-    "../includes/model_appmaster.php",
-    "../includes/officialhome.php",
-    "../includes/officialhome_others.php",
-    "../includes/set_session.php",
-    "../institute/ajax/instituteinfo_view_new.php",
-    "../jsondata/labeldata.json",
-    "../lands/ajax/landinfo_view_new.php",
-    "../magazine/ajax/magazineinfo_view.php",
-    "../property/ajax/property_app_master.php",
-    "../property/ajax/propertyinfo_view_new.php",
-    "../renovate/ajax/renovateinfo_view_new.php",
-    "../resources/library/audio/string_audio.php?aud=1793292660",
-    "../resources/library/esign/index.php",
-    "../temples/ajax/ajax_page.php",
-    "../temples/ajax/app_master.php",
-    "../temples/ajax/mapping_screen.php",
-    "../temples/ajax/module_redir.php?module_id=",
-    "../temples/ajax/redir.php",
-    "../temples/ajax/templeinfo_view_new.php",
-    "../temples/menuasign.php?uid=",
-    "../temples/reports/temple_reports_rpt.php",
-    "../temples/temple_festival.php?activity_desc=Tracking-",
-    "../temples/temple_festivaldetail.php?festivalparam=",
-    "../temples/templeview.php",
-    "../ticketing/ajax/ticketing_infoview.php",
-    "../trustee/ajax/trusteeinfo_view_new.php",
-    "../webservice/youtubevideo_update.php",
-    "../welfare/ajax/welfareinfo_view_new.php",
-    "ajax/getdata.php",
-    "ajax/mapping_screen.php",
-    "templeinfo.php"
-   ],
-   "script_snippets": [
-    "false; }); }); $(document).ready(function(){ var table = $('#myTable,#myTable1,#myTable2,#subTable,#myTable3,#myTable4,#myTable5').DataTable({ retrieve: true, stateSave: false, language: { searchPlaceholder: \"Search...\", search:\"\" } }); $('a.toggle-vis').on( 'click', function (e) { e.preventDefault(); var column = table.column( $(this).attr('data-column') ); column.visible( ! column.visible() ); }); }); $(window).on('load', function(){ $(\".se-pre-con\").fadeOut(\"slow\"); }); $(document).rea",
-    "==========*/ $(\".colorblindness_page\").click(function(){ $(\"span[data-id]\").css('border','none'); var color = $(this).data('id'); $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:color, tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); }); /*================================ colorblindness_page end =================================*/ /*================",
-    "s_page\").click(function(){ $(\"span[data-id]\").css('border','none'); var color = $(this).data('id'); $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:color, tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); }); /*================================ colorblindness_page end =================================*/ /*================================ Onload ===========",
-    "/****logo image color end ****/ } $(document).ready(function(){ var mobile_color=''; if(mobile_color=='910101') { $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:'#910101', tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); } }); $(document).ready(function() { $(\".templeform_grid_view\").click(function(){ var formname = $(this).par",
-    "**/ } $(document).ready(function(){ var mobile_color=''; if(mobile_color=='910101') { $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:'#910101', tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); } }); $(document).ready(function() { $(\".templeform_grid_view\").click(function(){ var formname = $(this).parents(\"form\").attr(\"id\"); var",
-    "><img src=\"../resources/library/images/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function",
-    "ges/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function changelanguage() { // alert(",
-    "(thrownError); } }); }); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ mya",
-    "}); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } });",
-    "s, thrownError){ myalert(thrownError); } }); } function setcookie(temple_id) { var token = '1234456875544'; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = '1234456875544'; var service_code= $('#s",
-    "alert(thrownError); } }); } function setcookie(temple_id) { var token = '1234456875544'; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = '1234456875544'; var service_code= $('#service_code').val(); $('#ack",
-    "var token = '1234456875544'; var service_code= $('#service_code').val(); $('#ack_no').val(''); jQuery.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { transstatus: transstatus, mobileno:mobile_no, service_code:service_code, pg:'epayment_ackid', tokenp:token }, success:function(result) { $('#ack_no').html(result); $('#ack_no').val(''); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function getParameter"
-   ],
-   "text_start": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Session timeout in : 1200 sec Screen Reader Access A - A A + English Government of Karnataka Hindu Religious Institutions & Charitable Endowments Department × Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ HR-CE - Temple Summary ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Temple Search Match all of the following"
-  },
   {
    "url": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse",
    "post": null,
@@ -1990,6 +43,18 @@
      "href": "https://itms.kar.nic.in/hrcehome/commissioners_list.php"
     },
     {
+     "text": "ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_group_a.php"
+    },
+    {
+     "text": "ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_group_b.php"
+    },
+    {
+     "text": "ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_notified.php"
+    },
+    {
      "text": "ಗ್ಯಾಲರಿ",
      "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
     },
@@ -2008,6 +73,10 @@
     {
      "text": "ಅಧಿಸೂಚನೆ",
      "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
+    },
+    {
+     "text": "ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_actrules.php?action=11"
     },
     {
      "text": "ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ",
@@ -2096,7 +165,7 @@
     "../property/ajax/property_app_master.php",
     "../property/ajax/propertyinfo_view_new.php",
     "../renovate/ajax/renovateinfo_view_new.php",
-    "../resources/library/audio/string_audio.php?aud=1793292665",
+    "../resources/library/audio/string_audio.php?aud=1793292734",
     "../resources/library/esign/index.php",
     "../temples/ajax/ajax_page.php",
     "../temples/ajax/app_master.php",
@@ -2131,7 +200,11 @@
     "myalert(thrownError); } }); } function setcookie(temple_id) { var token = ''; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = ''; var service_code= $('#service_code').val(); $('#ack_no').val('')",
     "_no) { var token = ''; var service_code= $('#service_code').val(); $('#ack_no').val(''); jQuery.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { transstatus: transstatus, mobileno:mobile_no, service_code:service_code, pg:'epayment_ackid', tokenp:token }, success:function(result) { $('#ack_no').html(result); $('#ack_no').val(''); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function getParameter"
    ],
-   "text_start": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Session timeout in : 1200 sec Screen Reader Access A - A A + English Government of Karnataka Hindu Religious Institutions & Charitable Endowments Department × ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Portal Policies Terms of Use This Temple Portal is hosted by Hindu Religious Institutions & Charitable Endowments Department (HRI & CE), Government of Karnataka. The webiste has been designed and developed by Nati"
+   "text_start": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Session timeout in : 1200 sec Screen Reader Access A - A A + English Government of Karnataka Hindu Religious Institutions & Charitable Endowments Department × ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Portal Policies Terms of Use This Temple Portal is hosted by Hindu Religious Institutions & Charitable Endowments Department (HRI & CE), Government of Karnataka. The webiste has been designed and developed by Nati",
+   "policy_text": {
+    "Copyright Policy": "Copyright Policy The contents published in this portal are primarily owned by the HRI & CE Department. Material featured on this Portal may be reproduced free of charge after taking proper permission from the Department. However, the material has to be reproduced accurately and not to be used in a derogatory manner or in a misleading context and as per the guidelines provided by the Department. Wherever the material is being published or issued to others, the source must be prominently acknowledged. However, the permission to reproduce this material shall not extend to any material which is identified as being copyright of a third party. Authorisation to reproduce such material must be obtained from the departments / copyright holders concerned. Privacy Policy The Temple Portal and apps based on this Portal do not automatically capture any specific personal information from you without your consent, (like name, phone number or e-mail address), that allows us to identify you individually. If the Temple Portal requests you to provide personal information, for registration or other activities ,you will be informed for the particular purposes for which the information is gathered and adequate security measures will be taken to protect your personal information. We do not sell or share any personally identifiable information volunteered on the Temple Portal site to any third party (public/private). Any information provided to this Portal will be protected from loss, misuse, unauthorized access or disclosure, alteration, or destruction. We gather certain information about the User, such as Internet protocol (IP) addresses, domain name, browser type, operating system, the date and time of the visit and the pages visited. We make no attempt to link these addresses with the identity of individuals visiting our site unless an attempt to damage the site has been detected or the department wants such information for any specific queries. Hyper Linking Policy Links to external websites/portals At many places in this Portal, you shall find links to other websites / portals. These links have been placed after careful scrutiny. These links have been placed for user convenience. NIC or HRI & CE Department are not responsible for the contents and reliability of the linked websites and does not necessarily endorse the views expressed in them. Mere presence of the link or its listing on this Portal should not be assumed as endorsement of any kind. We cannot guarantee that the",
+    "Copyright": "Copyright Policy The contents published in this portal are primarily owned by the HRI & CE Department. Material featured on this Portal may be reproduced free of charge after taking proper permission from the Department. However, the material has to be reproduced accurately and not to be used in a derogatory manner or in a misleading context and as per the guidelines provided by the Department. Wherever the material is being published or issued to others, the source must be prominently acknowledged. However, the permission to reproduce this material shall not extend to any material which is identified as being copyright of a third party. Authorisation to reproduce such material must be obtained from the departments / copyright holders concerned. Privacy Policy The Temple Portal and apps based on this Portal do not automatically capture any specific personal information from you without your consent, (like name, phone number or e-mail address), that allows us to identify you individually. If the Temple Portal requests you to provide personal information, for registration or other activities ,you will be informed for the particular purposes for which the information is gathered and adequate security measures will be taken to protect your personal information. We do not sell or share any personally identifiable information volunteered on the Temple Portal site to any third party (public/private). Any information provided to this Portal will be protected from loss, misuse, unauthorized access or disclosure, alteration, or destruction. We gather certain information about the User, such as Internet protocol (IP) addresses, domain name, browser type, operating system, the date and time of the visit and the pages visited. We make no attempt to link these addresses with the identity of individuals visiting our site unless an attempt to damage the site has been detected or the department wants such information for any specific queries. Hyper Linking Policy Links to external websites/portals At many places in this Portal, you shall find links to other websites / portals. These links have been placed after careful scrutiny. These links have been placed for user convenience. NIC or HRI & CE Department are not responsible for the contents and reliability of the linked websites and does not necessarily endorse the views expressed in them. Mere presence of the link or its listing on this Portal should not be assumed as endorsement of any kind. We cannot guarantee that the"
+   }
   },
   {
    "url": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright",
@@ -2175,6 +248,18 @@
      "href": "https://itms.kar.nic.in/hrcehome/commissioners_list.php"
     },
     {
+     "text": "ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_group_a.php"
+    },
+    {
+     "text": "ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_group_b.php"
+    },
+    {
+     "text": "ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_notified.php"
+    },
+    {
      "text": "ಗ್ಯಾಲರಿ",
      "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright"
     },
@@ -2193,6 +278,10 @@
     {
      "text": "ಅಧಿಸೂಚನೆ",
      "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright"
+    },
+    {
+     "text": "ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_actrules.php?action=11"
     },
     {
      "text": "ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ",
@@ -2281,7 +370,7 @@
     "../property/ajax/property_app_master.php",
     "../property/ajax/propertyinfo_view_new.php",
     "../renovate/ajax/renovateinfo_view_new.php",
-    "../resources/library/audio/string_audio.php?aud=1793292669",
+    "../resources/library/audio/string_audio.php?aud=1793292739",
     "../resources/library/esign/index.php",
     "../temples/ajax/ajax_page.php",
     "../temples/ajax/app_master.php",
@@ -2316,7 +405,344 @@
     "myalert(thrownError); } }); } function setcookie(temple_id) { var token = ''; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = ''; var service_code= $('#service_code').val(); $('#ack_no').val('')",
     "_no) { var token = ''; var service_code= $('#service_code').val(); $('#ack_no').val(''); jQuery.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { transstatus: transstatus, mobileno:mobile_no, service_code:service_code, pg:'epayment_ackid', tokenp:token }, success:function(result) { $('#ack_no').html(result); $('#ack_no').val(''); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function getParameter"
    ],
-   "text_start": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Session timeout in : 1200 sec Screen Reader Access A - A A + English Government of Karnataka Hindu Religious Institutions & Charitable Endowments Department × ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Portal Policies Terms of Use This Temple Portal is hosted by Hindu Religious Institutions & Charitable Endowments Department (HRI & CE), Government of Karnataka. The webiste has been designed and developed by Nati"
+   "text_start": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Session timeout in : 1200 sec Screen Reader Access A - A A + English Government of Karnataka Hindu Religious Institutions & Charitable Endowments Department × ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Portal Policies Terms of Use This Temple Portal is hosted by Hindu Religious Institutions & Charitable Endowments Department (HRI & CE), Government of Karnataka. The webiste has been designed and developed by Nati",
+   "policy_text": {
+    "Copyright Policy": "Copyright Policy The contents published in this portal are primarily owned by the HRI & CE Department. Material featured on this Portal may be reproduced free of charge after taking proper permission from the Department. However, the material has to be reproduced accurately and not to be used in a derogatory manner or in a misleading context and as per the guidelines provided by the Department. Wherever the material is being published or issued to others, the source must be prominently acknowledged. However, the permission to reproduce this material shall not extend to any material which is identified as being copyright of a third party. Authorisation to reproduce such material must be obtained from the departments / copyright holders concerned. Privacy Policy The Temple Portal and apps based on this Portal do not automatically capture any specific personal information from you without your consent, (like name, phone number or e-mail address), that allows us to identify you individually. If the Temple Portal requests you to provide personal information, for registration or other activities ,you will be informed for the particular purposes for which the information is gathered and adequate security measures will be taken to protect your personal information. We do not sell or share any personally identifiable information volunteered on the Temple Portal site to any third party (public/private). Any information provided to this Portal will be protected from loss, misuse, unauthorized access or disclosure, alteration, or destruction. We gather certain information about the User, such as Internet protocol (IP) addresses, domain name, browser type, operating system, the date and time of the visit and the pages visited. We make no attempt to link these addresses with the identity of individuals visiting our site unless an attempt to damage the site has been detected or the department wants such information for any specific queries. Hyper Linking Policy Links to external websites/portals At many places in this Portal, you shall find links to other websites / portals. These links have been placed after careful scrutiny. These links have been placed for user convenience. NIC or HRI & CE Department are not responsible for the contents and reliability of the linked websites and does not necessarily endorse the views expressed in them. Mere presence of the link or its listing on this Portal should not be assumed as endorsement of any kind. We cannot guarantee that the",
+    "Copyright": "Copyright Policy The contents published in this portal are primarily owned by the HRI & CE Department. Material featured on this Portal may be reproduced free of charge after taking proper permission from the Department. However, the material has to be reproduced accurately and not to be used in a derogatory manner or in a misleading context and as per the guidelines provided by the Department. Wherever the material is being published or issued to others, the source must be prominently acknowledged. However, the permission to reproduce this material shall not extend to any material which is identified as being copyright of a third party. Authorisation to reproduce such material must be obtained from the departments / copyright holders concerned. Privacy Policy The Temple Portal and apps based on this Portal do not automatically capture any specific personal information from you without your consent, (like name, phone number or e-mail address), that allows us to identify you individually. If the Temple Portal requests you to provide personal information, for registration or other activities ,you will be informed for the particular purposes for which the information is gathered and adequate security measures will be taken to protect your personal information. We do not sell or share any personally identifiable information volunteered on the Temple Portal site to any third party (public/private). Any information provided to this Portal will be protected from loss, misuse, unauthorized access or disclosure, alteration, or destruction. We gather certain information about the User, such as Internet protocol (IP) addresses, domain name, browser type, operating system, the date and time of the visit and the pages visited. We make no attempt to link these addresses with the identity of individuals visiting our site unless an attempt to damage the site has been detected or the department wants such information for any specific queries. Hyper Linking Policy Links to external websites/portals At many places in this Portal, you shall find links to other websites / portals. These links have been placed after careful scrutiny. These links have been placed for user convenience. NIC or HRI & CE Department are not responsible for the contents and reliability of the linked websites and does not necessarily endorse the views expressed in them. Mere presence of the link or its listing on this Portal should not be assumed as endorsement of any kind. We cannot guarantee that the"
+   }
+  },
+  {
+   "url": "https://itms.kar.nic.in/hrcehome/index.php",
+   "post": null,
+   "robots_allows": true,
+   "robots_txt": "",
+   "status": 200,
+   "final_url": "https://itms.kar.nic.in/hrcehome/index.php",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 669696,
+   "title": "ಕರ್ನಾಟಕ ಸರ್ಕಾರ - ಹಿಂದೂ ಧಾರ್ಮಿಕ ಹಾಗೂ ಧರ್ಮಾದಾಯ ದತ್ತಿಗಳ ಇಲಾಖೆ",
+   "headings": [
+    "Temples",
+    "Festivals",
+    "Temple Services",
+    "Donation",
+    "Hindu Religious & Charitable Endowments Department",
+    "Shri. D. K.Shivakumar",
+    "Dr G Parameshwara",
+    "K. S. Basavanthappa",
+    "Shri. Rajender Kumar Kataria, IAS"
+   ],
+   "forms": [
+    {
+     "action": "https://itms.kar.nic.in/hrcehome/index.php",
+     "method": "GET",
+     "fields": [
+      {
+       "tag": "input",
+       "name": "mobileno",
+       "type": "text"
+      }
+     ]
+    },
+    {
+     "action": "https://itms.kar.nic.in/hrcehome/index.php",
+     "method": "GET",
+     "fields": [
+      {
+       "tag": "input",
+       "name": "uname",
+       "type": "text"
+      },
+      {
+       "tag": "input",
+       "name": "rmobileno",
+       "type": "text"
+      },
+      {
+       "tag": "input",
+       "name": "emailid",
+       "type": "text"
+      },
+      {
+       "tag": "input",
+       "name": "submit",
+       "type": "button"
+      },
+      {
+       "tag": "input",
+       "name": "tokenid",
+       "type": "hidden"
+      },
+      {
+       "tag": "input",
+       "name": "chat_id",
+       "type": "hidden"
+      },
+      {
+       "tag": "input",
+       "name": "chat_to",
+       "type": "hidden"
+      }
+     ]
+    },
+    {
+     "action": "javascript:void(0)",
+     "method": "POST",
+     "fields": [
+      {
+       "tag": "input",
+       "name": "name",
+       "type": "text"
+      },
+      {
+       "tag": "input",
+       "name": "email",
+       "type": "text"
+      },
+      {
+       "tag": "input",
+       "name": "subject",
+       "type": "text"
+      },
+      {
+       "tag": "textarea",
+       "name": "feedbackmessage",
+       "type": null
+      },
+      {
+       "tag": "input",
+       "name": "captchatxt",
+       "type": "text"
+      },
+      {
+       "tag": "input",
+       "name": "actionmode",
+       "type": "hidden"
+      },
+      {
+       "tag": "input",
+       "name": "feedback_id",
+       "type": "hidden"
+      },
+      {
+       "tag": "input",
+       "name": "templeid",
+       "type": "hidden"
+      },
+      {
+       "tag": "input",
+       "name": "loginid",
+       "type": "hidden"
+      },
+      {
+       "tag": "input",
+       "name": "tokenid",
+       "type": "hidden"
+      }
+     ]
+    }
+   ],
+   "links": [
+    {
+     "text": "ದೇವಾಲಯಗಳು",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
+    },
+    {
+     "text": "ದೇವಾಲಯದ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
+    },
+    {
+     "text": "Temple Valuables Details",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_actrules.php?action=18"
+    },
+    {
+     "text": "ಆಯುಕ್ತರ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/commissioners_list.php"
+    },
+    {
+     "text": "ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_group_a.php"
+    },
+    {
+     "text": "ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_group_b.php"
+    },
+    {
+     "text": "ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_notified.php"
+    },
+    {
+     "text": "ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_actrules.php?action=11"
+    },
+    {
+     "text": "ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ",
+     "href": "https://itms.kar.nic.in/temples/login.php"
+    },
+    {
+     "text": "ಬಿ ವೃಂದದ ಅಧಿಕಾರಿಗಳ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/57/document_1.pdf"
+    },
+    {
+     "text": "ಎ ವೃಂದದ ಅಧಿಕಾರಿಗಳ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/56/document_1.pdf"
+    },
+    {
+     "text": "ಅಧಿಸೂಚಿತ ದೇವಾಲಯಗಳಲ್ಲಿ ಕರ್ತವ್ಯ ನಿರ್ವಹಿಸುತ್ತಿರುವ ಅರ್ಚಕರು ಮತ್ತು ನೌಕರರ ಮಕ್ಕಳ ವಿದ್ಯಾಭ್ಯಾಸಕ್ಕಾಗಿ ಪ್ರೋತ್ಸಾಹ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/55/document_1.pdf"
+    },
+    {
+     "text": "Yatra Subsidy - 2026",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/52/document_1.pdf"
+    },
+    {
+     "text": "ವಾಹನ ಚಾಲಕರ ಅಂತಿಮ ಜೇಷ್ಠತಾ ಪಟ್ಟಿ ದಿನಾಂಕ: 01.01.2025 ರಲ್ಲಿದ್ದಂತೆ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/45/document_1.pdf"
+    },
+    {
+     "text": "ಸಮೂಹ ಬಿ ವೃಂದದ ಅಂತಿಮ ಜೇಷ್ಠತಾ ಪಟ್ಟಿ ದಿನಾಂಕ: 01.01.2025 ರಲ್ಲಿದ್ದಂತೆ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/41/document_1.pdf"
+    },
+    {
+     "text": "ಹೈದರಾಬಾದ್-ಕರ್ನಾಟಕ ಅಂತಿಮ ಜೇಷ್ಠತಾ ಪಟ್ಟಿ ದಿನಾಂಕ: 01.01.2025 ರಲ್ಲಿದ್ದಂತೆ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/40/document_1.pdf"
+    },
+    {
+     "text": "ಗ್ರೂಪ್ ಡಿ ಅಂತಿಮ ಜೇಷ್ಠತಾ ಪಟ್ಟಿ ದಿನಾಂಕ: 01.01.2025 ರಲ್ಲಿದ್ದಂತೆ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/46/document_1.pdf"
+    },
+    {
+     "text": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕರ ಅಂತಿಮ ಜೇಷ್ಠತಾ ಪಟ್ಟಿ ದಿನಾಂಕ: 01.01.2025 ರಲ್ಲಿದ್ದಂತೆ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/44/document_1.pdf"
+    },
+    {
+     "text": "ಬಿ ವೃಂದದ ಅಧಿಕಾರಿಗಳ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/57/document_1.pdf"
+    },
+    {
+     "text": "ಎ ವೃಂದದ ಅಧಿಕಾರಿಗಳ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/56/document_1.pdf"
+    },
+    {
+     "text": "ಅಧಿಸೂಚಿತ ದೇವಾಲಯಗಳಲ್ಲಿ ಕರ್ತವ್ಯ ನಿರ್ವಹಿಸುತ್ತಿರುವ ಅರ್ಚಕರು ಮತ್ತು ನೌಕರರ ಮಕ್ಕಳ ವಿದ್ಯಾಭ್ಯಾಸಕ್ಕಾಗಿ ಪ್ರೋತ್ಸಾಹ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/55/document_1.pdf"
+    },
+    {
+     "text": "Yatra Subsidy - 2026",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/52/document_1.pdf"
+    },
+    {
+     "text": "ವಾಹನ ಚಾಲಕರ ಅಂತಿಮ ಜೇಷ್ಠತಾ ಪಟ್ಟಿ ದಿನಾಂಕ: 01.01.2025 ರಲ್ಲಿದ್ದಂತೆ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/45/document_1.pdf"
+    },
+    {
+     "text": "ಸಮೂಹ ಬಿ ವೃಂದದ ಅಂತಿಮ ಜೇಷ್ಠತಾ ಪಟ್ಟಿ ದಿನಾಂಕ: 01.01.2025 ರಲ್ಲಿದ್ದಂತೆ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/41/document_1.pdf"
+    },
+    {
+     "text": "ಹೈದರಾಬಾದ್-ಕರ್ನಾಟಕ ಅಂತಿಮ ಜೇಷ್ಠತಾ ಪಟ್ಟಿ ದಿನಾಂಕ: 01.01.2025 ರಲ್ಲಿದ್ದಂತೆ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/40/document_1.pdf"
+    },
+    {
+     "text": "ಗ್ರೂಪ್ ಡಿ ಅಂತಿಮ ಜೇಷ್ಠತಾ ಪಟ್ಟಿ ದಿನಾಂಕ: 01.01.2025 ರಲ್ಲಿದ್ದಂತೆ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/46/document_1.pdf"
+    },
+    {
+     "text": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕರ ಅಂತಿಮ ಜೇಷ್ಠತಾ ಪಟ್ಟಿ ದಿನಾಂಕ: 01.01.2025 ರಲ್ಲಿದ್ದಂತೆ",
+     "href": "https://itms.kar.nic.in/resources/docs/hrcescroll_doc/44/document_1.pdf"
+    },
+    {
+     "text": "Department Login",
+     "href": "https://itms.kar.nic.in/temples/login.php"
+    },
+    {
+     "text": "Portal Policies",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
+    },
+    {
+     "text": "Temple Search",
+     "href": "javascript:void(0)"
+    },
+    {
+     "text": "Downloads",
+     "href": "javascript:void(0)"
+    }
+   ],
+   "tables": [],
+   "script_srcs": [
+    "https://itms.kar.nic.in/resources/library/js/jquery-4.0.0.min.js",
+    "https://itms.kar.nic.in/resources/library/js/jquery-ui.min_1.13.2.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap_5.3.8/js/bootstrap.bundle.min.js",
+    "https://itms.kar.nic.in/resources/library/js/jquery-confirm.min.js",
+    "https://itms.kar.nic.in/resources/library/label_homepage.js",
+    "https://itms.kar.nic.in/js/req_common.js",
+    "https://itms.kar.nic.in/temples/js/login_script.js",
+    "https://itms.kar.nic.in/temples/js/chat.js",
+    "https://itms.kar.nic.in/resources/library/js/jquery.bxslider.js",
+    "https://itms.kar.nic.in/resources/library/js/crypto-js.min.js",
+    "https://itms.kar.nic.in/js/lazy.js",
+    "https://itms.kar.nic.in/masters/js/master_validate.js"
+   ],
+   "script_endpoints": [
+    "../budget/ajax/budget_app_master.php",
+    "../budget/ajax/budgetinfo_view_new.php",
+    "../courtcases/ajax/courtinfo_view.php",
+    "../dcbs/ajax/dcbinfo_view_new.php",
+    "../department/ajax/deptinfo_view_new.php",
+    "../eservices/ajax/epayinfo_view_new.php",
+    "../hrcehome/ajax/home_appmaster.php",
+    "../hrcehome/ajax/homepage_view.php",
+    "../hrcehome/index_temple.php?tid=",
+    "../hrcehome/landrpt_view.php",
+    "../hrcehome/reports/landrpt_view.php",
+    "../hundi/ajax/hundi_infoview.php",
+    "../includes/color_blindness_page.php",
+    "../includes/model_appmaster.php",
+    "../includes/officialhome.php",
+    "../includes/officialhome_others.php",
+    "../includes/set_session.php",
+    "../institute/ajax/instituteinfo_view_new.php",
+    "../lands/ajax/landinfo_view_new.php",
+    "../magazine/ajax/magazineinfo_view.php",
+    "../property/ajax/property_app_master.php",
+    "../property/ajax/propertyinfo_view_new.php",
+    "../renovate/ajax/renovateinfo_view_new.php",
+    "../resources/library/audio/string_audio.php?aud=1793292744",
+    "../resources/library/esign/index.php",
+    "../temples/ajax/ajax_page.php",
+    "../temples/ajax/app_master.php",
+    "../temples/ajax/mapping_screen.php",
+    "../temples/ajax/module_redir.php?module_id=",
+    "../temples/ajax/redir.php",
+    "../temples/ajax/templeinfo_view_new.php",
+    "../temples/menuasign.php?uid=",
+    "../temples/reports/temple_reports_rpt.php",
+    "../temples/temple_festival.php?activity_desc=Tracking-",
+    "../temples/temple_festivaldetail.php?festivalparam=",
+    "../temples/templeview.php",
+    "../ticketing/ajax/ticketing_infoview.php",
+    "../trustee/ajax/trusteeinfo_view_new.php",
+    "../webservice/youtubevideo_update.php",
+    "../welfare/ajax/welfareinfo_view_new.php",
+    "ajax/getdata.php",
+    "ajax/mapping_screen.php",
+    "templeinfo.php"
+   ],
+   "script_snippets": [
+    "><img src=\"../resources/library/images/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function",
+    "ges/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function changelanguage() { // alert(",
+    "(thrownError); } }); }); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ mya",
+    "}); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } });",
+    "s, thrownError){ myalert(thrownError); } }); } function setcookie(temple_id) { var token = '1234456875544'; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = '1234456875544'; var service_code= $('#s",
+    "alert(thrownError); } }); } function setcookie(temple_id) { var token = '1234456875544'; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = '1234456875544'; var service_code= $('#service_code').val(); $('#ack",
+    "var token = '1234456875544'; var service_code= $('#service_code').val(); $('#ack_no').val(''); jQuery.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { transstatus: transstatus, mobileno:mobile_no, service_code:service_code, pg:'epayment_ackid', tokenp:token }, success:function(result) { $('#ack_no').html(result); $('#ack_no').val(''); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function getParameter",
+    "ation to '+activity_desc); $('#otp_authentication_event').click(); } else { localStorage.setItem(\"page_name\", page); $.ajax({ url: page, data: { pageid:page, mappingid:mappingid, catcode:category, scatcode:scategory, acatcode:acategory, rcode:rcode, activity_sid:activity_sid, activity_desc:activity_desc, admin_flag:admin_flag, flowtype_sid:flowtype_sid, form_type:form_type, //activity_flow_type:activity_flow_type, //act",
+    "ity_desc); $('#otp_authentication_event').click(); } else { localStorage.setItem(\"page_name\", page); $.ajax({ url: page, data: { pageid:page, mappingid:mappingid, catcode:category, scatcode:scategory, acatcode:acategory, rcode:rcode, activity_sid:activity_sid, activity_desc:activity_desc, admin_flag:admin_flag, flowtype_sid:flowtype_sid, form_type:form_type, //activity_flow_type:activity_flow_type, //activity_form_type:",
+    "d, form_type:form_type, //activity_flow_type:activity_flow_type, //activity_form_type:activity_form_type, rpt_url:rpt_id }, cache: true, success: function(html){ $(\".content-wrapper\").html(''); $(\".content-wrapper\").append(html); $(\".form_overlay,#formloading_img\").hide(); $(\"#formloading_img\").css('display','none'); }, error:function (xhr, ajaxOptions, thrownError){ $(\".form_overlay,#formloading_img\").hide(); } }); } } function authenticat",
+    "); } } function authenticated_templeview(temple_id,flag,module_id) { var token = '1234456875544'; var role_code = ''; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", //data:dataString, data: { tid:temple_id, flag:flag, pg:'authenticated_templeview', tokenp:token, module_id:module_id }, success:function(result){ if(flag=='others' && temple_id=='7') self.location=\"../temples/templeview.php\"; else if (module_id==10) self.location=\"../temples/ajax/module_redir.php?mo",
+    "uthenticated_templeview(temple_id,flag,module_id) { var token = '1234456875544'; var role_code = ''; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", //data:dataString, data: { tid:temple_id, flag:flag, pg:'authenticated_templeview', tokenp:token, module_id:module_id }, success:function(result){ if(flag=='others' && temple_id=='7') self.location=\"../temples/templeview.php\"; else if (module_id==10) self.location=\"../temples/ajax/module_redir.php?module_id=\"+module_id; else i"
+   ],
+   "text_start": "﻿ ಕರ್ನಾಟಕ ಸರ್ಕಾರ - ಹಿಂದೂ ಧಾರ್ಮಿಕ ಹಾಗೂ ಧರ್ಮಾದಾಯ ದತ್ತಿಗಳ ಇಲಾಖೆ Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Screen Reader Access A - A A + English Government of Karnataka Hindu Religious & Charitable Endowments Department ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Temples Festivals Temple Services Donation ಬಿ ವೃಂದದ ಅಧಿಕಾರಿಗಳ ಪಟ್ಟಿ ಎ ವೃಂದದ ಅಧಿಕಾರಿಗಳ ಪಟ್ಟಿ ಅಧಿಸೂಚಿತ ದೇವಾಲಯಗಳಲ್ಲಿ ಕರ್ತವ್ಯ ನಿರ್ವಹಿಸುತ್ತಿರುವ ಅರ್ಚಕರು ಮತ್ತು ನೌಕರರ ಮಕ್ಕಳ ವಿದ್ಯಾಭ್ಯಾಸಕ್ಕಾಗಿ ಪ್ರೋತ್ಸಾಹಧನ ಪಡೆಯಲು ಅರ್ಜಿಯನ್ನು ಆಹ್ವಾನಿಸಲಾಗಿದೆ , ಅರ್ಜಿ ಸಲ್ಲಿಸಲು ಕೊನೆಯ ದಿನಾಂಕ - 30/10/2026 Yatra Subsidy - "
   }
  ]
 }
