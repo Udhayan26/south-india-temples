@@ -183,8 +183,9 @@ def name_sim(a: str, b: str) -> float:
     a, b = skeleton(a), skeleton(b)
     if not a or not b:
         return 0.0
-    if len(a) >= 5 and (a in b or b in a):
-        return 0.92
+    short, long_ = sorted((a, b), key=len)
+    if len(short) >= 6 and short in long_ and len(short) / len(long_) >= 0.6:
+        return 0.92          # "Bhairavesvar" in "Bhairavesvaraswam" — not "esvar" in "Kalamesvar"
     return SequenceMatcher(None, a, b).ratio()
 
 
@@ -374,6 +375,15 @@ def build(temples: list[dict]) -> list[dict]:
     return rows
 
 
+# dedications too common to match across a whole district without the village name
+GENERIC = re.compile(r"^\s*(sri\s+)?(isvara|iswara|eswara|eshwar|ishvara|siva|shiva|vishnu|perumal|rama|krishna|"
+                     r"hanuman|anjaneya|durga|jaina|jain|basava|basavanna|ramalinga|mallikarjuna|somesvara|"
+                     r"someshvara|kalleshvara|kallesvara|virupaksha|narayana|venkatesa|ganesa|ganapati|vinayaka|"
+                     r"pillaiyar|amman|kali|mariamman|subrahmanya|nagesvara|kailasanatha|chennakesava|"
+                     r"gopalakrishna|lakshmi ?narasimha|narasimha|varadaraja|siddhesvara|ramesvara)"
+                     r"(deva|devar|svamin|swamin|swami|swamy)?(\s+temple)?\s*$", re.I)
+
+
 def _link_by_village(r, places, grid, by_district, district_rel, link):
     od = old_district(r.get("district_old") or r.get("district", ""))
     state_code, modern = (od or (None, []))
@@ -387,7 +397,7 @@ def _link_by_village(r, places, grid, by_district, district_rel, link):
     if modern and len(cands) > 1:
         prefer = [c for c in cands if district_rel.get(c[2], {}).get(c[3], "") in modern]
         cands = prefer or cands
-    dedication = r.get("temple_name") or r.get("location_detail", "")
+    dedication = r.get("temple_name", "")
     best = None
     for plat, plon, sc, rel in cands[:5]:
         for d, t in grid.around(plat, plon, 3000):
@@ -411,6 +421,21 @@ def _link_by_village(r, places, grid, by_district, district_rel, link):
                     r["latitude"], r["longitude"] = t["latitude"], t["longitude"]
                     r["location_basis"] = "Temple (matched by name in village)"
                     return
+    # dedication unique within the old district's modern districts: "Kripapurisvara temple"
+    if dedication and modern:
+        mk = {skeleton(m) for m in modern}
+        pool = [t for (st_name, d), ts in by_district.items()
+                if (state_code not in STATES or st_name == STATES[state_code]) and skeleton(d) in mk for t in ts]
+        hits = [t for t in pool if name_sim(dedication, t["name"]) >= 0.85]
+        named_here = [t for t in hits if vkey and (vkey in skeleton(t["name"]) or vkey == skeleton(t.get("city", "")))]
+        ded = skeleton(dedication)
+        distinctive = len(ded) >= 10 and not GENERIC.search(dedication)
+        pick = named_here[0] if len(named_here) == 1 else (hits[0] if len(hits) == 1 and distinctive else None)
+        if pick:
+            link(r, pick, "Temple name match in district")
+            r["latitude"], r["longitude"] = pick["latitude"], pick["longitude"]
+            r["location_basis"] = "Temple (matched by name in district)"
+            return
     if cands:
         plat, plon, sc, rel = cands[0]
         r["latitude"], r["longitude"] = plat, plon

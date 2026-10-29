@@ -203,8 +203,15 @@ def _temple(spot: str) -> str:
         ms = list(TEMPLE_RX.finditer(spot))
         if not ms:
             return ""
-        words = [w for w in ms[-1].group(1).split() if w.lower() not in STOPWORDS]
-        name = " ".join(words[-3:])
+        words = ms[-1].group(1).split()
+        mixed = not spot.isupper()
+        # keep the capitalised name just before "temple": "prakara Bhaktavatsalesvara" -> "Bhaktavatsalesvara"
+        keep = []
+        for w in reversed(words):
+            if w.lower() in STOPWORDS or (mixed and not w[0].isupper()):
+                break
+            keep.insert(0, w)
+        name = " ".join(keep[-3:])
     name = name.strip(" ,.-")
     return (_titlecase(name) + " temple") if name and len(name) > 2 else ""
 
@@ -250,6 +257,8 @@ def parse_page(soup: BeautifulSoup, page: dict) -> list[dict]:
         if date_seg:   # "Savanna Odeya, 1351 A.D." -> "Savanna Odeya"
             mm = re.search(r",\s*(?=[^,]*(?:\d{3,4}|Saka|Kali|Kollam|regnal|year|century))", date_seg, re.I)
             king = date_seg[:mm.start()].strip(" ,.") if mm else ""
+            if len(king.split()) > 6 or re.match(r"(this|the|it|in|on|at|a|an|records?|dated)\b", king, re.I):
+                king = ""
         used = {place_seg, spot, date_seg}
         summary = ""
         for x in segs:
