@@ -912,6 +912,22 @@
   "places:IN-TN:7910817": "2026-10-28T23:26:00",
   "places:IN-TN:9537174": "2026-10-28T23:34:34",
   "places:IN-TN:9602893": "2026-10-28T23:30:50",
+  "sii:1/part_1": "2026-10-29T16:12:27",
+  "sii:1/part_2": "2026-10-29T16:12:37",
+  "sii:1/part_3": "2026-10-29T16:12:47",
+  "sii:1/part_4": "2026-10-29T16:12:58",
+  "sii:11/chalukyas_of_badami": "2026-10-29T16:13:08",
+  "sii:11/pallavas_of_kanchi": "2026-10-29T16:13:19",
+  "sii:11/rashtrakutas": "2026-10-29T16:13:29",
+  "sii:11/tribhuvanamalla_vikramaditya": "2026-10-29T16:13:40",
+  "sii:11/western_chalukyas": "2026-10-29T16:13:50",
+  "sii:12/stones_101_to_125": "2026-10-29T16:14:00",
+  "sii:12/stones_126_to_150": "2026-10-29T16:14:11",
+  "sii:12/stones_151_to_175": "2026-10-29T16:14:22",
+  "sii:12/stones_176_to_200": "2026-10-29T16:14:32",
+  "sii:12/stones_1_to_25": "2026-10-29T16:14:43",
+  "sii:12/stones_201_to_225": "2026-10-29T16:14:54",
+  "sii_index:SII": "2026-10-29T16:12:16",
   "wikidata:IN-AP:13997802": "2026-10-13T00:00:00",
   "wikidata:IN-AP:13997864": "2026-10-13T00:00:00",
   "wikidata:IN-AP:13997968": "2026-10-13T00:00:00",
@@ -1064,5 +1080,1297 @@
   "wikidata:IN-KA": "2026-10-22T17:26:48",
   "wikidata:IN-KL": "2026-10-22T17:20:32",
   "wikidata:IN-TN": "2026-10-22T17:14:17"
- }
+ },
+ "sii_pages": [
+  {
+   "path": "1/part_1",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_1/part_1.html",
+   "volume": "1",
+   "volume_title": "South Indian Inscriptions_Volume 1 - Virinchipuram Temple Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "1/part_2",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_1/part_2.html",
+   "volume": "1",
+   "volume_title": "South Indian Inscriptions_Volume 1 - Virinchipuram Temple Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "1/part_3",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_1/part_3.html",
+   "volume": "1",
+   "volume_title": "South Indian Inscriptions_Volume 1 - Virinchipuram Temple Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "1/part_4",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_1/part_4.html",
+   "volume": "1",
+   "volume_title": "South Indian Inscriptions_Volume 1 - Virinchipuram Temple Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "11/chalukyas_of_badami",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_11/chalukyas_of_badami.html",
+   "volume": "11",
+   "volume_title": "South Indian Inscriptions-Volume-XI-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "11/pallavas_of_kanchi",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_11/pallavas_of_kanchi.html",
+   "volume": "11",
+   "volume_title": "South Indian Inscriptions-Volume-XI-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "11/rashtrakutas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_11/rashtrakutas.html",
+   "volume": "11",
+   "volume_title": "South Indian Inscriptions-Volume-XI-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "11/tribhuvanamalla_vikramaditya",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_11/tribhuvanamalla_vikramaditya.html",
+   "volume": "11",
+   "volume_title": "South Indian Inscriptions-Volume-XI-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "11/western_chalukyas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_11/western_chalukyas.html",
+   "volume": "11",
+   "volume_title": "South Indian Inscriptions-Volume-XI-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "12/stones_101_to_125",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_12/stones_101_to_125.html",
+   "volume": "12",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "12/stones_126_to_150",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_12/stones_126_to_150.html",
+   "volume": "12",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "12/stones_151_to_175",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_12/stones_151_to_175.html",
+   "volume": "12",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "12/stones_176_to_200",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_12/stones_176_to_200.html",
+   "volume": "12",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "12/stones_1_to_25",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_12/stones_1_to_25.html",
+   "volume": "12",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "12/stones_201_to_225",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_12/stones_201_to_225.html",
+   "volume": "12",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "12/stones_226_to_250",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_12/stones_226_to_250.html",
+   "volume": "12",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "12/stones_251_to_260",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_12/stones_251_to_260.html",
+   "volume": "12",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "12/stones_51_to_75",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_12/stones_51_to_75.html",
+   "volume": "12",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "12/stones_76_to_100",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_12/stones_76_to_100.html",
+   "volume": "12",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_101_to_125",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_101_to_125.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_126_to_150",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_126_to_150.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_151_to_175",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_151_to_175.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_176_to_200",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_176_to_200.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_1_to_25",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_1_to_25.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_201_to_225",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_201_to_225.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_226_to_250",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_226_to_250.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_251_to_275",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_251_to_275.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_26_to_50",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_26_to_50.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_276_to_300",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_276_to_300.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_301_to_325",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_301_to_325.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_326_to_352",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_326_to_352.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_51_to_75",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_51_to_75.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "13/stones_76_to_100",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_13/stones_76_to_100.html",
+   "volume": "13",
+   "volume_title": "South Indian Inscriptions Volume_13 - Cholas Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "14/stones_101_to_128",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_14/stones_101_to_128.html",
+   "volume": "14",
+   "volume_title": "South Indian Inscriptions Volume_14 - Pandya Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "14/stones_129_to_150",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_14/stones_129_to_150.html",
+   "volume": "14",
+   "volume_title": "South Indian Inscriptions Volume_14 - Pandya Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "14/stones_151_to_175",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_14/stones_151_to_175.html",
+   "volume": "14",
+   "volume_title": "South Indian Inscriptions Volume_14 - Pandya Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "14/stones_176_to_200",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_14/stones_176_to_200.html",
+   "volume": "14",
+   "volume_title": "South Indian Inscriptions Volume_14 - Pandya Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "14/stones_1_to_25",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_14/stones_1_to_25.html",
+   "volume": "14",
+   "volume_title": "South Indian Inscriptions Volume_14 - Pandya Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "14/stones_201_to_225",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_14/stones_201_to_225.html",
+   "volume": "14",
+   "volume_title": "South Indian Inscriptions Volume_14 - Pandya Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "14/stones_226_to_250",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_14/stones_226_to_250.html",
+   "volume": "14",
+   "volume_title": "South Indian Inscriptions Volume_14 - Pandya Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "14/stones_251_to_267",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_14/stones_251_to_267.html",
+   "volume": "14",
+   "volume_title": "South Indian Inscriptions Volume_14 - Pandya Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "14/stones_26_to_50",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_14/stones_26_to_50.html",
+   "volume": "14",
+   "volume_title": "South Indian Inscriptions Volume_14 - Pandya Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "14/stones_51_to_75",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_14/stones_51_to_75.html",
+   "volume": "14",
+   "volume_title": "South Indian Inscriptions Volume_14 - Pandya Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "14/stones_76_to_100",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_14/stones_76_to_100.html",
+   "volume": "14",
+   "volume_title": "South Indian Inscriptions Volume_14 - Pandya Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "15/chalukyas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_15/chalukyas.html",
+   "volume": "15",
+   "volume_title": "South Indian Inscriptions-Volume XV-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "15/east_india_company",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_15/east_india_company.html",
+   "volume": "15",
+   "volume_title": "South Indian Inscriptions-Volume XV-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "15/hoysalas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_15/hoysalas.html",
+   "volume": "15",
+   "volume_title": "South Indian Inscriptions-Volume XV-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "15/kadambas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_15/kadambas.html",
+   "volume": "15",
+   "volume_title": "South Indian Inscriptions-Volume XV-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "15/kalachuris",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_15/kalachuris.html",
+   "volume": "15",
+   "volume_title": "South Indian Inscriptions-Volume XV-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "15/marathas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_15/marathas.html",
+   "volume": "15",
+   "volume_title": "South Indian Inscriptions-Volume XV-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "15/miscellaneous_inscriptions",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_15/miscellaneous_inscriptions.html",
+   "volume": "15",
+   "volume_title": "South Indian Inscriptions-Volume XV-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "15/muslim_rulers",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_15/muslim_rulers.html",
+   "volume": "15",
+   "volume_title": "South Indian Inscriptions-Volume XV-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "15/sindas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_15/sindas.html",
+   "volume": "15",
+   "volume_title": "South Indian Inscriptions-Volume XV-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "15/vijayanagara_kings",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_15/vijayanagara_kings.html",
+   "volume": "15",
+   "volume_title": "South Indian Inscriptions-Volume XV-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "15/yadavas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_15/yadavas.html",
+   "volume": "15",
+   "volume_title": "South Indian Inscriptions-Volume XV-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_101_to_125",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_101_to_125.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_126_to_150",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_126_to_150.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_151_to_175",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_151_to_175.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_176_to_200",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_176_to_200.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_1_to_25",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_1_to_25.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_201_to_225",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_201_to_225.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_226_to_250",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_226_to_250.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_251_to_275",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_251_to_275.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_26_to_50",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_26_to_50.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_276_to_300",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_276_to_300.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_301_to_325",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_301_to_325.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_326_to_335",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_326_to_335.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_51_to_75",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_51_to_75.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "16/stones_76_to_100",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_16/stones_76_to_100.html",
+   "volume": "16",
+   "volume_title": "South Indian Inscriptions Volume_16 - Telugu Inscriptions of the Vijayanagara Dynasty @ whatisindia.com"
+  },
+  {
+   "path": "17/chalukya_western",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/chalukya_western.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/cholas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/cholas.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/hoysala",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/hoysala.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/kalachurya",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/kalachurya.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/marathas_of_tanjore",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/marathas_of_tanjore.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/nayakas_of_tanjore",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/nayakas_of_tanjore.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/neighbors",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/neighbors.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/pallava",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/pallava.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/pandyas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/pandyas.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/pandyas_of_ucchangi",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/pandyas_of_ucchangi.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/rastrakuta",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/rastrakuta.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/sambuvaraya",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/sambuvaraya.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/sultans_of_mysore",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/sultans_of_mysore.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/telugu_chola",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/telugu_chola.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/tondaman",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/tondaman.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/vijayanagara",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/vijayanagara.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/yadava",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/yadava.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "17/yadavaraya",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/yadavaraya.html",
+   "volume": "17",
+   "volume_title": "South Indian Inscriptions - Volume 17 - Chalukya,Western Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "18/miscellaneous",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_18/miscellaneous.html",
+   "volume": "18",
+   "volume_title": "South Indian Inscriptions-Volume-XVIII-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "18/mysore_rulers",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_18/mysore_rulers.html",
+   "volume": "18",
+   "volume_title": "South Indian Inscriptions-Volume-XVIII-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "18/the_early_chalukyas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_18/the_early_chalukyas.html",
+   "volume": "18",
+   "volume_title": "South Indian Inscriptions-Volume-XVIII-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "18/the_guttas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_18/the_guttas.html",
+   "volume": "18",
+   "volume_title": "South Indian Inscriptions-Volume-XVIII-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "18/the_hoysalas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_18/the_hoysalas.html",
+   "volume": "18",
+   "volume_title": "South Indian Inscriptions-Volume-XVIII-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "18/the_kadambas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_18/the_kadambas.html",
+   "volume": "18",
+   "volume_title": "South Indian Inscriptions-Volume-XVIII-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "18/the_kalachuryas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_18/the_kalachuryas.html",
+   "volume": "18",
+   "volume_title": "South Indian Inscriptions-Volume-XVIII-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "18/the_later_chalukyas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_18/the_later_chalukyas.html",
+   "volume": "18",
+   "volume_title": "South Indian Inscriptions-Volume-XVIII-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "18/the_rashtrakutas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_18/the_rashtrakutas.html",
+   "volume": "18",
+   "volume_title": "South Indian Inscriptions-Volume-XVIII-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "18/the_vijayanagara_kings",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_18/the_vijayanagara_kings.html",
+   "volume": "18",
+   "volume_title": "South Indian Inscriptions-Volume-XVIII-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "18/the_yadavas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_18/the_yadavas.html",
+   "volume": "18",
+   "volume_title": "South Indian Inscriptions-Volume-XVIII-Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_01",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_01.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_106",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_106.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_127",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_127.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_148",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_148.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_169",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_169.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_190",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_190.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_211",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_211.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_22",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_22.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_232",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_232.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_253",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_253.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_274",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_274.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_295",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_295.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_316",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_316.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_337",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_337.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_358",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_358.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_379",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_379.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_400",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_400.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_421",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_421.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_43",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_43.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_447",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_447.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_64",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_64.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "19/inscription_of_parakesarivarman_no_85",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_19/inscription_of_parakesarivarman_no_85.html",
+   "volume": "19",
+   "volume_title": "South Indian Inscriptions-Volume-XIX-Inscriptions of Parakesarivarman @ whatisindia.com"
+  },
+  {
+   "path": "2/edited_by",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_2/edited_by.html",
+   "volume": "2",
+   "volume_title": "South Indian Inscriptions Volume 2 - Rajarajesvara Temple Inscriptions at Tanjavur @ whatisindia.com"
+  },
+  {
+   "path": "2/part_i",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_2/part_i.html",
+   "volume": "2",
+   "volume_title": "South Indian Inscriptions Volume 2 - Rajarajesvara Temple Inscriptions at Tanjavur @ whatisindia.com"
+  },
+  {
+   "path": "2/part_ii",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_2/part_ii.html",
+   "volume": "2",
+   "volume_title": "South Indian Inscriptions Volume 2 - Rajarajesvara Temple Inscriptions at Tanjavur @ whatisindia.com"
+  },
+  {
+   "path": "2/part_iii",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_2/part_iii.html",
+   "volume": "2",
+   "volume_title": "South Indian Inscriptions Volume 2 - Rajarajesvara Temple Inscriptions at Tanjavur @ whatisindia.com"
+  },
+  {
+   "path": "2/part_iv",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_2/part_iv.html",
+   "volume": "2",
+   "volume_title": "South Indian Inscriptions Volume 2 - Rajarajesvara Temple Inscriptions at Tanjavur @ whatisindia.com"
+  },
+  {
+   "path": "2/part_v",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_2/part_v.html",
+   "volume": "2",
+   "volume_title": "South Indian Inscriptions Volume 2 - Rajarajesvara Temple Inscriptions at Tanjavur @ whatisindia.com"
+  },
+  {
+   "path": "20/miscellaneous",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/miscellaneous.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_chalukyas_of_badami",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_chalukyas_of_badami.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_chalukyas_of_kalyana",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_chalukyas_of_kalyana.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_chutus",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_chutus.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_hoysalas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_hoysalas.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_kadambas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_kadambas.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_kalachuryas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_kalachuryas.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_muslim_rulers",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_muslim_rulers.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_rashtrakutas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_rashtrakutas.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_rattas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_rattas.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_sode_chiefs",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_sode_chiefs.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_vijayanagara_kings",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_vijayanagara_kings.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_western_gangas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_western_gangas.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "20/the_yadavas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_20/the_yadavas.html",
+   "volume": "20",
+   "volume_title": "South Indian Inscriptions - Bombay-Karnataka Inscriptions @ whatisindia.com"
+  },
+  {
+   "path": "23/chera",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/chera.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/chola",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/chola.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/kakatiya_and_feudatory",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/kakatiya_and_feudatory.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/kodumbalur",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/kodumbalur.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/kongu",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/kongu.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/nayakas_of_madurai",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/nayakas_of_madurai.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/nayakas_of_tanjavur",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/nayakas_of_tanjavur.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/pallava",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/pallava.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/pandya",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/pandya.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/pottapi_chodas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/pottapi_chodas.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/rashtrakuta",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/rashtrakuta.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/setupati",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/setupati.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/unidentified_pandya_or_chola",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/unidentified_pandya_or_chola.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "23/vijayanagara",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_23/vijayanagara.html",
+   "volume": "23",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "24/cholas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_24/cholas.html",
+   "volume": "24",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "24/gajapati",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_24/gajapati.html",
+   "volume": "24",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "24/hoysalas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_24/hoysalas.html",
+   "volume": "24",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "24/kakatiya",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_24/kakatiya.html",
+   "volume": "24",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "24/nayakas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_24/nayakas.html",
+   "volume": "24",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "24/pandyas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_24/pandyas.html",
+   "volume": "24",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "24/vijayanagara",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_24/vijayanagara.html",
+   "volume": "24",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/chalukyas_eastern",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/chalukyas_eastern.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/cholas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/cholas.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/dutch",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/dutch.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/hoysalas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/hoysalas.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/kakatiyas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/kakatiyas.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/marathas_of_tanjore",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/marathas_of_tanjore.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/miscellaneous",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/miscellaneous.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/other_feudatories",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/other_feudatories.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/pallava",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/pallava.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/pandya",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/pandya.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/qutb_shahis",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/qutb_shahis.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/rashtrakuta",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/rashtrakuta.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/reddis",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/reddis.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/rulers_of_kongu",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/rulers_of_kongu.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/sambuvarayas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/sambuvarayas.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "26/vijayanagara",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_26/vijayanagara.html",
+   "volume": "26",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "27/additionsandcorrections",
+   "url": "https://whatisindia.com/inscriptions/south_indian_inscriptions/volume_27/additionsandcorrections.html",
+   "volume": "27",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "27/images",
+   "url": "https://whatisindia.com/inscriptions/south_indian_inscriptions/volume_27/images.html",
+   "volume": "27",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "27/textofinscriptions",
+   "url": "https://whatisindia.com/inscriptions/south_indian_inscriptions/volume_27/textofinscriptions.html",
+   "volume": "27",
+   "volume_title": "South Indian Inscriptions - Inscriptions collected during the year 1908-09 @ whatisindia.com"
+  },
+  {
+   "path": "3/aditya_ii_karikala",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/aditya_ii_karikala.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/gandaraditya",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/gandaraditya.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/inscription_ukkal",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/inscription_ukkal.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/karuvur",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/karuvur.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/kulottunga_chola_i",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/kulottunga_chola_i.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/kulottunga_chola_iii",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/kulottunga_chola_iii.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/manimangalam",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/manimangalam.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/melpadi",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/melpadi.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/parakesarivarman_parantaka_i",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/parakesarivarman_parantaka_i.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/parantaka_ii",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/parantaka_ii.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/parthivendravarman",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/parthivendravarman.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/rajakesarivarman_aditya_i",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/rajakesarivarman_aditya_i.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/tiruvallam",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/tiruvallam.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/uttama_chola",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/uttama_chola.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/vikrama_chola",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/vikrama_chola.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "3/virarajendra_i",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_3/virarajendra_i.html",
+   "volume": "3",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Tamil @ whatisindia.co"
+  },
+  {
+   "path": "9/alupas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/alupas.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/banas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/banas.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/chalukyas_of_badami",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/chalukyas_of_badami.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/chalukyas_of_kalyani",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/chalukyas_of_kalyani.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/changalva",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/changalva.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/cholas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/cholas.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/cholas_of_renandu",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/cholas_of_renandu.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/eastern_chalukyas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/eastern_chalukyas.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/guttas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/guttas.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/hoysalas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/hoysalas.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/kalachuryas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/kalachuryas.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/miscellaneous",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/miscellaneous.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/mysore_kings",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/mysore_kings.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/nolamba_pallavas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/nolamba_pallavas.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/rashtrakutas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/rashtrakutas.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/ummattur",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/ummattur.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/vaidumbas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/vaidumbas.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/vijayanagara",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/vijayanagara.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  },
+  {
+   "path": "9/yadavas",
+   "url": "https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_9/yadavas.html",
+   "volume": "9",
+   "volume_title": "South Indian Inscriptions - Misc.Inscriptions in Kannada @ whatisindia.com"
+  }
+ ]
 }
