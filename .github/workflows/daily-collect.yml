@@ -1,8 +1,7 @@
 name: Daily temple data collection
 
 on:
-  # schedule disabled on debug branch
-  x-schedule:
+  schedule:
     # 18:47 UTC = 00:17 AM IST. GitHub usually starts scheduled jobs 2–3 hours late,
     # so the real run lands around 02:00–03:30 AM IST — the low-traffic night window.
     - cron: "47 18 * * *"
