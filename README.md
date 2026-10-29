@@ -42,6 +42,9 @@ Sources · No. of Sources · Last Updated
 |---|---|---|
 | **OpenStreetMap** (Overpass API) | every `place_of_worship` with religion hindu / jain / buddhist, plus temples mapped without a religion tag, `building=temple` and historic temples — district by district | free |
 | **Wikidata** | temples per district (fast map-box search) + deity, heritage status, inception, images, Divya Desam / Paadal Petra / Jyotirlinga… | free |
+| **Overture Maps** (Places) | open POI data from Meta, Microsoft, Foursquare… — temple categories in South India, latest monthly release read with DuckDB; duplicates of mapped temples are merged | free (CDLA-Permissive-2.0 / Apache-2.0 / CC0) |
+| **GeoNames** | gazetteer temples / shrines (feature codes TMPL, SHRN, MSTY, PGDA) with exact state | free (CC BY 4.0) |
+| **ASI** | list of Centrally Protected Monuments — flags ASI-protected temples, adds edict / inscription sites | public list |
 | **OSM villages / towns** | nearest village or town (within 4 km) fills *City / Village* for temples without an address | free |
 | **Google Maps** (Places API, optional) | adds Google place ID & map link; set secret `GOOGLE_MAPS_API_KEY` | paid API (has monthly free usage) |
 | **Government data** | drop `.csv` / `.xlsx` files into `data/sources/govt/` (e.g. TN HR&CE list, data.gov.in, ASI monuments) | — |
@@ -134,4 +137,5 @@ data/state.json     progress — which district was fetched when; "errors" shows
 data/run_log.csv    one line per nightly run
 ```
 
-Licence note: OpenStreetMap data © OpenStreetMap contributors (ODbL) — keep the attribution if you share the sheet.
+Licence note: the combined sheet contains OpenStreetMap data (© OpenStreetMap contributors, ODbL) — keep the
+attribution if you share it. Also credit Overture Maps Foundation, GeoNames.org (CC BY 4.0) and Wikidata (CC0).

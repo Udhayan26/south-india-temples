@@ -20,7 +20,7 @@ import threading
 import traceback
 from datetime import datetime, timedelta
 
-from . import asi, datagovin, google_places, osm, sii, wikidata
+from . import asi, datagovin, geonames, google_places, osm, overture, sii, wikidata
 from .common import DATA, STATES
 from .export import write_excel, write_geojson
 from .merge import build_master
@@ -28,7 +28,7 @@ from .merge import build_master
 STATE_FILE = DATA / "state.json"
 LOG_FILE = DATA / "run_log.csv"
 REFRESH_DAYS = {"districts": 60, "osm": 30, "wikidata": 14, "places": 90, "google": 90,
-                "sii_index": 90, "sii": 365, "datagovin": 30, "asi": 180}
+                "sii_index": 90, "sii": 365, "datagovin": 30, "asi": 180, "overture": 30, "geonames": 90}
 EXPORT_RESERVE_MIN = 6       # keep time for merge + Excel
 PAUSE_BETWEEN_CALLS = 10     # seconds between two requests to the SAME server
 
@@ -37,10 +37,10 @@ WORKERS = {
     "overpass": ("districts", "osm", "places"),
     "wikidata": ("wikidata",),
     "sii": ("sii_index", "sii"),
-    "other": ("asi", "datagovin", "google"),
+    "other": ("asi", "geonames", "overture", "datagovin", "google"),
 }
 ORDER = {"districts": 0, "osm": 1, "wikidata": 2, "sii_index": 3, "sii": 4, "places": 5,
-         "datagovin": 6, "google": 7, "asi": 6}
+         "datagovin": 6, "google": 7, "asi": 6, "geonames": 6, "overture": 6}
 GLOBAL = ("SII", "GOV")   # pseudo "states" for jobs not tied to a state
 
 
@@ -73,8 +73,9 @@ def build_queue(st: dict, states: list[str], skip_kinds: frozenset = frozenset()
                     jobs.append(("sii", "SII", pg))
             continue
         if sc == "GOV":
-            if _due(st, "asi:GOV", "asi"):
-                jobs.append(("asi", "GOV", None))
+            for kind in ("asi", "geonames", "overture"):
+                if _due(st, f"{kind}:GOV", kind):
+                    jobs.append((kind, "GOV", None))
             for res in datagovin.resources():
                 if _due(st, f"datagovin:{res['id']}", "datagovin"):
                     jobs.append(("datagovin", "GOV", res))
@@ -139,6 +140,10 @@ def _do(job, st) -> tuple[int, str]:
         return datagovin.fetch(d), "records"
     if kind == "asi":
         return asi.fetch(), "temples"
+    if kind == "geonames":
+        return geonames.fetch(), "temples"
+    if kind == "overture":
+        return overture.fetch(), "temples"
     return google_places.fetch_district(sc, d), "temples"
 
 

@@ -19,9 +19,9 @@ from .common import DATA, FIELDS, RAW, infer_deity, maps_url, read_rows, write_r
 MASTER = DATA / "temples_master.csv"
 
 # Which source wins for each kind of field (first non-empty value is kept)
-PRIORITY_DEFAULT = ["Private collection", "Government", "Wikidata", "OpenStreetMap", "Google Maps"]
-PRIORITY_ADMIN = ["OpenStreetMap", "Wikidata", "Private collection", "Government", "Google Maps"]
-PRIORITY_GPS = ["Private collection", "OpenStreetMap", "Wikidata", "Government", "Google Maps"]
+PRIORITY_DEFAULT = ["Private collection", "Government", "Wikidata", "OpenStreetMap", "GeoNames", "Overture Maps", "Google Maps"]
+PRIORITY_ADMIN = ["OpenStreetMap", "Wikidata", "Private collection", "Government", "GeoNames", "Overture Maps", "Google Maps"]
+PRIORITY_GPS = ["Private collection", "OpenStreetMap", "Wikidata", "GeoNames", "Overture Maps", "Government", "Google Maps"]
 LIST_FIELDS = {"special_group", "sources"}
 ID_FIELDS = ["wikidata_id", "osm_id", "google_place_id"]
 
@@ -81,8 +81,11 @@ class Merger:
         if c:
             best, best_score = None, 0.0
             ci, cj = _cell(*c)
-            for di in (-1, 0, 1):
-                for dj in (-1, 0, 1):
+            # POI datasets (Overture, GeoNames) are often a few hundred metres off the map
+            loose = _src(row) in ("Overture Maps", "GeoNames")
+            reach = (-2, -1, 0, 1, 2) if loose else (-1, 0, 1)
+            for di in reach:
+                for dj in reach:
                     for gi in self.grid.get((ci + di, cj + dj), []):
                         for other in self.groups[gi]:
                             oc = self._coords(other)
@@ -92,7 +95,9 @@ class Merger:
                             sim = similar(row["name"], other["name"])
                             unnamed = not norm_name(row["name"]) or not norm_name(other["name"])
                             ok = (d <= 60 and (sim >= 0.5 or unnamed)) or (d <= 200 and sim >= 0.75)
-                            score = sim + (1 - d / 250)
+                            if loose:
+                                ok = ok or (d <= 120 and sim >= 0.45) or (d <= 450 and sim >= 0.7)
+                            score = sim + (1 - d / 500)
                             if ok and score > best_score:
                                 best, best_score = gi, score
             if best is not None:
@@ -235,18 +240,26 @@ def _fill_places(records: list[dict]) -> None:
             r["city"] = idx.find(float(r["latitude"]), float(r["longitude"]), 4000) or ""
 
 
+MAP_ONLY = {"Wikidata", "Overture Maps", "GeoNames"}
+
+
 def _refine_wikidata_only(records: list[dict]) -> None:
-    """Wikidata rows are fetched by bounding box, so their district can be a neighbour's.
-    Take district/state from the nearest OSM temple instead (within 8 km, else 25 km)."""
+    """Wikidata / Overture / GeoNames rows have no (or a box-based) district: take district
+    (and state when missing) from the nearest OSM temple — within 8 km, else 25 km when the
+    state is already known. Rows that still have no state lie outside South India: dropped."""
     pts = [(float(r["latitude"]), float(r["longitude"]), (r["district"], r["state"]))
            for r in records if "OpenStreetMap" in r["sources"] and r["latitude"] != "" and r["district"]]
     near, wide = Nearest(pts, cell=0.08), Nearest(pts, cell=0.25)
     for r in records:
-        if r["sources"] == "Wikidata" and r["latitude"] != "":
+        srcs = {x.split(":")[0].strip() for x in r["sources"].split("; ") if x}
+        if srcs and srcs <= MAP_ONLY and r["latitude"] != "":
             lat, lon = float(r["latitude"]), float(r["longitude"])
-            hit = near.find(lat, lon, 8000) or wide.find(lat, lon, 25000)
-            if hit:
+            hit = near.find(lat, lon, 8000) or (wide.find(lat, lon, 25000) if r["state"] else None)
+            if hit and (not r["state"] or hit[1] == r["state"]):
                 r["district"], r["state"] = hit
+            elif hit and r["state"] and hit[1] != r["state"]:
+                r["district"] = ""            # near a state border: keep the source's state
+    records[:] = [r for r in records if r["state"]]
 
 
 def _add_by_locality(m: "Merger", path) -> None:
@@ -283,7 +296,7 @@ def _add_by_locality(m: "Merger", path) -> None:
 
 def build_master() -> list[dict]:
     m = Merger()
-    for src in ("osm", "wikidata"):
+    for src in ("osm", "wikidata", "geonames", "overture"):
         for p in sorted((RAW / src).rglob("*.csv")):
             for row in read_rows(p):
                 m.add(_upgrade(row))
