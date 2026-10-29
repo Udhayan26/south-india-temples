@@ -23,7 +23,7 @@ from .common import DATA, session
 
 OUT = DATA / "probe" / "report.json"
 INTERESTING = re.compile(r"temple|devasth|kovil|list|district|download|pdf|xls|csv|search|directory|"
-                         r"institution|kml|kmz|export|monument", re.I)
+                         r"institution|kml|kmz|export|monument|ಪಟ್ಟಿ|ಘೋಷ್ವಾರೆ|ಸಂಸ್ಥೆ|பட்டியல்|కోవెల|ദേവസ്വം", re.I)
 _robots: dict[str, urllib.robotparser.RobotFileParser] = {}
 
 
@@ -87,7 +87,7 @@ def probe(url: str) -> dict:
         href = urljoin(r.url, a["href"])
         if INTERESTING.search(txt + " " + href):
             links.append({"text": txt, "href": href})
-    rec["links"] = links[:80]
+    rec["links"] = links[:200]
     tables = []
     for t in soup.find_all("table")[:8]:
         rows = t.find_all("tr")
@@ -103,7 +103,12 @@ def probe(url: str) -> dict:
     for m in re.finditer(r"(\$\.(?:ajax|post|get)|fetch\(|url\s*:|DataTable\(|ajax\s*:)", scripts):
         snips.append(" ".join(scripts[max(0, m.start() - 150):m.start() + 450].split()))
     rec["script_snippets"] = snips[:12]
-    rec["text_start"] = " ".join(soup.get_text(" ").split())[:1500]
+    full = " ".join(soup.get_text(" ").split())
+    rec["text_start"] = full[:1500]
+    for word in ("Terms of Use", "Copyright Policy", "Copyright", "Hyperlinking Policy"):
+        i = full.find(word, 1500)
+        if i > 0:
+            rec.setdefault("policy_text", {})[word] = full[i:i + 2500]
     return rec
 
 
