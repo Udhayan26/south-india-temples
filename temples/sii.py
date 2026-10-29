@@ -98,17 +98,25 @@ def discover() -> list[dict]:
 
 
 # ------------------------------------------------------------------ parsing
-NO_RX = re.compile(r"^No\.?\s*(\d+[A-Za-z]?)\b\.?\s*(.*)$")
-AR_RX = re.compile(r"A\.?\s*R\.?\s*(?:E\.?\s*)?No\.?\s*([\w/\-]+(?:\s*(?:and|&|,)\s*[\w/\-]+)*)\s+of\s+(\d{4})", re.I)
+SEP = " \u00b6 "   # paragraph boundary marker
+BLOCKS = ["p", "div", "td", "th", "tr", "li", "h1", "h2", "h3", "h4", "h5", "h6", "center", "blockquote",
+          "table", "ul", "ol", "dd", "dt"]
+START_RX = re.compile(r"\bNo\s*\.\s*(\d{1,4}[A-Za-z]?)\b")
+REF_RX = re.compile(r"\(\s*((?:A\s*\.\s*R|B\s*\.\s*K|M\s*\.\s*E\s*\.\s*R|A\s*\.\s*R\s*\.\s*E|E\s*\.\s*I|C\s*\.\s*P)"
+                    r"[\s.]*(?:No|Nos)\s*\.?\s*[\w\-/,& ]{1,40}?\s+of\s+[\d\-]{4,9})\s*\.?\s*\)", re.I)
 YEAR_RX = re.compile(r"(\d{3,4})\s*(?:-\d{1,4})?\s*A\.?\s*D\b|A\.?\s*D\.?\s*(\d{3,4})", re.I)
-DATE_HINT = re.compile(r"A\.\s*D\b|\bA\.D\.|\bSaka\b|\bS\.\s*\d|\bKali\b|\bKollam\b|regnal|\byear\b|century", re.I)
-SPOT_RX = re.compile(r"temple|shrine|slab|pillar|wall|rock|mandapa|gopura|stone|plate|basement|base|"
-                     r"prakara|tank|cave|boulder|well|hill|beam|lintel", re.I)
-TEMPLE_RX = re.compile(r"((?:[A-Z][\w\-']+\s?){1,4})\s+temple|temple\s+of\s+((?:[A-Z][\w\-']+\s?){1,4})")
+DATE_HINT = re.compile(r"A\.\s*D\b|\bA\.D|\bSaka\b|\bKali\b|\bKollam\b|regnal|\b\d{1,2}(?:st|nd|rd|th) year\b|century", re.I)
+SPOT_START = re.compile(r"^(on|in|at|near|round|inside|built|from|below|above|engraved|found|lying)\b", re.I)
+PLACE_END = re.compile(r"(district|taluk|taluka|french india|state|agency|presidency|zamindari)\.?$", re.I)
+TEMPLE_RX = re.compile(r"(?:of\s+the\s+|the\s+)?((?:[A-Za-z][\w\-']*\s+){0,3}?[A-Za-z][\w\-']*)\s+temple\b", re.I)
+TEMPLE_OF_RX = re.compile(r"temple\s+of\s+((?:[A-Z][\w\-']*\s?){1,3})", re.I)
+STOPWORDS = {"the", "of", "in", "on", "at", "a", "an", "same", "this", "that", "central", "shrine", "main",
+             "big", "small", "ruined", "old", "inner", "outer", "enclosure", "wall", "walls", "base", "north",
+             "south", "east", "west", "and", "near", "village", "local", "wall", "gopura", "mandapa"}
 
 DYNASTIES = ["Chola", "Pandya", "Pallava", "Vijayanagara", "Hoysala", "Kakatiya", "Rashtrakuta",
              "Chalukya", "Ganga", "Kadamba", "Nayaka", "Chera", "Reddi", "Yadava", "Sambuvaraya",
-             "Bana", "Vaidumba", "Telugu Choda", "Kongu", "Muttaraiya", "Satavahana", "Ikshvaku"]
+             "Bana", "Vaidumba", "Telugu Choda", "Kongu", "Muttaraiya", "Satavahana", "Ikshvaku", "Alupa"]
 KING_DYNASTY = [
     (r"rajaraja|rajendra|kulottunga|kulothunga|parantaka|vikrama ?chola|aditya|gandaraditya|uttama ?chola|"
      r"sundara ?chola|rajadhiraja|rajamahendra|parakesari|rajakesari|koparakesari|kopparakesari", "Chola"),
@@ -116,82 +124,153 @@ KING_DYNASTY = [
      r"venkatapati|tirumala ?raya|saluva|narasimha ?raya|immadi|savanna|kampana", "Vijayanagara"),
     (r"sundara ?pandya|maravarman|jatavarman|srivallabha|vira ?pandya|kulasekhara", "Pandya"),
     (r"nandivarman|narasimhavarman|mahendravarman|rajasimha|dantivarman|nripatunga|aparajita|"
-     r"paramesvaravarman|kampavarman", "Pallava"),
+     r"paramesvaravarman|kampavarman|kopperunjinga", "Pallava"),
     (r"prataparudra|ganapatideva|rudramba|rudradeva|kakati", "Kakatiya"),
     (r"ballala|vishnuvardhana|hoysala", "Hoysala"),
-    (r"kannaradeva|krishna iii|rashtrakuta", "Rashtrakuta"),
-    (r"vikramaditya|someshvara|someswara|jagadekamalla|trailokyamalla|chalukya", "Chalukya"),
+    (r"kannaradeva|krishna iii|rashtrakuta|govinda iv|amoghavarsha", "Rashtrakuta"),
+    (r"vikramaditya|someshvara|someswara|jagadekamalla|trailokyamalla|tribhuvanamalla|chalukya", "Chalukya"),
     (r"nayak|nayaka|tirumala ?nayak|achyutappa|raghunatha", "Nayaka"),
 ]
 LANGS = ["Tamil", "Telugu", "Kannada", "Malayalam", "Sanskrit", "Grantha", "Prakrit"]
 
 
-def _lines(soup: BeautifulSoup) -> list[str]:
+def page_text(soup: BeautifulSoup) -> str:
+    """Whole page as one string; real paragraph boundaries kept as a marker."""
+    for t in soup(["script", "style", "noscript"]):
+        t.decompose()
+    for node in soup.find_all(string=True):
+        node.replace_with(re.sub(r"\s+", " ", str(node)))
     for br in soup.find_all("br"):
-        br.replace_with("\n")
-    text = soup.get_text("\n")
-    return [" ".join(l.split()) for l in text.splitlines() if l.strip()]
+        br.replace_with(SEP)
+    for tag in soup.find_all(BLOCKS):
+        tag.insert_before(SEP)
+        tag.insert_after(SEP)
+    text = soup.get_text("")
+    text = text.replace("\u00e2\u0080\u0094", "-").replace("\u00e2", "-")
+    text = re.sub(r"\s+", " ", text)
+    return re.sub(r"(\s*\u00b6\s*)+", SEP, text)
+
+
+def _lines(soup: BeautifulSoup) -> list[str]:   # kept for debugging
+    return [x.strip() for x in page_text(soup).split("\u00b6") if x.strip()]
+
+
+def _entry_starts(text: str) -> list[re.Match]:
+    out = []
+    for m in START_RX.finditer(text):
+        before = text[max(0, m.start() - 8):m.start()]
+        after = text[m.end():m.end() + 12]
+        if re.search(r"[RKEI]\s*\.\s*$|\(\s*$|[RKEI]\.\s*\u00b6?\s*$", before):
+            continue                      # "(A.R. No. 215 of 1904)" is a reference, not an entry
+        if re.match(r"\s*(to|-|and|&)\s*\d", after) or re.match(r"\s*of\s+\d{4}", after):
+            continue                      # "No. 199 to 202" (contents) / "No. 5 of 1906"
+        out.append(m)
+    return out
+
+
+def _segments(s: str) -> list[str]:
+    s = re.sub(r"\[\d+\]", " ", s)
+    parts = re.split(r"\u00b6|(?<=[a-zA-Z\)\]])\.\s+(?=[A-Z(])", s)
+    return [p.strip(" .-:;,") for p in parts if p and p.strip(" .-:;,")]
+
+
+def _titlecase(s: str) -> str:
+    return s.title() if s.isupper() else s
+
+
+def _place(seg: str) -> tuple[str, str, str]:
+    parts = [p.strip(" .") for p in re.sub(r"\(.*?\)", "", seg).split(",") if p.strip(" .")]
+    district = next((re.sub(r"\s*district$", "", p, flags=re.I) for p in parts if re.search(r"district$", p, re.I)), "")
+    ti = next((i for i, p in enumerate(parts) if re.search(r"taluka?$", p, re.I)), None)
+    taluk = re.sub(r"\s*taluka?$", "", parts[ti], flags=re.I) if ti is not None else ""
+    village = parts[0] if parts else ""
+    if SPOT_START.match(village) or re.search(r"taluka?$|district$", village, re.I):
+        # "ON A STONE ... IN KARIYANGALA, NEAR POLALI, MANGALORE TALUK, ..."
+        cand = parts[ti - 1] if ti else ""
+        m = re.search(r"\b(?:in|at)\s+([A-Za-z][\w\-]+(?:\s[A-Za-z][\w\-]+)?)\s*$", parts[0], re.I)
+        village = (m.group(1) if m else re.sub(r"^near\s+", "", cand, flags=re.I)) if (m or cand) else ""
+    if not district:   # "Tribhuvani, Pondicherry, French India" -> a known old district name
+        from .inscriptions import old_district
+        district = next((p for p in parts[1:] if old_district(p)), "")
+    return _titlecase(village), _titlecase(taluk), _titlecase(district)
+
+
+def _temple(spot: str) -> str:
+    m = TEMPLE_OF_RX.search(spot)
+    if m:
+        name = m.group(1).strip()
+    else:
+        ms = list(TEMPLE_RX.finditer(spot))
+        if not ms:
+            return ""
+        words = [w for w in ms[-1].group(1).split() if w.lower() not in STOPWORDS]
+        name = " ".join(words[-3:])
+    name = name.strip(" ,.-")
+    return (_titlecase(name) + " temple") if name and len(name) > 2 else ""
 
 
 def parse_page(soup: BeautifulSoup, page: dict) -> list[dict]:
-    lines = _lines(soup)
-    starts = [i for i, l in enumerate(lines) if NO_RX.match(l) and len(l) < 160]
+    text = page_text(soup)
+    starts = _entry_starts(text)
     vt = page.get("volume_title", "")
     dynasty = next((d for d in DYNASTIES if d.lower() in vt.lower()), "")
     language = next((l for l in LANGS if l.lower() in vt.lower()), "")
     today = date.today().isoformat()
-    out = []
-    for k, i in enumerate(starts):
-        block = lines[i:starts[k + 1] if k + 1 < len(starts) else len(lines)]
-        m = NO_RX.match(block[0])
-        number, rest = m.group(1), m.group(2)
-        head = ([rest] if rest else []) + block[1:9]
-        head_text = " ".join(head)
-        ar = AR_RX.search(head_text)
-        place_i = next((j for j, l in enumerate(head) if re.search(r"\bDistrict\b|\bTaluk\b|\bTaluka\b|\bState\b", l)), None)
-        village = taluk = district = ""
-        if place_i is not None:
-            parts = [p.strip(" .") for p in re.sub(r"\(.*?\)", "", head[place_i]).split(",") if p.strip(" .")]
-            village = parts[0] if parts else ""
-            taluk = next((re.sub(r"\s*Taluka?$", "", p) for p in parts if re.search(r"Taluka?$", p)), "")
-            district = next((re.sub(r"\s*District$", "", p) for p in parts if p.endswith("District")), "")
-            if village.endswith(("Taluk", "District")):
-                village = ""
-        after = head[(place_i + 1) if place_i is not None else 0:]
-        spot = next((l for l in after if SPOT_RX.search(l) and not AR_RX.search(l)), "")
-        date_line = next((l for l in after if DATE_HINT.search(l) and l != spot and len(l) < 200), "")
-        tm = TEMPLE_RX.search(spot) or TEMPLE_RX.search(head_text)
-        temple = ""
-        if tm:
-            temple = (tm.group(1) or tm.group(2) or "").strip()
-            temple = re.sub(r"^(the|of|in|on|near|at)\s+", "", temple, flags=re.I) + " temple"
-        ym = YEAR_RX.search(date_line)
+    out, seen_numbers = [], set()
+    for k, m in enumerate(starts):
+        number = m.group(1)
+        end = starts[k + 1].start() if k + 1 < len(starts) else len(text)
+        rest = text[m.end():end][:6000].lstrip(" .\u00b6-:")
+        ref = REF_RX.search(rest[:250])
+        reference = ""
+        if ref and ref.start() < 80:
+            reference = re.sub(r"\s+", " ", ref.group(1))
+            reference = re.sub(r"A\s*\.\s*R\s*\.?", "A.R.", reference)
+            reference = re.sub(r"B\s*\.\s*K\s*\.?", "B.K.", reference)
+            rest = rest[ref.end():]
+        segs = _segments(rest)
+        if not segs or (not reference and not any(SPOT_START.match(x) or PLACE_END.search(x) for x in segs[:3])):
+            continue                         # not an inscription heading
+        head = segs[:5]
+        place_seg = next((x for x in head[:3] if PLACE_END.search(x) and len(x) < 200), "")
+        if not place_seg and head and "," in head[0] and len(head[0]) < 90 and not SPOT_START.match(head[0]) \
+                and not re.match(r"(this|it|the|records?)\b", head[0], re.I):
+            place_seg = head[0]
+        spot = next((x for x in head[:4] if SPOT_START.match(x) and len(x) < 260), "")
+        if not spot and place_seg and SPOT_START.match(place_seg):
+            spot = place_seg
+        village, taluk, district = _place(place_seg) if place_seg else ("", "", "")
+        if not village and spot:
+            mv = re.search(r"\b(?:at|in)\s+([A-Za-z][\w\-]+(?:[\s-][A-Za-z][\w\-]+)?)\s*$", spot, re.I)
+            village = _titlecase(mv.group(1)) if mv else ""
+        date_seg = next((x for x in head if x not in (spot, place_seg) and DATE_HINT.search(x) and len(x) < 140), "")
+        ym = YEAR_RX.search(date_seg)
         year = (ym.group(1) or ym.group(2)) if ym else ""
         king = ""
-        if date_line:   # "Savanna Odeya, 1351 A.D." -> "Savanna Odeya"
-            mm = re.search(r",\s*(?=[^,]*(?:\d{3,4}|Saka|Kali|Kollam|regnal|year|century))", date_line, re.I)
-            king = date_line[:mm.start()].strip(" ,.") if mm else ""
+        if date_seg:   # "Savanna Odeya, 1351 A.D." -> "Savanna Odeya"
+            mm = re.search(r",\s*(?=[^,]*(?:\d{3,4}|Saka|Kali|Kollam|regnal|year|century))", date_seg, re.I)
+            king = date_seg[:mm.start()].strip(" ,.") if mm else ""
+        used = {place_seg, spot, date_seg}
+        summary = ""
+        for x in segs:
+            if x not in used and len(x) > 40:
+                summary = x[:300]
+                break
+        row_dynasty = dynasty
         for rx, dyn in KING_DYNASTY:
-            if re.search(rx, king + " " + date_line, re.I):
+            if re.search(rx, f"{king} {date_seg} {summary}", re.I):
                 row_dynasty = dyn
                 break
-        else:
-            row_dynasty = dynasty
-        used = {head[place_i]} if place_i is not None else set()
-        used |= {spot, date_line, block[0]}
-        body = [l for l in block[1:] if l not in used and not AR_RX.fullmatch(l.strip("() ."))]
-        summary = ""
-        for l in body:
-            if len(l) > 40 and not AR_RX.search(l):
-                summary = re.split(r"(?<=[.!?])\s", l)[0][:300]
-                break
+        key = (number, reference)
+        if key in seen_numbers:
+            continue
+        seen_numbers.add(key)
         out.append(blank_ins(
             title=f"SII Vol. {page['volume']} No. {number}" + (f" — {village}" if village else ""),
-            type=ins_type(head_text + " " + summary),
-            temple_name=temple, location_detail=spot[:300], village=village, taluk=taluk,
-            district_old=district, king=king[:120], dynasty=row_dynasty, date_text=date_line[:200],
-            year_ce=year, language=language,
-            reference=f"A.R. No. {ar.group(1)} of {ar.group(2)}" if ar else "",
+            type=ins_type(f"{spot} {summary}"),
+            temple_name=_temple(spot) or _temple(place_seg), location_detail=_titlecase(spot)[:300],
+            village=village, taluk=taluk, district_old=district, king=king[:120], dynasty=row_dynasty,
+            date_text=date_seg[:200], year_ce=year, language=language, reference=reference,
             volume=page["volume"], number=number, summary=summary,
             source="South Indian Inscriptions (whatisindia.com)", source_url=page["url"], last_updated=today,
         ))
