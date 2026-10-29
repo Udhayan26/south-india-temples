@@ -20,7 +20,9 @@ LOCAL_LANG = {"IN-TN": "ta", "IN-PY": "ta", "IN-KL": "ml", "IN-KA": "kn", "IN-AP
 
 SPECIAL_GROUPS = [
     (r"divya desam", "Divya Desam"),
-    (r"paadal petra|padal petra|thevaram", "Paadal Petra Sthalam"),
+    (r"paadal petra|padal petra|thevaram|tevaram", "Paadal Petra Sthalam"),
+    (r"abhimana|abhimana sthalam", "Abhimana Sthalam"),
+    (r"vaippu", "Vaippu Sthalam"),
     (r"jyotirlinga", "Jyotirlinga"),
     (r"shakti peeth|sakthi peeth", "Shakti Peetha"),
     (r"arupadai|six abodes of murugan", "Arupadai Veedu"),
@@ -47,9 +49,10 @@ SELECT DISTINCT ?item WHERE {{
 
 DETAIL_QUERY = """
 SELECT ?item ?itemLabel ?local ?coord ?deityLabel ?adminLabel ?inception ?image
-       ?heritageLabel ?groupLabel ?website ?operatorLabel ?itemDescription WHERE {{
+       ?heritageLabel ?groupLabel ?typeLabel ?website ?operatorLabel ?itemDescription WHERE {{
   VALUES ?item {{ {items} }}
   ?item wdt:P625 ?coord .
+  OPTIONAL {{ ?item wdt:P31 ?type }}
   OPTIONAL {{ ?item wdt:P825 ?deity }}
   OPTIONAL {{ ?item wdt:P131 ?admin }}
   OPTIONAL {{ ?item wdt:P571 ?inception }}
@@ -141,14 +144,14 @@ def fetch_district(state_code: str, district: dict) -> int:
             "image": v.get("image", ""), "website": v.get("website", ""),
             "operator": v.get("operatorLabel", ""), "desc": v.get("itemDescription", ""),
         })
-        for key in ("deityLabel", "heritageLabel", "groupLabel"):
+        for key in ("deityLabel", "heritageLabel", "groupLabel", "typeLabel"):
             if v.get(key) and not re.fullmatch(r"Q\d+", v[key]):
                 multi[qid][key].add(v[key])
 
     today = date.today().isoformat()
     rows = []
     for qid, it in items.items():
-        groups_text = " ".join(multi[qid]["groupLabel"] | multi[qid]["heritageLabel"]) + " " + it["desc"]
+        groups_text = " ".join(multi[qid]["groupLabel"] | multi[qid]["heritageLabel"] | multi[qid]["typeLabel"]) + " " + it["desc"]
         special = sorted({label for rx, label in SPECIAL_GROUPS if re.search(rx, groups_text, re.I)})
         if NOT_TEMPLE.search(it["name"]):
             continue
