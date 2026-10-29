@@ -44,12 +44,19 @@ def robots_ok(url: str) -> tuple[bool, str]:
 
 
 def probe(url: str) -> dict:
+    """url, or "POST url|a=1&b=2" to submit a form."""
+    data = None
+    if url.startswith("POST "):
+        url, _, form = url[5:].partition("|")
+        from urllib.parse import parse_qsl
+        data = dict(parse_qsl(form, keep_blank_values=True))
     ok, raw = robots_ok(url)
-    rec = {"url": url, "robots_allows": ok, "robots_txt": raw}
+    rec = {"url": url, "post": data, "robots_allows": ok, "robots_txt": raw}
     if not ok:
         return rec
     try:
-        r = session().get(url, timeout=60, allow_redirects=True)
+        r = (session().post(url, data=data, timeout=90) if data is not None
+             else session().get(url, timeout=60, allow_redirects=True))
     except Exception as e:
         rec["error"] = str(e)[:300]
         return rec
@@ -67,9 +74,9 @@ def probe(url: str) -> dict:
         for el in f.find_all(["input", "select", "textarea"]):
             d = {"tag": el.name, "name": el.get("name"), "type": el.get("type")}
             if el.name == "select":
-                opts = [o.get_text(" ").strip() for o in el.find_all("option")]
+                opts = [(o.get("value"), o.get_text(" ").strip()) for o in el.find_all("option")]
                 d["options"] = len(opts)
-                d["sample_options"] = opts[:12]
+                d["sample_options"] = opts[:40]
             fields.append(d)
         forms.append({"action": urljoin(r.url, f.get("action") or ""), "method": (f.get("method") or "get").upper(),
                       "fields": fields[:30]})
@@ -81,9 +88,13 @@ def probe(url: str) -> dict:
         if INTERESTING.search(txt + " " + href):
             links.append({"text": txt, "href": href})
     rec["links"] = links[:80]
-    rec["tables"] = [{"rows": len(t.find_all("tr")),
-                      "header": [" ".join(c.get_text(" ").split())[:40] for c in (t.find("tr") or soup).find_all(["th", "td"])][:12]}
-                     for t in soup.find_all("table")[:8]]
+    tables = []
+    for t in soup.find_all("table")[:8]:
+        rows = t.find_all("tr")
+        tables.append({"rows": len(rows), "sample": [[" ".join(c.get_text(" ").split())[:50] for c in tr.find_all(["th", "td"])][:14]
+                                                      for tr in rows[:6]],
+                       "row_links": [urljoin(r.url, a["href"]) for a in t.find_all("a", href=True)][:10]})
+    rec["tables"] = tables
     rec["text_start"] = " ".join(soup.get_text(" ").split())[:1500]
     return rec
 

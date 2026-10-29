@@ -1,21 +1,9 @@
-# Government temple portals
-https://hrce.tn.gov.in/hrcehome/temple_search.php?activity=temple_search
-https://hrce.tn.gov.in/hrcehome/index.php
+https://itms.kar.nic.in/hrcehome/temple_list.php
+https://itms.kar.nic.in/hrcehome/hrce_temple.php
 https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search
-https://itms.kar.nic.in/hrcehome/index.php
-https://aptemples.ap.gov.in/
-https://tms.ap.gov.in/
-https://endowments.ap.gov.in/
-https://tstemples.telangana.gov.in/
-https://endowments.ts.nic.in/templedetails.html
-https://www.travancoredevaswomboard.org/
-https://www.onlinetdb.com/
-https://malabardevaswom.kerala.gov.in/
-https://cochindevaswomboard.org/
-https://490kdbtemples.org/
-https://asi.nic.in/pdf/CPM_List.pdf
-https://www.tnarch.gov.in/
-https://www.data.gov.in/catalog/list-and-b-grade-temples-karnataka
-# Google My Maps (public, official KML export)
-https://www.google.com/maps/d/kml?mid=1hPNe6HwqtOfKIx_ASOfDOUM9knM&forcekml=1
-https://www.google.com/maps/d/viewer?mid=1hPNe6HwqtOfKIx_ASOfDOUM9knM
+POST https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search|temple_name=&TI-district_code=&pincode=&TF-temple_location=&TI-temple_id=&submit=Search
+https://travancoredevaswomboard.org/downloads/
+https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/
+https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/
+https://490kdbtemples.wordpress.com/about/list-of-devaswoms/
+https://www.onlinetdb.com/store.htm
