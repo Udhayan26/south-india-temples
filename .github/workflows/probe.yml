@@ -1,0 +1,35 @@
+name: Probe websites (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Space-separated URLs (blank = data/probe/targets.txt)"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: temple-collector
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m temples.probe ${{ github.event.inputs.urls }}
+      - name: Commit report
+        run: |
+          git config user.name  "temple-bot"
+          git config user.email "temple-bot@users.noreply.github.com"
+          git add data/probe/
+          git diff --cached --quiet || git commit -m "probe: website check $(date -u +%F)"
+          git pull --rebase -q && git push
