@@ -27,8 +27,17 @@ NOT_RELIGION_RX = r"church|cathedral|chapel|mosque|masjid|synagogue|gurdwara|gur
 NOT_TEMPLE = re.compile(r"church|cathedral|chapel|mosque|masjid|dargah|juma|gurudwara|gurdwara|synagogue|"
                         r"school|college|hospital|hotel|lodge|restaurant|store|shop|bank|atm|pharmacy|"
                         r"hall\b|apartment|residency|tours|travels|bus stop|road\b|street\b", re.I)
-TEMPLE_NAME = re.compile(r"temple|kovil|koil|gudi|devasth|devalay|kshetr|mandir|amman|perumal|swamy|swami|"
-                         r"eswar|iswar|alayam|basadi|kavu|ambalam|mutt\b|math\b|ashram|vihar|stupa", re.I)
+ALAYAM = r"devalayam|shivalayam|sivalayam|ramalayam|vishnvalayam|\balayam\b"   # not "Mettupalayam"
+TEMPLE_NAME = re.compile(r"temple|kovil|koil|gudi|devasth|kshetr|kshethr|mandir|amman|perumal|swamy|swami|"
+                         r"eswar|iswar|basadi|kavu|ambalam|mutt\b|math\b|vihar|stupa|" + ALAYAM + "|"
+                         r"கோவில்|கோயில்|ஆலயம்|அம்மன்|ஈஸ்வர|ஸ்வரர்|பெருமாள்|முருக|விநாயக|பிள்ளையார்|"
+                         r"ക്ഷേത്ര|ദേവീ|ദേവി|കാവ്|ഭഗവതി|മഹാദേവ|ശിവ|"
+                         r"ದೇವಸ್ಥಾನ|ದೇವಾಲಯ|ಗುಡಿ|ಮಠ|ದೇವಿ|ಸ್ವಾಮಿ|ಅಮ್ಮ|ದೇವರ|"
+                         r"దేవస్థానం|దేవాలయం|గుడి|ఆలయం|క్షేత్ర|స్వామి|అమ్మవారి|ఆలయ", re.I)
+STRONG = re.compile(r"temple|kovil|koil|gudi|mandir|devasth|kshetr|kshethr|" + ALAYAM + "|"
+                    r"கோவில்|கோயில்|ക്ഷേത്ര|ದೇವಸ್ಥಾನ|ದೇವಾಲಯ|దేవస్థానం|దేవాలయం|క్షేత్ర", re.I)
+ORG = re.compile(r"trust|sangh|sangam|seva|samithi|samiti|society|association|cent(re|er)|kendra|ಕೇಂದ್ರ|"
+                 r"office|foundation|committee|yanthram|yantra|kalyana mandapam|marriage|function hall", re.I)
 REGION = {
     "IN-TN": ["tn", "tamil nadu", "tamilnadu"], "IN-KL": ["kl", "kerala"], "IN-KA": ["ka", "karnataka"],
     "IN-AP": ["ap", "andhra pradesh"], "IN-TG": ["tg", "ts", "telangana"],
@@ -94,8 +103,11 @@ def fetch() -> int:
         name = (p["name"] or "").strip()
         if not name or NOT_TEMPLE.search(name):
             continue
-        if not (re.search(r"hindu|jain|buddhist|temple|shrine", p["cat"] or "") or TEMPLE_NAME.search(name)):
-            continue                      # "religious_organization" etc. without a temple-like name
+        from .common import infer_deity
+        if not (TEMPLE_NAME.search(name) or infer_deity(name)[0]):
+            continue                      # bare place names ("Thakazhy"), businesses...
+        if ORG.search(name) and not STRONG.search(name):
+            continue                      # trusts, associations, halls without "temple" in the name
         region = (p["region"] or "").strip().lower()
         code = _REGION.get(region)
         if region and not code:
