@@ -1,7 +1,8 @@
 name: Daily temple data collection
 
 on:
-  schedule:
+  # schedule disabled on debug branch
+  x-schedule:
     # 18:47 UTC = 00:17 AM IST. GitHub usually starts scheduled jobs 2–3 hours late,
     # so the real run lands around 02:00–03:30 AM IST — the low-traffic night window.
     - cron: "47 18 * * *"
@@ -35,33 +36,12 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Collect (time-boxed)
-        env:
-          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}   # optional
-          GOOGLE_MAX_REQUESTS: ${{ vars.GOOGLE_MAX_REQUESTS || '150' }}
-          DATA_GOV_IN_API_KEY: ${{ secrets.DATA_GOV_IN_API_KEY }}        # optional
+      - name: Dump sample SII pages (debug branch only)
+        run: python debug/dump.py
+      - name: Commit debug
         run: |
-          STATES="${{ github.event.inputs.states }}"
-          python -m temples.run --minutes "${{ github.event.inputs.minutes || '50' }}" ${STATES:+--states "$STATES"}
-
-      - name: Commit data
-        run: |
-          git config user.name  "temple-bot"
-          git config user.email "temple-bot@users.noreply.github.com"
-          git add data/
-          git diff --cached --quiet || git commit -m "data: daily update $(date -u +%F)"
-          git push
-
-      - name: Publish Excel to the "latest" release
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh release view latest >/dev/null 2>&1 || \
-            gh release create latest --title "Latest temple data" --notes "Updated automatically every night."
-          gh release upload latest output/south_india_temples.xlsx data/temples_master.csv --clobber
-          [ -f data/inscriptions_master.csv ] && gh release upload latest data/inscriptions_master.csv --clobber || true
-          gh release edit latest --notes "Updated $(date -u '+%d %b %Y %H:%M') UTC — $(($(wc -l < data/temples_master.csv) - 1)) temples."
-
+          git config user.name "temple-bot"; git config user.email "temple-bot@users.noreply.github.com"
+          git add debug/ && git commit -m "debug dump" && git push origin HEAD:sii-debug
       - uses: actions/upload-artifact@v4
         with:
           name: south_india_temples_${{ github.run_number }}
