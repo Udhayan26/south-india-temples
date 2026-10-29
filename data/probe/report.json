@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-10-29T16:49:18",
+ "checked_at": "2026-10-29T16:50:52",
  "results": [
   {
    "url": "https://itms.kar.nic.in/hrcehome/temple_list.php",
@@ -588,165 +588,93 @@
      "row_links": []
     }
    ],
+   "script_srcs": [
+    "https://itms.kar.nic.in/resources/library/js/jquery-3.7.1.min.js",
+    "https://itms.kar.nic.in/resources/library/js/jquery-ui.min_1.13.2.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/bootstrap.bundle.min.js",
+    "https://itms.kar.nic.in/resources/library/js/jquery-confirm.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/bootstrap-datepicker.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/jquery.dataTables.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/dataTables.bootstrap4.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/dataTables.buttons.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/jszip.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.html5.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.print.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.colVis.min.js",
+    "https://itms.kar.nic.in/resources/library/label.js",
+    "https://itms.kar.nic.in/js/req_common.js",
+    "https://itms.kar.nic.in/temples/js/login_script.js",
+    "https://itms.kar.nic.in/eservices/js/ajax_epayment.js",
+    "https://itms.kar.nic.in/resources/qrcode/qrcode-js/jquery.qrcode.min.js",
+    "https://itms.kar.nic.in/resources/qrcode/qrcode-js/qrcode.js",
+    "https://itms.kar.nic.in/resources/texttospeech/text_to_speech.js",
+    "https://itms.kar.nic.in/js/session_out.js",
+    "https://itms.kar.nic.in/js/script.js",
+    "https://itms.kar.nic.in/masters/js/master_validate.js"
+   ],
+   "script_endpoints": [
+    "../budget/ajax/budget_app_master.php",
+    "../budget/ajax/budgetinfo_view_new.php",
+    "../courtcases/ajax/courtinfo_view.php",
+    "../dcbs/ajax/dcbinfo_view_new.php",
+    "../department/ajax/deptinfo_view_new.php",
+    "../eservices/ajax/epayinfo_view_new.php",
+    "../hrcehome/ajax/home_appmaster.php",
+    "../hrcehome/ajax/homepage_view.php",
+    "../hrcehome/index_temple.php?tid=",
+    "../hrcehome/landrpt_view.php",
+    "../hrcehome/reports/landrpt_view.php",
+    "../hrcehome/reports/temple_list_rpt.php",
+    "../hundi/ajax/hundi_infoview.php",
+    "../includes/color_blindness_page.php",
+    "../includes/model_appmaster.php",
+    "../includes/officialhome.php",
+    "../includes/officialhome_others.php",
+    "../includes/set_session.php",
+    "../institute/ajax/instituteinfo_view_new.php",
+    "../lands/ajax/landinfo_view_new.php",
+    "../magazine/ajax/magazineinfo_view.php",
+    "../property/ajax/property_app_master.php",
+    "../property/ajax/propertyinfo_view_new.php",
+    "../renovate/ajax/renovateinfo_view_new.php",
+    "../resources/library/audio/string_audio.php?aud=1793292654",
+    "../resources/library/esign/index.php",
+    "../temples/ajax/ajax_page.php",
+    "../temples/ajax/app_master.php",
+    "../temples/ajax/mapping_screen.php",
+    "../temples/ajax/module_redir.php?module_id=",
+    "../temples/ajax/redir.php",
+    "../temples/ajax/templeinfo_view_new.php",
+    "../temples/menuasign.php?uid=",
+    "../temples/reports/temple_reports_rpt.php",
+    "../temples/temple_festival.php?activity_desc=Tracking-",
+    "../temples/temple_festivaldetail.php?festivalparam=",
+    "../temples/templeview.php",
+    "../ticketing/ajax/ticketing_infoview.php",
+    "../trustee/ajax/trusteeinfo_view_new.php",
+    "../webservice/youtubevideo_update.php",
+    "../welfare/ajax/welfareinfo_view_new.php",
+    "ajax/getdata.php",
+    "ajax/mapping_screen.php",
+    "templeinfo.php"
+   ],
+   "script_snippets": [
+    "false; }); }); $(document).ready(function(){ var table = $('#myTable,#myTable1,#myTable2,#subTable,#myTable3,#myTable4,#myTable5').DataTable({ retrieve: true, stateSave: false, language: { searchPlaceholder: \"Search...\", search:\"\" } }); $('a.toggle-vis').on( 'click', function (e) { e.preventDefault(); var column = table.column( $(this).attr('data-column') ); column.visible( ! column.visible() ); }); }); $(window).on('load', function(){ $(\".se-pre-con\").fadeOut(\"slow\"); }); $(document).rea",
+    "==========*/ $(\".colorblindness_page\").click(function(){ $(\"span[data-id]\").css('border','none'); var color = $(this).data('id'); $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:color, tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); }); /*================================ colorblindness_page end =================================*/ /*================",
+    "s_page\").click(function(){ $(\"span[data-id]\").css('border','none'); var color = $(this).data('id'); $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:color, tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); }); /*================================ colorblindness_page end =================================*/ /*================================ Onload ===========",
+    "/****logo image color end ****/ } $(document).ready(function(){ var mobile_color=''; if(mobile_color=='910101') { $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:'#910101', tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); } }); $(document).ready(function() { $(\".templeform_grid_view\").click(function(){ var formname = $(this).par",
+    "**/ } $(document).ready(function(){ var mobile_color=''; if(mobile_color=='910101') { $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:'#910101', tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); } }); $(document).ready(function() { $(\".templeform_grid_view\").click(function(){ var formname = $(this).parents(\"form\").attr(\"id\"); var",
+    "><img src=\"../resources/library/images/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function",
+    "ges/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function changelanguage() { // alert(",
+    "(thrownError); } }); }); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ mya",
+    "}); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } });",
+    "r, ajaxOptions, thrownError){ myalert(thrownError); } }); } function setcookie(temple_id) { var token = ''; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = ''; var service_code= $('#service_code')",
+    "myalert(thrownError); } }); } function setcookie(temple_id) { var token = ''; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = ''; var service_code= $('#service_code').val(); $('#ack_no').val('')",
+    "_no) { var token = ''; var service_code= $('#service_code').val(); $('#ack_no').val(''); jQuery.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { transstatus: transstatus, mobileno:mobile_no, service_code:service_code, pg:'epayment_ackid', tokenp:token }, success:function(result) { $('#ack_no').html(result); $('#ack_no').val(''); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function getParameter"
+   ],
    "text_start": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Session timeout in : 1200 sec Screen Reader Access A - A A + English Government of Karnataka Hindu Religious Institutions & Charitable Endowments Department × Details Save ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Temple List State List District List Heritage Temple List(Listed) Heritage Temple List(Non-Listed) Religious Institute (without Kattalai) Religious Endowment"
   },
   {
-   "url": "https://itms.kar.nic.in/hrcehome/hrce_temple.php",
-   "post": null,
-   "robots_allows": true,
-   "robots_txt": "",
-   "status": 200,
-   "final_url": "https://itms.kar.nic.in/hrcehome/hrce_temple.php",
-   "content_type": "text/html; charset=UTF-8",
-   "bytes": 381629,
-   "title": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department",
-   "headings": [],
-   "forms": [],
-   "links": [
-    {
-     "text": "ನಮ್ಮ ಬಗ್ಗೆ",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
-    },
-    {
-     "text": "ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
-    },
-    {
-     "text": "ಆಡಳಿತ",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
-    },
-    {
-     "text": "ದೇವಾಲಯಗಳು",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
-    },
-    {
-     "text": "ದೇವಾಲಯದ ಪಟ್ಟಿ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
-    },
-    {
-     "text": "Temple Valuables Details",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_actrules.php?action=18"
-    },
-    {
-     "text": "ಆಯುಕ್ತರ ಪಟ್ಟಿ",
-     "href": "https://itms.kar.nic.in/hrcehome/commissioners_list.php"
-    },
-    {
-     "text": "ಗ್ಯಾಲರಿ",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
-    },
-    {
-     "text": "ಯೋಜನೆಗಳು",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
-    },
-    {
-     "text": "ಆಗಮ",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
-    },
-    {
-     "text": "ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
-    },
-    {
-     "text": "ಅಧಿಸೂಚನೆ",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
-    },
-    {
-     "text": "ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ",
-     "href": "https://itms.kar.nic.in/temples/login.php"
-    },
-    {
-     "text": "Department Login",
-     "href": "https://itms.kar.nic.in/temples/login.php"
-    },
-    {
-     "text": "Portal Policies",
-     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
-    }
-   ],
-   "tables": [
-    {
-     "rows": 3,
-     "sample": [
-      [
-       "Sl.no",
-       "Classification Of Temples",
-       "Number of Temples",
-       "View"
-      ],
-      [
-       "1",
-       "Temples",
-       "359",
-       "ನೋಟ"
-      ],
-      [
-       "Total",
-       "359",
-       ""
-      ]
-     ],
-     "row_links": []
-    },
-    {
-     "rows": 3,
-     "sample": [
-      [
-       "Sl.no",
-       "Religious Temple Type",
-       "Number of Temples",
-       "View"
-      ],
-      [
-       "1",
-       "ಅಧಿಸೂಚಿತ ದೇವಾಲಯಗಳು",
-       "359",
-       "ನೋಟ"
-      ],
-      [
-       "Total",
-       "359",
-       ""
-      ]
-     ],
-     "row_links": []
-    },
-    {
-     "rows": 4,
-     "sample": [
-      [
-       "Sl.no",
-       "Section",
-       "Annual income of Temple",
-       "Number of Temple",
-       "View"
-      ],
-      [
-       "1",
-       "ವಿಭಾಗ 46(I)",
-       "ಪ್ರವರ್ಗ \"ಎ\" - 25,00,000/- ರೂಪಾಯಿಗಳನ್ನು ಮೀರುವ ಒಟ್ಟು",
-       "203",
-       "ನೋಟ"
-      ],
-      [
-       "2",
-       "ವಿಭಾಗ 46(II)",
-       "ಪ್ರವರ್ಗ \"ಬಿ\" - 5,00,000/- ರೂಪಾಯಿಗಳನ್ನು ಮೀರುವ ಆದರೆ ",
-       "156",
-       "ನೋಟ"
-      ],
-      [
-       "Total",
-       "359",
-       ""
-      ]
-     ],
-     "row_links": []
-    }
-   ],
-   "text_start": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Session timeout in : 1200 sec Screen Reader Access A - A A + English Government of Karnataka Hindu Religious Institutions & Charitable Endowments Department × Details Save ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Temples ಹಿಂದೂ ಧಾರ್ಮಿಕ ಇಲಾಖೆಯ ನಿಯಂತ್ರಣದಲ್ಲಿ 34564 ಹಿಂದೂ ಧಾರ್ಮಿಕ ದೇವಾಲಯಗಳಿವೆ. ವಿವರಗಳು ಈ ಕೆಳಗಿನಂತಿವೆ Classification Of Temples Sl.no Classification Of Temples N"
-  },
-  {
    "url": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search",
    "post": null,
    "robots_allows": true,
@@ -1933,1133 +1861,117 @@
      "row_links": []
     }
    ],
+   "script_srcs": [
+    "https://itms.kar.nic.in/resources/library/js/jquery-3.7.1.min.js",
+    "https://itms.kar.nic.in/resources/library/js/jquery-ui.min_1.13.2.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/bootstrap.bundle.min.js",
+    "https://itms.kar.nic.in/resources/library/js/jquery-confirm.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/bootstrap-datepicker.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/jquery.dataTables.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/dataTables.bootstrap4.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/dataTables.buttons.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/jszip.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.html5.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.print.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.colVis.min.js",
+    "https://itms.kar.nic.in/resources/library/label.js",
+    "https://itms.kar.nic.in/js/req_common.js",
+    "https://itms.kar.nic.in/temples/js/login_script.js",
+    "https://itms.kar.nic.in/eservices/js/ajax_epayment.js",
+    "https://itms.kar.nic.in/resources/qrcode/qrcode-js/jquery.qrcode.min.js",
+    "https://itms.kar.nic.in/resources/qrcode/qrcode-js/qrcode.js",
+    "https://itms.kar.nic.in/resources/texttospeech/text_to_speech.js",
+    "https://itms.kar.nic.in/js/session_out.js",
+    "https://itms.kar.nic.in/js/script.js",
+    "https://itms.kar.nic.in/js/temple_autosearch.js",
+    "https://itms.kar.nic.in/masters/js/master_validate.js"
+   ],
+   "script_endpoints": [
+    "../budget/ajax/budget_app_master.php",
+    "../budget/ajax/budgetinfo_view_new.php",
+    "../courtcases/ajax/courtinfo_view.php",
+    "../dcbs/ajax/dcbinfo_view_new.php",
+    "../department/ajax/deptinfo_view_new.php",
+    "../eservices/ajax/epayinfo_view_new.php",
+    "../hrcehome/ajax/home_appmaster.php",
+    "../hrcehome/ajax/homepage_view.php",
+    "../hrcehome/index_temple.php?tid=",
+    "../hrcehome/landrpt_view.php",
+    "../hrcehome/reports/landrpt_view.php",
+    "../hundi/ajax/hundi_infoview.php",
+    "../includes/color_blindness_page.php",
+    "../includes/model_appmaster.php",
+    "../includes/officialhome.php",
+    "../includes/officialhome_others.php",
+    "../includes/set_session.php",
+    "../institute/ajax/instituteinfo_view_new.php",
+    "../jsondata/labeldata.json",
+    "../lands/ajax/landinfo_view_new.php",
+    "../magazine/ajax/magazineinfo_view.php",
+    "../property/ajax/property_app_master.php",
+    "../property/ajax/propertyinfo_view_new.php",
+    "../renovate/ajax/renovateinfo_view_new.php",
+    "../resources/library/audio/string_audio.php?aud=1793292660",
+    "../resources/library/esign/index.php",
+    "../temples/ajax/ajax_page.php",
+    "../temples/ajax/app_master.php",
+    "../temples/ajax/mapping_screen.php",
+    "../temples/ajax/module_redir.php?module_id=",
+    "../temples/ajax/redir.php",
+    "../temples/ajax/templeinfo_view_new.php",
+    "../temples/menuasign.php?uid=",
+    "../temples/reports/temple_reports_rpt.php",
+    "../temples/temple_festival.php?activity_desc=Tracking-",
+    "../temples/temple_festivaldetail.php?festivalparam=",
+    "../temples/templeview.php",
+    "../ticketing/ajax/ticketing_infoview.php",
+    "../trustee/ajax/trusteeinfo_view_new.php",
+    "../webservice/youtubevideo_update.php",
+    "../welfare/ajax/welfareinfo_view_new.php",
+    "ajax/getdata.php",
+    "ajax/mapping_screen.php",
+    "templeinfo.php"
+   ],
+   "script_snippets": [
+    "false; }); }); $(document).ready(function(){ var table = $('#myTable,#myTable1,#myTable2,#subTable,#myTable3,#myTable4,#myTable5').DataTable({ retrieve: true, stateSave: false, language: { searchPlaceholder: \"Search...\", search:\"\" } }); $('a.toggle-vis').on( 'click', function (e) { e.preventDefault(); var column = table.column( $(this).attr('data-column') ); column.visible( ! column.visible() ); }); }); $(window).on('load', function(){ $(\".se-pre-con\").fadeOut(\"slow\"); }); $(document).rea",
+    "==========*/ $(\".colorblindness_page\").click(function(){ $(\"span[data-id]\").css('border','none'); var color = $(this).data('id'); $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:color, tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); }); /*================================ colorblindness_page end =================================*/ /*================",
+    "s_page\").click(function(){ $(\"span[data-id]\").css('border','none'); var color = $(this).data('id'); $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:color, tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); }); /*================================ colorblindness_page end =================================*/ /*================================ Onload ===========",
+    "/****logo image color end ****/ } $(document).ready(function(){ var mobile_color=''; if(mobile_color=='910101') { $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:'#910101', tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); } }); $(document).ready(function() { $(\".templeform_grid_view\").click(function(){ var formname = $(this).par",
+    "**/ } $(document).ready(function(){ var mobile_color=''; if(mobile_color=='910101') { $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:'#910101', tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); } }); $(document).ready(function() { $(\".templeform_grid_view\").click(function(){ var formname = $(this).parents(\"form\").attr(\"id\"); var",
+    "><img src=\"../resources/library/images/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function",
+    "ges/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function changelanguage() { // alert(",
+    "(thrownError); } }); }); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ mya",
+    "}); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } });",
+    "s, thrownError){ myalert(thrownError); } }); } function setcookie(temple_id) { var token = '1234456875544'; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = '1234456875544'; var service_code= $('#s",
+    "alert(thrownError); } }); } function setcookie(temple_id) { var token = '1234456875544'; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = '1234456875544'; var service_code= $('#service_code').val(); $('#ack",
+    "var token = '1234456875544'; var service_code= $('#service_code').val(); $('#ack_no').val(''); jQuery.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { transstatus: transstatus, mobileno:mobile_no, service_code:service_code, pg:'epayment_ackid', tokenp:token }, success:function(result) { $('#ack_no').html(result); $('#ack_no').val(''); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function getParameter"
+   ],
    "text_start": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Session timeout in : 1200 sec Screen Reader Access A - A A + English Government of Karnataka Hindu Religious Institutions & Charitable Endowments Department × Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ HR-CE - Temple Summary ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Temple Search Match all of the following"
   },
   {
-   "url": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search",
-   "post": {
-    "temple_name": "",
-    "TI-district_code": "",
-    "pincode": "",
-    "TF-temple_location": "",
-    "TI-temple_id": "",
-    "submit": "Search"
-   },
+   "url": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse",
+   "post": null,
    "robots_allows": true,
    "robots_txt": "",
    "status": 200,
-   "final_url": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search",
+   "final_url": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse",
    "content_type": "text/html; charset=UTF-8",
-   "bytes": 444479,
+   "bytes": 311425,
    "title": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department",
    "headings": [],
-   "forms": [
-    {
-     "action": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search",
-     "method": "POST",
-     "fields": [
-      {
-       "tag": "select",
-       "name": "temple_name",
-       "type": null,
-       "options": 1,
-       "sample_options": [
-        [
-         null,
-         ""
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "TI-district_code",
-       "type": "dropdown",
-       "options": 29,
-       "sample_options": [
-        [
-         "",
-         "-- ಜಿಲ್ಲೆ --"
-        ],
-        [
-         "10",
-         "ಬಾಗಲಕೋಟೆ"
-        ],
-        [
-         "17",
-         "ಬಳ್ಳಾರಿ"
-        ],
-        [
-         "11",
-         "ಬೆಳಗಾವಿ"
-        ],
-        [
-         "02",
-         "ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ"
-        ],
-        [
-         "01",
-         "ಬೆಂಗಳೂರು"
-        ],
-        [
-         "18",
-         "ಬೀದರ್‌"
-        ],
-        [
-         "23",
-         "ಚಾಮರಾಜನಗರ"
-        ],
-        [
-         "08",
-         "ಚಿಕ್ಕಬಳ್ಳಾಪುರ"
-        ],
-        [
-         "24",
-         "ಚಿಕ್ಕಮಗಳೂರು"
-        ],
-        [
-         "03",
-         "ಚಿತ್ರದುರ್ಗ"
-        ],
-        [
-         "25",
-         "ದಕ್ಷಿಣ ಕನ್ನಡ"
-        ],
-        [
-         "04",
-         "ದಾವಣಗೆರೆ"
-        ],
-        [
-         "26",
-         "ಹಾಸನ"
-        ],
-        [
-         "15",
-         "ಹಾವೇರಿ"
-        ],
-        [
-         "19",
-         "ಕಲಬುರಗಿ"
-        ],
-        [
-         "27",
-         "ಕೊಡಗು"
-        ],
-        [
-         "05",
-         "ಕೋಲಾರ"
-        ],
-        [
-         "20",
-         "ಕೊಪ್ಪಳ"
-        ],
-        [
-         "28",
-         "ಮಂಡ್ಯ"
-        ],
-        [
-         "29",
-         "ಮೈಸೂರು"
-        ],
-        [
-         "21",
-         "ರಾಯಚೂರು"
-        ],
-        [
-         "09",
-         "ರಾಮನಗರ"
-        ],
-        [
-         "06",
-         "ಶಿವಮೊಗ್ಗ"
-        ],
-        [
-         "07",
-         "ತುಮಕೂರು"
-        ],
-        [
-         "30",
-         "ಉಡುಪಿ"
-        ],
-        [
-         "16",
-         "ಉತ್ತರ ಕನ್ನಡ"
-        ],
-        [
-         "12",
-         "ವಿಜಯಾಪುರ"
-        ],
-        [
-         "22",
-         "ಯಾದಗಿರಿ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "TI-taluk_code",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ತಾಲ್ಲೂಕು --"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "TI-village_code",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ಕಂದಾಯ ಗ್ರಾಮ --"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "pincode",
-       "type": "text"
-      },
-      {
-       "tag": "input",
-       "name": "TF-temple_location",
-       "type": "text"
-      },
-      {
-       "tag": "input",
-       "name": "TI-temple_id",
-       "type": "text"
-      },
-      {
-       "tag": "select",
-       "name": "TI-temple_subcategory_code",
-       "type": "dropdown",
-       "options": 4,
-       "sample_options": [
-        [
-         "",
-         "-- ದೇವಾಲಯ ಉಪ ವರ್ಗ --"
-        ],
-        [
-         "3",
-         "ಗುಂಪು"
-        ],
-        [
-         "1",
-         "ಮುಖ್ಯ"
-        ],
-        [
-         "2",
-         "ಉಪ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "TI-temple_category_code",
-       "type": "dropdown",
-       "options": 7,
-       "sample_options": [
-        [
-         "",
-         "-- ವರ್ಗ --"
-        ],
-        [
-         "1",
-         "ದೇವಾಲಯಗಳು"
-        ],
-        [
-         "2",
-         "ಜೈನ ದೇವಾಲಯಗಳು"
-        ],
-        [
-         "3",
-         "ಮಠಗಳು"
-        ],
-        [
-         "4",
-         "ಮಠಗಳಿಗೆ ಹೊಂದಿಕೊಂಡ ದೇವಾಲಯಗಳು"
-        ],
-        [
-         "5",
-         "ದತ್ತಿಗಳು"
-        ],
-        [
-         "6",
-         "ನಿರ್ದಿಷ್ಟ ದತ್ತಿಗಳು"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "TF-pradhana_moolavar",
-       "type": "dropdown",
-       "options": 4,
-       "sample_options": [
-        [
-         "",
-         "-- ಪ್ರಧಾನ ದೇವರು --"
-        ],
-        [
-         "1",
-         "ಸ್ವಾಮಿ"
-        ],
-        [
-         "2",
-         "ಅಮ್ಮನವರು"
-        ],
-        [
-         "3",
-         "ಎರಡೂ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "moolavar_type_code",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ದೇವಾಲಯ ಪೂಜೆ ವಿಧ --"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "moolavar_subtype_code",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ದೇವಾಲಯ ಪೂಜೆ ಉಪ ವಿಧ --"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "moolavar_swami_name",
-       "type": "text"
-      },
-      {
-       "tag": "input",
-       "name": "moolavar_ambal_name",
-       "type": "text"
-      },
-      {
-       "tag": "select",
-       "name": "TF-vimana_type",
-       "type": "dropdown",
-       "options": 9,
-       "sample_options": [
-        [
-         "",
-         "-- ವಿಮಾನದ ವಿಧ --"
-        ],
-        [
-         "1",
-         "ಆನಂದ ವಿಮಾನ"
-        ],
-        [
-         "3",
-         "ಅಷ್ಟಂಕ ವಿಮಾನ"
-        ],
-        [
-         "33",
-         "ಚತುಷ್ಟ"
-        ],
-        [
-         "2",
-         "ಗಜಮುಖ ವಿಮಾನ"
-        ],
-        [
-         "34",
-         "ಸಾಮಾನ್ಯ ಗೋಪುರ"
-        ],
-        [
-         "32",
-         "ಇಲ್ಲ"
-        ],
-        [
-         "999",
-         "ಇತರ ವಿಮಾನಗಳು"
-        ],
-        [
-         "31",
-         "ರಾಜಗೋಪುರ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "TF-sanctorum_structure",
-       "type": "dropdown",
-       "options": 9,
-       "sample_options": [
-        [
-         "",
-         "-- ಗರ್ಭಗುಡಿಯಲ್ಲಿ ಆಕಾರ --"
-        ],
-        [
-         "1",
-         "ವೃತ್ತದ ಆಕಾರ"
-        ],
-        [
-         "6",
-         "ಶಂಖ"
-        ],
-        [
-         "3",
-         "ಶಂಖದ ಆಕಾರ"
-        ],
-        [
-         "9",
-         "ಗಜಬೃಷ್ಠ"
-        ],
-        [
-         "7",
-         "ಷಟ್ಕೋನ"
-        ],
-        [
-         "8",
-         "ಪಂಚಭುಜ"
-        ],
-        [
-         "2",
-         "ಚದರ ಆಕಾರ"
-        ],
-        [
-         "5",
-         "ತ್ರಿಕೋನ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "agamam_code",
-       "type": "dropdown",
-       "options": 33,
-       "sample_options": [
-        [
-         "",
-         "-- ಆಗಮ --"
-        ],
-        [
-         "9",
-         "ಅಮ್ಮೀಮತ್ ಆಗಮ"
-        ],
-        [
-         "14",
-         "ಅನಲ ಆಗಮ"
-        ],
-        [
-         "19",
-         "ಚಂದ್ರಜ್ಞಾನ (ಚಂದ್ರಹಾಸ) ಆಗಮ"
-        ],
-        [
-         "23",
-         "ಸಿದ್ಧ ಆಗಮ"
-        ],
-        [
-         "6",
-         "ದೀಪ್ತ ಆಗಮ"
-        ],
-        [
-         "1",
-         "ಕಾಮಿಕ ಆಗಮ"
-        ],
-        [
-         "32",
-         "ಕರ್ಣ ಕಾಮಿಗ ಆಗಮ"
-        ],
-        [
-         "27",
-         "ಕರ್ಣ ಆಗಮ"
-        ],
-        [
-         "31",
-         "ಕುಮಾರ ತರ"
-        ],
-        [
-         "22",
-         "ಲಲಿತ ಆಗಮ"
-        ],
-        [
-         "17",
-         "ಮಕುಡ ಆಗಮ"
-        ],
-        [
-         "20",
-         "ಮುಖಬಿಂಬ ಆಗಮ"
-        ],
-        [
-         "12",
-         "ನಿಶ್ವಾರ ಆಗಮ"
-        ],
-        [
-         "999",
-         "ಇತರೆ ಪ್ರಕಾರ"
-        ],
-        [
-         "29",
-         "ಪಾಂಚರಾತ್ರ"
-        ],
-        [
-         "26",
-         "ಪರಮೇಶ್ವರ ಆಗಮ"
-        ],
-        [
-         "21",
-         "ಪುರೋಹಿತ (ಆಂತರಿಕ) ಅಗಮ"
-        ],
-        [
-         "16",
-         "ರಾರವ ಆಗಮ"
-        ],
-        [
-         "8",
-         "ಸಹಸ್ರಕ ಅಗಮ"
-        ],
-        [
-         "24",
-         "ಸಂತಾನ ಆಗಮ"
-        ],
-        [
-         "3",
-         "ಸಿಂಥಿಯಾ ಅಗಮ"
-        ],
-        [
-         "10",
-         "ಸುಪ್ರಬಾತ ಆಗಮ"
-        ],
-        [
-         "25",
-         "ಸರ್ವೋತ್ಕ (ನರಸಿಂಹ) ಆಗಮ"
-        ],
-        [
-         "7",
-         "ಸೂತ್ಸುಮ ಅಗಮ"
-        ],
-        [
-         "13",
-         "ಸುಯಾಂಬುವ ಆಗಮ"
-        ],
-        [
-         "33",
-         "ತಂದರಸಾರ"
-        ],
-        [
-         "30",
-         "ವೈಖಾನಸ"
-        ],
-        [
-         "28",
-         "ವಡುಲ (ಹರಡುವ) ಆಗಮ"
-        ],
-        [
-         "15",
-         "ವೀರ (ಭದ್ರ) ಆಗಮ"
-        ],
-        [
-         "11",
-         "ವಿಜಯ ಆಗಮ"
-        ],
-        [
-         "18",
-         "ವಿಮಲಾ ಆಗಮ"
-        ],
-        [
-         "2",
-         "ಯೋಗಜ ಆಗಮ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "mangalasanam_code",
-       "type": "dropdown",
-       "options": 34,
-       "sample_options": [
-        [
-         "",
-         "-- ಹಾಡು ಸ್ವೀಕರಿಸಲಾಗಿದೆ --"
-        ],
-        [
-         "30",
-         "-"
-        ],
-        [
-         "10",
-         "ಆಳ್ವಾರರು"
-        ],
-        [
-         "14",
-         "ಬಹುಮನಿ"
-        ],
-        [
-         "24",
-         "ಆಂಗ್ಲರ ಕಾಲದಿಂದ ಬೆಳಕಿಗೆ ಬಂದಿರುತ್ತದೆ"
-        ],
-        [
-         "11",
-         "ಚಾಲುಕ್ಯ"
-        ],
-        [
-         "18",
-         "ಚೋಳರು"
-        ],
-        [
-         "25",
-         "ದುರ್ಗಾಪರಮೇಶ್ವರಿ"
-        ],
-        [
-         "32",
-         "ಈರಪ್ಪಯ್ಯ"
-        ],
-        [
-         "28",
-         "ಗೋಪುರ ಮತ್ತು ಸುತ್ತುಪೌಳಿ"
-        ],
-        [
-         "13",
-         "ಹೊಯ್ಸಳರು"
-        ],
-        [
-         "9",
-         "ಕದಂಬ"
-        ],
-        [
-         "22",
-         "ಮಧ್ವಾಚಾರ್ಯ"
-        ],
-        [
-         "17",
-         "ಮೈಸೂರು ಒಡೆಯರು"
-        ],
-        [
-         "29",
-         "ಅನ್ವಯಿಸುವುದಿಲ್ಲ"
-        ],
-        [
-         "16",
-         "ನಾಯಕ್"
-        ],
-        [
-         "31",
-         "ಅನ್ವಯಿಸುವುದಿಲ್ಲ"
-        ],
-        [
-         "8",
-         "ಇತರೆ ಸಂತ"
-        ],
-        [
-         "4",
-         "ಇತರೆ ಕನ್ಕಡ ಕವಿಗಳು"
-        ],
-        [
-         "20",
-         "ಪಲ್ಲರು"
-        ],
-        [
-         "26",
-         "ಪಾಂಚರಾತ್ರ"
-        ],
-        [
-         "19",
-         "ಪಾಂಡಿಯರು"
-        ],
-        [
-         "12",
-         "ರಾಷ್ಟ್ರಕೂಟ"
-        ],
-        [
-         "27",
-         "ಗೌತಮ ಋಷಿ"
-        ],
-        [
-         "5",
-         "ಶೀವ ನಾಲ್ವರು"
-        ],
-        [
-         "1",
-         "ಶೀವ ನಾಯನ್ಮಾರ್ಸ್"
-        ],
-        [
-         "6",
-         "ಶೀವ ಸಂತ"
-        ],
-        [
-         "7",
-         "ಸಂತಾನ ಕುರವರ್ಗಲ್"
-        ],
-        [
-         "33",
-         "ಶಾಕ್ತ ಸಾಧು ಸಂತರೂ"
-        ],
-        [
-         "23",
-         "ಶ್ರೀ ಶ್ರೀ ವಾದಿರಾಜ ತೀರ್ಥರು"
-        ],
-        [
-         "15",
-         "ಸುಲ್ತಾನ್"
-        ],
-        [
-         "2",
-         "ವೈನವ ಆಳ್ವರು"
-        ],
-        [
-         "3",
-         "ವೈಷ್ಣವ ಸಂತರು"
-        ],
-        [
-         "21",
-         "ವಿಜಯನಗರ ಅರಸರು"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "subshrine_name",
-       "type": "text"
-      },
-      {
-       "tag": "select",
-       "name": "speciality_code",
-       "type": "dropdown",
-       "options": 11,
-       "sample_options": [
-        [
-         "",
-         "-- ದೇವಾಲಯ ವಿಶೇಷ --"
-        ],
-        [
-         "6",
-         "ತಲೆ ಮರ"
-        ],
-        [
-         "5",
-         "ಐತಿಹಾಸಿಕ"
-        ],
-        [
-         "999",
-         "ಇತರೆ"
-        ],
-        [
-         "9",
-         "ಪ್ರಸಾದ"
-        ],
-        [
-         "2",
-         "ಪ್ರಾರ್ಥನೆ"
-        ],
-        [
-         "3",
-         "ಪುರಾತನ"
-        ],
-        [
-         "1",
-         "ಪರಿಹಾರ"
-        ],
-        [
-         "8",
-         "ಪವಿತ್ರ ನೀರು"
-        ],
-        [
-         "7",
-         "ರಚನೆ"
-        ],
-        [
-         "4",
-         "ಪ್ರವಾಸಿ"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "temple_popular_name",
-       "type": "text"
-      },
-      {
-       "tag": "input",
-       "name": "moolavar_popular_name",
-       "type": "text"
-      },
-      {
-       "tag": "input",
-       "name": "ambal_popular_name",
-       "type": "text"
-      },
-      {
-       "tag": "select",
-       "name": "poet_saint",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ಕವಿಗಳು, ಸಂತರು --"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "sthalam_type",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ಸ್ಥಳ ವಿಶೇಷ ವಿಧ --"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "institute_code",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ಸಂಸ್ಥೆಗಳು --"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "inspector_office_code",
-       "type": "dropdown",
-       "options": 1,
-       "sample_options": [
-        [
-         "",
-         "-- ಇನ್ಸ್ಪೆಕ್ಟರ್ ವಿಭಾಗ --"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "parliament_code",
-       "type": "dropdown",
-       "options": 29,
-       "sample_options": [
-        [
-         "",
-         "-- ಸಂಸತ್ತಿನ ಕ್ಷೇತ್ರ --"
-        ],
-        [
-         "3",
-         "ಬಾಗಲಕೋಟೆ"
-        ],
-        [
-         "24",
-         "ಬೆಂಗಳೂರು ಕೇಂದ್ರ"
-        ],
-        [
-         "15",
-         "ಬೆಂಗಳೂರು ಉತ್ತರ"
-        ],
-        [
-         "23",
-         "ಬೆಂಗಳೂರು ಗ್ರಾಮೀಣ"
-        ],
-        [
-         "25",
-         "ಬೆಂಗಳೂರು ದಕ್ಷಿಣ"
-        ],
-        [
-         "2",
-         "ಬೆಳಗಾವಿ"
-        ],
-        [
-         "9",
-         "ಬಳ್ಳಾರಿ"
-        ],
-        [
-         "7",
-         "ಬೀದರ್"
-        ],
-        [
-         "4",
-         "ಬಿಜಾಪುರ"
-        ],
-        [
-         "22",
-         "ಚಾಮರಾಜನಗರ"
-        ],
-        [
-         "26",
-         "ಚಿಕ್ಕಬಳ್ಳಾಪುರ"
-        ],
-        [
-         "1",
-         "ಚಿಕ್ಕೋಡಿ"
-        ],
-        [
-         "18",
-         "ಚಿತ್ರದುರ್ಗ"
-        ],
-        [
-         "17",
-         "ದಕ್ಷಿಣ ಕನ್ನಡ"
-        ],
-        [
-         "13",
-         "ದಾವಣಗೆರೆ"
-        ],
-        [
-         "11",
-         "ಧಾರವಾಡ"
-        ],
-        [
-         "5",
-         "ಗುಲ್ಬರ್ಗ"
-        ],
-        [
-         "16",
-         "ಹಾಸನ"
-        ],
-        [
-         "10",
-         "ಹಾವೇರಿ"
-        ],
-        [
-         "27",
-         "ಕೋಲಾರ"
-        ],
-        [
-         "8",
-         "ಕೊಪ್ಪಳ"
-        ],
-        [
-         "20",
-         "ಮಂಡ್ಯ"
-        ],
-        [
-         "21",
-         "ಮೈಸೂರು"
-        ],
-        [
-         "6",
-         "ರಾಯಚೂರು"
-        ],
-        [
-         "14",
-         "ಶಿವಮೊಗ್ಗ"
-        ],
-        [
-         "19",
-         "ತುಮಕೂರು"
-        ],
-        [
-         "28",
-         "ಉಡುಪಿ ಚಿಕ್ಕಮಗಳೂರು"
-        ],
-        [
-         "12",
-         "ಉತ್ತರ ಕನ್ನಡ"
-        ]
-       ]
-      },
-      {
-       "tag": "select",
-       "name": "assembly_code",
-       "type": "dropdown",
-       "options": 226,
-       "sample_options": [
-        [
-         "",
-         "-- ವಿಧಾನಸಭಾ ಕ್ಷೇತ್ರ --"
-        ],
-        [
-         "33",
-         "ಅಫಜಲಪುರ"
-        ],
-        [
-         "50",
-         "ಆಳಂದ"
-        ],
-        [
-         "172",
-         "ಆನೇಕಲ್"
-        ],
-        [
-         "9",
-         "ಅರಭಾವಿ"
-        ],
-        [
-         "119",
-         "ಅರಕಲಗೂಡು"
-        ],
-        [
-         "115",
-         "ಅರಸೀಕೆರೆ"
-        ],
-        [
-         "3",
-         "ಅಥಣಿ"
-        ],
-        [
-         "56",
-         "ಔರಾದ್"
-        ],
-        [
-         "20",
-         "ಬಬಲೇಶ್ವರ"
-        ],
-        [
-         "29",
-         "ಬದಾಮಿ"
-        ],
-        [
-         "30",
-         "ಬಾಗಲಕೋಟೆ"
-        ],
-        [
-         "202",
-         "ಬಾಗೇಪಲ್ಲಿ"
-        ],
-        [
-         "14",
-         "ಬೈಲಹೊಂಗಲ"
-        ],
-        [
-         "112",
-         "ಬೈಂದೂರು"
-        ],
-        [
-         "171",
-         "ಬೆಂಗಳೂರು ದಕ್ಷಿಣ"
-        ],
-        [
-         "214",
-         "ಬಂಗಾರಪೇಟೆ"
-        ],
-        [
-         "126",
-         "ಬಂಟ್ವಾಳ"
-        ],
-        [
-         "51",
-         "ಬಸವಕಲ್ಯಾಣ"
-        ],
-        [
-         "19",
-         "ಬಸವನ ಬಾಗೆವಾಡಿ"
-        ],
-        [
-         "196",
-         "ಬಸವನಗುಡಿ"
-        ],
-        [
-         "12",
-         "ಬೆಳಗಾವಿ ದಕ್ಷಿಣ"
-        ],
-        [
-         "13",
-         "ಬೆಳಗಾವಿ ಗ್ರಾಮೀಣ"
-        ],
-        [
-         "11",
-         "ಬೆಳಗಾವಿ ಉತ್ತರ"
-        ],
-        [
-         "69",
-         "ಬಳ್ಳಾರಿ"
-        ],
-        [
-         "70",
-         "ಬಳ್ಳಾರಿ ನಗರ"
-        ],
-        [
-         "121",
-         "ಬೆಳ್ತಂಗಡಿ"
-        ],
-        [
-         "116",
-         "ಬೇಲೂರು"
-        ],
-        [
-         "106",
-         "ಭದ್ರಾವತಿ"
-        ],
-        [
-         "55",
-         "ಭಾಲ್ಕಿ"
-        ],
-        [
-         "94",
-         "ಭಟ್ಕಳ"
-        ],
-        [
-         "54",
-         "ಬೀದರ್"
-        ],
-        [
-         "53",
-         "ಬೀದರ್ ದಕ್ಷಿಣ"
-        ],
-        [
-         "21",
-         "ಬಿಜಾಪುರ ನಗರ"
-        ],
-        [
-         "28",
-         "ಬಿಲ್ಗಿ"
-        ],
-        [
-         "200",
-         "ಬೊಮ್ಮನಹಳ್ಳಿ"
-        ],
-        [
-         "198",
-         "ಬಿಟಿಎಂ ಲೇಔಟ್"
-        ],
-        [
-         "78",
-         "ಬ್ಯಾಡಗಿ"
-        ],
-        [
-         "178",
-         "ಬ್ಯಾಟರಾಯನಪುರ"
-        ],
-        [
-         "130",
-         "ಚಳ್ಳಕೆರೆ"
-        ]
-       ]
-      },
-      {
-       "tag": "input",
-       "name": "captchatxt",
-       "type": "text"
-      }
-     ]
-    },
-    {
-     "action": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search",
-     "method": "POST",
-     "fields": []
-    }
-   ],
+   "forms": [],
    "links": [
     {
      "text": "ನಮ್ಮ ಬಗ್ಗೆ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
     },
     {
      "text": "ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
     },
     {
      "text": "ಆಡಳಿತ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
     },
     {
      "text": "ದೇವಾಲಯಗಳು",
@@ -3079,23 +1991,23 @@
     },
     {
      "text": "ಗ್ಯಾಲರಿ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
     },
     {
      "text": "ಯೋಜನೆಗಳು",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
     },
     {
      "text": "ಆಗಮ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
     },
     {
      "text": "ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
     },
     {
      "text": "ಅಧಿಸೂಚನೆ",
-     "href": "https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search"
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
     },
     {
      "text": "ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ",
@@ -3115,1339 +2027,296 @@
      "rows": 3,
      "sample": [
       [
-       "S.No.",
-       "Temple Id",
-       "Temple Name",
-       "District",
-       "Action"
+       "Terms of Use This Temple Portal is hosted by Hindu",
+       "",
+       "Terms of Use This Temple Portal is hosted by Hindu"
       ],
-      [],
       [
-       "Loading..."
+       ""
+      ],
+      [
+       "Terms of Use This Temple Portal is hosted by Hindu"
+      ]
+     ],
+     "row_links": []
+    },
+    {
+     "rows": 2,
+     "sample": [
+      [
+       ""
+      ],
+      [
+       "Terms of Use This Temple Portal is hosted by Hindu"
       ]
      ],
      "row_links": []
     }
    ],
-   "text_start": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Session timeout in : 1200 sec Screen Reader Access A - A A + English Government of Karnataka Hindu Religious Institutions & Charitable Endowments Department × Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ HR-CE - Temple Summary ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Temple Search Match all of the following"
+   "script_srcs": [
+    "https://itms.kar.nic.in/resources/library/js/jquery-3.7.1.min.js",
+    "https://itms.kar.nic.in/resources/library/js/jquery-ui.min_1.13.2.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/bootstrap.bundle.min.js",
+    "https://itms.kar.nic.in/resources/library/js/jquery-confirm.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/bootstrap-datepicker.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/jquery.dataTables.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/dataTables.bootstrap4.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/dataTables.buttons.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/jszip.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.html5.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.print.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.colVis.min.js",
+    "https://itms.kar.nic.in/resources/library/label.js",
+    "https://itms.kar.nic.in/js/req_common.js",
+    "https://itms.kar.nic.in/temples/js/login_script.js",
+    "https://itms.kar.nic.in/eservices/js/ajax_epayment.js",
+    "https://itms.kar.nic.in/resources/qrcode/qrcode-js/jquery.qrcode.min.js",
+    "https://itms.kar.nic.in/resources/qrcode/qrcode-js/qrcode.js",
+    "https://itms.kar.nic.in/resources/texttospeech/text_to_speech.js",
+    "https://itms.kar.nic.in/js/session_out.js",
+    "https://itms.kar.nic.in/masters/js/master_validate.js"
+   ],
+   "script_endpoints": [
+    "../budget/ajax/budget_app_master.php",
+    "../budget/ajax/budgetinfo_view_new.php",
+    "../courtcases/ajax/courtinfo_view.php",
+    "../dcbs/ajax/dcbinfo_view_new.php",
+    "../department/ajax/deptinfo_view_new.php",
+    "../eservices/ajax/epayinfo_view_new.php",
+    "../hrcehome/ajax/homepage_view.php",
+    "../hrcehome/index_temple.php?tid=",
+    "../hundi/ajax/hundi_infoview.php",
+    "../includes/color_blindness_page.php",
+    "../includes/officialhome.php",
+    "../includes/officialhome_others.php",
+    "../includes/set_session.php",
+    "../institute/ajax/instituteinfo_view_new.php",
+    "../lands/ajax/landinfo_view_new.php",
+    "../magazine/ajax/magazineinfo_view.php",
+    "../property/ajax/property_app_master.php",
+    "../property/ajax/propertyinfo_view_new.php",
+    "../renovate/ajax/renovateinfo_view_new.php",
+    "../resources/library/audio/string_audio.php?aud=1793292665",
+    "../resources/library/esign/index.php",
+    "../temples/ajax/ajax_page.php",
+    "../temples/ajax/app_master.php",
+    "../temples/ajax/mapping_screen.php",
+    "../temples/ajax/module_redir.php?module_id=",
+    "../temples/ajax/redir.php",
+    "../temples/ajax/templeinfo_view_new.php",
+    "../temples/menuasign.php?uid=",
+    "../temples/reports/temple_reports_rpt.php",
+    "../temples/temple_festival.php?activity_desc=Tracking-",
+    "../temples/temple_festivaldetail.php?festivalparam=",
+    "../temples/templeview.php",
+    "../ticketing/ajax/ticketing_infoview.php",
+    "../trustee/ajax/trusteeinfo_view_new.php",
+    "../webservice/youtubevideo_update.php",
+    "../welfare/ajax/welfareinfo_view_new.php",
+    "ajax/getdata.php",
+    "ajax/mapping_screen.php",
+    "templeinfo.php"
+   ],
+   "script_snippets": [
+    "false; }); }); $(document).ready(function(){ var table = $('#myTable,#myTable1,#myTable2,#subTable,#myTable3,#myTable4,#myTable5').DataTable({ retrieve: true, stateSave: false, language: { searchPlaceholder: \"Search...\", search:\"\" } }); $('a.toggle-vis').on( 'click', function (e) { e.preventDefault(); var column = table.column( $(this).attr('data-column') ); column.visible( ! column.visible() ); }); }); $(window).on('load', function(){ $(\".se-pre-con\").fadeOut(\"slow\"); }); $(document).rea",
+    "==========*/ $(\".colorblindness_page\").click(function(){ $(\"span[data-id]\").css('border','none'); var color = $(this).data('id'); $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:color, tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); }); /*================================ colorblindness_page end =================================*/ /*================",
+    "s_page\").click(function(){ $(\"span[data-id]\").css('border','none'); var color = $(this).data('id'); $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:color, tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); }); /*================================ colorblindness_page end =================================*/ /*================================ Onload ===========",
+    "/****logo image color end ****/ } $(document).ready(function(){ var mobile_color=''; if(mobile_color=='910101') { $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:'#910101', tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); } }); $(document).ready(function() { $(\".templeform_grid_view\").click(function(){ var formname = $(this).par",
+    "**/ } $(document).ready(function(){ var mobile_color=''; if(mobile_color=='910101') { $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:'#910101', tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); } }); $(document).ready(function() { $(\".templeform_grid_view\").click(function(){ var formname = $(this).parents(\"form\").attr(\"id\"); var",
+    "><img src=\"../resources/library/images/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function",
+    "ges/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function changelanguage() { // alert(",
+    "(thrownError); } }); }); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ mya",
+    "}); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } });",
+    "r, ajaxOptions, thrownError){ myalert(thrownError); } }); } function setcookie(temple_id) { var token = ''; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = ''; var service_code= $('#service_code')",
+    "myalert(thrownError); } }); } function setcookie(temple_id) { var token = ''; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = ''; var service_code= $('#service_code').val(); $('#ack_no').val('')",
+    "_no) { var token = ''; var service_code= $('#service_code').val(); $('#ack_no').val(''); jQuery.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { transstatus: transstatus, mobileno:mobile_no, service_code:service_code, pg:'epayment_ackid', tokenp:token }, success:function(result) { $('#ack_no').html(result); $('#ack_no').val(''); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function getParameter"
+   ],
+   "text_start": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Session timeout in : 1200 sec Screen Reader Access A - A A + English Government of Karnataka Hindu Religious Institutions & Charitable Endowments Department × ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Portal Policies Terms of Use This Temple Portal is hosted by Hindu Religious Institutions & Charitable Endowments Department (HRI & CE), Government of Karnataka. The webiste has been designed and developed by Nati"
   },
   {
-   "url": "https://travancoredevaswomboard.org/downloads/",
-   "post": null,
-   "robots_allows": true,
-   "robots_txt": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://travancoredevaswomboard.org/wp-sitemap.xml\n",
-   "status": 200,
-   "final_url": "https://travancoredevaswomboard.org/downloads/",
-   "content_type": "text/html; charset=UTF-8",
-   "bytes": 41154,
-   "title": "Downloads – Travancore Devaswom Board",
-   "headings": [
-    "Downloads",
-    "Kshethrasuvidham | Temple Management Solutions"
-   ],
-   "forms": [
-    {
-     "action": "https://travancoredevaswomboard.org/",
-     "method": "GET",
-     "fields": [
-      {
-       "tag": "input",
-       "name": "s",
-       "type": "search"
-      },
-      {
-       "tag": "input",
-       "name": null,
-       "type": "submit"
-      }
-     ]
-    },
-    {
-     "action": "https://travancoredevaswomboard.org/",
-     "method": "GET",
-     "fields": [
-      {
-       "tag": "input",
-       "name": "s",
-       "type": "search"
-      },
-      {
-       "tag": "input",
-       "name": null,
-       "type": "submit"
-      }
-     ]
-    }
-   ],
-   "links": [
-    {
-     "text": "Skip to navigation",
-     "href": "https://travancoredevaswomboard.org/downloads/#site-navigation"
-    },
-    {
-     "text": "Skip to content",
-     "href": "https://travancoredevaswomboard.org/downloads/#content"
-    },
-    {
-     "text": "Sabarimala Temple Calendar",
-     "href": "https://travancoredevaswomboard.org/sabarimala-temple-calendar/"
-    },
-    {
-     "text": "Vazhipadu List",
-     "href": "http://travancoredevaswomboard.org/vazhipadu/"
-    },
-    {
-     "text": "Downloads",
-     "href": "https://travancoredevaswomboard.org/downloads/"
-    },
-    {
-     "text": "Downloads",
-     "href": "https://travancoredevaswomboard.org/downloads/"
-    },
-    {
-     "text": "Sabarimala Temple Calendar",
-     "href": "https://travancoredevaswomboard.org/sabarimala-temple-calendar/"
-    },
-    {
-     "text": "Vazhipadu List",
-     "href": "http://travancoredevaswomboard.org/vazhipadu/"
-    },
-    {
-     "text": "Downloads",
-     "href": "https://travancoredevaswomboard.org/downloads/"
-    },
-    {
-     "text": "FORM FOR IDENTITY CARD FOR EMPLOYEES AND CIRCULAR",
-     "href": "http://travancoredevaswomboard.org/wp-content/uploads/2025/10/id-form.pdf"
-    },
-    {
-     "text": "APPLICATION FORM FOR SCOOTER/MOTOR CYCLE/CAR LOAN FOR EMPLOYEES",
-     "href": "http://travancoredevaswomboard.org/wp-content/uploads/2023/03/KFC-1044-25A-sec-No-border.pdf"
-    },
-    {
-     "text": "FORM B1 – APPLICATION FOR",
-     "href": "http://travancoredevaswomboard.org/wp-content/uploads/2023/08/Adobe-Scan-02-Aug-2023-1.pdf"
-    },
-    {
-     "text": "REFUNDABLE",
-     "href": "http://travancoredevaswomboard.org/wp-content/uploads/2023/08/Adobe-Scan-02-Aug-2023-1.pdf"
-    },
-    {
-     "text": "/NON-REFUNDABLE WITHDRAWAL FROM THE DEVASWOM PROVIDENT FUND",
-     "href": "http://travancoredevaswomboard.org/wp-content/uploads/2023/08/Adobe-Scan-02-Aug-2023-1.pdf"
-    },
-    {
-     "text": "Application For Leave",
-     "href": "http://travancoredevaswomboard.org/wp-content/uploads/2023/11/Application-For-Leave.pdf"
-    },
-    {
-     "text": "Sabarimala Temple Calendar",
-     "href": "https://travancoredevaswomboard.org/sabarimala-temple-calendar/"
-    },
-    {
-     "text": "",
-     "href": "https://travancoredevaswomboard.org/downloads/"
-    }
-   ],
-   "tables": [],
-   "text_start": "Downloads – Travancore Devaswom Board Skip to navigation Skip to content Search for: Travancore Devaswom Board Swaami Saranam Home Projects Sabarimala Sabarimala Temple Calendar Sabarimala Master Plan Vazhipadu List Administration Notifications RTI Act Orders Contact Us Sabarimala Pooja Timing Press Release Sabarimala News Downloads ക്ഷേത്രങ്ങളിലെ വഴിപാട് നിരക്കു വർദ്ധന – ഉത്തരവ് Home Projects Sabarimala Administration Notifications RTI Act Orders Contact Us Sabarimala Pooja Timing Press Release Sabarimala News Downloads ക്ഷേത്രങ്ങളിലെ വഴിപാട് നിരക്കു വർദ്ധന – ഉത്തരവ് Search for: Travancore Devaswom Board Swaami Saranam OFFICIAL WEBSITE Home Projects Sabarimala Sabarimala Temple Calendar Sabarimala Master Plan Vazhipadu List Administration Notifications RTI Act Orders Contact Us Sabarimala Pooja Timing Press Release Sabarimala News Downloads ക്ഷേത്രങ്ങളിലെ വഴിപാട് നിരക്കു വർദ്ധന – ഉത്തരവ് Downloads Home Downloads FORM FOR IDENTITY CARD FOR EMPLOYEES AND CIRCULAR APPLICATION FORM FOR SCOOTER/MOTOR CYCLE/CAR LOAN FOR EMPLOYEES FORM B1 – APPLICATION FOR REFUNDABLE /NON-REFUNDABLE WITHDRAWAL FROM THE DEVASWOM PROVIDENT FUND Application For Leave Home Projects Sabarimala Sabarimala Temple Calendar Sabarimala Master Plan Administration Notifications RTI Act Orders Orders 2020 Orders 2019 Orders 2018 Orders 2017 Contact Us Board Office: Nanthancode, Kawdiar Post, Thiruvananthapuram, Kerala – 695003 EPABX NOS: 0471-2317983, 2316963, 2310921, 2723240 FAX: 0471-2310192 © 2020 Designed "
-  },
-  {
-   "url": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/",
-   "post": null,
-   "robots_allows": true,
-   "robots_txt": "# If you are regularly crawling WordPress.com sites, please use our firehose to receive real-time push updates instead.\n# Please see https://developer.wordpress.com/docs/firehose/ for more details.\n\nSitemap: https://490kdbtemples.org/sitemap.xml\nSitemap: https://490kdbtemples.org/news-sitemap.xml\n\nUser-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\nDisallow: /wp-login.php\nDisallow: /wp-signup.php\nDisallow: /press-this.php\nDisallow: /remote-login.php\nDisallow: /activate/\nDisallow: /cgi-bin/\nDisallow: /mshots/v1/\nDisallow: /next/\nDisallow: /public.api/\n\n# This file was generated on Sat, 22 Aug 2026 15:58:22 +0000\n",
-   "status": 200,
-   "final_url": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/",
-   "content_type": "text/html; charset=UTF-8",
-   "bytes": 182643,
-   "title": "Nagercoil Devaswom Group நாகர்கோயில் தொகுதி தேவஸம் | திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ",
-   "headings": [
-    "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ",
-    "Nagercoil Devaswom Group நாகர்கோயில் தொகுதி தேவஸம்",
-    "",
-    "Nagercoil (Agastheeswaram Taluk) was the erstwhile taluk of the princely state of Travancore in India. The States Reorga",
-    "",
-    "The Agastheeswaram Taluk Map: attached in bottom of this page. From this Map we can able to realise the exact Locations ",
-    "Name of Villages in Agastheeswaram Taluk: Acharipallam, Agastiswaram-A, Agastiswaram-B, Alagappapuram, Anjugramam, Azhag",
-    "இணைக்கப்பட்ட திருக்கோயில்கள்",
-    "Incorporated Devaswoms",
-    "இணைக்கப்படாத திருக்கோயில்கள் – பகுதி-1",
-    "Unincorporated Devaswoms – Part -1",
-    "Unincorporated Devaswoms – Part -2",
-    "Grant In Aid Temples / Matoms / Institutions",
-    "வருராந்தர நன்கொடை பெரும் திருக்கோயில்கள்",
-    "Annual Grant Temples",
-    "Rate this:",
-    "The KDB President & Members or The Joint Commissioner / Executive Officer",
-    "Copy Right License",
-    "Admin / Chief Author",
-    "KDB Temple Searcher"
-   ],
-   "forms": [
-    {
-     "action": "https://490kdbtemples.org/",
-     "method": "GET",
-     "fields": [
-      {
-       "tag": "input",
-       "name": "s",
-       "type": "search"
-      },
-      {
-       "tag": "input",
-       "name": null,
-       "type": "submit"
-      }
-     ]
-    },
-    {
-     "action": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/",
-     "method": "POST",
-     "fields": [
-      {
-       "tag": "input",
-       "name": null,
-       "type": "submit"
-      }
-     ]
-    },
-    {
-     "action": "https://subscribe.wordpress.com",
-     "method": "POST",
-     "fields": [
-      {
-       "tag": "input",
-       "name": "email",
-       "type": "email"
-      },
-      {
-       "tag": "input",
-       "name": "action",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "blog_id",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "source",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "sub-type",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "_wpnonce",
-       "type": "hidden"
-      }
-     ]
-    }
-   ],
-   "links": [
-    {
-     "text": "Skip to content",
-     "href": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/#content"
-    },
-    {
-     "text": "Home",
-     "href": "https://490kdbtemples.wordpress.com/"
-    },
-    {
-     "text": "Boothapandy Devaswoms",
-     "href": "https://490kdbtemples.org/about/boothapandy-devaswom-group-of-temples-kdb-1-to-66/"
-    },
-    {
-     "text": "Nagercoil Devaswoms",
-     "href": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/"
-    },
-    {
-     "text": "Padmanabhapuram Devaswoms",
-     "href": "https://490kdbtemples.org/about/padmanabhapuram-devaswom-group-of-temples-kdb-160-to-274a/"
-    },
-    {
-     "text": "Kuzhithurai Devaswoms",
-     "href": "https://490kdbtemples.org/about/kuzhithurai-devaswom-group-of-temples-kdb-275-to-367a/"
-    },
-    {
-     "text": "Shencottah Devaswoms",
-     "href": "https://490kdbtemples.org/devaswoms/shencottah-devaswom-group-of-temples-kdb-368-to-455/"
-    },
-    {
-     "text": "Rayasam Records",
-     "href": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/"
-    },
-    {
-     "text": "Sub Group Devaswoms",
-     "href": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/"
-    },
-    {
-     "text": "Devaswom Classifications",
-     "href": "https://490kdbtemples.wordpress.com/about/list-of-devaswoms/"
-    },
-    {
-     "text": "As per The Travancore State Panjangam",
-     "href": "https://490kdbtemples.wordpress.com/about/list-of-devaswom-sub-groups/"
-    },
-    {
-     "text": "Inscriptions in KDB Devaswoms",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "The Original Travancore Devaswom Manuals and it’s Contents",
-     "href": "https://490kdbtemples.org/travancore-devaswom-manual/"
-    },
-    {
-     "text": "Devaswom Maps",
-     "href": "https://490kdbtemples.wordpress.com/about/devaswom-taluks/"
-    },
-    {
-     "text": "e_Library",
-     "href": "https://490kdbtemples.org/about/e-library/"
-    },
-    {
-     "text": "Travancore Temple Rules",
-     "href": "https://490kdbtemples.org/daily-poojas-and-special-rituals-in-travancore-temple-rules/"
-    },
-    {
-     "text": "LAND REVENUE RECORDS AND ACCOUNTS",
-     "href": "https://490kdbtemples.org/land-revenue-records-and-accounts/"
-    },
-    {
-     "text": "BIBLIOGRAPHY",
-     "href": "https://490kdbtemples.org/reference/"
-    },
-    {
-     "text": "Festivals",
-     "href": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/"
-    },
-    {
-     "text": "Shivalayam Ottam",
-     "href": "https://490kdbtemples.wordpress.com/about/kumari-shivalayam-ottam/"
-    },
-    {
-     "text": "Official Port",
-     "href": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/"
-    },
-    {
-     "text": "HR&CE – KDB – Temples",
-     "href": "http://www.kanyakumaritemples.tnhrce.in/"
-    },
-    {
-     "text": "KK District Devaswoms",
-     "href": "http://www.kanyakumaritemples.org"
-    },
-    {
-     "text": "HRCE ACT 1959 – Incorporated Devaswoms",
-     "href": "http://tnhrce.org/pdf/HRCE_ACT_1959_SH_1.pdf"
-    },
-    {
-     "text": "HRCE ACT 1959 – Unincorporated Devaswoms",
-     "href": "http://tnhrce.org/pdf/HRCE_ACT_1959_SH_2,3.pdf"
-    },
-    {
-     "text": "Heritage sites",
-     "href": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/"
-    },
-    {
-     "text": "KDB Temple Guide",
-     "href": "http://www.tnhrce.org/temples/TNHRCE_temple_Kanyakumari%20KOVIL%20VALIKATTI.html"
-    },
-    {
-     "text": "Temple Contact",
-     "href": "http://www.kanyakumaritemples.org/contact_us.php"
-    },
-    {
-     "text": "Donors",
-     "href": "https://490kdbtemples.wordpress.com/about/list-of-donors-for-the-renovation-poojas-for-non-pooja-temples/"
-    },
-    {
-     "text": "Sponsors",
-     "href": "https://490kdbtemples.wordpress.com/about/web-site-sponsers/"
-    },
-    {
-     "text": "Contact us",
-     "href": "https://490kdbtemples.wordpress.com/about/contact-us/"
-    },
-    {
-     "text": "Acknowledgements",
-     "href": "https://490kdbtemples.org/acknowledgements/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ ",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/67th-kdb-arulmigu-thanumalayan-thirukkovil-suchindram-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/68th-kdb-arulmigu-bhagavathyamman-thirukkovil-kanyakumari-agastheeswaram-taluk/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/69th-kdb-arulmigu-agasthiyamudaya-nainar-thirukkovil-agastheeswaram-agastheeswaram-taluk/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/70th-kdb-arulmigu-subramaniaswamy-thirukkovil-marungoor-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/71th-kdb-arulmigu-eaduththayudhamudaya-nainar-thirukkovil-banamthittai-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/72th-kdb-arulmigu-mathusoothanaperumal-thirukkovil-parakkai-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/73th-kdb-arulmigu-pachchaperumal-thirukkovil-ezhagaram-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/74th-kdb-arulmigu-azhakamman-thirukkovil-vadiveeswaram-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/75th-kdb-455-arulmigu-nagaraja-thirukkovil-nagercoil-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/76th-kdb-75-arulmigu-thazhuviya-mahadevar-thirukkovil-thaliyal-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/77th-kdb-76-arulmigu-krishnanaswamy-thirukkovil-krishnankovil-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/78th-kdb-78-arulmigu-natarajar-thirukkovil-perambalam-suchendiram-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/79th-kdb-77-arulmigu-thekketheruvu-kulasekara-perumal-thirukkovil-perambalam-sucheenthiram-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/80th-kdb-79-arulmigu-krishnanaswamy-thirukkovil-asramam-sucheenthiram-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/81th-kdb-80-arulmigu-munnuthiththa-nangayamman-thirukkovil-sucheenthiram-agastheeswaram-taluk-major-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/82th-kdb-81-arulmigu-sakkaratheertha-viswanathar-thirukkovil-kanniyakumari-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/83th-kdb-82-arulmigu-panchalangapuram-krishnanaswamy-thirukkovil-panchalangapuram-makaathaanapuram-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/84th-kdb-83-arulmigu-vadaketheruvu-mahadevar-thirukkovil-vadaketheruvu-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/85th-kdb-84-arulmigu-akkarai-mahadevar-thirukkovil-akkarai-parakkai-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/86th-kdb-85-arulmigu-kariayamaanickaththaazhwar-thirukkovil-kariyamaanickapuram-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/87th-kdb-86-arulmigu-valampuri-vinayagar-thirukkovil-eazhakaram-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/88th-kdb-87-arulmigu-aarumuga-pillayar-thirukkovil-eazhakaram-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/89th-kdb-88-arulmigu-kottavilai-sastha-thirukkovil-vadiveeswaram-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/90th-kdb-89-arulmigu-idatheertha-perumal-thirukkovil-vadiveeswaram-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/91th-kdb-90-arulmigu-melavaathil-melavaasal-vinayagar-thirukkovil-perambalam-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/92th-kdb-91-arulmigu-thruvenkida-vinna-perumal-thirukkovil-aashramam-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/93th-kdb-92-arulmigu-brahmarakshasa-perumal-thirukkovil-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/94th-kdb-93-arulmigu-apathukatha-kandan-sastha-thirukkovil-thaamarakkulam-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/95th-kdb-94-arulmigu-peria-shamundeeswaramudaya-ninar-thirukkovil-taamarakkulam-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/96th-kdb-95-arulmigu-kaasi-viswanathar-thirukkovil-sucheenthiram-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/97th-kdb-96-arulmigu-alathamman-thirukkovil-thaamarakkulam-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/98th-kdb-97-arulmigu-eraviputhur-eravi-vinayagar-thirukkovil-iravipputhoor-marungoor-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/99th-kdb-98-arulmigu-krishnaswamy-thirukkovil-vishnupuram-marungoor-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/100th-kdb-99-arulmigu-vnnathamkulam-poosastha-thirukkovil-vannaaththamkulam-marungoor-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/101th-kdb-100-arulmigu-kothichapillayagaram-perumal-thirukkovil-kothichapillayagaram-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/102th-kdb-101-arulmigu-sivan-kaasi-viswanaathar-thirukkovil-kothichapillaiagaram-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/103th-kdb-102-arulmigu-therkkuman-saakthi-vinayagar-thirukkovil-therkkuman-perambalam-agastheeswaram-taluk-small-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/104th-kdb-103-arulmigu-veeramarthanda-vinayagar-thirukkovil-perambalam-agastheeswaram-taluk-small-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/105th-kdb-104-arulmigu-arasadi-vinayagar-thirukkovil-aashramam-agastheeswaram-taluk-small-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/106th-kdb-105-arulmigu-kulasekara-vinayagar-thirukkovil-sucheenthiram-agastheeswaram-taluk-small-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/107th-kdb-106-arulmigu-karumkali-amman-thirukkovil-sucheenthiram-agastheeswaram-taluk-small-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/108th-kdb-107-arulmigu-puthugramam-perumal-thirukkovil-puthugraamam-kothichapillaiagaram-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/109th-kdb-108-arulmigu-karuppukotta-kailaasanaathar-thirukkovil-karuppukottai-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/110th-kdb-109-arulmigu-perumal-thirukkovil-puravassary-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/111th-kdb-110-arulmigu-sivan-thirukkovil-puravassery-agastheeswaram-taluk-minor-temple/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.wordpress.com/about/112th-kdb-111-arulmigu-arassadi-krishnanaswamy-thirukkovil-puravassary-agastheeswaram-taluk-minor-temple/"
-    }
-   ],
-   "tables": [],
-   "text_start": "Nagercoil Devaswom Group நாகர்கோயில் தொகுதி தேவஸம் | திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ Menu Skip to content Home List of Devaswoms Boothapandy Devaswoms Nagercoil Devaswoms Padmanabhapuram Devaswoms Kuzhithurai Devaswoms Shencottah Devaswoms Rayasam Records Sub Group Devaswoms Devaswom Classifications As per The Travancore State Panjangam Inscriptions in KDB Devaswoms The Original Travancore Devaswom Manuals and it’s Contents Devaswom Maps e_Library Travancore Temple Rules LAND REVENUE RECORDS AND ACCOUNTS BIBLIOGRAPHY Festivals Shivalayam Ottam Official Port HR&CE – KDB – Temples KK District Devaswoms TNHRCE HRCE ACT 1959 – Incorporated Devaswoms HRCE ACT 1959 – Unincorporated Devaswoms Thirukoil offical Magazines Heritage sites KDB Temple Guide Shaivam Contact us Temple Contact Donors Sponsors Contact us Acknowledgements திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ Nagercoil Devaswom Group நாகர்கோயில் தொகுதி தேவஸம் Nagercoil (Agastheeswaram Taluk) was the erstwhile taluk of the princely state of Travancore in India. The States Reorganisation Act, 1956 came into effect from the 1 November 1956, and consequently, the Tamil-speaking area of Agastheeswaram Taluk of Thiruvananthapuram district were transferred from Travancore-Cochin to Madras State including 99 Travancore Devaswom Board Temples. These Temples are now under the Administration & Cont"
-  },
-  {
-   "url": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/",
-   "post": null,
-   "robots_allows": true,
-   "robots_txt": "# If you are regularly crawling WordPress.com sites, please use our firehose to receive real-time push updates instead.\n# Please see https://developer.wordpress.com/docs/firehose/ for more details.\n\nSitemap: https://490kdbtemples.org/sitemap.xml\nSitemap: https://490kdbtemples.org/news-sitemap.xml\n\nUser-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\nDisallow: /wp-login.php\nDisallow: /wp-signup.php\nDisallow: /press-this.php\nDisallow: /remote-login.php\nDisallow: /activate/\nDisallow: /cgi-bin/\nDisallow: /mshots/v1/\nDisallow: /next/\nDisallow: /public.api/\n\n# This file was generated on Sat, 22 Aug 2026 15:58:22 +0000\n",
-   "status": 200,
-   "final_url": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/",
-   "content_type": "text/html; charset=UTF-8",
-   "bytes": 516777,
-   "title": "Travancore Inscriptions in KDB – TAS | திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ",
-   "headings": [
-    "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ",
-    "Travancore Inscriptions in KDB – TAS",
-    "KDB DEVASWOM ROCK INSCRIPTIONS",
-    "COPPER PLATES RECOREDS",
-    "CADJEN & CENTRAL RECORDS",
-    "മൂഴിക്കുളം കച്ചവും പ്രാചീന രാജശാസനകളും ലിഖിതങ്ങളും:",
-    "Rate this:",
-    "Share this:",
-    "The KDB President & Members or The Joint Commissioner / Executive Officer",
-    "Copy Right License",
-    "Admin / Chief Author",
-    "KDB Temple Searcher",
-    "Touch with web Admin / Author"
-   ],
-   "forms": [
-    {
-     "action": "https://490kdbtemples.org/",
-     "method": "GET",
-     "fields": [
-      {
-       "tag": "input",
-       "name": "s",
-       "type": "search"
-      },
-      {
-       "tag": "input",
-       "name": null,
-       "type": "submit"
-      }
-     ]
-    },
-    {
-     "action": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/",
-     "method": "POST",
-     "fields": [
-      {
-       "tag": "input",
-       "name": null,
-       "type": "submit"
-      }
-     ]
-    },
-    {
-     "action": "https://subscribe.wordpress.com",
-     "method": "POST",
-     "fields": [
-      {
-       "tag": "input",
-       "name": "email",
-       "type": "email"
-      },
-      {
-       "tag": "input",
-       "name": "action",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "blog_id",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "source",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "sub-type",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "_wpnonce",
-       "type": "hidden"
-      }
-     ]
-    }
-   ],
-   "links": [
-    {
-     "text": "Skip to content",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/#content"
-    },
-    {
-     "text": "Home",
-     "href": "https://490kdbtemples.wordpress.com/"
-    },
-    {
-     "text": "Boothapandy Devaswoms",
-     "href": "https://490kdbtemples.org/about/boothapandy-devaswom-group-of-temples-kdb-1-to-66/"
-    },
-    {
-     "text": "Nagercoil Devaswoms",
-     "href": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/"
-    },
-    {
-     "text": "Padmanabhapuram Devaswoms",
-     "href": "https://490kdbtemples.org/about/padmanabhapuram-devaswom-group-of-temples-kdb-160-to-274a/"
-    },
-    {
-     "text": "Kuzhithurai Devaswoms",
-     "href": "https://490kdbtemples.org/about/kuzhithurai-devaswom-group-of-temples-kdb-275-to-367a/"
-    },
-    {
-     "text": "Shencottah Devaswoms",
-     "href": "https://490kdbtemples.org/devaswoms/shencottah-devaswom-group-of-temples-kdb-368-to-455/"
-    },
-    {
-     "text": "Rayasam Records",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "Sub Group Devaswoms",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "Devaswom Classifications",
-     "href": "https://490kdbtemples.wordpress.com/about/list-of-devaswoms/"
-    },
-    {
-     "text": "As per The Travancore State Panjangam",
-     "href": "https://490kdbtemples.wordpress.com/about/list-of-devaswom-sub-groups/"
-    },
-    {
-     "text": "Inscriptions in KDB Devaswoms",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "The Original Travancore Devaswom Manuals and it’s Contents",
-     "href": "https://490kdbtemples.org/travancore-devaswom-manual/"
-    },
-    {
-     "text": "Devaswom Maps",
-     "href": "https://490kdbtemples.wordpress.com/about/devaswom-taluks/"
-    },
-    {
-     "text": "e_Library",
-     "href": "https://490kdbtemples.org/about/e-library/"
-    },
-    {
-     "text": "Travancore Temple Rules",
-     "href": "https://490kdbtemples.org/daily-poojas-and-special-rituals-in-travancore-temple-rules/"
-    },
-    {
-     "text": "LAND REVENUE RECORDS AND ACCOUNTS",
-     "href": "https://490kdbtemples.org/land-revenue-records-and-accounts/"
-    },
-    {
-     "text": "BIBLIOGRAPHY",
-     "href": "https://490kdbtemples.org/reference/"
-    },
-    {
-     "text": "Festivals",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "Shivalayam Ottam",
-     "href": "https://490kdbtemples.wordpress.com/about/kumari-shivalayam-ottam/"
-    },
-    {
-     "text": "Official Port",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "HR&CE – KDB – Temples",
-     "href": "http://www.kanyakumaritemples.tnhrce.in/"
-    },
-    {
-     "text": "KK District Devaswoms",
-     "href": "http://www.kanyakumaritemples.org"
-    },
-    {
-     "text": "HRCE ACT 1959 – Incorporated Devaswoms",
-     "href": "http://tnhrce.org/pdf/HRCE_ACT_1959_SH_1.pdf"
-    },
-    {
-     "text": "HRCE ACT 1959 – Unincorporated Devaswoms",
-     "href": "http://tnhrce.org/pdf/HRCE_ACT_1959_SH_2,3.pdf"
-    },
-    {
-     "text": "Heritage sites",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "KDB Temple Guide",
-     "href": "http://www.tnhrce.org/temples/TNHRCE_temple_Kanyakumari%20KOVIL%20VALIKATTI.html"
-    },
-    {
-     "text": "Temple Contact",
-     "href": "http://www.kanyakumaritemples.org/contact_us.php"
-    },
-    {
-     "text": "Donors",
-     "href": "https://490kdbtemples.wordpress.com/about/list-of-donors-for-the-renovation-poojas-for-non-pooja-temples/"
-    },
-    {
-     "text": "Sponsors",
-     "href": "https://490kdbtemples.wordpress.com/about/web-site-sponsers/"
-    },
-    {
-     "text": "Contact us",
-     "href": "https://490kdbtemples.wordpress.com/about/contact-us/"
-    },
-    {
-     "text": "Acknowledgements",
-     "href": "https://490kdbtemples.org/acknowledgements/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ ",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "மேன்மைக்குரிய நீதிமன்றம் விதித்த – கல்வெட்டு தீர்ப்பு",
-     "href": "https://490kdbtemples.org/wp-content/uploads/2021/02/e0ae95e0aeb2e0af8de0aeb5e0af86e0ae9fe0af8de0ae9fe0af81-e0aea4e0af80e0aeb0e0af8de0aeaae0af8de0aeaae0af81-f573as2009.pdf"
-    },
-    {
-     "text": "Download",
-     "href": "https://490kdbtemples.org/wp-content/uploads/2021/02/e0ae95e0aeb2e0af8de0aeb5e0af86e0ae9fe0af8de0ae9fe0af81-e0aea4e0af80e0aeb0e0af8de0aeaae0af8de0aeaae0af81-f573as2009.pdf"
-    },
-    {
-     "text": "Share on Facebook (Opens in new window) Facebook",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/?share=facebook"
-    },
-    {
-     "text": "Share on LinkedIn (Opens in new window) LinkedIn",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/?share=linkedin"
-    },
-    {
-     "text": "Share on X (Opens in new window) X",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/?share=twitter"
-    },
-    {
-     "text": "Share on Tumblr (Opens in new window) Tumblr",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/?share=tumblr"
-    },
-    {
-     "text": "Share on Pinterest (Opens in new window) Pinterest",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/?share=pinterest"
-    },
-    {
-     "text": "Share on Telegram (Opens in new window) Telegram",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/?share=telegram"
-    },
-    {
-     "text": "Share on WhatsApp (Opens in new window) WhatsApp",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/?share=jetpack-whatsapp"
-    },
-    {
-     "text": "Kanyakumari District Incorporated and Unincorporated Devaswoms, Kanyakumari Devaswom Board, Kanyakum",
-     "href": "https://maps.google.com/maps?z=16&q=kanyakumari%2Bdistrict%2Bincorporated%2Band%2Bunincorporated%2Bdevaswoms%2C%2Bkanyakumari%2Bdevaswom%2Bboard%2C%2Bkanyakumari%2Bdistrict%2Btemples%2C%2Bhead%2Boffice%2C%2Bsthanumaalaya%2Bmarkazhisabha%2Bsathram%2C%2Bsuchidrum%2C%2Bkanyakumari%2Bdistrict%2B%E2%80%93%2B629704%2C%2Btamilnadu."
-    },
-    {
-     "text": "Follow திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്",
-     "href": "https://490kdbtemples.org"
-    },
-    {
-     "text": "Dr.A Radhakrishnan Ph.D, (H.C.)",
-     "href": "https://490kdbtemples.org/author/490kdb/"
-    },
-    {
-     "text": "Kanyakumari District",
-     "href": "https://maps.google.com/maps?z=16&q=kanyakumari%2Bdistrict"
-    },
-    {
-     "text": "Dr.A.ராதாகிருஷ்ணன் Ph.D(H.C.), (ஆராட்சியாளர் - “திருவிதாங்கூர் வரலாறு மற்றும் தேவஸ்வங்கள்”) Dr.A.Rad",
-     "href": "tel:Dr.A.ராதாகிருஷ்ணன்%20Ph.D(H.C.),%20(ஆராட்சியாளர்%20-%20“திருவிதாங்கூர்%20வரலாறு%20மற்றும்%20தேவஸ்வங்கள்”)%20Dr.A.Radhakrishnan,Ph.D(H.C.)%20(RESEARCHER%20–%20THE%20TRAVANCORE%20HISTORY%20AND%20DEVASWOMS)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Ph:%2009995556013(telegram)%20/%2009446467129(whatsapp)"
-    },
-    {
-     "text": "Subscribe",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "Subscribed",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ ",
-     "href": "https://490kdbtemples.org"
-    },
-    {
-     "text": "Log in now.",
-     "href": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252F490kdbtemples.org%252Fabout%252Flist-of-devaswom-sub-groups-2%252F"
-    },
-    {
-     "text": "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ ",
-     "href": "https://490kdbtemples.org"
-    },
-    {
-     "text": "Log in",
-     "href": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252F490kdbtemples.org%252Fabout%252Flist-of-devaswom-sub-groups-2%252F"
-    },
-    {
-     "text": "Report this content",
-     "href": "https://wordpress.com/abuse/?report_url=https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "Collapse this bar",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "logged in",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    }
-   ],
-   "tables": [],
-   "text_start": "Travancore Inscriptions in KDB – TAS | திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ Menu Skip to content Home List of Devaswoms Boothapandy Devaswoms Nagercoil Devaswoms Padmanabhapuram Devaswoms Kuzhithurai Devaswoms Shencottah Devaswoms Rayasam Records Sub Group Devaswoms Devaswom Classifications As per The Travancore State Panjangam Inscriptions in KDB Devaswoms The Original Travancore Devaswom Manuals and it’s Contents Devaswom Maps e_Library Travancore Temple Rules LAND REVENUE RECORDS AND ACCOUNTS BIBLIOGRAPHY Festivals Shivalayam Ottam Official Port HR&CE – KDB – Temples KK District Devaswoms TNHRCE HRCE ACT 1959 – Incorporated Devaswoms HRCE ACT 1959 – Unincorporated Devaswoms Thirukoil offical Magazines Heritage sites KDB Temple Guide Shaivam Contact us Temple Contact Donors Sponsors Contact us Acknowledgements திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ Travancore Inscriptions in KDB – TAS തിരുവിതാങ്കൂർ ക്ഷേത്രങ്ങളിലെ (ദേവസ്വം) ശിലാ ലിഖിതങ്ങൾ திருவிதாங்கூர் திருக்கோவில் (தேவசம்) கல்வெட்டுக்கள் KDB DEVASWOM ROCK INSCRIPTIONS / COPPER PLATES / CENTRAL RECORDS / CADJEN RECOREDS THE JUDGEMENT FROM HONOURABLE HIGH COURT OF MADRAS ON INSCRIBED DEVASWOM LANDS (attached in bottom of this page) KDB DEVASWOM ROCK INSCRIPTIONS COPPER PLATES RECOREDS CADJEN & CENTRAL RECORDS മൂഴിക്കുളം കച്ചവും പ്രാചീന രാജശാസനകളും ലിഖിതങ്ങളും: നാടുവാഴികളോ രാജാക്കൻമാരോ പുറപ്പ"
-  },
-  {
-   "url": "https://490kdbtemples.wordpress.com/about/list-of-devaswoms/",
-   "post": null,
-   "robots_allows": true,
-   "robots_txt": "# If you are regularly crawling WordPress.com sites, please use our firehose to receive real-time push updates instead.\n# Please see https://developer.wordpress.com/docs/firehose/ for more details.\n\nSitemap: https://490kdbtemples.org/sitemap.xml\nSitemap: https://490kdbtemples.org/news-sitemap.xml\n\nUser-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\nDisallow: /wp-login.php\nDisallow: /wp-signup.php\nDisallow: /press-this.php\nDisallow: /remote-login.php\nDisallow: /activate/\nDisallow: /cgi-bin/\nDisallow: /mshots/v1/\nDisallow: /next/\nDisallow: /public.api/\n\n# This file was generated on Sat, 22 Aug 2026 15:58:22 +0000\n",
-   "status": 200,
-   "final_url": "https://490kdbtemples.org/about/list-of-devaswoms/",
-   "content_type": "text/html; charset=UTF-8",
-   "bytes": 115068,
-   "title": "CLASSIFICATIONS OF DEVASWOMS | திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ",
-   "headings": [
-    "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ",
-    "CLASSIFICATIONS OF DEVASWOMS",
-    "பெரிய திருக்கோயில்கள் (Major Temples) – 56 nos.",
-    "சிறிய திருக்கோயில்கள் (Minor Temple) – 129 nos.",
-    "மிகச்சிறிய திருக்கோயில்கள் (Small Temples) – 273 nos.",
-    "தன் வைப்பு திருக்கோயில்கள் (Personal Deposited Temples) – 18 nos.",
-    "சங்கேதம் திருக்கோயில்கள் (Sanketham Temples) – 12 nos.",
-    "ஸ்ரீபாதம் திருக்கோயில்கள் (Sree Paadam Temples) – 2 nos.",
-    "Total Temples : 490",
-    "Total Temples : 72",
-    "Rate this:",
-    "The KDB President & Members or The Joint Commissioner / Executive Officer",
-    "Copy Right License",
-    "Admin / Chief Author",
-    "KDB Temple Searcher",
-    "Touch with web Admin / Author"
-   ],
-   "forms": [
-    {
-     "action": "https://490kdbtemples.org/",
-     "method": "GET",
-     "fields": [
-      {
-       "tag": "input",
-       "name": "s",
-       "type": "search"
-      },
-      {
-       "tag": "input",
-       "name": null,
-       "type": "submit"
-      }
-     ]
-    },
-    {
-     "action": "https://490kdbtemples.org/about/list-of-devaswoms/",
-     "method": "POST",
-     "fields": [
-      {
-       "tag": "input",
-       "name": null,
-       "type": "submit"
-      }
-     ]
-    },
-    {
-     "action": "https://subscribe.wordpress.com",
-     "method": "POST",
-     "fields": [
-      {
-       "tag": "input",
-       "name": "email",
-       "type": "email"
-      },
-      {
-       "tag": "input",
-       "name": "action",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "blog_id",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "source",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "sub-type",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "_wpnonce",
-       "type": "hidden"
-      }
-     ]
-    }
-   ],
-   "links": [
-    {
-     "text": "Skip to content",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/#content"
-    },
-    {
-     "text": "Home",
-     "href": "https://490kdbtemples.wordpress.com/"
-    },
-    {
-     "text": "Boothapandy Devaswoms",
-     "href": "https://490kdbtemples.org/about/boothapandy-devaswom-group-of-temples-kdb-1-to-66/"
-    },
-    {
-     "text": "Nagercoil Devaswoms",
-     "href": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/"
-    },
-    {
-     "text": "Padmanabhapuram Devaswoms",
-     "href": "https://490kdbtemples.org/about/padmanabhapuram-devaswom-group-of-temples-kdb-160-to-274a/"
-    },
-    {
-     "text": "Kuzhithurai Devaswoms",
-     "href": "https://490kdbtemples.org/about/kuzhithurai-devaswom-group-of-temples-kdb-275-to-367a/"
-    },
-    {
-     "text": "Shencottah Devaswoms",
-     "href": "https://490kdbtemples.org/devaswoms/shencottah-devaswom-group-of-temples-kdb-368-to-455/"
-    },
-    {
-     "text": "Rayasam Records",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/"
-    },
-    {
-     "text": "Sub Group Devaswoms",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/"
-    },
-    {
-     "text": "Devaswom Classifications",
-     "href": "https://490kdbtemples.wordpress.com/about/list-of-devaswoms/"
-    },
-    {
-     "text": "As per The Travancore State Panjangam",
-     "href": "https://490kdbtemples.wordpress.com/about/list-of-devaswom-sub-groups/"
-    },
-    {
-     "text": "Inscriptions in KDB Devaswoms",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "The Original Travancore Devaswom Manuals and it’s Contents",
-     "href": "https://490kdbtemples.org/travancore-devaswom-manual/"
-    },
-    {
-     "text": "Devaswom Maps",
-     "href": "https://490kdbtemples.wordpress.com/about/devaswom-taluks/"
-    },
-    {
-     "text": "e_Library",
-     "href": "https://490kdbtemples.org/about/e-library/"
-    },
-    {
-     "text": "Travancore Temple Rules",
-     "href": "https://490kdbtemples.org/daily-poojas-and-special-rituals-in-travancore-temple-rules/"
-    },
-    {
-     "text": "LAND REVENUE RECORDS AND ACCOUNTS",
-     "href": "https://490kdbtemples.org/land-revenue-records-and-accounts/"
-    },
-    {
-     "text": "BIBLIOGRAPHY",
-     "href": "https://490kdbtemples.org/reference/"
-    },
-    {
-     "text": "Festivals",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/"
-    },
-    {
-     "text": "Shivalayam Ottam",
-     "href": "https://490kdbtemples.wordpress.com/about/kumari-shivalayam-ottam/"
-    },
-    {
-     "text": "Official Port",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/"
-    },
-    {
-     "text": "HR&CE – KDB – Temples",
-     "href": "http://www.kanyakumaritemples.tnhrce.in/"
-    },
-    {
-     "text": "KK District Devaswoms",
-     "href": "http://www.kanyakumaritemples.org"
-    },
-    {
-     "text": "HRCE ACT 1959 – Incorporated Devaswoms",
-     "href": "http://tnhrce.org/pdf/HRCE_ACT_1959_SH_1.pdf"
-    },
-    {
-     "text": "HRCE ACT 1959 – Unincorporated Devaswoms",
-     "href": "http://tnhrce.org/pdf/HRCE_ACT_1959_SH_2,3.pdf"
-    },
-    {
-     "text": "Heritage sites",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/"
-    },
-    {
-     "text": "KDB Temple Guide",
-     "href": "http://www.tnhrce.org/temples/TNHRCE_temple_Kanyakumari%20KOVIL%20VALIKATTI.html"
-    },
-    {
-     "text": "Temple Contact",
-     "href": "http://www.kanyakumaritemples.org/contact_us.php"
-    },
-    {
-     "text": "Donors",
-     "href": "https://490kdbtemples.wordpress.com/about/list-of-donors-for-the-renovation-poojas-for-non-pooja-temples/"
-    },
-    {
-     "text": "Sponsors",
-     "href": "https://490kdbtemples.wordpress.com/about/web-site-sponsers/"
-    },
-    {
-     "text": "Contact us",
-     "href": "https://490kdbtemples.wordpress.com/about/contact-us/"
-    },
-    {
-     "text": "Acknowledgements",
-     "href": "https://490kdbtemples.org/acknowledgements/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ ",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "Kanyakumari District Incorporated and Unincorporated Devaswoms, Kanyakumari Devaswom Board, Kanyakum",
-     "href": "https://maps.google.com/maps?z=16&q=kanyakumari%2Bdistrict%2Bincorporated%2Band%2Bunincorporated%2Bdevaswoms%2C%2Bkanyakumari%2Bdevaswom%2Bboard%2C%2Bkanyakumari%2Bdistrict%2Btemples%2C%2Bhead%2Boffice%2C%2Bsthanumaalaya%2Bmarkazhisabha%2Bsathram%2C%2Bsuchidrum%2C%2Bkanyakumari%2Bdistrict%2B%E2%80%93%2B629704%2C%2Btamilnadu."
-    },
-    {
-     "text": "Follow திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്",
-     "href": "https://490kdbtemples.org"
-    },
-    {
-     "text": "Dr.A Radhakrishnan Ph.D, (H.C.)",
-     "href": "https://490kdbtemples.org/author/490kdb/"
-    },
-    {
-     "text": "Kanyakumari District",
-     "href": "https://maps.google.com/maps?z=16&q=kanyakumari%2Bdistrict"
-    },
-    {
-     "text": "Dr.A.ராதாகிருஷ்ணன் Ph.D(H.C.), (ஆராட்சியாளர் - “திருவிதாங்கூர் வரலாறு மற்றும் தேவஸ்வங்கள்”) Dr.A.Rad",
-     "href": "tel:Dr.A.ராதாகிருஷ்ணன்%20Ph.D(H.C.),%20(ஆராட்சியாளர்%20-%20“திருவிதாங்கூர்%20வரலாறு%20மற்றும்%20தேவஸ்வங்கள்”)%20Dr.A.Radhakrishnan,Ph.D(H.C.)%20(RESEARCHER%20–%20THE%20TRAVANCORE%20HISTORY%20AND%20DEVASWOMS)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Ph:%2009995556013(telegram)%20/%2009446467129(whatsapp)"
-    },
-    {
-     "text": "Subscribe",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/"
-    },
-    {
-     "text": "Subscribed",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/"
-    },
-    {
-     "text": "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ ",
-     "href": "https://490kdbtemples.org"
-    },
-    {
-     "text": "Log in now.",
-     "href": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252F490kdbtemples.org%252Fabout%252Flist-of-devaswoms%252F"
-    },
-    {
-     "text": "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ ",
-     "href": "https://490kdbtemples.org"
-    },
-    {
-     "text": "Log in",
-     "href": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252F490kdbtemples.org%252Fabout%252Flist-of-devaswoms%252F"
-    },
-    {
-     "text": "Report this content",
-     "href": "https://wordpress.com/abuse/?report_url=https://490kdbtemples.org/about/list-of-devaswoms/"
-    },
-    {
-     "text": "Collapse this bar",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/"
-    },
-    {
-     "text": "logged in",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/list-of-devaswoms/"
-    }
-   ],
-   "tables": [],
-   "text_start": "CLASSIFICATIONS OF DEVASWOMS | திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ Menu Skip to content Home List of Devaswoms Boothapandy Devaswoms Nagercoil Devaswoms Padmanabhapuram Devaswoms Kuzhithurai Devaswoms Shencottah Devaswoms Rayasam Records Sub Group Devaswoms Devaswom Classifications As per The Travancore State Panjangam Inscriptions in KDB Devaswoms The Original Travancore Devaswom Manuals and it’s Contents Devaswom Maps e_Library Travancore Temple Rules LAND REVENUE RECORDS AND ACCOUNTS BIBLIOGRAPHY Festivals Shivalayam Ottam Official Port HR&CE – KDB – Temples KK District Devaswoms TNHRCE HRCE ACT 1959 – Incorporated Devaswoms HRCE ACT 1959 – Unincorporated Devaswoms Thirukoil offical Magazines Heritage sites KDB Temple Guide Shaivam Contact us Temple Contact Donors Sponsors Contact us Acknowledgements திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ CLASSIFICATIONS OF DEVASWOMS LISTED DEVASWOMS UNDER KDB ADMINISTRATION பெரிய திருக்கோயில்கள் (Major Temples) – 56 nos. சிறிய திருக்கோயில்கள் (Minor Temple) – 129 nos. மிகச்சிறிய திருக்கோயில்கள் (Small Temples) – 273 nos. தன் வைப்பு திருக்கோயில்கள் (Personal Deposited Temples) – 18 nos. சங்கேதம் திருக்கோயில்கள் (Sanketham Temples) – 12 nos. ஸ்ரீபாதம் திருக்கோயில்கள் (Sree Paadam Temples) – 2 nos. Total Temples : 490 NON - LISTED TEMPLES AND INSTITUTIONS UNDER KDB ADMINISTRATION கணக்கில் இல்லாத திருக்கோயில"
-  },
-  {
-   "url": "https://www.onlinetdb.com/store.htm",
+   "url": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright",
    "post": null,
    "robots_allows": true,
    "robots_txt": "",
    "status": 200,
-   "final_url": "https://www.onlinetdb.com/store.htm",
-   "content_type": "text/html",
-   "bytes": 351219,
-   "title": "store",
-   "headings": [
-    "Group-1 Temples",
-    "1 .",
-    "Sabarimala",
-    "2 .",
-    "Kottarakkara Ganapathi Temple",
-    "3 .",
-    "Nilakkal Sree Mahadeva Temple",
-    "4 .",
-    "OTC Hanuman Temple",
-    "5 .",
-    "Pampa Ganapathy Temple",
-    "6 .",
-    "Peroor Sree Krishna Swamy Temple",
-    "7 .",
-    "Janardanaswamy Temple",
-    "8 .",
-    "Sarkaradevi Temple",
-    "9 .",
-    "Sreekanteswaram Mahadewa Temple",
-    "1 0 ."
-   ],
+   "final_url": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 311424,
+   "title": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department",
+   "headings": [],
    "forms": [],
    "links": [
     {
-     "text": "Kottarakkara Ganapathi Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_HeadingAnchor:58HCV4m"
+     "text": "ನಮ್ಮ ಬಗ್ಗೆ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright"
     },
     {
-     "text": "Nilakkal Sree Mahadeva Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_HeadingAnchor:58eiiiW"
+     "text": "ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright"
     },
     {
-     "text": "OTC Hanuman Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_HeadingAnchor:58tTfHl"
+     "text": "ಆಡಳಿತ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright"
     },
     {
-     "text": "Pampa Ganapathy Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_HeadingAnchor:58cQp8p"
+     "text": "ದೇವಾಲಯಗಳು",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_temple.php"
     },
     {
-     "text": "Peroor Sree Krishna Swamy Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_HeadingAnchor:58bSW7k"
+     "text": "ದೇವಾಲಯದ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/temple_list.php"
     },
     {
-     "text": "Janardanaswamy Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_HeadingAnchor:58Dak0r"
+     "text": "Temple Valuables Details",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_actrules.php?action=18"
     },
     {
-     "text": "Sarkaradevi Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_HeadingAnchor:58xLy30"
+     "text": "ಆಯುಕ್ತರ ಪಟ್ಟಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/commissioners_list.php"
     },
     {
-     "text": "Sreekanteswaram Mahadewa Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_HeadingAnchor:58QUt8z"
+     "text": "ಗ್ಯಾಲರಿ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright"
     },
     {
-     "text": "Thirumullavaram Sri Maha Vishnu Swami Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_HeadingAnchor:58cDgYx"
+     "text": "ಯೋಜನೆಗಳು",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright"
     },
     {
-     "text": "Thiruvallam Parasu Rama Swami Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_HeadingAnchor:58FrrxL"
+     "text": "ಆಗಮ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright"
     },
     {
-     "text": "Group-2 Temples",
-     "href": "https://www.onlinetdb.com/store-2.htm#HeadingAnchor:58k0dp0"
+     "text": "ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright"
     },
     {
-     "text": "Group-2 Temples",
-     "href": "https://www.onlinetdb.com/store-2.htm#HeadingAnchor:58k0dp0"
+     "text": "ಅಧಿಸೂಚನೆ",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright"
     },
     {
-     "text": "Kottarakkara Ganapathi Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_Xxr_v8_HeadingAnchor:58HCV4m"
+     "text": "ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ",
+     "href": "https://itms.kar.nic.in/temples/login.php"
     },
     {
-     "text": "Nilakkal Sree Mahadeva Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_Xxr_v8_HeadingAnchor:58eiiiW"
+     "text": "Department Login",
+     "href": "https://itms.kar.nic.in/temples/login.php"
     },
     {
-     "text": "OTC Hanuman Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_Xxr_v8_HeadingAnchor:58tTfHl"
-    },
-    {
-     "text": "Pampa Ganapathy Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_Xxr_v8_HeadingAnchor:58cQp8p"
-    },
-    {
-     "text": "Peroor Sree Krishna Swamy Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_Xxr_v8_HeadingAnchor:58bSW7k"
-    },
-    {
-     "text": "Janardanaswamy Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_Xxr_v8_HeadingAnchor:58Dak0r"
-    },
-    {
-     "text": "Sarkaradevi Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_Xxr_v8_HeadingAnchor:58xLy30"
-    },
-    {
-     "text": "Sreekanteswaram Mahadewa Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_Xxr_v8_HeadingAnchor:58QUt8z"
-    },
-    {
-     "text": "Thirumullavaram Sri Maha Vishnu Swami Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_Xxr_v8_HeadingAnchor:58cDgYx"
-    },
-    {
-     "text": "Thiruvallam Parasu Rama Swami Temple",
-     "href": "https://www.onlinetdb.com/store.htm#xl_Xxr_v8_HeadingAnchor:58FrrxL"
-    },
-    {
-     "text": "Group-2 Temples",
-     "href": "https://www.onlinetdb.com/store-2.htm#Xxr_v10_HeadingAnchor:58k0dp0"
-    },
-    {
-     "text": "Group-2 Temples",
-     "href": "https://www.onlinetdb.com/store-2.htm#Xxr_v10_HeadingAnchor:58k0dp0"
-    },
-    {
-     "text": "Temples",
-     "href": "https://www.onlinetdb.com/store.htm"
+     "text": "Portal Policies",
+     "href": "https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse"
     }
    ],
-   "tables": [],
-   "text_start": "store Group-1 Temples 1 . Sabarimala 2 . Kottarakkara Ganapathi Temple 3 . Nilakkal Sree Mahadeva Temple 4 . OTC Hanuman Temple 5 . Pampa Ganapathy Temple 6 . Peroor Sree Krishna Swamy Temple 7 . Janardanaswamy Temple 8 . Sarkaradevi Temple 9 . Sreekanteswaram Mahadewa Temple 1 0 . Thirumullavaram Sri Maha Vishnu Swami Temple 1 1 . Thiruvallam Parasu Rama Swami Temple Sabarimala Sabarimala Sree Dharma Sastha Temple which attracts millions of devotees every year from all over the country and abroad, is one of the ancient mountain shrines situated in a deep, dense forest on the virgin hill of Sabari, in the Ranni-Perunad village of Pathanamthitta district of Kerala, in South India. Surrounded by lush tropical jungles and 18 hills, the shrine is over 4000 ft above sea level. Sabarimala is part of Sahyadris (Western Ghats); remnants of ancient temples are visible in the adjoining hills and at Nilackal, Kalaketi and Karimala offerings are still made to the devis/devas. Vavar Tharaâ is located close to the Shri Dharma Sastha temple. Legend has it that Vavar, a sufi saint, was close to Swami Ayyappa. Location of âVavar Nadaâ in the premises of Sree Dharma Sastha temple and the custom of Ayyappa devotees offering their prayers at the Vavar Nada are hailed as fine examples of secularism and communal harmony. Another significant aspect of Sabarimala pilgrimage is that pilgrims, irrespective of cast or religion or wealth are considered equal before Lord Ayyapa and all of them addr"
+   "tables": [
+    {
+     "rows": 3,
+     "sample": [
+      [
+       "Terms of Use This Temple Portal is hosted by Hindu",
+       "",
+       "Terms of Use This Temple Portal is hosted by Hindu"
+      ],
+      [
+       ""
+      ],
+      [
+       "Terms of Use This Temple Portal is hosted by Hindu"
+      ]
+     ],
+     "row_links": []
+    },
+    {
+     "rows": 2,
+     "sample": [
+      [
+       ""
+      ],
+      [
+       "Terms of Use This Temple Portal is hosted by Hindu"
+      ]
+     ],
+     "row_links": []
+    }
+   ],
+   "script_srcs": [
+    "https://itms.kar.nic.in/resources/library/js/jquery-3.7.1.min.js",
+    "https://itms.kar.nic.in/resources/library/js/jquery-ui.min_1.13.2.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/bootstrap.bundle.min.js",
+    "https://itms.kar.nic.in/resources/library/js/jquery-confirm.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/bootstrap-datepicker.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/jquery.dataTables.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/dataTables.bootstrap4.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/dataTables.buttons.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/jszip.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.html5.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.print.min.js",
+    "https://itms.kar.nic.in/resources/library/bootstrap/js/buttons.colVis.min.js",
+    "https://itms.kar.nic.in/resources/library/label.js",
+    "https://itms.kar.nic.in/js/req_common.js",
+    "https://itms.kar.nic.in/temples/js/login_script.js",
+    "https://itms.kar.nic.in/eservices/js/ajax_epayment.js",
+    "https://itms.kar.nic.in/resources/qrcode/qrcode-js/jquery.qrcode.min.js",
+    "https://itms.kar.nic.in/resources/qrcode/qrcode-js/qrcode.js",
+    "https://itms.kar.nic.in/resources/texttospeech/text_to_speech.js",
+    "https://itms.kar.nic.in/js/session_out.js",
+    "https://itms.kar.nic.in/masters/js/master_validate.js"
+   ],
+   "script_endpoints": [
+    "../budget/ajax/budget_app_master.php",
+    "../budget/ajax/budgetinfo_view_new.php",
+    "../courtcases/ajax/courtinfo_view.php",
+    "../dcbs/ajax/dcbinfo_view_new.php",
+    "../department/ajax/deptinfo_view_new.php",
+    "../eservices/ajax/epayinfo_view_new.php",
+    "../hrcehome/ajax/homepage_view.php",
+    "../hrcehome/index_temple.php?tid=",
+    "../hundi/ajax/hundi_infoview.php",
+    "../includes/color_blindness_page.php",
+    "../includes/officialhome.php",
+    "../includes/officialhome_others.php",
+    "../includes/set_session.php",
+    "../institute/ajax/instituteinfo_view_new.php",
+    "../lands/ajax/landinfo_view_new.php",
+    "../magazine/ajax/magazineinfo_view.php",
+    "../property/ajax/property_app_master.php",
+    "../property/ajax/propertyinfo_view_new.php",
+    "../renovate/ajax/renovateinfo_view_new.php",
+    "../resources/library/audio/string_audio.php?aud=1793292669",
+    "../resources/library/esign/index.php",
+    "../temples/ajax/ajax_page.php",
+    "../temples/ajax/app_master.php",
+    "../temples/ajax/mapping_screen.php",
+    "../temples/ajax/module_redir.php?module_id=",
+    "../temples/ajax/redir.php",
+    "../temples/ajax/templeinfo_view_new.php",
+    "../temples/menuasign.php?uid=",
+    "../temples/reports/temple_reports_rpt.php",
+    "../temples/temple_festival.php?activity_desc=Tracking-",
+    "../temples/temple_festivaldetail.php?festivalparam=",
+    "../temples/templeview.php",
+    "../ticketing/ajax/ticketing_infoview.php",
+    "../trustee/ajax/trusteeinfo_view_new.php",
+    "../webservice/youtubevideo_update.php",
+    "../welfare/ajax/welfareinfo_view_new.php",
+    "ajax/getdata.php",
+    "ajax/mapping_screen.php",
+    "templeinfo.php"
+   ],
+   "script_snippets": [
+    "false; }); }); $(document).ready(function(){ var table = $('#myTable,#myTable1,#myTable2,#subTable,#myTable3,#myTable4,#myTable5').DataTable({ retrieve: true, stateSave: false, language: { searchPlaceholder: \"Search...\", search:\"\" } }); $('a.toggle-vis').on( 'click', function (e) { e.preventDefault(); var column = table.column( $(this).attr('data-column') ); column.visible( ! column.visible() ); }); }); $(window).on('load', function(){ $(\".se-pre-con\").fadeOut(\"slow\"); }); $(document).rea",
+    "==========*/ $(\".colorblindness_page\").click(function(){ $(\"span[data-id]\").css('border','none'); var color = $(this).data('id'); $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:color, tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); }); /*================================ colorblindness_page end =================================*/ /*================",
+    "s_page\").click(function(){ $(\"span[data-id]\").css('border','none'); var color = $(this).data('id'); $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:color, tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); }); /*================================ colorblindness_page end =================================*/ /*================================ Onload ===========",
+    "/****logo image color end ****/ } $(document).ready(function(){ var mobile_color=''; if(mobile_color=='910101') { $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:'#910101', tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); } }); $(document).ready(function() { $(\".templeform_grid_view\").click(function(){ var formname = $(this).par",
+    "**/ } $(document).ready(function(){ var mobile_color=''; if(mobile_color=='910101') { $.ajax({ type: \"POST\", url: \"../includes/color_blindness_page.php\", data: { blindness_color:'#910101', tid:'', }, success:function(result){ color_settting(result,''); }, error:function (xhr, ajaxOptions, thrownError){ alert(thrownError); } }); } }); $(document).ready(function() { $(\".templeform_grid_view\").click(function(){ var formname = $(this).parents(\"form\").attr(\"id\"); var",
+    "><img src=\"../resources/library/images/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function",
+    "ges/load.gif\"><br><span style=\"font-family:arial;font-size:11px;\">Loading...</span></center>' ); $.ajax({ type: \"POST\", url: \"../temples/ajax/templeinfo_view_new.php\", cache: false, contentType: false, processData: false, data:form_data, // dataType:'JSON', success:function(result) { $(\".grid_view\").html(''); $(\".grid_view\").html(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); }); }); function changelanguage() { // alert(",
+    "(thrownError); } }); }); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ mya",
+    "}); }); function changelanguage() { // alert(1); var lang = ''; var url_parm_lang = ''; $.ajax({ type: \"POST\", url: \"../includes/set_session.php\", data: { val:lang }, success:function(result){ //alert(result); // window.location.href = \"templeinfo.php\"; // if(url_parm_lang != '') { window.location.href = window.location.href.split(\"?\")[0]; } else { location.reload(); } }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } });",
+    "r, ajaxOptions, thrownError){ myalert(thrownError); } }); } function setcookie(temple_id) { var token = ''; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = ''; var service_code= $('#service_code')",
+    "myalert(thrownError); } }); } function setcookie(temple_id) { var token = ''; $.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { tokenp:token, temple_slno:temple_id, pg:'setcookie', }, success:function(result){ myalert(result); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function epayment_ackid(transstatus,mobile_no) { var token = ''; var service_code= $('#service_code').val(); $('#ack_no').val('')",
+    "_no) { var token = ''; var service_code= $('#service_code').val(); $('#ack_no').val(''); jQuery.ajax({ type: \"POST\", url: \"../temples/ajax/app_master.php\", data: { transstatus: transstatus, mobileno:mobile_no, service_code:service_code, pg:'epayment_ackid', tokenp:token }, success:function(result) { $('#ack_no').html(result); $('#ack_no').val(''); }, error:function (xhr, ajaxOptions, thrownError){ myalert(thrownError); } }); } function getParameter"
+   ],
+   "text_start": "Government of Karnataka – Hindu Religious Institutions & Charitable Endowments Department Details Loading... Save ಮರೆಮಾಡಿ ಒಪ್ಪಿಕೊಳ್ಳಿ ಮರೆಮಾಡಿ Action Reason Save ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ ಮರೆಮಾಡಿ Details Loading... ಮರೆಮಾಡಿ Session timeout in : 1200 sec Screen Reader Access A - A A + English Government of Karnataka Hindu Religious Institutions & Charitable Endowments Department × ಮುಖಪುಟ ನಮ್ಮ ಬಗ್ಗೆ ಇತಿಹಾಸ ನಮ್ಮ ಬಗ್ಗೆ ಸಾಮಾನ್ಯ ಮಾಹಿತಿ ದೃಷ್ಟಿ ಮೂಲೋದ್ದೇಶಗಳು ಕಾರ್ಯಾಚರಣೆ ಸಾಂಸ್ಥಿಕ ರಚನೆ ಲಭ್ಯವಿರುವ ಸೇವೆಗಳು ಕಾಯ್ದೆಗಳು ನಿಯಮಗಳು ಕಾಯ್ದೆಗಳು ಮತ್ತು ಅಧಿನಿಯಮಗಳು ಇಲಾಖೆ ಕೈಪಿಡಿ ಆಡಳಿತ ಧಾರ್ಮಿಕ ದರ್ತಿಗಳ ಇಲಾಖೆ ದೇವಾಲಯಗಳು ದೇವಾಲಯದ ಪಟ್ಟಿ Temple Valuables Details ಆಯುಕ್ತರ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಎ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಪ್ರವರ್ಗ ಬಿ ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಪಟ್ಟಿ ಜಿಲ್ಲಾವಾರು ಅಧಿಸೂಚಿತ ಸಂಸ್ಥೆಗಳ ಘೋಷ್ವಾರೆ ಸಾಮಾನ್ಯ ಯೋಜನೆ ಅನುದಾನದ ಸರ್ಕಾರದ ಆದೇಶಗಳು ಗ್ಯಾಲರಿ ಫೋಟೋಗಳು ಯೋಜನೆಗಳು ವರ್ಷಾಸನ ತಸ್ತಿಕ್ ದುರಸ್ತಿ/ಜೀರ್ಣೋದ್ದಾರ/ನಿರ್ವಹಣೆಗೆ ಸರ್ಕಾರದ ಅನುದಾನ ನಗದು ಸಹಾಯಧನ ಪರಿಶಿಷ್ಠ ಜಾತಿ ಮತ್ತು ಗಿರಿಜನ ಉಪಯೋಜನೆ ಆರಾಧನಾ ಯೋಜನೆ ರುದ್ರಭೂಮಿ ಆಧುನೀಕರಣ ಕೈಲಾಸ ಮಾನಸ ಸೆರೋವರ ಯಾತ್ರಿಕರಿಗೆ ಸಹಾಯಧನ ನೀಡುವ ಯೋಜನೆ ಚಾರ್ ಧಾಮ್ ಯಾತ್ರೆ ಸಾಮಾನ್ಯ ಸಂಗ್ರಹಣಾ ನಿಧಿ ಆಗಮ ಪರೀಕ್ಷೆಯ ಫಲಿತಾಂಶ ಮಾಹಿತಿ ಹಕ್ಕು ಕಾಯಿದೆ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಎ ಮಾಹಿತಿ ಹಕ್ಕು ೪(೧)ಬಿ ಮಾಹಿತಿ ಹಕ್ಕು ೨೬(೩)ಬಿ ಆನ್‌ಲೈನ್‌ ಮಾಹಿತಿ ಹಕ್ಕು ಅಧಿಸೂಚನೆ ತಾತ್ಕಾಲಿಕ ಹಿರಿತನ ಪಟ್ಟಿ Performance Report Sec 31(7) ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ಇಲಾಖೆ ಲಾಗಿನ್ ಮಾಡಿ FAQ Portal Policies Terms of Use This Temple Portal is hosted by Hindu Religious Institutions & Charitable Endowments Department (HRI & CE), Government of Karnataka. The webiste has been designed and developed by Nati"
   }
  ]
 }
