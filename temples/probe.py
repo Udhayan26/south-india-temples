@@ -62,6 +62,20 @@ def probe(url: str) -> dict:
         return rec
     ctype = r.headers.get("content-type", "")
     rec.update({"status": r.status_code, "final_url": r.url, "content_type": ctype, "bytes": len(r.content)})
+    if "pdf" in ctype:
+        import io
+        import pdfplumber
+        pages = []
+        with pdfplumber.open(io.BytesIO(r.content)) as pdf:
+            rec["pdf_pages"] = len(pdf.pages)
+            for i, pg in enumerate(pdf.pages):
+                if i not in (0, 1, 3, 4, 5) and i % 12:
+                    continue
+                tables = pg.extract_tables()
+                pages.append({"page": i + 1, "text": (pg.extract_text() or "")[:600],
+                              "tables": [t[:8] for t in tables[:2]]})
+        rec["pdf_sample"] = pages[:20]
+        return rec
     if "html" not in ctype and "xml" not in ctype:
         rec["first_bytes"] = r.content[:200].decode("latin-1")
         return rec
