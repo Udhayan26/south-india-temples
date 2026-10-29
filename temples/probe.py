@@ -95,6 +95,14 @@ def probe(url: str) -> dict:
                                                       for tr in rows[:6]],
                        "row_links": [urljoin(r.url, a["href"]) for a in t.find_all("a", href=True)][:10]})
     rec["tables"] = tables
+    # endpoints referenced from scripts (AJAX data sources)
+    scripts = " ".join(t.get_text(" ") for t in soup.find_all("script") if not t.get("src"))
+    rec["script_srcs"] = [urljoin(r.url, t["src"]) for t in soup.find_all("script", src=True)][:30]
+    rec["script_endpoints"] = sorted(set(re.findall(r"""["']([\w./\-]+\.(?:php|json|aspx|do|jsp)[^"'\s]*)["']""", scripts)))[:60]
+    snips = []
+    for m in re.finditer(r"(\$\.(?:ajax|post|get)|fetch\(|url\s*:|DataTable\(|ajax\s*:)", scripts):
+        snips.append(" ".join(scripts[max(0, m.start() - 150):m.start() + 450].split()))
+    rec["script_snippets"] = snips[:12]
     rec["text_start"] = " ".join(soup.get_text(" ").split())[:1500]
     return rec
 

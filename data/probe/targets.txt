@@ -1,9 +1,4 @@
 https://itms.kar.nic.in/hrcehome/temple_list.php
-https://itms.kar.nic.in/hrcehome/hrce_temple.php
 https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search
-POST https://itms.kar.nic.in/hrcehome/temple_search.php?activity=temple_search|temple_name=&TI-district_code=&pincode=&TF-temple_location=&TI-temple_id=&submit=Search
-https://travancoredevaswomboard.org/downloads/
-https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/
-https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/
-https://490kdbtemples.wordpress.com/about/list-of-devaswoms/
-https://www.onlinetdb.com/store.htm
+https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=termsofuse
+https://itms.kar.nic.in/hrcehome/hrce_portalpolicy.php?searchcase=copyright
