@@ -1,1481 +1,962 @@
 {
- "checked_at": "2026-10-29T16:53:15",
+ "checked_at": "2026-10-29T16:55:07",
  "results": [
   {
-   "url": "https://asi.nic.in/copyright-policy/",
+   "url": "https://asi.nic.in/pdf/CPM_List.pdf",
    "post": null,
    "robots_allows": true,
    "robots_txt": "\n\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t<!DOCTYPE html>\n\t\t\t\t\t<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"zxx\">\n\n\t\t\t\t\t<head>\n\t\t\t\t\t\t<meta charset=\"UTF-8\">\n\t\t\t\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t\t\t\t\t<title>Archaeological Survey of India</title>\n\n\t\t\t\t\t\t<link rel=\"stylesheet\" href=\"/css/owl.carousel.min.css\"\n\t\t\t\t\t\t\ttype=\"text/css\">\n\n\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t<link href=\"/static/css/bootstrap.min.css\"\n\t\t\t\t\t\t\t\trel=\"stylesheet\" type=\"text/css\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<link href=\"/css/style.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/plugin.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/flaticon.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/myFont.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link rel=\"icon\" type=\"image/png\"\n\t\t\t\t\t\t\t\t\thref=\"/icon/ac-logo.png\">\n\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css\">\n\n\n\t\t\t\t\t\t\t\t<!-- <script src=\"/cdn-cgi/apps/head/aXeeT3C8FEVE2uMUPMMUDxVnKrs.js\"></script> -->\n\n\t\t\t\t\t\t\t\t<link href=\"/css/bootstrap.min.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/default.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/swiper.min.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/style.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/plugin.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/flaticon.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"/css/owl.carousel.min.css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\" href=\"/css/animate.css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\" href=\"/css/responsive.css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/font-awesome-animation.min.css\"\n\t\t\t\t\t\t\t\t\trel=\"stylesheet\" type=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/font-awesome.min.css\"\n\t\t\t\t\t\t\t\t\trel=\"stylesheet\" type=\"text/css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css\">\n\t\t\t\t\t\t\t\t<style type=\"text/css\">\n\t\t\t\t\t\t\t\t\t.swiper-slide.mst2.swiper-slide-next {\n\t\t\t\t\t\t\t\t\t\t/* height: 532px; */\n\t\t\t\t\t\t\t\t\t\toverflow: hidden;\n\t\t\t\t\t\t\t\t\t\tposition: relative;\n\t\t\t\t\t\t\t\t\t\tbackground: #5e5e5e;\n\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\tbutton.callMethodw {\n\t\t\t\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\t\t\t\tmargin: 0 0 0px !important;\n\t\t\t\t\t\t\t\t\t\tpadding: 0 !important;\n\t\t\t\t\t\t\t\t\t\tposition: relative;\n\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\ta.abcextendCssNext {\n\t\t\t\t\t\t\t\t\t\tdisplay: block;\n\t\t\t\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\t\t\t\tmargin: -6px 0px 0px 0px !important;\n\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\ta.abcextendCssPre {\n\t\t\t\t\t\t\t\t\t\tdisplay: block;\n\t\t\t\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\t\t\t\tmargin: -2px 0px 0px 0px",
    "status": 200,
-   "final_url": "https://asi.nic.in/",
-   "content_type": "text/html;charset=UTF-8",
-   "bytes": 8354447,
-   "title": "Archaeological Survey of India",
-   "headings": [
-    "Select Language",
-    "भाषा चुनें",
-    "The India Biennale 2026",
-    "Ajanta Caves",
-    "St. Francis of Assisi Church",
-    "Ajanta Caves Interior",
-    "Benisagar",
-    "HIGHLIGHTS",
-    "मुख्य बिंदु",
-    "welcome to archaeological survey of india",
-    "भारतीय पुरातत्व सर्वेक्षण में आपका स्वागत है",
-    "Events & Activities View all",
-    "कार्यक्रम और गतिविधियाँ सभी देखें",
-    "Research and Activities",
-    "अनुसंधान और गतिविधियाँ",
-    "Studies and Database",
-    "अध्ययन और डेटाबेस",
-    "Resources",
-    "संसाधन",
-    "Others"
-   ],
-   "forms": [
-    {
-     "action": "https://asi.nic.in/",
-     "method": "GET",
-     "fields": [
-      {
-       "tag": "input",
-       "name": null,
-       "type": "search"
-      }
-     ]
-    }
-   ],
-   "links": [
-    {
-     "text": "Refund policy",
-     "href": "https://asi.nic.in/admin/whatsnew/download/917"
-    },
-    {
-     "text": "भुगतान वापसी की नीति",
-     "href": "https://asi.nic.in/admin/whatsnew/download/917"
-    },
-    {
-     "text": "Refund policy",
-     "href": "https://asi.nic.in/admin/whatsnew/download/917"
-    },
-    {
-     "text": "भुगतान वापसी की नीति",
-     "href": "https://asi.nic.in/admin/whatsnew/download/917"
-    },
-    {
-     "text": "Visit Monuments",
-     "href": "https://asi.nic.in/pages/Monuments"
-    },
-    {
-     "text": "स्मारक दर्शन",
-     "href": "https://asi.nic.in/pages/Monuments"
-    },
-    {
-     "text": "visit",
-     "href": "https://asi.nic.in/pages/Monuments"
-    },
-    {
-     "text": "ASI, Bhubaneswar Circle has organised a Tiranga Rangoli at Rajarani Temple",
-     "href": "https://asi.nic.in/pages/Events-&-Activities/HQ"
-    },
-    {
-     "text": "Temple Survey मंदिर सर्वेक्षण",
-     "href": "https://asi.nic.in/pages/Temple-Survey-Project/Bhopal"
-    },
-    {
-     "text": "National Mission on Monuments and Antiquities स्मारकों और पुरावशेषों पर राष्ट्रीय मिशन",
-     "href": "https://nmma.nic.in/nmma/indexAction.do"
-    },
-    {
-     "text": "*Circular for the engagement of Subject/domain editors for the Publication Section, Archaeological S",
-     "href": "https://asi.nic.in/admin/whatsnew/download/910"
-    },
-    {
-     "text": "*भारतीय पुरातत्व सर्वेक्षण के प्रकाशन अनुभाग के लिए विषय/क्षेत्र संपादकों की नियुक्ति हेतु परिपत्र",
-     "href": "https://asi.nic.in/admin/whatsnew/download/910"
-    },
-    {
-     "text": "*Contact details for Internal Complaints Committee (ICC)",
-     "href": "https://asi.nic.in/admin/whatsnew/download/908"
-    },
-    {
-     "text": "*आंतरिक शिकायत समिति (आईसीसी) के संपर्क विवरण",
-     "href": "https://asi.nic.in/admin/whatsnew/download/908"
-    },
-    {
-     "text": "*Discount on ASI Publicaions from 1st January, 2026 to 31st December, 2026 *1 जनवरी, 2026 से 31 दिसं",
-     "href": "https://asi.nic.in/admin/circular/downloadPdf/162"
-    },
-    {
-     "text": "*List of ASI Publications Under Discount * छूट के अंतर्गत आने वाले एएसआई प्रकाशनों की सूची।",
-     "href": "https://asi.nic.in/admin/circular/downloadPdf/163"
-    },
-    {
-     "text": "Act and Rules अधिनियम और नियम",
-     "href": "https://asi.nic.in/pages/Monuments"
-    },
-    {
-     "text": "Monument Open for Night Viewing स्मारक रात्रि दर्शन के लिए खुला है",
-     "href": "https://asi.nic.in/pages/Monument-Open-for-Night-Viewing/HQ"
-    },
-    {
-     "text": "FOR REPAIR AND CONSERVATION OF TOWER OF SILEN ...",
-     "href": "https://asi.nic.in/admin/tender/download/1329"
-    },
-    {
-     "text": "FOR REPAIRS AND CONSERVATION WORK AT SAINT PA ...",
-     "href": "https://asi.nic.in/admin/tender/download/1328"
-    },
-    {
-     "text": "FOR ANNUAL REPAIR TO BUDDHIST CAVES, JUNAGADH ...",
-     "href": "https://asi.nic.in/admin/tender/download/1327"
-    },
-    {
-     "text": "Engagement of Legal Consultant on contractual ...",
-     "href": "https://asi.nic.in/admin/circular/downloadPdf/189"
-    },
-    {
-     "text": "Vacancy Circular for the post of ADG (Researc ...",
-     "href": "https://asi.nic.in/admin/circular/downloadPdf/188"
-    },
-    {
-     "text": "Notification with respect to Pancha Devata Pa ...",
-     "href": "https://asi.nic.in/admin/whatsnew/download/1146"
-    },
-    {
-     "text": "Notification of Painted Rock Shelters at Agra",
-     "href": "https://asi.nic.in/admin/whatsnew/download/1145"
-    },
-    {
-     "text": "Engagement of Legal Consultant on contractual ...",
-     "href": "https://asi.nic.in/admin/jobsvacancie/download/94"
-    },
-    {
-     "text": "Vacancy Circular for the post of ADG (Researc ...",
-     "href": "https://asi.nic.in/admin/jobsvacancie/download/93"
-    },
-    {
-     "text": "Seniority",
-     "href": "https://asi.nic.in/senioritylist/HQ"
-    },
-    {
-     "text": "Fellowship",
-     "href": "https://asi.nic.in/HQ/link-download/Fellowship"
-    }
-   ],
-   "tables": [],
-   "script_srcs": [
-    "https://asi.nic.in/js/bootstrap.min.js",
-    "https://asi.nic.in/js/main.js",
-    "https://asi.nic.in/js/custom-lightbox.js",
-    "https://asi.nic.in/js/custom-nav.js",
-    "https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js",
-    "https://asi.nic.in/js/jquery.min.js",
-    "https://asi.nic.in/js/owl.carousel.js",
-    "https://asi.nic.in/js/cal.js",
-    "https://asi.nic.in/js/mapdata.js",
-    "https://asi.nic.in/js/countrymap.js",
-    "https://asi.nic.in/js/select.js",
-    "https://asi.nic.in/js/swiper.min.js",
-    "https://asi.nic.in/js/wow.js",
-    "https://asi.nic.in/js/newJvm.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js",
-    "https://cdnjs.cloudflare.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
-    "https://asi.nic.in/js/custom-lightbox.js",
-    "https://asi.nic.in/js/custom-nav.js",
-    "https://asi.nic.in/js/ottps.js",
-    "https://asi.nic.in/js/owl.carousel.js",
-    "https://asi.nic.in/js/cal.js",
-    "https://asi.nic.in/admin/css/admin2/js/dataTables.bootstrap.min.js",
-    "https://asi.nic.in/admin/css/admin2/js/app.js",
-    "https://asi.nic.in/admin/css/admin2/js/custom.js",
-    "https://asi.nic.in/js/commonFunction.js",
-    "https://asi.nic.in/js/ace-responsive-menu.js",
-    "https://asi.nic.in/admin/css/admin2/js/jquery.min.js",
-    "https://asi.nic.in/js/main.js",
-    "https://asi.nic.in/js/bootstrap.min.js",
-    "https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"
-   ],
-   "script_endpoints": [],
-   "script_snippets": [
-    "rev\").prop('disabled', false); }); function getMonumentDetails() { $ .ajax({ url: \"/pages/fetch-monument/\" + $( '#centralProtectedMonuments option:selected') .val(), type: 'GET', success: function (data) { var description = data.descriptionMn; $(\"#centralProtectedImg\").attr(\"src\", \"data:image/jpeg;base64,\" + data.img1); $(\"#centralProtectedMonumentsDetails\").empty();",
-    "} }); } function getCityList(cityid) { $ .ajax({ url: \"/pages/fetch-monuments-circlewise/\" + cityid, type: 'GET', cache: false, success: function (data) { var res = data[0].descriptionMn; var descp = res.substr(0, 428); $(\"#centralProtectedImg\").attr( \"src\", \"data:image/jpeg;base64,\" + data[0].img1); $('#cent",
-    "var lang = $('#laguagedChanged option:selected').val(); if (lang == 1) { $ .ajax({ url: \"/languageChange/\" + lang, type: 'GET', success: function (data) { location.reload(true); } }); } else { window.location.href = \"/languageChangedHindi\"; } } /* function languageChangedHindi() { $ .ajax({ url : \"/pages/l",
-    "di\"; } } /* function languageChangedHindi() { $ .ajax({ url : \"/pages/languageChangedHindi/\" + $('#laguagedChangedHindi option:selected') .val(), type : 'GET', success : function(data) { location.reload(true); } }); } */ function languageChangedHindi() { document.getElementById(\"laguagedChangedHindi\").addEventListener(\"cli"
-   ],
-   "text_start": "Archaeological Survey of India Select Language भाषा चुनें English हिंदी You can change this anytime using the language dropdown above. आप इसे ऊपर दिए गए भाषा विकल्प से बदल सकते हैं। Home होम Who Is Who RTI FAQ's Sitemap About Us History Organisation ASI Logo Archive Image Gallery Video Gallery मुख्य पृष्ठ कौन क्या है सूचना का अधिकार बहुधा पूछे गए प्रश्न साइट मैप हमारे बारे में इतिहास संगठन भारतीय पुरातत्व सर्वेक्षण लोगो पुरालेख चित्र गैलरी वीडियो गैलरी Reader Access स्क्रीन रीडर हिंदी English User Login यूजर लॉगिन Tickets Option1 Tickets Option2 Refund policy टिकट विकल्प 1 टिकट विकल्प 2 भुगतान वापसी की नीति Tickets Option1 Tickets Option2 Refund policy ☰ Beware टिकट विकल्प 1 टिकट विकल्प 2 भुगतान वापसी की नीति ☰ सावधान Facebook Twitter Instagram The India Biennale 2026 Ajanta Caves Visit St. Francis of Assisi Church Ajanta Caves Interior Visit Benisagar HIGHLIGHTS मुख्य बिंदु Experience World Heritage विश्व धरोहर का अनुभव करें Visit Monuments स्मारक दर्शन Explorations and Excavations अन्वेषण और उत्खनन Our Museums हमारे संग्रहालय Preservation and Conservation संरक्षण और परिरक्षण welcome to archaeological survey of india Archaeological Survey of India is the premier organization for archaeological researches and protection of cultural heritage in India. We protect , conserve, discover and maintain our most cherished tangible and intangible heritage for the enjoyment of the world. We welcome you to plan , visit and immerse yourself into these treasures. भारतीय पुरातत्व सर्वेक्षण ",
-   "policy_text": {
-    "Copyright Policy": "Copyright Policy | Hyperlinking Policy | Accessibility Statement नियम और शर्तें | गोपनीयता नीति | कॉपीराइट नीति | हाइपरलिंक नीति | अभिगम्यता वक्तव्य Copyright © 2025 Archaeological Survey of India Government of India कॉपीराइट © 2025 भारतीय पुरातत्व सर्वेक्षण भारत सरकार Page last updated on: 2026-10-29 10:23:32 Visitors: 6029021 यह पृष्ठ अंतिम बार दिनांक: 2026-10-29 10:23:32 को अपडेट किया गया आगंतुक: 6029021 × Search",
-    "Copyright": "Copyright Policy | Hyperlinking Policy | Accessibility Statement नियम और शर्तें | गोपनीयता नीति | कॉपीराइट नीति | हाइपरलिंक नीति | अभिगम्यता वक्तव्य Copyright © 2025 Archaeological Survey of India Government of India कॉपीराइट © 2025 भारतीय पुरातत्व सर्वेक्षण भारत सरकार Page last updated on: 2026-10-29 10:23:32 Visitors: 6029021 यह पृष्ठ अंतिम बार दिनांक: 2026-10-29 10:23:32 को अपडेट किया गया आगंतुक: 6029021 × Search",
-    "Hyperlinking Policy": "Hyperlinking Policy | Accessibility Statement नियम और शर्तें | गोपनीयता नीति | कॉपीराइट नीति | हाइपरलिंक नीति | अभिगम्यता वक्तव्य Copyright © 2025 Archaeological Survey of India Government of India कॉपीराइट © 2025 भारतीय पुरातत्व सर्वेक्षण भारत सरकार Page last updated on: 2026-10-29 10:23:32 Visitors: 6029021 यह पृष्ठ अंतिम बार दिनांक: 2026-10-29 10:23:32 को अपडेट किया गया आगंतुक: 6029021 × Search"
-   }
-  },
-  {
-   "url": "https://asi.nic.in/website-policies/",
-   "post": null,
-   "robots_allows": true,
-   "robots_txt": "\n\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t<!DOCTYPE html>\n\t\t\t\t\t<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"zxx\">\n\n\t\t\t\t\t<head>\n\t\t\t\t\t\t<meta charset=\"UTF-8\">\n\t\t\t\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t\t\t\t\t<title>Archaeological Survey of India</title>\n\n\t\t\t\t\t\t<link rel=\"stylesheet\" href=\"/css/owl.carousel.min.css\"\n\t\t\t\t\t\t\ttype=\"text/css\">\n\n\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t<link href=\"/static/css/bootstrap.min.css\"\n\t\t\t\t\t\t\t\trel=\"stylesheet\" type=\"text/css\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<link href=\"/css/style.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/plugin.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/flaticon.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/myFont.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link rel=\"icon\" type=\"image/png\"\n\t\t\t\t\t\t\t\t\thref=\"/icon/ac-logo.png\">\n\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css\">\n\n\n\t\t\t\t\t\t\t\t<!-- <script src=\"/cdn-cgi/apps/head/aXeeT3C8FEVE2uMUPMMUDxVnKrs.js\"></script> -->\n\n\t\t\t\t\t\t\t\t<link href=\"/css/bootstrap.min.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/default.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/swiper.min.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/style.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/plugin.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/flaticon.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"/css/owl.carousel.min.css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\" href=\"/css/animate.css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\" href=\"/css/responsive.css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/font-awesome-animation.min.css\"\n\t\t\t\t\t\t\t\t\trel=\"stylesheet\" type=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/font-awesome.min.css\"\n\t\t\t\t\t\t\t\t\trel=\"stylesheet\" type=\"text/css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css\">\n\t\t\t\t\t\t\t\t<style type=\"text/css\">\n\t\t\t\t\t\t\t\t\t.swiper-slide.mst2.swiper-slide-next {\n\t\t\t\t\t\t\t\t\t\t/* height: 532px; */\n\t\t\t\t\t\t\t\t\t\toverflow: hidden;\n\t\t\t\t\t\t\t\t\t\tposition: relative;\n\t\t\t\t\t\t\t\t\t\tbackground: #5e5e5e;\n\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\tbutton.callMethodw {\n\t\t\t\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\t\t\t\tmargin: 0 0 0px !important;\n\t\t\t\t\t\t\t\t\t\tpadding: 0 !important;\n\t\t\t\t\t\t\t\t\t\tposition: relative;\n\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\ta.abcextendCssNext {\n\t\t\t\t\t\t\t\t\t\tdisplay: block;\n\t\t\t\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\t\t\t\tmargin: -6px 0px 0px 0px !important;\n\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\ta.abcextendCssPre {\n\t\t\t\t\t\t\t\t\t\tdisplay: block;\n\t\t\t\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\t\t\t\tmargin: -2px 0px 0px 0px",
-   "status": 200,
-   "final_url": "https://asi.nic.in/",
-   "content_type": "text/html;charset=UTF-8",
-   "bytes": 8354447,
-   "title": "Archaeological Survey of India",
-   "headings": [
-    "Select Language",
-    "भाषा चुनें",
-    "The India Biennale 2026",
-    "Ajanta Caves",
-    "St. Francis of Assisi Church",
-    "Ajanta Caves Interior",
-    "Benisagar",
-    "HIGHLIGHTS",
-    "मुख्य बिंदु",
-    "welcome to archaeological survey of india",
-    "भारतीय पुरातत्व सर्वेक्षण में आपका स्वागत है",
-    "Events & Activities View all",
-    "कार्यक्रम और गतिविधियाँ सभी देखें",
-    "Research and Activities",
-    "अनुसंधान और गतिविधियाँ",
-    "Studies and Database",
-    "अध्ययन और डेटाबेस",
-    "Resources",
-    "संसाधन",
-    "Others"
-   ],
-   "forms": [
-    {
-     "action": "https://asi.nic.in/",
-     "method": "GET",
-     "fields": [
-      {
-       "tag": "input",
-       "name": null,
-       "type": "search"
-      }
-     ]
-    }
-   ],
-   "links": [
-    {
-     "text": "Refund policy",
-     "href": "https://asi.nic.in/admin/whatsnew/download/917"
-    },
-    {
-     "text": "भुगतान वापसी की नीति",
-     "href": "https://asi.nic.in/admin/whatsnew/download/917"
-    },
-    {
-     "text": "Refund policy",
-     "href": "https://asi.nic.in/admin/whatsnew/download/917"
-    },
-    {
-     "text": "भुगतान वापसी की नीति",
-     "href": "https://asi.nic.in/admin/whatsnew/download/917"
-    },
-    {
-     "text": "Visit Monuments",
-     "href": "https://asi.nic.in/pages/Monuments"
-    },
-    {
-     "text": "स्मारक दर्शन",
-     "href": "https://asi.nic.in/pages/Monuments"
-    },
-    {
-     "text": "visit",
-     "href": "https://asi.nic.in/pages/Monuments"
-    },
-    {
-     "text": "ASI, Bhubaneswar Circle has organised a Tiranga Rangoli at Rajarani Temple",
-     "href": "https://asi.nic.in/pages/Events-&-Activities/HQ"
-    },
-    {
-     "text": "Temple Survey मंदिर सर्वेक्षण",
-     "href": "https://asi.nic.in/pages/Temple-Survey-Project/Bhopal"
-    },
-    {
-     "text": "National Mission on Monuments and Antiquities स्मारकों और पुरावशेषों पर राष्ट्रीय मिशन",
-     "href": "https://nmma.nic.in/nmma/indexAction.do"
-    },
-    {
-     "text": "*Circular for the engagement of Subject/domain editors for the Publication Section, Archaeological S",
-     "href": "https://asi.nic.in/admin/whatsnew/download/910"
-    },
-    {
-     "text": "*भारतीय पुरातत्व सर्वेक्षण के प्रकाशन अनुभाग के लिए विषय/क्षेत्र संपादकों की नियुक्ति हेतु परिपत्र",
-     "href": "https://asi.nic.in/admin/whatsnew/download/910"
-    },
-    {
-     "text": "*Contact details for Internal Complaints Committee (ICC)",
-     "href": "https://asi.nic.in/admin/whatsnew/download/908"
-    },
-    {
-     "text": "*आंतरिक शिकायत समिति (आईसीसी) के संपर्क विवरण",
-     "href": "https://asi.nic.in/admin/whatsnew/download/908"
-    },
-    {
-     "text": "*Discount on ASI Publicaions from 1st January, 2026 to 31st December, 2026 *1 जनवरी, 2026 से 31 दिसं",
-     "href": "https://asi.nic.in/admin/circular/downloadPdf/162"
-    },
-    {
-     "text": "*List of ASI Publications Under Discount * छूट के अंतर्गत आने वाले एएसआई प्रकाशनों की सूची।",
-     "href": "https://asi.nic.in/admin/circular/downloadPdf/163"
-    },
-    {
-     "text": "Act and Rules अधिनियम और नियम",
-     "href": "https://asi.nic.in/pages/Monuments"
-    },
-    {
-     "text": "Monument Open for Night Viewing स्मारक रात्रि दर्शन के लिए खुला है",
-     "href": "https://asi.nic.in/pages/Monument-Open-for-Night-Viewing/HQ"
-    },
-    {
-     "text": "FOR REPAIR AND CONSERVATION OF TOWER OF SILEN ...",
-     "href": "https://asi.nic.in/admin/tender/download/1329"
-    },
-    {
-     "text": "FOR REPAIRS AND CONSERVATION WORK AT SAINT PA ...",
-     "href": "https://asi.nic.in/admin/tender/download/1328"
-    },
-    {
-     "text": "FOR ANNUAL REPAIR TO BUDDHIST CAVES, JUNAGADH ...",
-     "href": "https://asi.nic.in/admin/tender/download/1327"
-    },
-    {
-     "text": "Engagement of Legal Consultant on contractual ...",
-     "href": "https://asi.nic.in/admin/circular/downloadPdf/189"
-    },
-    {
-     "text": "Vacancy Circular for the post of ADG (Researc ...",
-     "href": "https://asi.nic.in/admin/circular/downloadPdf/188"
-    },
-    {
-     "text": "Notification with respect to Pancha Devata Pa ...",
-     "href": "https://asi.nic.in/admin/whatsnew/download/1146"
-    },
-    {
-     "text": "Notification of Painted Rock Shelters at Agra",
-     "href": "https://asi.nic.in/admin/whatsnew/download/1145"
-    },
-    {
-     "text": "Engagement of Legal Consultant on contractual ...",
-     "href": "https://asi.nic.in/admin/jobsvacancie/download/94"
-    },
-    {
-     "text": "Vacancy Circular for the post of ADG (Researc ...",
-     "href": "https://asi.nic.in/admin/jobsvacancie/download/93"
-    },
-    {
-     "text": "Seniority",
-     "href": "https://asi.nic.in/senioritylist/HQ"
-    },
-    {
-     "text": "Fellowship",
-     "href": "https://asi.nic.in/HQ/link-download/Fellowship"
-    }
-   ],
-   "tables": [],
-   "script_srcs": [
-    "https://asi.nic.in/js/bootstrap.min.js",
-    "https://asi.nic.in/js/main.js",
-    "https://asi.nic.in/js/custom-lightbox.js",
-    "https://asi.nic.in/js/custom-nav.js",
-    "https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js",
-    "https://asi.nic.in/js/jquery.min.js",
-    "https://asi.nic.in/js/owl.carousel.js",
-    "https://asi.nic.in/js/cal.js",
-    "https://asi.nic.in/js/mapdata.js",
-    "https://asi.nic.in/js/countrymap.js",
-    "https://asi.nic.in/js/select.js",
-    "https://asi.nic.in/js/swiper.min.js",
-    "https://asi.nic.in/js/wow.js",
-    "https://asi.nic.in/js/newJvm.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js",
-    "https://cdnjs.cloudflare.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
-    "https://asi.nic.in/js/custom-lightbox.js",
-    "https://asi.nic.in/js/custom-nav.js",
-    "https://asi.nic.in/js/ottps.js",
-    "https://asi.nic.in/js/owl.carousel.js",
-    "https://asi.nic.in/js/cal.js",
-    "https://asi.nic.in/admin/css/admin2/js/dataTables.bootstrap.min.js",
-    "https://asi.nic.in/admin/css/admin2/js/app.js",
-    "https://asi.nic.in/admin/css/admin2/js/custom.js",
-    "https://asi.nic.in/js/commonFunction.js",
-    "https://asi.nic.in/js/ace-responsive-menu.js",
-    "https://asi.nic.in/admin/css/admin2/js/jquery.min.js",
-    "https://asi.nic.in/js/main.js",
-    "https://asi.nic.in/js/bootstrap.min.js",
-    "https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"
-   ],
-   "script_endpoints": [],
-   "script_snippets": [
-    "rev\").prop('disabled', false); }); function getMonumentDetails() { $ .ajax({ url: \"/pages/fetch-monument/\" + $( '#centralProtectedMonuments option:selected') .val(), type: 'GET', success: function (data) { var description = data.descriptionMn; $(\"#centralProtectedImg\").attr(\"src\", \"data:image/jpeg;base64,\" + data.img1); $(\"#centralProtectedMonumentsDetails\").empty();",
-    "} }); } function getCityList(cityid) { $ .ajax({ url: \"/pages/fetch-monuments-circlewise/\" + cityid, type: 'GET', cache: false, success: function (data) { var res = data[0].descriptionMn; var descp = res.substr(0, 428); $(\"#centralProtectedImg\").attr( \"src\", \"data:image/jpeg;base64,\" + data[0].img1); $('#cent",
-    "var lang = $('#laguagedChanged option:selected').val(); if (lang == 1) { $ .ajax({ url: \"/languageChange/\" + lang, type: 'GET', success: function (data) { location.reload(true); } }); } else { window.location.href = \"/languageChangedHindi\"; } } /* function languageChangedHindi() { $ .ajax({ url : \"/pages/l",
-    "di\"; } } /* function languageChangedHindi() { $ .ajax({ url : \"/pages/languageChangedHindi/\" + $('#laguagedChangedHindi option:selected') .val(), type : 'GET', success : function(data) { location.reload(true); } }); } */ function languageChangedHindi() { document.getElementById(\"laguagedChangedHindi\").addEventListener(\"cli"
-   ],
-   "text_start": "Archaeological Survey of India Select Language भाषा चुनें English हिंदी You can change this anytime using the language dropdown above. आप इसे ऊपर दिए गए भाषा विकल्प से बदल सकते हैं। Home होम Who Is Who RTI FAQ's Sitemap About Us History Organisation ASI Logo Archive Image Gallery Video Gallery मुख्य पृष्ठ कौन क्या है सूचना का अधिकार बहुधा पूछे गए प्रश्न साइट मैप हमारे बारे में इतिहास संगठन भारतीय पुरातत्व सर्वेक्षण लोगो पुरालेख चित्र गैलरी वीडियो गैलरी Reader Access स्क्रीन रीडर हिंदी English User Login यूजर लॉगिन Tickets Option1 Tickets Option2 Refund policy टिकट विकल्प 1 टिकट विकल्प 2 भुगतान वापसी की नीति Tickets Option1 Tickets Option2 Refund policy ☰ Beware टिकट विकल्प 1 टिकट विकल्प 2 भुगतान वापसी की नीति ☰ सावधान Facebook Twitter Instagram The India Biennale 2026 Ajanta Caves Visit St. Francis of Assisi Church Ajanta Caves Interior Visit Benisagar HIGHLIGHTS मुख्य बिंदु Experience World Heritage विश्व धरोहर का अनुभव करें Visit Monuments स्मारक दर्शन Explorations and Excavations अन्वेषण और उत्खनन Our Museums हमारे संग्रहालय Preservation and Conservation संरक्षण और परिरक्षण welcome to archaeological survey of india Archaeological Survey of India is the premier organization for archaeological researches and protection of cultural heritage in India. We protect , conserve, discover and maintain our most cherished tangible and intangible heritage for the enjoyment of the world. We welcome you to plan , visit and immerse yourself into these treasures. भारतीय पुरातत्व सर्वेक्षण ",
-   "policy_text": {
-    "Copyright Policy": "Copyright Policy | Hyperlinking Policy | Accessibility Statement नियम और शर्तें | गोपनीयता नीति | कॉपीराइट नीति | हाइपरलिंक नीति | अभिगम्यता वक्तव्य Copyright © 2025 Archaeological Survey of India Government of India कॉपीराइट © 2025 भारतीय पुरातत्व सर्वेक्षण भारत सरकार Page last updated on: 2026-10-29 10:23:44 Visitors: 6029023 यह पृष्ठ अंतिम बार दिनांक: 2026-10-29 10:23:44 को अपडेट किया गया आगंतुक: 6029023 × Search",
-    "Copyright": "Copyright Policy | Hyperlinking Policy | Accessibility Statement नियम और शर्तें | गोपनीयता नीति | कॉपीराइट नीति | हाइपरलिंक नीति | अभिगम्यता वक्तव्य Copyright © 2025 Archaeological Survey of India Government of India कॉपीराइट © 2025 भारतीय पुरातत्व सर्वेक्षण भारत सरकार Page last updated on: 2026-10-29 10:23:44 Visitors: 6029023 यह पृष्ठ अंतिम बार दिनांक: 2026-10-29 10:23:44 को अपडेट किया गया आगंतुक: 6029023 × Search",
-    "Hyperlinking Policy": "Hyperlinking Policy | Accessibility Statement नियम और शर्तें | गोपनीयता नीति | कॉपीराइट नीति | हाइपरलिंक नीति | अभिगम्यता वक्तव्य Copyright © 2025 Archaeological Survey of India Government of India कॉपीराइट © 2025 भारतीय पुरातत्व सर्वेक्षण भारत सरकार Page last updated on: 2026-10-29 10:23:44 Visitors: 6029023 यह पृष्ठ अंतिम बार दिनांक: 2026-10-29 10:23:44 को अपडेट किया गया आगंतुक: 6029023 × Search"
-   }
-  },
-  {
-   "url": "https://asi.nic.in/",
-   "post": null,
-   "robots_allows": true,
-   "robots_txt": "\n\t\n\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\t<!DOCTYPE html>\n\t\t\t\t\t<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"zxx\">\n\n\t\t\t\t\t<head>\n\t\t\t\t\t\t<meta charset=\"UTF-8\">\n\t\t\t\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t\t\t\t\t\t<title>Archaeological Survey of India</title>\n\n\t\t\t\t\t\t<link rel=\"stylesheet\" href=\"/css/owl.carousel.min.css\"\n\t\t\t\t\t\t\ttype=\"text/css\">\n\n\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t<link href=\"/static/css/bootstrap.min.css\"\n\t\t\t\t\t\t\t\trel=\"stylesheet\" type=\"text/css\">\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t<link href=\"/css/style.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/plugin.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/flaticon.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/myFont.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link rel=\"icon\" type=\"image/png\"\n\t\t\t\t\t\t\t\t\thref=\"/icon/ac-logo.png\">\n\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css\">\n\n\n\t\t\t\t\t\t\t\t<!-- <script src=\"/cdn-cgi/apps/head/aXeeT3C8FEVE2uMUPMMUDxVnKrs.js\"></script> -->\n\n\t\t\t\t\t\t\t\t<link href=\"/css/bootstrap.min.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/default.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/swiper.min.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/style.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/plugin.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/flaticon.css\" rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\ttype=\"text/css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"/css/owl.carousel.min.css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\" href=\"/css/animate.css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\" href=\"/css/responsive.css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/font-awesome-animation.min.css\"\n\t\t\t\t\t\t\t\t\trel=\"stylesheet\" type=\"text/css\">\n\t\t\t\t\t\t\t\t<link href=\"/css/font-awesome.min.css\"\n\t\t\t\t\t\t\t\t\trel=\"stylesheet\" type=\"text/css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css\">\n\t\t\t\t\t\t\t\t<link rel=\"stylesheet\"\n\t\t\t\t\t\t\t\t\thref=\"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css\">\n\t\t\t\t\t\t\t\t<style type=\"text/css\">\n\t\t\t\t\t\t\t\t\t.swiper-slide.mst2.swiper-slide-next {\n\t\t\t\t\t\t\t\t\t\t/* height: 532px; */\n\t\t\t\t\t\t\t\t\t\toverflow: hidden;\n\t\t\t\t\t\t\t\t\t\tposition: relative;\n\t\t\t\t\t\t\t\t\t\tbackground: #5e5e5e;\n\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\tbutton.callMethodw {\n\t\t\t\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\t\t\t\tmargin: 0 0 0px !important;\n\t\t\t\t\t\t\t\t\t\tpadding: 0 !important;\n\t\t\t\t\t\t\t\t\t\tposition: relative;\n\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\ta.abcextendCssNext {\n\t\t\t\t\t\t\t\t\t\tdisplay: block;\n\t\t\t\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\t\t\t\tmargin: -6px 0px 0px 0px !important;\n\t\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t\ta.abcextendCssPre {\n\t\t\t\t\t\t\t\t\t\tdisplay: block;\n\t\t\t\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\t\t\t\tmargin: -2px 0px 0px 0px",
-   "status": 200,
-   "final_url": "https://asi.nic.in/",
-   "content_type": "text/html;charset=UTF-8",
-   "bytes": 8354447,
-   "title": "Archaeological Survey of India",
-   "headings": [
-    "Select Language",
-    "भाषा चुनें",
-    "The India Biennale 2026",
-    "Ajanta Caves",
-    "St. Francis of Assisi Church",
-    "Ajanta Caves Interior",
-    "Benisagar",
-    "HIGHLIGHTS",
-    "मुख्य बिंदु",
-    "welcome to archaeological survey of india",
-    "भारतीय पुरातत्व सर्वेक्षण में आपका स्वागत है",
-    "Events & Activities View all",
-    "कार्यक्रम और गतिविधियाँ सभी देखें",
-    "Research and Activities",
-    "अनुसंधान और गतिविधियाँ",
-    "Studies and Database",
-    "अध्ययन और डेटाबेस",
-    "Resources",
-    "संसाधन",
-    "Others"
-   ],
-   "forms": [
-    {
-     "action": "https://asi.nic.in/",
-     "method": "GET",
-     "fields": [
-      {
-       "tag": "input",
-       "name": null,
-       "type": "search"
-      }
-     ]
-    }
-   ],
-   "links": [
-    {
-     "text": "Refund policy",
-     "href": "https://asi.nic.in/admin/whatsnew/download/917"
-    },
-    {
-     "text": "भुगतान वापसी की नीति",
-     "href": "https://asi.nic.in/admin/whatsnew/download/917"
-    },
-    {
-     "text": "Refund policy",
-     "href": "https://asi.nic.in/admin/whatsnew/download/917"
-    },
-    {
-     "text": "भुगतान वापसी की नीति",
-     "href": "https://asi.nic.in/admin/whatsnew/download/917"
-    },
-    {
-     "text": "Visit Monuments",
-     "href": "https://asi.nic.in/pages/Monuments"
-    },
-    {
-     "text": "स्मारक दर्शन",
-     "href": "https://asi.nic.in/pages/Monuments"
-    },
-    {
-     "text": "visit",
-     "href": "https://asi.nic.in/pages/Monuments"
-    },
-    {
-     "text": "ASI, Bhubaneswar Circle has organised a Tiranga Rangoli at Rajarani Temple",
-     "href": "https://asi.nic.in/pages/Events-&-Activities/HQ"
-    },
-    {
-     "text": "Temple Survey मंदिर सर्वेक्षण",
-     "href": "https://asi.nic.in/pages/Temple-Survey-Project/Bhopal"
-    },
-    {
-     "text": "National Mission on Monuments and Antiquities स्मारकों और पुरावशेषों पर राष्ट्रीय मिशन",
-     "href": "https://nmma.nic.in/nmma/indexAction.do"
-    },
-    {
-     "text": "*Circular for the engagement of Subject/domain editors for the Publication Section, Archaeological S",
-     "href": "https://asi.nic.in/admin/whatsnew/download/910"
-    },
-    {
-     "text": "*भारतीय पुरातत्व सर्वेक्षण के प्रकाशन अनुभाग के लिए विषय/क्षेत्र संपादकों की नियुक्ति हेतु परिपत्र",
-     "href": "https://asi.nic.in/admin/whatsnew/download/910"
-    },
-    {
-     "text": "*Contact details for Internal Complaints Committee (ICC)",
-     "href": "https://asi.nic.in/admin/whatsnew/download/908"
-    },
-    {
-     "text": "*आंतरिक शिकायत समिति (आईसीसी) के संपर्क विवरण",
-     "href": "https://asi.nic.in/admin/whatsnew/download/908"
-    },
-    {
-     "text": "*Discount on ASI Publicaions from 1st January, 2026 to 31st December, 2026 *1 जनवरी, 2026 से 31 दिसं",
-     "href": "https://asi.nic.in/admin/circular/downloadPdf/162"
-    },
-    {
-     "text": "*List of ASI Publications Under Discount * छूट के अंतर्गत आने वाले एएसआई प्रकाशनों की सूची।",
-     "href": "https://asi.nic.in/admin/circular/downloadPdf/163"
-    },
-    {
-     "text": "Act and Rules अधिनियम और नियम",
-     "href": "https://asi.nic.in/pages/Monuments"
-    },
-    {
-     "text": "Monument Open for Night Viewing स्मारक रात्रि दर्शन के लिए खुला है",
-     "href": "https://asi.nic.in/pages/Monument-Open-for-Night-Viewing/HQ"
-    },
-    {
-     "text": "FOR REPAIR AND CONSERVATION OF TOWER OF SILEN ...",
-     "href": "https://asi.nic.in/admin/tender/download/1329"
-    },
-    {
-     "text": "FOR REPAIRS AND CONSERVATION WORK AT SAINT PA ...",
-     "href": "https://asi.nic.in/admin/tender/download/1328"
-    },
-    {
-     "text": "FOR ANNUAL REPAIR TO BUDDHIST CAVES, JUNAGADH ...",
-     "href": "https://asi.nic.in/admin/tender/download/1327"
-    },
-    {
-     "text": "Engagement of Legal Consultant on contractual ...",
-     "href": "https://asi.nic.in/admin/circular/downloadPdf/189"
-    },
-    {
-     "text": "Vacancy Circular for the post of ADG (Researc ...",
-     "href": "https://asi.nic.in/admin/circular/downloadPdf/188"
-    },
-    {
-     "text": "Notification with respect to Pancha Devata Pa ...",
-     "href": "https://asi.nic.in/admin/whatsnew/download/1146"
-    },
-    {
-     "text": "Notification of Painted Rock Shelters at Agra",
-     "href": "https://asi.nic.in/admin/whatsnew/download/1145"
-    },
-    {
-     "text": "Engagement of Legal Consultant on contractual ...",
-     "href": "https://asi.nic.in/admin/jobsvacancie/download/94"
-    },
-    {
-     "text": "Vacancy Circular for the post of ADG (Researc ...",
-     "href": "https://asi.nic.in/admin/jobsvacancie/download/93"
-    },
-    {
-     "text": "Seniority",
-     "href": "https://asi.nic.in/senioritylist/HQ"
-    },
-    {
-     "text": "Fellowship",
-     "href": "https://asi.nic.in/HQ/link-download/Fellowship"
-    }
-   ],
-   "tables": [],
-   "script_srcs": [
-    "https://asi.nic.in/js/bootstrap.min.js",
-    "https://asi.nic.in/js/main.js",
-    "https://asi.nic.in/js/custom-lightbox.js",
-    "https://asi.nic.in/js/custom-nav.js",
-    "https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js",
-    "https://asi.nic.in/js/jquery.min.js",
-    "https://asi.nic.in/js/owl.carousel.js",
-    "https://asi.nic.in/js/cal.js",
-    "https://asi.nic.in/js/mapdata.js",
-    "https://asi.nic.in/js/countrymap.js",
-    "https://asi.nic.in/js/select.js",
-    "https://asi.nic.in/js/swiper.min.js",
-    "https://asi.nic.in/js/wow.js",
-    "https://asi.nic.in/js/newJvm.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js",
-    "https://cdnjs.cloudflare.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
-    "https://asi.nic.in/js/custom-lightbox.js",
-    "https://asi.nic.in/js/custom-nav.js",
-    "https://asi.nic.in/js/ottps.js",
-    "https://asi.nic.in/js/owl.carousel.js",
-    "https://asi.nic.in/js/cal.js",
-    "https://asi.nic.in/admin/css/admin2/js/dataTables.bootstrap.min.js",
-    "https://asi.nic.in/admin/css/admin2/js/app.js",
-    "https://asi.nic.in/admin/css/admin2/js/custom.js",
-    "https://asi.nic.in/js/commonFunction.js",
-    "https://asi.nic.in/js/ace-responsive-menu.js",
-    "https://asi.nic.in/admin/css/admin2/js/jquery.min.js",
-    "https://asi.nic.in/js/main.js",
-    "https://asi.nic.in/js/bootstrap.min.js",
-    "https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"
-   ],
-   "script_endpoints": [],
-   "script_snippets": [
-    "rev\").prop('disabled', false); }); function getMonumentDetails() { $ .ajax({ url: \"/pages/fetch-monument/\" + $( '#centralProtectedMonuments option:selected') .val(), type: 'GET', success: function (data) { var description = data.descriptionMn; $(\"#centralProtectedImg\").attr(\"src\", \"data:image/jpeg;base64,\" + data.img1); $(\"#centralProtectedMonumentsDetails\").empty();",
-    "} }); } function getCityList(cityid) { $ .ajax({ url: \"/pages/fetch-monuments-circlewise/\" + cityid, type: 'GET', cache: false, success: function (data) { var res = data[0].descriptionMn; var descp = res.substr(0, 428); $(\"#centralProtectedImg\").attr( \"src\", \"data:image/jpeg;base64,\" + data[0].img1); $('#cent",
-    "var lang = $('#laguagedChanged option:selected').val(); if (lang == 1) { $ .ajax({ url: \"/languageChange/\" + lang, type: 'GET', success: function (data) { location.reload(true); } }); } else { window.location.href = \"/languageChangedHindi\"; } } /* function languageChangedHindi() { $ .ajax({ url : \"/pages/l",
-    "di\"; } } /* function languageChangedHindi() { $ .ajax({ url : \"/pages/languageChangedHindi/\" + $('#laguagedChangedHindi option:selected') .val(), type : 'GET', success : function(data) { location.reload(true); } }); } */ function languageChangedHindi() { document.getElementById(\"laguagedChangedHindi\").addEventListener(\"cli"
-   ],
-   "text_start": "Archaeological Survey of India Select Language भाषा चुनें English हिंदी You can change this anytime using the language dropdown above. आप इसे ऊपर दिए गए भाषा विकल्प से बदल सकते हैं। Home होम Who Is Who RTI FAQ's Sitemap About Us History Organisation ASI Logo Archive Image Gallery Video Gallery मुख्य पृष्ठ कौन क्या है सूचना का अधिकार बहुधा पूछे गए प्रश्न साइट मैप हमारे बारे में इतिहास संगठन भारतीय पुरातत्व सर्वेक्षण लोगो पुरालेख चित्र गैलरी वीडियो गैलरी Reader Access स्क्रीन रीडर हिंदी English User Login यूजर लॉगिन Tickets Option1 Tickets Option2 Refund policy टिकट विकल्प 1 टिकट विकल्प 2 भुगतान वापसी की नीति Tickets Option1 Tickets Option2 Refund policy ☰ Beware टिकट विकल्प 1 टिकट विकल्प 2 भुगतान वापसी की नीति ☰ सावधान Facebook Twitter Instagram The India Biennale 2026 Ajanta Caves Visit St. Francis of Assisi Church Ajanta Caves Interior Visit Benisagar HIGHLIGHTS मुख्य बिंदु Experience World Heritage विश्व धरोहर का अनुभव करें Visit Monuments स्मारक दर्शन Explorations and Excavations अन्वेषण और उत्खनन Our Museums हमारे संग्रहालय Preservation and Conservation संरक्षण और परिरक्षण welcome to archaeological survey of india Archaeological Survey of India is the premier organization for archaeological researches and protection of cultural heritage in India. We protect , conserve, discover and maintain our most cherished tangible and intangible heritage for the enjoyment of the world. We welcome you to plan , visit and immerse yourself into these treasures. भारतीय पुरातत्व सर्वेक्षण ",
-   "policy_text": {
-    "Copyright Policy": "Copyright Policy | Hyperlinking Policy | Accessibility Statement नियम और शर्तें | गोपनीयता नीति | कॉपीराइट नीति | हाइपरलिंक नीति | अभिगम्यता वक्तव्य Copyright © 2025 Archaeological Survey of India Government of India कॉपीराइट © 2025 भारतीय पुरातत्व सर्वेक्षण भारत सरकार Page last updated on: 2026-10-29 10:23:58 Visitors: 6029026 यह पृष्ठ अंतिम बार दिनांक: 2026-10-29 10:23:58 को अपडेट किया गया आगंतुक: 6029026 × Search",
-    "Copyright": "Copyright Policy | Hyperlinking Policy | Accessibility Statement नियम और शर्तें | गोपनीयता नीति | कॉपीराइट नीति | हाइपरलिंक नीति | अभिगम्यता वक्तव्य Copyright © 2025 Archaeological Survey of India Government of India कॉपीराइट © 2025 भारतीय पुरातत्व सर्वेक्षण भारत सरकार Page last updated on: 2026-10-29 10:23:58 Visitors: 6029026 यह पृष्ठ अंतिम बार दिनांक: 2026-10-29 10:23:58 को अपडेट किया गया आगंतुक: 6029026 × Search",
-    "Hyperlinking Policy": "Hyperlinking Policy | Accessibility Statement नियम और शर्तें | गोपनीयता नीति | कॉपीराइट नीति | हाइपरलिंक नीति | अभिगम्यता वक्तव्य Copyright © 2025 Archaeological Survey of India Government of India कॉपीराइट © 2025 भारतीय पुरातत्व सर्वेक्षण भारत सरकार Page last updated on: 2026-10-29 10:23:58 Visitors: 6029026 यह पृष्ठ अंतिम बार दिनांक: 2026-10-29 10:23:58 को अपडेट किया गया आगंतुक: 6029026 × Search"
-   }
-  },
-  {
-   "url": "https://490kdbtemples.org/about/",
-   "post": null,
-   "robots_allows": true,
-   "robots_txt": "# If you are regularly crawling WordPress.com sites, please use our firehose to receive real-time push updates instead.\n# Please see https://developer.wordpress.com/docs/firehose/ for more details.\n\nSitemap: https://490kdbtemples.org/sitemap.xml\nSitemap: https://490kdbtemples.org/news-sitemap.xml\n\nUser-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\nDisallow: /wp-login.php\nDisallow: /wp-signup.php\nDisallow: /press-this.php\nDisallow: /remote-login.php\nDisallow: /activate/\nDisallow: /cgi-bin/\nDisallow: /mshots/v1/\nDisallow: /next/\nDisallow: /public.api/\n\n# This file was generated on Sat, 22 Aug 2026 15:58:22 +0000\n",
-   "status": 200,
-   "final_url": "https://490kdbtemples.org/",
-   "content_type": "text/html; charset=UTF-8",
-   "bytes": 1038110,
-   "title": "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ | Travancore Devaswom Archives for Kanyakumari Devaswom Board' 490 Temples",
-   "headings": [
-    "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ",
-    "🌻🌺🌼🌾Incredible Travancore Devaswoms…🌾🌼🌺🌻",
-    "",
-    "|| श्री पद्मनाभा रक्षिथो ||",
-    "",
-    "",
-    "Making Lord Padmanabhaswamy as the King of Travancore – Thrippadidhanam",
-    "|| श्री आधिकेशवा रक्षिथो ||",
-    "",
-    "The Formation of Thiruvithancore Sirkar Devaswoms",
-    "கன்னியாகுமரி மாவட்டத்தில் ஆறு குடைவரைக்கோயில்கள் உள்ளன. அவை:",
-    "Formation of Travancore Devaswom Department",
-    "The Major Devaswoms in Travancore state:",
-    "",
-    "Travancore Land Revenue Manual – Ayacut Sirkar Devaswom Lands:",
-    "Formation of Travancore Devaswom Board by Thiru-Kochi State",
-    "Linguistic Reorganisation of Tamil State from The Travancore",
-    "",
-    "The Formation of Kanyakumari Devaswom Board",
-    "Report of the Hindu Religious Endowments Commission 1960-1962"
-   ],
-   "forms": [
-    {
-     "action": "https://490kdbtemples.org/",
-     "method": "GET",
-     "fields": [
-      {
-       "tag": "input",
-       "name": "s",
-       "type": "search"
-      },
-      {
-       "tag": "input",
-       "name": null,
-       "type": "submit"
-      }
+   "final_url": "https://asi.nic.in/pdf/CPM_List.pdf",
+   "content_type": "application/pdf",
+   "bytes": 3283232,
+   "pdf_pages": 142,
+   "pdf_sample": [
+    {
+     "page": 1,
+     "text": "Centrally Protected Monuments/Sites: State-wise and Circle-wise\nSl.No. Name of State / No. of Name of the Circle No. of\nU.T. Monuments Monuments\n1. Andhra Pradesh 135 Amaravati Circle `135\n2. Arunachal Pradesh 03 Guwahati Circle 03\n3. Assam 55 Guwahati Circle 55\n4. Bihar 70 Patna Circle 70\n5. Chhattisgarh 46 Raipur Circle 46\n6. Daman & Diu (U.T.) 11 Vadodara Circle 11\n7. Goa 21 Goa Circle 21\n8. Gujarat 205 Vadodara Circle 159\nRajkot Circle 46\n9. Haryana 93 Chandigarh Circle 93\n10. Himachal Pradesh 40 Shimla Circle 40\n11. Jammu & Kashmir 56 Srinagar Circle 56\n(U.T.)\n12. Jharkhand 13 Ranchi Circ",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of State /\nU.T.",
+        "No. of\nMonuments",
+        "Name of the Circle",
+        "No. of\nMonuments"
+       ],
+       [
+        "1.",
+        "Andhra Pradesh",
+        "135",
+        "Amaravati Circle",
+        "`135"
+       ],
+       [
+        "2.",
+        "Arunachal Pradesh",
+        "03",
+        "Guwahati Circle",
+        "03"
+       ],
+       [
+        "3.",
+        "Assam",
+        "55",
+        "Guwahati Circle",
+        "55"
+       ],
+       [
+        "4.",
+        "Bihar",
+        "70",
+        "Patna Circle",
+        "70"
+       ],
+       [
+        "5.",
+        "Chhattisgarh",
+        "46",
+        "Raipur Circle",
+        "46"
+       ],
+       [
+        "6.",
+        "Daman & Diu (U.T.)",
+        "11",
+        "Vadodara Circle",
+        "11"
+       ],
+       [
+        "7.",
+        "Goa",
+        "21",
+        "Goa Circle",
+        "21"
+       ]
+      ]
      ]
     },
     {
-     "action": "https://490kdbtemples.org/",
-     "method": "POST",
-     "fields": [
-      {
-       "tag": "input",
-       "name": null,
-       "type": "submit"
-      }
+     "page": 2,
+     "text": "Centrally Protected Monuments/Sites: Circle-wise and State-wise\nSl.No. Circle Name No. of State Covered No. of Monuments\nMonuments\n1. Agra Circle 187 Uttar Pradesh 154\n2. Aizawl Circle 10 Manipur 01\nMizoram 01\nTripura 08\n3. Amaravati Circle 135 Andhra Pradesh 135\n4. Aurangabad Circle 75 Maharashtra 75\n5. Bangalore Circle 133 Karnataka 133\n6. Bhopal Circle 183 Madhya Pradesh 183\n7. Bhubaneswar Circle 41 Odisha 41\n8. Chandigarh Circle 126 Haryana 93\nPunjab 33\n9. Chennai Circle 257 Tamilnadu 250\nPuducherry (U.T.) 07\n10. Dehradun Circle 44 Uttarakhand 44\n11. Delhi Circle 172 N.C.T. Delhi 172\n12. D",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Circle Name",
+        "No. of\nMonuments",
+        "State Covered",
+        "No. of Monuments"
+       ],
+       [
+        "1.",
+        "Agra Circle",
+        "187",
+        "Uttar Pradesh",
+        "154"
+       ],
+       [
+        "2.",
+        "Aizawl Circle",
+        "10",
+        "Manipur",
+        "01"
+       ],
+       [
+        null,
+        null,
+        null,
+        "Mizoram",
+        "01"
+       ],
+       [
+        null,
+        null,
+        null,
+        "Tripura",
+        "08"
+       ],
+       [
+        "3.",
+        "Amaravati Circle",
+        "135",
+        "Andhra Pradesh",
+        "135"
+       ],
+       [
+        "4.",
+        "Aurangabad Circle",
+        "75",
+        "Maharashtra",
+        "75"
+       ],
+       [
+        "5.",
+        "Bangalore Circle",
+        "133",
+        "Karnataka",
+        "133"
+       ]
+      ]
      ]
     },
     {
-     "action": "https://subscribe.wordpress.com",
-     "method": "POST",
-     "fields": [
-      {
-       "tag": "input",
-       "name": "email",
-       "type": "email"
-      },
-      {
-       "tag": "input",
-       "name": "action",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "blog_id",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "source",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "sub-type",
-       "type": "hidden"
-      },
-      {
-       "tag": "input",
-       "name": "_wpnonce",
-       "type": "hidden"
-      }
+     "page": 4,
+     "text": "1. List of Centrally Protected Monuments / Sites under the jurisdiction of\nAndhra Pradesh (Amaravati Circle)\nSl.No. Name of the Monument / Site Locality District\n1. Hill Fort and buildings therein and the Gooty Anantapuramu\nfortifications at the foot of the hill.\n2. Madhavaraya temple (Old Vishnu temple) Gorantla Anantapuramu\n3. Outer wall of the Mahalakshmi temple Goripalli Anantapuramu\n4. Group of sculptures - Ancient Site Hemavati Anantapuramu\n5. Group of old temples together with Hemavati Anantapuramu\nadjacent land\n6. Large dolmen on a rocky hillock Kalyandurg Anantapuramu\n7. Mallikarjuna ",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "1.",
+        "Hill Fort and buildings therein and the\nfortifications at the foot of the hill.",
+        "Gooty",
+        "Anantapuramu"
+       ],
+       [
+        "2.",
+        "Madhavaraya temple (Old Vishnu temple)",
+        "Gorantla",
+        "Anantapuramu"
+       ],
+       [
+        "3.",
+        "Outer wall of the Mahalakshmi temple",
+        "Goripalli",
+        "Anantapuramu"
+       ],
+       [
+        "4.",
+        "Group of sculptures - Ancient Site",
+        "Hemavati",
+        "Anantapuramu"
+       ],
+       [
+        "5.",
+        "Group of old temples together with\nadjacent land",
+        "Hemavati",
+        "Anantapuramu"
+       ],
+       [
+        "6.",
+        "Large dolmen on a rocky hillock",
+        "Kalyandurg",
+        "Anantapuramu"
+       ],
+       [
+        "7.",
+        "Mallikarjuna (Siva) temple",
+        "Kambaduru",
+        "Anantapuramu"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 5,
+     "text": "Sl.No. Name of the Monument / Site Locality District\ncircles\n33. Chennakeswaraswami temple Sompalle Chittoor\n34. Megalithic cists and cairns Virakuppam Chittoor\n(Birakuppam)\n35. Mounds containing Buddhist remains such Adurru East Godavari\nas stupas\n36. Gollingeswara group of temples Biccavolu East Godavari\n37. Kanchragudi Biccavolu East Godavari\n38. Monolithic Ganesa Image Biccavolu East Godavari\n39. Nakkalagudi Biccavolu East Godavari\n40. Veerabhadra temple Biccavolu East Godavari\n41. Bhimeswara temple Draksharama East Godavari\n42. Rock-cut caves and cisterns and remains Kapavaram East Godava",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "",
+        "circles",
+        "",
+        ""
+       ],
+       [
+        "33.",
+        "Chennakeswaraswami temple",
+        "Sompalle",
+        "Chittoor"
+       ],
+       [
+        "34.",
+        "Megalithic cists and cairns",
+        "Virakuppam\n(Birakuppam)",
+        "Chittoor"
+       ],
+       [
+        "35.",
+        "Mounds containing Buddhist remains such\nas stupas",
+        "Adurru",
+        "East Godavari"
+       ],
+       [
+        "36.",
+        "Gollingeswara group of temples",
+        "Biccavolu",
+        "East Godavari"
+       ],
+       [
+        "37.",
+        "Kanchragudi",
+        "Biccavolu",
+        "East Godavari"
+       ],
+       [
+        "38.",
+        "Monolithic Ganesa Image",
+        "Biccavolu",
+        "East Godavari"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 6,
+     "text": "Sl.No. Name of the Monument / Site Locality District\n(iii) Hill of Nagarjunakonda with the\nancient remains\n60. Four-storeyed rock-cut Hindu temple Undavalli Guntur\n61. The Mounds with ancient remains Velpur Guntur\n62. Vigneswara swami temple Chilamakuru Kadapa YSR\n63. Agatheswarswami Temple Chilamkuru Kadapa YSR\n64. Remains of the buried Jain temple Danavulapadu Kadapa YSR\n65. Fort with enclosed ancient buildings, Gandikota Kadapa YSR\nMadhavaperumal temple and tower known\nas Madarsala\n66. Saumyanatha temple Nandalur Kadapa YSR\n67. Ancient Village site Peddamudiyan Kadapa YSR\n68. Kothandaramasw",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "",
+        "(iii) Hill of Nagarjunakonda with the\nancient remains",
+        "",
+        ""
+       ],
+       [
+        "60.",
+        "Four-storeyed rock-cut Hindu temple",
+        "Undavalli",
+        "Guntur"
+       ],
+       [
+        "61.",
+        "The Mounds with ancient remains",
+        "Velpur",
+        "Guntur"
+       ],
+       [
+        "62.",
+        "Vigneswara swami temple",
+        "Chilamakuru",
+        "Kadapa YSR"
+       ],
+       [
+        "63.",
+        "Agatheswarswami Temple",
+        "Chilamkuru",
+        "Kadapa YSR"
+       ],
+       [
+        "64.",
+        "Remains of the buried Jain temple",
+        "Danavulapadu",
+        "Kadapa YSR"
+       ],
+       [
+        "65.",
+        "Fort with enclosed ancient buildings,\nMadhavaperumal temple and tower known\nas Madarsala",
+        "Gandikota",
+        "Kadapa YSR"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 13,
+     "text": "Sl.No. Name of the Monument / Site Locality District\n26. Vapiyaka Cave Barabar and Jehanabad\nNagarjuni hils,\n27. Visva Jhopa Cave Barabar and Jehanabad\nNagarjuni hils,\n28. Ancient Buddhistic image and sculptures Ghejan Jehanabad\ncollected underneath a shed\n29. Ancient monolithic pillar known as Lat Lat Jehanabad\n30. Tomb of Bakhtiar Khan Malik Sarai Kaimur\n31. Temple of Mundeswari Devi Paura Kaimur\n32. Kanhaiya ji ka mandir Bandarjhula Kishanganj\n33. Remains of ancient fort or Pachrukhi Garh Balirajgarh Madhubani\nlocally known as Raja Bali Ka Garh\n34. Asokan Column Kolhua Muzaffarpur\n35. Ancie",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "26.",
+        "Vapiyaka Cave",
+        "Barabar and\nNagarjuni hils,",
+        "Jehanabad"
+       ],
+       [
+        "27.",
+        "Visva Jhopa Cave",
+        "Barabar and\nNagarjuni hils,",
+        "Jehanabad"
+       ],
+       [
+        "28.",
+        "Ancient Buddhistic image and sculptures\ncollected underneath a shed",
+        "Ghejan",
+        "Jehanabad"
+       ],
+       [
+        "29.",
+        "Ancient monolithic pillar known as Lat",
+        "Lat",
+        "Jehanabad"
+       ],
+       [
+        "30.",
+        "Tomb of Bakhtiar Khan",
+        "Malik Sarai",
+        "Kaimur"
+       ],
+       [
+        "31.",
+        "Temple of Mundeswari Devi",
+        "Paura",
+        "Kaimur"
+       ],
+       [
+        "32.",
+        "Kanhaiya ji ka mandir",
+        "Bandarjhula",
+        "Kishanganj"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 25,
+     "text": "List of Centrally Protected Monuments / Sites under the jurisdiction of Haryana\n(Chandigarh Circle)\nSl.No. Name of the Monument / Site Locality District\n1. Old Mughal Kosminar Ambala (city) Ambala\n2. Ancient Site Naurangabad Bhiwani\n3. Bund or Dam, 30 feet by 200 at Anangpur Anangpur Faridabad\n4. Kos Minar No. 10 Khawaza Sarai Faridabad\n5. Mughal Bridge over the Buddhiawala Nala Khawaza Sarai Faridabad\n6. Surajkund Masonry tank at Lakharpur Lakharpur Faridabad\n7. Kos Minar No. 13 (Missing) Mujessar Faridabad\n8. Kos Minar No. 11 Village Mawai Faridabad\n(Sec29,\nFaridabad)\n9. Ancient site at Bana",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "1.",
+        "Old Mughal Kosminar",
+        "Ambala (city)",
+        "Ambala"
+       ],
+       [
+        "2.",
+        "Ancient Site",
+        "Naurangabad",
+        "Bhiwani"
+       ],
+       [
+        "3.",
+        "Bund or Dam, 30 feet by 200 at Anangpur",
+        "Anangpur",
+        "Faridabad"
+       ],
+       [
+        "4.",
+        "Kos Minar No. 10",
+        "Khawaza Sarai",
+        "Faridabad"
+       ],
+       [
+        "5.",
+        "Mughal Bridge over the Buddhiawala Nala",
+        "Khawaza Sarai",
+        "Faridabad"
+       ],
+       [
+        "6.",
+        "Surajkund Masonry tank at Lakharpur",
+        "Lakharpur",
+        "Faridabad"
+       ],
+       [
+        "7.",
+        "Kos Minar No. 13 (Missing)",
+        "Mujessar",
+        "Faridabad"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 37,
+     "text": "Sl.No. Name of the Monument / Site Locality District\n28. The Jain Temple of Meguti Aihole Bagalkot\n29. Jotirling Temple Aihole Bagalkot\n30. Karegudi Aihole Bagalkot\n31. Kintgudi Aihole Bagalkot\n32. Maddingudi (Basavanna) Aihole Bagalkot\n33. Maddingudi (Basavanna) Aihole Bagalkot\n34. Yogi narayan Temple Aihole Bagalkot\n35. Matha or Hall just behind the last without a Aihole Bagalkot\nshrine\n36. Mena Basti (Jain Cave ) Aihole Bagalkot\n37. No name, but forms part of no.67 Aihole Bagalkot\n38. No name close to no.99 Aihole Bagalkot\n39. Rachigudi Aihole Bagalkot\n40. Ramling Temple Aihole Bagalkot\n41.",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "28.",
+        "The Jain Temple of Meguti",
+        "Aihole",
+        "Bagalkot"
+       ],
+       [
+        "29.",
+        "Jotirling Temple",
+        "Aihole",
+        "Bagalkot"
+       ],
+       [
+        "30.",
+        "Karegudi",
+        "Aihole",
+        "Bagalkot"
+       ],
+       [
+        "31.",
+        "Kintgudi",
+        "Aihole",
+        "Bagalkot"
+       ],
+       [
+        "32.",
+        "Maddingudi (Basavanna)",
+        "Aihole",
+        "Bagalkot"
+       ],
+       [
+        "33.",
+        "Maddingudi (Basavanna)",
+        "Aihole",
+        "Bagalkot"
+       ],
+       [
+        "34.",
+        "Yogi narayan Temple",
+        "Aihole",
+        "Bagalkot"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 49,
+     "text": "14. List of Centrally Protected Monuments / Sites under the jurisdiction of\nLadakh (U.T.) (Leh Mini-Circle)\nSl.No. Name of the Monument / Site Locality District\n1. Rock cut Four Armed Bodhi Satava Mulbekh Kargil\n2. Sculpture at Drass Drass Kargil\n3. Buddhist Monastery Lamayuru Leh\n4. Buddhist Monastery Lakir Leh\n5. Buddhist Monasteries Alchi Leh\n6. Buddhist Gumpha Phyang Leh\n7. Ancient Palace at Leh Leh Leh\n8. Old Castle (Tsemo Hill) Leh Leh\n9. Stupa Tiserru Shestang Leh\n10. Ancient Palace including Shrine Shey Leh\n11. Hamis Gumpha Hemis Leh\n12. Ancient Gumpha Thiksey Leh\n13. Shrine of four Lo",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "1.",
+        "Rock cut Four Armed Bodhi Satava",
+        "Mulbekh",
+        "Kargil"
+       ],
+       [
+        "2.",
+        "Sculpture at Drass",
+        "Drass",
+        "Kargil"
+       ],
+       [
+        "3.",
+        "Buddhist Monastery",
+        "Lamayuru",
+        "Leh"
+       ],
+       [
+        "4.",
+        "Buddhist Monastery",
+        "Lakir",
+        "Leh"
+       ],
+       [
+        "5.",
+        "Buddhist Monasteries",
+        "Alchi",
+        "Leh"
+       ],
+       [
+        "6.",
+        "Buddhist Gumpha",
+        "Phyang",
+        "Leh"
+       ],
+       [
+        "7.",
+        "Ancient Palace at Leh",
+        "Leh",
+        "Leh"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 61,
+     "text": "Sl.No. Name of the Monument / Site Locality District\n19. Brahmanical Caves Polu Sonala Palghar\n20. Carved Stones Vada Palghar\n21. Small Dargah near Habsi Gumaz (near Agar Pune\nJunnar)\n22. Cave Temples and Inscriptions Bedsa Pune\n23. Cave temples and Inscriptions Bhaja Pune\n24. Caves and inscription at the Nana Pass Ghatghar Pune\n(Naneghat)\n25. Cave Temples and Inscriptions Junnar Pune\n26. Fort of Shivneri Junnar Pune\n27. HabshiGumbaz Junnar Pune\n28. Cave Temples and inscriptions Karla Pune\n29. Ancient dam with lock and sluice gates Khed Pune\n30. Dilawar Khan’s Masjid Khed Pune\n31. Dilawar Khan",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "19.",
+        "Brahmanical Caves",
+        "Polu Sonala",
+        "Palghar"
+       ],
+       [
+        "20.",
+        "Carved Stones",
+        "Vada",
+        "Palghar"
+       ],
+       [
+        "21.",
+        "Small Dargah near Habsi Gumaz (near\nJunnar)",
+        "Agar",
+        "Pune"
+       ],
+       [
+        "22.",
+        "Cave Temples and Inscriptions",
+        "Bedsa",
+        "Pune"
+       ],
+       [
+        "23.",
+        "Cave temples and Inscriptions",
+        "Bhaja",
+        "Pune"
+       ],
+       [
+        "24.",
+        "Caves and inscription at the Nana Pass\n(Naneghat)",
+        "Ghatghar",
+        "Pune"
+       ],
+       [
+        "25.",
+        "Cave Temples and Inscriptions",
+        "Junnar",
+        "Pune"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 73,
+     "text": "Sl.No. Name of the Monument / Site Locality District\n28. Flag Staff Tower 400 Yards north of North Delhi\nChauburji Mosque\nnear Hindu Rao\nHospital\n29. Phoolchadar aqueduct near Najafgarh Jhil Chaukri Mubarakabad North Delhi\naqueduct\n30. Site of Siege Battery Compound of Curzon North Delhi\nHouse\n31. Alipur Cemetery Delhi Alipur Camping North Delhi\nground\n32. Site of Siege Battery East of Hospital in North Delhi\nPolice Line\n33. The remaining gateways of old Magazine GPO, Delhi North Delhi\nwith their adjoining building.\n34. Site of Siege Battery In the garden near North Delhi\nsouth west entrance t",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "28.",
+        "Flag Staff Tower",
+        "400 Yards north of\nChauburji Mosque\nnear Hindu Rao\nHospital",
+        "North Delhi"
+       ],
+       [
+        "29.",
+        "Phoolchadar aqueduct near Najafgarh Jhil\naqueduct",
+        "Chaukri Mubarakabad",
+        "North Delhi"
+       ],
+       [
+        "30.",
+        "Site of Siege Battery",
+        "Compound of Curzon\nHouse",
+        "North Delhi"
+       ],
+       [
+        "31.",
+        "Alipur Cemetery",
+        "Delhi Alipur Camping\nground",
+        "North Delhi"
+       ],
+       [
+        "32.",
+        "Site of Siege Battery",
+        "East of Hospital in\nPolice Line",
+        "North Delhi"
+       ],
+       [
+        "33.",
+        "The remaining gateways of old Magazine\nwith their adjoining building.",
+        "GPO, Delhi",
+        "North Delhi"
+       ],
+       [
+        "34.",
+        "Site of Siege Battery",
+        "In the garden near\nsouth west entrance to\nDelhi Club ground",
+        "North Delhi"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 85,
+     "text": "Sl.No. Name of the Monument / Site Locality District\n22. Seven Kos Minars on old Badshahi highway Shampur Jalandhar\nfrom Delhi to Lahore\n23. Seven Kos Minars on old Badshahi highway Tut Kalan Jalandhar\nfrom Delhi to Lahore\n24. Seven Kos Minars on old Badshahi highway Upal Jalandhar\nfrom Delhi to Lahore\n25. Kos Minar about three miles east of Dhandari Kalan Ludhiana\nLudhiana (missing)\n26. Kos Minar near the village of Ghungrali Ghungrali Rajputan Ludhiana\nRajputan\n27. Kos Minar near the Sarai of Lashkari Khan Laskari Khan Ludhiana\n28. Kos Minar about one mile east of Ludhiana Sherpur Kalan Ludh",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "22.",
+        "Seven Kos Minars on old Badshahi highway\nfrom Delhi to Lahore",
+        "Shampur",
+        "Jalandhar"
+       ],
+       [
+        "23.",
+        "Seven Kos Minars on old Badshahi highway\nfrom Delhi to Lahore",
+        "Tut Kalan",
+        "Jalandhar"
+       ],
+       [
+        "24.",
+        "Seven Kos Minars on old Badshahi highway\nfrom Delhi to Lahore",
+        "Upal",
+        "Jalandhar"
+       ],
+       [
+        "25.",
+        "Kos Minar about three miles east of\nLudhiana (missing)",
+        "Dhandari Kalan",
+        "Ludhiana"
+       ],
+       [
+        "26.",
+        "Kos Minar near the village of Ghungrali\nRajputan",
+        "Ghungrali Rajputan",
+        "Ludhiana"
+       ],
+       [
+        "27.",
+        "Kos Minar near the Sarai of Lashkari Khan",
+        "Laskari Khan",
+        "Ludhiana"
+       ],
+       [
+        "28.",
+        "Kos Minar about one mile east of Ludhiana",
+        "Sherpur Kalan",
+        "Ludhiana"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 97,
+     "text": "Sl.No. Name of the Monument / Site Locality District\n127. Megalithic cists circumscribed by stone circles. Rajakulipettai Kanchipuram\n128. Megalithic Cists and Cairns with stone circles Rayalpattu Kanchipuram\n129. Ruined Dutch Fort and cemetery. Sadras Kanchipuram\n130. Kailasnatahaswami temple at salabogam Salabogam Kanchipuram\ntemple.\n131. Rock-cut Siva temples with three lingas. Salavankuppam Kanchipuram\n132. The tiger headed rock-cut temple. Salavankuppam Kanchipuram\n133. Two inscribed rocks, one having six and the Salavankuppam Kanchipuram\nother fifty lines of ancient Tamil inscriptions wi",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "127.",
+        "Megalithic cists circumscribed by stone circles.",
+        "Rajakulipettai",
+        "Kanchipuram"
+       ],
+       [
+        "128.",
+        "Megalithic Cists and Cairns with stone circles",
+        "Rayalpattu",
+        "Kanchipuram"
+       ],
+       [
+        "129.",
+        "Ruined Dutch Fort and cemetery.",
+        "Sadras",
+        "Kanchipuram"
+       ],
+       [
+        "130.",
+        "Kailasnatahaswami temple at salabogam\ntemple.",
+        "Salabogam",
+        "Kanchipuram"
+       ],
+       [
+        "131.",
+        "Rock-cut Siva temples with three lingas.",
+        "Salavankuppam",
+        "Kanchipuram"
+       ],
+       [
+        "132.",
+        "The tiger headed rock-cut temple.",
+        "Salavankuppam",
+        "Kanchipuram"
+       ],
+       [
+        "133.",
+        "Two inscribed rocks, one having six and the\nother fifty lines of ancient Tamil inscriptions with\nremains of other ancient buildings around them.",
+        "Salavankuppam",
+        "Kanchipuram"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 109,
+     "text": "Sl.No. Name of the Monument / Site Locality District\nfacing the river Yamuna.\n6. City wall on the west side of Agra Gate. Agra Agra\n7. Dakhini darwaza in Mohalla Tajganj. Agra Agra\n8. Firoz Khan's Tomb. Agra Agra\n9. Gateway at Pul Changa Modi. Agra Agra\n10. Gateway in the interior of Tajganj. Agra Agra\n11. Great Idgah. Agra Agra\n12. Itimad-ud-Daula’s Tomb Agra Agra\n13. Inscribed tablet in a piece of the old city wall of Agra Agra\nAgra (Akbarabad) on the west side of the\nMahatma Gandhi road\n14. Jami Masjid Agra Agra\n15. Jhun Jhun Katora Agra Agra\n16. Khans Gate Agra Agra\n17. Kiosk and buildings",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "",
+        "facing the river Yamuna.",
+        "",
+        ""
+       ],
+       [
+        "6.",
+        "City wall on the west side of Agra Gate.",
+        "Agra",
+        "Agra"
+       ],
+       [
+        "7.",
+        "Dakhini darwaza in Mohalla Tajganj.",
+        "Agra",
+        "Agra"
+       ],
+       [
+        "8.",
+        "Firoz Khan's Tomb.",
+        "Agra",
+        "Agra"
+       ],
+       [
+        "9.",
+        "Gateway at Pul Changa Modi.",
+        "Agra",
+        "Agra"
+       ],
+       [
+        "10.",
+        "Gateway in the interior of Tajganj.",
+        "Agra",
+        "Agra"
+       ],
+       [
+        "11.",
+        "Great Idgah.",
+        "Agra",
+        "Agra"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 121,
+     "text": "Sl.No. Name of the Monument / Site Locality District\n147. Small mound locally known as Bhainsasur with Chukta Mahoba\na ruined temple on the summit and old statue\ninside it\n148. Brahm Tal, an extensive tank with embankment Kabraia Mahoba\nOn this embankment is a ruined Chandella\ntemple lake and the ruins of a baithak\n149. Ruins of a palace on a hill Kulpahar Mahoba\n150. Two ruined granite temples Luhari Mahoba\n151. Foundation of Temple Madau Mahoba Mahoba\n152. Granite pillar Mahoba Mahoba\n153. Five life-sized elephant statues Mahoba Mahoba\n154. Jama Masjid Mahoba Mahoba\n155. Lake of Vijaya Sagar",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "147.",
+        "Small mound locally known as Bhainsasur with\na ruined temple on the summit and old statue\ninside it",
+        "Chukta",
+        "Mahoba"
+       ],
+       [
+        "148.",
+        "Brahm Tal, an extensive tank with embankment\nOn this embankment is a ruined Chandella\ntemple lake and the ruins of a baithak",
+        "Kabraia",
+        "Mahoba"
+       ],
+       [
+        "149.",
+        "Ruins of a palace on a hill",
+        "Kulpahar",
+        "Mahoba"
+       ],
+       [
+        "150.",
+        "Two ruined granite temples",
+        "Luhari",
+        "Mahoba"
+       ],
+       [
+        "151.",
+        "Foundation of Temple Madau",
+        "Mahoba",
+        "Mahoba"
+       ],
+       [
+        "152.",
+        "Granite pillar",
+        "Mahoba",
+        "Mahoba"
+       ],
+       [
+        "153.",
+        "Five life-sized elephant statues",
+        "Mahoba",
+        "Mahoba"
+       ]
+      ],
+      [
+       [
+        "Sl.No.",
+        "Name of Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "1.",
+        "Group of ruined brick temple of the 10th century\nlocally called Teligarhi",
+        "Bhagupur",
+        "Amethi"
+       ],
+       [
+        "2.",
+        "Extensive brick strewn mounds undoubtedly of\nthe ruins of Buddhist cities",
+        "Raipur, Tikri,\nShahgarh",
+        "Amethi"
+       ],
+       [
+        "3.",
+        "Gateway",
+        "Ajitma",
+        "Auraiya"
+       ],
+       [
+        "4.",
+        "Kos Minar in field no.127",
+        "Bhagautipur",
+        "Auraiya"
+       ]
+      ]
+     ]
+    },
+    {
+     "page": 133,
+     "text": "Sl.No. Name of the Monument / Site Locality District\n83. Large mound covered with broken bricks and a Padrauna Kushinagar\nfew statues\n84. Mound of brick ruins Sahiya Kushinagar\n85. Ancient site and archaeological remains Radrauli Maharjganj\n86. Ancient Site Ghosi Mau\n87. Several caves in the precipitous sandstone Adhesar Mirzapur\ncliffnear the top of the hill\n88. Ruined Stone Fort of Lalitpur Ahraura Mirzapur\n89. Bhardari Devi ka Pahar containing Asokan Ahraurakhas Mirzapur\ninscription\n90. Ruins of Three Small Linga Temple circa Ahugi Mirzapur\n1000AD.\n91. Ruins of a Saiva Temple Ahugi Mirzapur",
+     "tables": [
+      [
+       [
+        "Sl.No.",
+        "Name of the Monument / Site",
+        "Locality",
+        "District"
+       ],
+       [
+        "83.",
+        "Large mound covered with broken bricks and a\nfew statues",
+        "Padrauna",
+        "Kushinagar"
+       ],
+       [
+        "84.",
+        "Mound of brick ruins",
+        "Sahiya",
+        "Kushinagar"
+       ],
+       [
+        "85.",
+        "Ancient site and archaeological remains",
+        "Radrauli",
+        "Maharjganj"
+       ],
+       [
+        "86.",
+        "Ancient Site",
+        "Ghosi",
+        "Mau"
+       ],
+       [
+        "87.",
+        "Several caves in the precipitous sandstone\ncliffnear the top of the hill",
+        "Adhesar",
+        "Mirzapur"
+       ],
+       [
+        "88.",
+        "Ruined Stone Fort of Lalitpur",
+        "Ahraura",
+        "Mirzapur"
+       ],
+       [
+        "89.",
+        "Bhardari Devi ka Pahar containing Asokan\ninscription",
+        "Ahraurakhas",
+        "Mirzapur"
+       ]
+      ]
      ]
     }
-   ],
-   "links": [
-    {
-     "text": "Skip to content",
-     "href": "https://490kdbtemples.org/#content"
-    },
-    {
-     "text": "Home",
-     "href": "https://490kdbtemples.wordpress.com/"
-    },
-    {
-     "text": "Boothapandy Devaswoms",
-     "href": "https://490kdbtemples.org/about/boothapandy-devaswom-group-of-temples-kdb-1-to-66/"
-    },
-    {
-     "text": "Nagercoil Devaswoms",
-     "href": "https://490kdbtemples.org/about/nagercoil-devaswom-group-of-temples-kdb-67-to-159a/"
-    },
-    {
-     "text": "Padmanabhapuram Devaswoms",
-     "href": "https://490kdbtemples.org/about/padmanabhapuram-devaswom-group-of-temples-kdb-160-to-274a/"
-    },
-    {
-     "text": "Kuzhithurai Devaswoms",
-     "href": "https://490kdbtemples.org/about/kuzhithurai-devaswom-group-of-temples-kdb-275-to-367a/"
-    },
-    {
-     "text": "Shencottah Devaswoms",
-     "href": "https://490kdbtemples.org/devaswoms/shencottah-devaswom-group-of-temples-kdb-368-to-455/"
-    },
-    {
-     "text": "Rayasam Records",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "Sub Group Devaswoms",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "Devaswom Classifications",
-     "href": "https://490kdbtemples.wordpress.com/about/list-of-devaswoms/"
-    },
-    {
-     "text": "As per The Travancore State Panjangam",
-     "href": "https://490kdbtemples.wordpress.com/about/list-of-devaswom-sub-groups/"
-    },
-    {
-     "text": "Inscriptions in KDB Devaswoms",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "The Original Travancore Devaswom Manuals and it’s Contents",
-     "href": "https://490kdbtemples.org/travancore-devaswom-manual/"
-    },
-    {
-     "text": "Devaswom Maps",
-     "href": "https://490kdbtemples.wordpress.com/about/devaswom-taluks/"
-    },
-    {
-     "text": "e_Library",
-     "href": "https://490kdbtemples.org/about/e-library/"
-    },
-    {
-     "text": "Travancore Temple Rules",
-     "href": "https://490kdbtemples.org/daily-poojas-and-special-rituals-in-travancore-temple-rules/"
-    },
-    {
-     "text": "LAND REVENUE RECORDS AND ACCOUNTS",
-     "href": "https://490kdbtemples.org/land-revenue-records-and-accounts/"
-    },
-    {
-     "text": "BIBLIOGRAPHY",
-     "href": "https://490kdbtemples.org/reference/"
-    },
-    {
-     "text": "Festivals",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "Shivalayam Ottam",
-     "href": "https://490kdbtemples.wordpress.com/about/kumari-shivalayam-ottam/"
-    },
-    {
-     "text": "Official Port",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "HR&CE – KDB – Temples",
-     "href": "http://www.kanyakumaritemples.tnhrce.in/"
-    },
-    {
-     "text": "KK District Devaswoms",
-     "href": "http://www.kanyakumaritemples.org"
-    },
-    {
-     "text": "HRCE ACT 1959 – Incorporated Devaswoms",
-     "href": "http://tnhrce.org/pdf/HRCE_ACT_1959_SH_1.pdf"
-    },
-    {
-     "text": "HRCE ACT 1959 – Unincorporated Devaswoms",
-     "href": "http://tnhrce.org/pdf/HRCE_ACT_1959_SH_2,3.pdf"
-    },
-    {
-     "text": "Heritage sites",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "KDB Temple Guide",
-     "href": "http://www.tnhrce.org/temples/TNHRCE_temple_Kanyakumari%20KOVIL%20VALIKATTI.html"
-    },
-    {
-     "text": "Temple Contact",
-     "href": "http://www.kanyakumaritemples.org/contact_us.php"
-    },
-    {
-     "text": "Donors",
-     "href": "https://490kdbtemples.wordpress.com/about/list-of-donors-for-the-renovation-poojas-for-non-pooja-temples/"
-    },
-    {
-     "text": "Sponsors",
-     "href": "https://490kdbtemples.wordpress.com/about/web-site-sponsers/"
-    },
-    {
-     "text": "Contact us",
-     "href": "https://490kdbtemples.wordpress.com/about/contact-us/"
-    },
-    {
-     "text": "Acknowledgements",
-     "href": "https://490kdbtemples.org/acknowledgements/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ ",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/wp-content/uploads/2022/05/kdb-web2-3.gif"
-    },
-    {
-     "text": "https://490kdbtemples.org/wp-content/uploads/2020/04/veena_kinhal_-_01_-_haratanaya_sree.mp3",
-     "href": "https://490kdbtemples.org/wp-content/uploads/2020/04/veena_kinhal_-_01_-_haratanaya_sree.mp3"
-    },
-    {
-     "text": "A.Radhakrishnan",
-     "href": "https://490kdbtemples.org/about/contact-us/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/kkk/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/shenkottai/"
-    },
-    {
-     "text": "",
-     "href": "https://i0.wp.com/490kdbtemples.org/wp-content/uploads/2020/10/devaswom-location-map.jpg?ssl=1"
-    },
-    {
-     "text": "",
-     "href": "https://i0.wp.com/490kdbtemples.org/wp-content/uploads/2020/10/cr-tnvl-senkottai-map.jpg?ssl=1"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/sencottai-in-tenkasi-dist/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/tenkasi-map/"
-    },
-    {
-     "text": "acknowledgment.",
-     "href": "https://490kdbtemples.org/acknowledgements/"
-    },
-    {
-     "text": "https://490kdbtemples.org/wp-content/uploads/2020/04/vancheesa-mangalam.mp3",
-     "href": "https://490kdbtemples.org/wp-content/uploads/2020/04/vancheesa-mangalam.mp3"
-    },
-    {
-     "text": "https://490kdbtemples.org/wp-content/uploads/2020/04/05.-thanumalayan-swamy-song.mp3",
-     "href": "https://490kdbtemples.org/wp-content/uploads/2020/04/05.-thanumalayan-swamy-song.mp3"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/assumed-bu-col-montro/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/assumed-bu-col-montro-2/"
-    },
-    {
-     "text": "",
-     "href": "https://i0.wp.com/490kdbtemples.org/wp-content/uploads/2019/08/kowdiarpalace.jpg?ssl=1"
-    },
-    {
-     "text": "",
-     "href": "https://i0.wp.com/490kdbtemples.org/wp-content/uploads/2019/08/kowdiar-palace-history.jpg?ssl=1"
-    },
-    {
-     "text": "",
-     "href": "https://i0.wp.com/490kdbtemples.org/wp-content/uploads/2019/11/kowdiyar.jpg?ssl=1"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/travancore-coin-imagaes-1/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/travancore-coin-imagaes-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/travancore-coin-imagaes-3/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/4d1c44b6-5d83-43a8-8988-4b4b90585afa/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/2144edf2-75b9-42ce-83b8-7d5516bbe98c/"
-    },
-    {
-     "text": "https://490kdbtemples.org/wp-content/uploads/2020/04/audio-2020-04-28-06-20-18.mp3",
-     "href": "https://490kdbtemples.org/wp-content/uploads/2020/04/audio-2020-04-28-06-20-18.mp3"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/img-6326/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/img-6325/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/img-6324/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/img-2500/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/ta-1939-dd-1/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/ta-1939-dd-2/"
-    },
-    {
-     "text": "https://490kdbtemples.org/wp-content/uploads/2020/04/00-om-108-times-music-for-yoga-meditaion-192-kb",
-     "href": "https://490kdbtemples.org/wp-content/uploads/2020/04/00-om-108-times-music-for-yoga-meditaion-192-kbps.mp3"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/major-devaswoms-1/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/major-devaswoms-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/major-devaswoms-3/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/major-devaswoms-4/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/thiruvabh-order/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/thiru-order/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/thiru-order-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/thiru-order-3/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/thiruva-1/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/thiruva-2/"
-    },
-    {
-     "text": "Click Here",
-     "href": "https://490kdbtemples.org/about/list-of-devaswom-sub-groups-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/mahatma-gandhis-pilgrimaga-in-travancore-state-in-1938/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/m-gandhiji-in-travancore/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/maharajah_sree_chithira_thirunal_with_cochin_maharajah/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/inaugrating_the_travancore-kochin_union/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-1-of13/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-2-of13/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-3-of13-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-4-of13/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-5-of13/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-6-of13/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-7-of13/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-8-of13/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-9-of13/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-10-of13/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-11-of13/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-12-of13-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/the-covanant-india-thiru-cochi-maharajas-1949-13-of13/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/images-2-4/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/img-6354/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/unnamed/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/16-1387189295-uthradam-thirunal-marrthanda-varma-pictures-14/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/aaratu145/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/moolam-thirunal-rama-varma-7ae92444-a1e0-436b-a249-c0ee18b21b3-resize-750/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/1-4/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/2-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/4-1/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10-4/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/20-3/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/7-3/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/11-3/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/9-3/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/8-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/india-state-re-org-gazette-1/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/india-state-re-org-gazette-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/india-state-re-org-gazette-3/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/india-state-re-org-gazette-4/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/india-state-re-org-gazette-5/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/trav-rec-trnasfer-kk-dist-4/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/trav-rec-trnasfer-kk-dist-3/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/trav-rec-trnasfer-kk-dist-5-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/trav-rec-trnasfer-kk-dist-1/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/trav-rec-trnasfer-kk-dist-2/"
-    },
-    {
-     "text": "https://490kdbtemples.org/wp-content/uploads/2020/04/9-classic-nadaswaram-with-tavil-192-kbps.mp3",
-     "href": "https://490kdbtemples.org/wp-content/uploads/2020/04/9-classic-nadaswaram-with-tavil-192-kbps.mp3"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/kkd/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/kkd2/"
-    },
-    {
-     "text": "Sreepadam lands",
-     "href": "http://www.lawsofindia.org/pdf/tamil_nadu/1973/1973TN11.pdf"
-    },
-    {
-     "text": "Click to access 362_Ex_III_1a.pdf",
-     "href": "http://www.stationeryprinting.tn.gov.in/extraordinary/2020/362_Ex_III_1a.pdf"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/img_4387/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/img_4390/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/yfyf-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/deudq/"
-    },
-    {
-     "text": "Click here",
-     "href": "https://www.indiacode.nic.in/bitstream/123456789/13275/1/TNHR%26CE%20ACT%2C%201959%20-%20revised%20and%20updated.pdf"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/cf100/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/cf100-2/"
-    },
-    {
-     "text": "G.O.(Ms).No.540 Dt: December 04, 2014",
-     "href": "http://cms.tn.gov.in/sites/default/files/go/rev_e_540_2014.pdf"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/4-2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/gar2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/img_6172/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/wet3/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/wet2/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10029-476/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10029-477/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10029-474/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10029-475/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10029-486/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10029-487/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10029-488/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10029-489/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10029-490/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10029-491/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10029-496/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/10029-497/"
-    },
-    {
-     "text": "https://490kdbtemples.org/wp-content/uploads/2020/04/audio-2020-04-25-19-04-49.m4a",
-     "href": "https://490kdbtemples.org/wp-content/uploads/2020/04/audio-2020-04-25-19-04-49.m4a"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/whatsapp-image-2021-07-17-at-07-31-18/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/whatsapp-image-2021-07-23-at-06-19-12/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/whatsapp-image-2021-07-23-at-07-00-23/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/whatsapp-image-2021-07-25-at-10-30-12-1/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/whatsapp-image-2021-07-24-at-19-47-32/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/whatsapp-image-2021-07-24-at-19-47-15-1/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/about/whatsapp-image-2021-07-25-at-10-16-48/"
-    },
-    {
-     "text": "click here",
-     "href": "https://490kdbtemples.org/about/contact-us/"
-    },
-    {
-     "text": "Share on Facebook (Opens in new window) Facebook",
-     "href": "https://490kdbtemples.org/?share=facebook"
-    },
-    {
-     "text": "Share on LinkedIn (Opens in new window) LinkedIn",
-     "href": "https://490kdbtemples.org/?share=linkedin"
-    },
-    {
-     "text": "Share on X (Opens in new window) X",
-     "href": "https://490kdbtemples.org/?share=twitter"
-    },
-    {
-     "text": "Share on Tumblr (Opens in new window) Tumblr",
-     "href": "https://490kdbtemples.org/?share=tumblr"
-    },
-    {
-     "text": "Share on Pinterest (Opens in new window) Pinterest",
-     "href": "https://490kdbtemples.org/?share=pinterest"
-    },
-    {
-     "text": "Share on Telegram (Opens in new window) Telegram",
-     "href": "https://490kdbtemples.org/?share=telegram"
-    },
-    {
-     "text": "Share on WhatsApp (Opens in new window) WhatsApp",
-     "href": "https://490kdbtemples.org/?share=jetpack-whatsapp"
-    },
-    {
-     "text": "Kanyakumari District Incorporated and Unincorporated Devaswoms, Kanyakumari Devaswom Board, Kanyakum",
-     "href": "https://maps.google.com/maps?z=16&q=kanyakumari%2Bdistrict%2Bincorporated%2Band%2Bunincorporated%2Bdevaswoms%2C%2Bkanyakumari%2Bdevaswom%2Bboard%2C%2Bkanyakumari%2Bdistrict%2Btemples%2C%2Bhead%2Boffice%2C%2Bsthanumaalaya%2Bmarkazhisabha%2Bsathram%2C%2Bsuchidrum%2C%2Bkanyakumari%2Bdistrict%2B%E2%80%93%2B629704%2C%2Btamilnadu."
-    },
-    {
-     "text": "Follow திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്",
-     "href": "https://490kdbtemples.org"
-    },
-    {
-     "text": "Dr.A Radhakrishnan Ph.D, (H.C.)",
-     "href": "https://490kdbtemples.org/author/490kdb/"
-    },
-    {
-     "text": "Kanyakumari District",
-     "href": "https://maps.google.com/maps?z=16&q=kanyakumari%2Bdistrict"
-    },
-    {
-     "text": "Dr.A.ராதாகிருஷ்ணன் Ph.D(H.C.), (ஆராட்சியாளர் - “திருவிதாங்கூர் வரலாறு மற்றும் தேவஸ்வங்கள்”) Dr.A.Rad",
-     "href": "tel:Dr.A.ராதாகிருஷ்ணன்%20Ph.D(H.C.),%20(ஆராட்சியாளர்%20-%20“திருவிதாங்கூர்%20வரலாறு%20மற்றும்%20தேவஸ்வங்கள்”)%20Dr.A.Radhakrishnan,Ph.D(H.C.)%20(RESEARCHER%20–%20THE%20TRAVANCORE%20HISTORY%20AND%20DEVASWOMS)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Ph:%2009995556013(telegram)%20/%2009446467129(whatsapp)"
-    },
-    {
-     "text": "Subscribe",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "Subscribed",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ ",
-     "href": "https://490kdbtemples.org"
-    },
-    {
-     "text": "Log in now.",
-     "href": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252F490kdbtemples.org%252F"
-    },
-    {
-     "text": "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ ",
-     "href": "https://490kdbtemples.org"
-    },
-    {
-     "text": "Log in",
-     "href": "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252F490kdbtemples.org%252F"
-    },
-    {
-     "text": "Report this content",
-     "href": "https://wordpress.com/abuse/?report_url=https://490kdbtemples.org/"
-    },
-    {
-     "text": "Collapse this bar",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "logged in",
-     "href": "https://490kdbtemples.org/"
-    },
-    {
-     "text": "",
-     "href": "https://490kdbtemples.org/"
-    }
-   ],
-   "tables": [],
-   "script_srcs": [
-    "https://490kdbtemples.org/_static/??/wp-content/js/rlt-proxy.js,/wp-content/blog-plugins/wordads-classes/js/cmp/v2/cmp-non-gdpr.js?m=1780567333j",
-    "https://0.gravatar.com/js/hovercards/hovercards.min.js?ver=202644d1133547e8a1f2801609f51cef12522abe7f6647d869e9fbc974fe356a37e613",
-    "https://490kdbtemples.org/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240i",
-    "https://490kdbtemples.org/_static/??-eJx9jEsOwjAMBS9EMFRIgQXiLKax0qTOh9oh1yc7KhZs58086NXMJStlhScXbyo3H7JAL5tDJ2ZmFCGBOBAqm/d0jHKAXZbaNwrOkwpQG2tZAxnGDkqpMir98D8/HNZhvxo1WjA7pm3Ij3Q/29tkL/Z0tfEDPgVEAg==",
-    "https://490kdbtemples.org/wp-content/blog-plugins/marketing-bar/js/marketing-bar.js?m=1792099380i&ver=20261014",
-    "https://490kdbtemples.org/_static/??-eJyNj0sOwjAMRC9EYgqIzwJxFJSmAdzEcVQnwPEJonzUFUuP5o1n4JaU5ZhdzEBFpVDOGAUsE1VJBfROoJ8IupcZ/IBfqg1svcBCN1vdKEFKwanBXfUKOpT8SnqZVGDTuUETxmlevjiqb1NpaydxhZ5cNFc8m4z8n108pto2enViW0Sd8D7lfvb2Lidj/XgDMUc4YrTQFgwdWDNwTQ4f31sY2x9o32x28/lmtV5u+wcTnX0y",
-    "https://490kdbtemples.org/wp-content/mu-plugins/jetpack-plugin/moon/_inc/build/tiled-gallery/tiled-gallery/tiled-gallery.min.js?m=1755006225i&ver=16.4-a.6",
-    "https://490kdbtemples.org/wp-content/plugins/gutenberg-core/v24.2.0/build/scripts/hooks/index.min.js?m=1792056112i&ver=f0f188028580e8dc1255",
-    "https://490kdbtemples.org/wp-content/plugins/gutenberg-core/v24.2.0/build/scripts/i18n/index.min.js?m=1792056112i&ver=1dfe7db3940c23ea9216",
-    "https://490kdbtemples.org/_static/??-eJyVUdFKQzEM/SG7Th+cexA/RUIbttw1SW3SO/b3VtzGRR0yCIRzTg45IfFYQ1JxFI/cQy19R2JxQq+QDmFQx5qUz0JkVbmI7zNK1hahuzK4U7raUgEzSsH3yBj2WCq2mMk8NrSqYjRjmCmj2m9mNdlDHLFIUukZR5hRHx3b6dxWTPLvUGDaNXC8NcyYCbCMfF+XL0AAyeNcOGG733vP0qEt8dLzx0cSNO2G5fsfP+DwvfHr42a7flk/bZ830ydOHbHx",
-    "https://polldaddy.com/js/rating/rating.js?ver=16.4-a.6",
-    "https://490kdbtemples.org/wp-content/mu-plugins/jetpack-plugin/moon/_inc/build/sharedaddy/sharing.min.js?m=1787950866i",
-    "https://stats.wp.com/w.js?71",
-    "https://490kdbtemples.org/wp-content/js/bilmur.min.js?i=19&m=202644"
-   ],
-   "script_endpoints": [
-    "/remote-login.php?wpcom_remote_login=validate",
-    "mejs.download-file"
-   ],
-   "script_snippets": [],
-   "text_start": "திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ | Travancore Devaswom Archives for Kanyakumari Devaswom Board' 490 Temples Menu Skip to content Home List of Devaswoms Boothapandy Devaswoms Nagercoil Devaswoms Padmanabhapuram Devaswoms Kuzhithurai Devaswoms Shencottah Devaswoms Rayasam Records Sub Group Devaswoms Devaswom Classifications As per The Travancore State Panjangam Inscriptions in KDB Devaswoms The Original Travancore Devaswom Manuals and it’s Contents Devaswom Maps e_Library Travancore Temple Rules LAND REVENUE RECORDS AND ACCOUNTS BIBLIOGRAPHY Festivals Shivalayam Ottam Official Port HR&CE – KDB – Temples KK District Devaswoms TNHRCE HRCE ACT 1959 – Incorporated Devaswoms HRCE ACT 1959 – Unincorporated Devaswoms Thirukoil offical Magazines Heritage sites KDB Temple Guide Shaivam Contact us Temple Contact Donors Sponsors Contact us Acknowledgements திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ 🌻🌺🌼🌾Incredible Travancore Devaswoms…🌾🌼🌺🌻 உ A Research report on The Travancore History & Devaswoms by Dr A Radhakrishnan Ph.D(HC) देवदेव कलयामि ते चरणाम्बुजसेवनम् नमोनमः https://490kdbtemples.org/wp-content/uploads/2020/04/veena_kinhal_-_01_-_haratanaya_sree.mp3 The Great Travancore Dynasty, One of the former Hindu princely state in southwestern India, now part of Kerala and Tamilnadu states. The Travancore dynasty was followers of Chera dynasty, in the early c",
-   "policy_text": {
-    "Copyright": "Copyright @ Chief Author – All rights are reserved. No part of this web document may be reproduced or transmitted or translated in any other form or by any means- Photocopying, recording without either prior permission in writing from the Chief Author. Unauthorized reuse of contents from this site is prohibited. Copy Right License This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License . Follow திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ on WordPress.com Admin / Chief Author Dr.A Radhakrishnan Ph.D, (H.C.) KDB Temple Searcher Search for: Touch with web Admin / Author Kanyakumari District Dr.A.ராதாகிருஷ்ணன் Ph.D(H.C.), (ஆராட்சியாளர் - “திருவிதாங்கூர் வரலாறு மற்றும் தேவஸ்வங்கள்”) Dr.A.Radhakrishnan,Ph.D(H.C.) (RESEARCHER – THE TRAVANCORE HISTORY AND DEVASWOMS) Ph: 09995556013(telegram) / 09446467129(whatsapp) radpillai.a@gmail.com Mon to Friday - 5:30pm to 7:00am Holidays, Saturday & Sunday - 24Hrs. Create a website or blog at WordPress.com Privacy & Cookies: This site uses cookies. By continuing to use this website, you agree to their use. To find out more, including how to control cookies, see here: Cookie Policy Subscribe Subscribed திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ Sign me up Have a WordPress.com account? Log in now. திருவிதாங்கூர் தேவஸ்வம் ஆவணக் காப்பகம் _ Travancore Devaswom Archives _ തിരുവിതാംങ്കൂർ ക്ഷേത്ര പുരാ രേഖകൾ Copy shortlink View post in Reader Manage subscriptions Sign up Log in Report this content Collapse this bar Loading Comments... You must be logged in to post a comment. %d Create your own website, free on WordPress.com. Create your own website. Start free"
-   }
+   ]
   }
  ]
 }
