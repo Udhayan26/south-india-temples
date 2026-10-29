@@ -20,6 +20,7 @@ MASTER = DATA / "temples_master.csv"
 
 # Which source wins for each kind of field (first non-empty value is kept)
 PRIORITY_DEFAULT = ["Private collection", "Government", "Wikidata", "OpenStreetMap", "Google Maps"]
+PRIORITY_ADMIN = ["OpenStreetMap", "Wikidata", "Private collection", "Government", "Google Maps"]
 PRIORITY_GPS = ["Private collection", "OpenStreetMap", "Wikidata", "Government", "Google Maps"]
 LIST_FIELDS = {"special_group", "sources"}
 ID_FIELDS = ["wikidata_id", "osm_id", "google_place_id"]
@@ -140,6 +141,9 @@ def _combine(rows: list[dict]) -> dict:
             out[f] = "; ".join(vals)
         else:
             out[f] = next((r[f] for r in ordered if str(r.get(f, "")).strip()), "")
+    # district / state names follow the map's boundaries so the By District sheet stays consistent
+    for f in ("district", "state"):
+        out[f] = next((r[f] for r in sorted(rows, key=rank(PRIORITY_ADMIN)) if str(r.get(f, "")).strip()), "")
     best = sorted(rows, key=lambda r: (r.get("deity_basis") != "Source data", rank(PRIORITY_DEFAULT)(r)))
     pick = next((r for r in best if r.get("deity")), None)
     if pick:
@@ -245,12 +249,45 @@ def _refine_wikidata_only(records: list[dict]) -> None:
                 r["district"], r["state"] = hit
 
 
+def _add_by_locality(m: "Merger", path) -> None:
+    """Lists without GPS but with a locality (ASI): join the mapped temple of that
+    locality with a matching name; else place the row at the locality itself."""
+    if not path.exists():
+        return
+    from .inscriptions import PLACE_ALIASES, _places_index, name_sim, skeleton
+    places = _places_index()
+    code = {v: k for k, v in __import__("temples.common", fromlist=["STATES"]).STATES.items()}
+    for row in read_rows(path):
+        row = _upgrade(row)
+        loc = (row.get("city") or "").lower().strip()
+        key = skeleton(PLACE_ALIASES.get(loc, loc))
+        cands = [c for c in places.get(key, []) if c[2] == code.get(row["state"])]
+        best = None
+        for plat, plon, *_ in cands[:5]:
+            for di in range(-10, 11):
+                for dj in range(-10, 11):
+                    for gi in m.grid.get((int(plat / CELL) + di, int(plon / CELL) + dj), []):
+                        for o in m.groups[gi]:
+                            s_ = name_sim(row["name"], o.get("name", ""))
+                            if s_ >= 0.6 and (best is None or s_ > best[0]):
+                                best = (s_, gi)
+        if best:
+            m.groups[best[1]].append(row)
+        elif cands:
+            row["latitude"], row["longitude"] = cands[0][0], cands[0][1]
+            row["address"] = f"{row['city']} (village centre — temple position approximate)"
+            m.add(row)
+        else:
+            m.add(row)
+
+
 def build_master() -> list[dict]:
     m = Merger()
     for src in ("osm", "wikidata"):
         for p in sorted((RAW / src).rglob("*.csv")):
             for row in read_rows(p):
                 m.add(_upgrade(row))
+    _add_by_locality(m, RAW / "asi" / "cpm.csv")
     for kind in ("govt", "private"):
         for row in manual.load(kind):
             m.add(row)

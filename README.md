@@ -64,6 +64,28 @@ Sources · No. of Sources · Last Updated
 village)**, or **Village (approximate)** — the last ones still need a temple confirmed by hand.
 The SII pages are fetched slowly with robots.txt respected; only index fields and a one-line summary are stored.
 
+### Google My Maps and your own Google Maps places
+
+Google does not allow automated downloading of Google Maps (its robots.txt blocks it), so these come in as files:
+
+- **A public My Map** (e.g. "276 Paadal Petra Sthalangal", "108 Divya Desams"): open the map → **⋮ menu →
+  Download KML** → tick *Export to a .KML file* → put the file in `data/sources/private/`. The map title becomes the
+  Special Group, pin names become temple names, and lines like `Moolavar: …` / `District: …` in the pin text are
+  read as columns. Credit the map's author if you share the sheet.
+- **Your own starred / saved places**: [Google Takeout](https://takeout.google.com) → *Maps (your places)* → put
+  `Saved Places.json` in `data/sources/private/`. Only places that look like temples are kept.
+- KML/KMZ from Google Earth or any other map app works the same way.
+
+### Government portals — what was checked
+
+| Portal | Status |
+|---|---|
+| Karnataka HRI&CE (itms.kar.nic.in) — 34,558 notified institutions, A/B lists, district-wise list | reachable, but its copyright policy requires **permission from the Department** before reproducing — request it, then add the lists |
+| TN HR&CE, AP / Telangana Endowments, Malabar Devaswom, TN Archaeology | not reachable from GitHub's servers (outside India) — download by hand / RTI and drop files in `data/sources/govt/` |
+| Travancore / Cochin Devaswom Boards | no downloadable temple list (only major temples) |
+| ASI centrally protected monuments (asi.nic.in CPM list) | public list — used to flag ASI-protected temples |
+| data.gov.in | web pages blocked; use the API (secret `DATA_GOV_IN_API_KEY`) |
+
 Govt/private files don't need a fixed format — columns like *Temple Name, Moolavar, District, Lat, Long* or a
 single *GPS* column (`12.91, 80.19`) are recognised automatically. See the `TEMPLATE_*.csv` files.
 Rows without GPS are still added and matched to mapped temples by name + district.

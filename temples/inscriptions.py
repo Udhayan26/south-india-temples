@@ -276,7 +276,7 @@ def load_manual() -> list[dict]:
 # ---------------------------------------------------------------- build + link
 def _load_raw() -> list[dict]:
     rows = []
-    for sub in ("ins_osm", "ins_wikidata", "sii"):
+    for sub in ("ins_osm", "ins_wikidata", "ins_asi", "sii"):
         for p in sorted((RAW / sub).rglob("*.csv")):
             rows += read_rows(p)
     return rows + load_manual()

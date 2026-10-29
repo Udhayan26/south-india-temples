@@ -5,6 +5,13 @@ Put any .csv or .xlsx into
     data/sources/private/   e.g. your own field survey, a friend's collection
 Column names are matched loosely (see ALIASES), so most sheets work as-is.
 A single "GPS" / "Location" column like "12.9716, 77.5946" is understood too.
+
+Map files work as well:
+    .kml / .kmz   Google My Maps ("⋮ -> Download KML"), Google Earth, other map apps.
+                  Pin name -> temple name, folder/layer -> Special Group,
+                  "Key: value" lines in the pin description (Moolavar: ..., District: ...)
+                  and ExtendedData fields are matched like spreadsheet columns.
+    .geojson/.json  GeoJSON, incl. Google Takeout "Saved Places.json" (your starred places).
 """
 from __future__ import annotations
 
@@ -43,7 +50,116 @@ def _norm(h: str) -> str:
     return re.sub(r"\s+", " ", str(h or "").strip().lower().replace("_", " "))
 
 
+def _strip_html(t: str) -> str:
+    t = re.sub(r"<br\s*/?>|</p>|</div>|</li>", "\n", t or "", flags=re.I)
+    t = re.sub(r"<[^>]+>", " ", t)
+    import html
+    return html.unescape(t)
+
+
+def _desc_fields(desc: str) -> dict:
+    """'Moolavar: Shiva\nDistrict: Thanjavur' -> {'Moolavar': 'Shiva', 'District': 'Thanjavur'}"""
+    out = {}
+    for line in desc.splitlines():
+        m = re.match(r"\s*([A-Za-z][\w ./()]{1,30}?)\s*[:=\-]\s*(.+)$", line)
+        if m and _norm(m.group(1)) in _LOOKUP:
+            out.setdefault(m.group(1), m.group(2).strip())
+    return out
+
+
+def _read_kml(path: Path) -> list[dict]:
+    import xml.etree.ElementTree as ET
+    import zipfile
+    if path.suffix.lower() == ".kmz":
+        with zipfile.ZipFile(path) as z:
+            name = next((n for n in z.namelist() if n.lower().endswith(".kml")), None)
+            raw = z.read(name) if name else b""
+    else:
+        raw = path.read_bytes()
+    root = ET.fromstring(raw)
+    ns = lambda tag: f"{{http://www.opengis.net/kml/2.2}}{tag}"
+    out = []
+
+    doc_title = (root.findtext(f"{ns('Document')}/{ns('name')}") or "").strip()
+
+    def walk(el, folder):
+        for child in el:
+            tag = child.tag.split("}")[-1]
+            if tag in ("Folder", "Document"):
+                fname = child.findtext(ns("name")) or folder
+                walk(child, fname if tag == "Folder" else folder)
+            elif tag == "Placemark":
+                coords = None
+                for g in ("Point", "Polygon", "LineString"):
+                    c = child.find(f".//{ns(g)}//{ns('coordinates')}") or child.find(f".//{ns(g)}/{ns('coordinates')}")
+                    if c is not None and c.text:
+                        pts = [tuple(map(float, p.split(",")[:2])) for p in c.text.split() if "," in p]
+                        if pts:
+                            lon = sum(p[0] for p in pts) / len(pts)
+                            lat = sum(p[1] for p in pts) / len(pts)
+                            coords = (lat, lon)
+                            break
+                desc = _strip_html(child.findtext(ns("description")) or "")
+                name = re.sub(r"^\s*\d{1,4}\s*[).:\-]\s*", "", (child.findtext(ns("name")) or "").strip())
+                note = " ".join(desc.split())[:500]
+                if folder:
+                    note = f"[{folder}] {note}".strip()
+                rec = {"Temple Name": name, "Notes": note}
+                if coords:
+                    rec["GPS"] = f"{coords[0]}, {coords[1]}"
+                if doc_title:
+                    rec["Group"] = doc_title
+                for d in child.iter(ns("Data")):
+                    rec.setdefault(d.get("name", ""), (d.findtext(ns("value")) or "").strip())
+                for sd in child.iter(ns("SimpleData")):
+                    rec.setdefault(sd.get("name", ""), (sd.text or "").strip())
+                for k, v in _desc_fields(desc).items():
+                    rec.setdefault(k, v)
+                out.append(rec)
+
+    walk(root, "")
+    return out
+
+
+def _read_geojson(path: Path) -> list[dict]:
+    import json
+    data = json.loads(path.read_text(encoding="utf-8-sig"))
+    feats = data.get("features", []) if isinstance(data, dict) else []
+    out = []
+    for f in feats:
+        g, p = f.get("geometry") or {}, dict(f.get("properties") or {})
+        loc = p.pop("location", None) if isinstance(p.get("location"), dict) else None   # Google Takeout
+        rec = {k: (v if not isinstance(v, (dict, list)) else "") for k, v in p.items()}
+        if loc:
+            rec["_takeout"] = "1"
+            rec.setdefault("Temple Name", loc.get("name") or p.get("Title") or "")
+            rec.setdefault("Address", loc.get("address", ""))
+        rec.setdefault("Temple Name", p.get("Title") or p.get("name") or "")
+        if g.get("type") == "Point" and g.get("coordinates"):
+            lon, lat = g["coordinates"][:2]
+            if lat or lon:
+                rec["GPS"] = f"{lat}, {lon}"
+        if p.get("google_maps_url") or p.get("Google Maps URL"):
+            rec["website"] = ""          # keep Google's own link out of the website column
+        out.append(rec)
+    return out
+
+
+TEMPLE_NAME = re.compile(r"temple|kovil|koil|gudi|devasth|devalay|kshetr|mandir|amman|perumal|swamy|swami|"
+                         r"eswarar|iswarar|alayam|basadi|kavu|ambalam|mutt|math\b|ashram", re.I)
+
+
+def _looks_like_temple(name: str) -> bool:
+    from .common import infer_deity
+    return bool(TEMPLE_NAME.search(name) or infer_deity(name)[0])
+
+
 def _read_any(path: Path) -> list[dict]:
+    suffix = path.suffix.lower()
+    if suffix in (".kml", ".kmz"):
+        return _read_kml(path)
+    if suffix in (".geojson", ".json"):
+        return _read_geojson(path)
     if path.suffix.lower() == ".csv":
         with path.open(newline="", encoding="utf-8-sig") as fh:
             return list(csv.DictReader(fh))
@@ -75,9 +191,12 @@ def load(kind: str) -> list[dict]:
     label = "Government" if kind == "govt" else "Private collection"
     rows, today = [], date.today().isoformat()
     for path in sorted(folder.glob("*")):
-        if path.suffix.lower() not in (".csv", ".xlsx") or path.name.startswith(("~", "TEMPLATE")):
+        if path.suffix.lower() not in (".csv", ".xlsx", ".kml", ".kmz", ".geojson", ".json") \
+                or path.name.startswith(("~", "TEMPLATE")):
             continue
         for rec in _read_any(path):
+            if rec.pop("_takeout", None) and not _looks_like_temple(rec.get("Temple Name", "")):
+                continue          # Saved Places also holds shops, restaurants...
             row = blank_row(sources=f"{label}: {path.stem}", last_updated=today)
             for col, val in rec.items():
                 h = _norm(col)
@@ -98,6 +217,10 @@ def load(kind: str) -> list[dict]:
                 lat = lon = None
             row["latitude"] = lat if lat else ""
             row["longitude"] = lon if lon else ""
+            if row["special_group"]:
+                from .wikidata import SPECIAL_GROUPS
+                canon = [lab for rx, lab in SPECIAL_GROUPS if re.search(rx, row["special_group"], re.I)]
+                row["special_group"] = "; ".join(canon) if canon else row["special_group"]
             if row["name"]:
                 rows.append(finish_row(row))
     return rows
