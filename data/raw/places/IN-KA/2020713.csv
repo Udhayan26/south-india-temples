@@ -1,0 +1,810 @@
+name,place,lat,lon
+Jevaragi,town,17.01219,76.77524
+Wadi,town,17.04718,76.99214
+Mudola,village,17.06165,77.39653
+Firozabad,village,17.08382,76.78986
+Shahabad,town,17.12411,76.94189
+Chittapura,town,17.11961,77.08586
+Sedam,town,17.17727,77.28236
+Malakheda,village,17.19545,77.15883
+Afzalpur,town,17.20058,76.36058
+Manura,village,17.29946,76.09872
+Farahatabad,village,17.1832,76.79038
+Atanur,village,17.23999,76.48123
+Gobbura,village,17.25847,76.64002
+Hadagila Haruti,village,17.30519,76.7278
+Kalaburagi,city,17.331,76.83342
+Kalagi,village,17.35343,77.1533
+Kodli,village,17.401,77.19186
+Sulapeta,village,17.40201,77.34727
+Chincholi,town,17.4652,77.41897
+Gola Buzurg,village,17.45202,76.72532
+Bhodhana,village,17.57038,76.75256
+Kamalapura,town,17.57843,76.98943
+Kinnisadaka,village,17.66257,77.05989
+Kiranagi,village,17.14529,76.84911
+Nimbarga,village,17.38608,76.58534
+Karajagi,village,17.28296,76.21603
+Kodla,village,17.03958,77.25647
+Digaon,village,17.09009,77.15618
+Dandoti,village,17.18326,77.1036
+Chandapura,town,17.44364,77.43339
+Sawalagi,village,17.34795,76.73147
+Kadaganchi,village,17.44369,76.65942
+Bhimalli,village,17.42632,76.74489
+Chaudapura,village,17.23451,76.55325
+Devala Ganagapura,village,17.18093,76.53445
+Havanuru,village,17.24993,76.68421
+Bidanuru,village,17.21032,76.66796
+Jamaga,village,17.44304,76.79767
+Chinchanasura,village,17.51984,76.78541
+Pattana,village,17.40842,76.72134
+Sultanpura,village,17.38377,76.82231
+Narona,village,17.51589,76.71853
+Keri Abalaga,village,17.48484,76.75909
+Ravura,village,17.0884,77.00304
+Ivani,village,17.20962,77.06264
+Mahagaon,village,17.52144,76.9155
+Sasargaon,village,17.497,77.21385
+Ainapura,village,17.61521,77.22031
+Kallahipparaga,village,17.41383,77.04458
+Kamakanura,village,17.39856,77.03422
+Harasura,village,17.43344,76.97534
+Kodadura,village,17.30241,77.20063
+Hale Hebbala,village,17.37747,77.06402
+Mangalagi,village,17.27563,77.23405
+Tengali,village,17.25204,77.13364
+Tonasalli,village,17.2349,77.13343
+Dhangapura,village,17.4247,76.55554
+Allagi,village,17.20657,76.30221
+Udachana,village,17.21347,76.17182
+Ballurgi,village,17.29846,76.37476
+Mashala,village,17.32201,76.24049
+Nelogi,village,17.05902,76.60809
+Yadrami,village,16.85529,76.53105
+Herura,village,17.09061,76.66552
+Koganuru,village,17.33757,76.56687
+Madiyala,village,17.38957,76.49361
+Badadala,village,17.31532,76.41366
+Melakunda B.,village,17.31718,76.66234
+Kinni Sultana,village,17.61896,76.61358
+Nilur,village,17.34713,76.63
+Bhairamadagi,village,17.29151,76.59604
+Hiroli,village,17.58116,76.36129
+Tadakal,village,17.61748,76.65487
+Rudrawadi,village,17.67727,76.62138
+Khajuri,village,17.687,76.56456
+Padasawali,village,17.59715,76.45918
+Niragudi,village,17.64217,76.46333
+Mataki,village,17.62697,76.51025
+Nanduru,village,17.25194,76.89601
+Srinivasa Saradagi,village,17.32551,76.9579
+Kumasi,village,17.45333,76.84448
+Okali,village,17.60132,76.96253
+Holakunda,village,17.53117,76.97488
+Kalmuda,village,17.57161,77.05372
+Nagura,village,17.47881,76.99818
+Kusanuru,village,17.30435,76.87623
+Kurikota,village,17.49182,76.92803
+Dongaragaon,village,17.66026,77.03233
+Chandanakera,village,17.51564,77.17796
+Alanga,village,17.73164,76.5498
+Babalada,village,17.50125,76.85793
+Nandikura,village,17.27267,76.81251
+Kolluru,village,17.53627,77.42955
+Maratura,village,17.21402,76.88572
+Andola,village,16.9522,76.83759
+Naribola,village,17.00355,76.91845
+Nalawara,village,16.9442,76.99173
+Kadani,village,17.25634,76.73308
+Sirasagi,village,17.30859,76.78318
+Sonta,village,17.61197,77.11063
+Kolkur,village,17.08532,76.76174
+Kudi,village,17.15961,76.74636
+Kellur,village,16.94876,76.77845
+Aranakala,village,17.4957,77.0679
+Ratakala,village,17.45222,77.10528
+Degalamadi,village,17.49403,77.40688
+Belura,village,17.5397,77.01554
+Jivanagi,village,17.52704,77.02934
+Bhagodi,village,17.19014,77.03759
+Honagunta,village,17.05741,76.9074
+Ladlapura,village,16.97777,77.03586
+Kamarawadi,village,17.04007,77.03535
+Sannati,village,16.82932,76.90806
+Satanura,village,17.04072,77.11808
+Savalagi,village,17.61056,76.74248
+Tawaragera,village,17.41085,76.89589
+Ganajalakheda,village,17.43146,76.84793
+Kalahangaraga,village,17.47647,76.80239
+Dharmawadi,village,17.41488,76.64197
+Hasaragundagi,village,17.13614,76.59055
+Kavalaga Buzurg,village,17.1711,76.70151
+Jogura,village,17.12305,76.63395
+Kavalaga Khurd,village,17.15754,76.71309
+Bandarawada,village,17.17862,76.58195
+Hagarahundagi,village,17.16401,76.74264
+Nidagunda,town,17.29466,77.37794
+Malagi,village,17.30223,77.22919
+Yalakapalli,village,17.42952,77.32119
+Dastapura,village,17.42354,77.36466
+Chimma Idlayi,village,17.43943,77.37418
+Rustampura,village,17.45893,77.30276
+Chimmanachoda,village,17.5223,77.29721
+Bhankura,village,17.1573,76.95698
+Bedasura,village,17.4943,77.11017
+Hirapura,suburb,17.32966,76.80346
+Belamangi,village,17.64058,76.74311
+Kodala Hangarga,village,17.53232,76.60553
+Hallisalagara,village,17.563,76.63226
+Manahalli,village,17.58154,76.65971
+Malagatti,village,17.11537,76.97513
+Maradagi,village,16.88725,76.8221
+Chigarahalli,village,16.90854,76.77753
+Gaonwara,village,16.90959,76.8227
+Haranura,village,16.95794,76.7138
+Ijeri,village,16.90974,76.6991
+Birala,village,16.91527,76.90695
+Alaguda,village,17.44849,76.92364
+Awarada,village,17.44502,76.89331
+Rajapura,suburb,17.3175,76.84818
+Kudiganura,village,17.25533,76.12282
+Rajapura,village,17.3439,77.19403
+Alluru,village,16.96714,77.15652
+Hadanura,village,17.11026,76.71138
+Adaki,village,17.11233,77.37555
+Jakanapalli,village,17.03222,77.33035
+Handaraki,village,16.9678,77.23606
+Bhimanahalli,village,16.95194,77.20106
+Rajola,village,17.0054,77.20397
+Ramatirtha,village,16.97717,77.17907
+Madana Hipparaga,village,17.457,76.3737
+Yalasangi,village,17.38675,76.45781
+Fort,neighbourhood,17.34396,76.83131
+Mandevala,village,16.9997,76.54198
+Ankalaga,village,17.13605,76.49668
+Chinamagera,village,17.21959,76.57192
+Avaralli,village,17.22692,76.63913
+Balundagi,village,17.05842,76.49784
+Revura,village,17.31676,76.46103
+Benne Shirura,village,17.34658,76.49726
+Chincholi,village,17.27371,76.42068
+Bhusanuru,village,17.46443,76.5334
+Cinnūra,village,17.29099,76.48946
+Ambewada,village,17.53198,76.41561
+Jhalaki Buzurg,village,17.44723,76.43081
+Savaleshwara,village,17.55681,76.44171
+Madaguṇaki,village,17.44543,76.40849
+Kawalaga,village,17.48034,76.49485
+Nandarga,village,17.30086,76.31262
+Telloni,village,17.30517,76.30273
+Dharmasagara,village,17.52913,77.52807
+Mukaramba,village,17.482,77.11927
+Ambalaga,village,17.61475,76.89215
+Salagara,village,17.63445,76.80751
+Suntanura,village,17.41566,76.67443
+Ladamugali,village,17.61642,76.87546
+Javalaga,village,17.53698,76.81533
+Elinavadagi,village,17.52445,76.64528
+Korahalli,village,17.48473,76.56768
+Salegaon,village,17.64384,76.54664
+Dastapura,village,17.54362,76.93223
+Chengata,village,17.55945,77.11684
+Navadagi,village,17.54485,76.96007
+Shadipura,village,17.4582,77.55197
+Keshwara,village,17.33357,77.27788
+Polakapalli,village,17.41665,77.42715
+Mogha,village,17.46093,77.22851
+Gundagurti,village,17.24094,77.06429
+Sangavi,village,17.26454,77.01865
+Bennura,village,17.25332,76.99886
+Koravara,village,17.31637,77.05803
+Petha Sirura,village,17.21619,76.99881
+Mughalanagaon,village,17.23848,76.95056
+Bhopala Teganura,village,17.38573,76.91899
+Halagadla,village,16.94099,76.73536
+Kallahangaraga,village,17.02487,76.64249
+Wastari,village,16.93962,76.58162
+Khanadala,village,17.24665,76.84295
+Kachapura,village,16.81387,76.49714
+Konasirasigi,village,16.90628,76.52801
+Ainapura,village,16.80631,76.47699
+Sumbada,village,16.83785,76.54416
+Chikka Lingadahalli,village,17.4378,77.4764
+Soma Lingadahalli,village,17.41116,77.47662
+Tumakunta,village,17.56351,77.38952
+Kerolli,village,17.3232,77.33578
+Hasaragundagi,village,17.54289,77.32705
+Miriyana,village,17.36472,77.49638
+Bhutapura,village,17.27994,77.29188
+Balabatti,village,16.7885,76.6257
+Kunchavaram,village,17.48605,77.6301
+Chindanura,village,17.47494,77.60034
+Salebiranalli,village,17.55176,77.37007
+Jattura,village,17.27355,77.44018
+Kanameshwara,village,16.83926,76.40323
+Kondaguli,village,16.84188,76.37673
+Rauza,suburb,17.34706,76.85303
+Kadakola,village,16.87322,76.4907
+Medak,village,16.98164,77.46388
+Motakapalli,village,16.9548,77.38393
+Maragutti,village,17.62017,77.05671
+Bachanala,village,17.62373,76.99655
+Udagi,village,17.1434,77.2174
+Naranala,village,17.50686,77.26208
+Ribbanapalli,village,17.06005,77.47657
+Bhosagi,village,17.18393,76.22582
+Alanda,town,17.56327,76.56785
+Hire Gaura,village,17.25211,76.29956
+Dargashirura,village,17.47946,76.40392
+Hipparaga,village,17.66924,76.68821
+Jamaga,village,17.67195,76.63786
+Jawalaga,village,17.71194,76.60498
+Nelakuda,village,17.66863,77.11619
+Belura,village,17.40035,76.84821
+Kanamasa,village,17.64627,76.66783
+Kauta,village,17.57929,76.76057
+Ainolli,village,17.4989,77.44077
+Anavara,village,17.40908,77.41708
+Bijanalli,village,17.39044,77.30963
+Gotura,village,17.35899,77.10411
+Halachera,village,17.34876,77.24598
+Kallura,village,17.38439,77.47163
+Kudahalli,village,17.37241,77.23183
+Kusrampalli,village,17.56384,77.43538
+Naga Idlayi,village,17.54706,77.41438
+Nagarahala,village,17.53648,77.28467
+Bangaraga,village,17.65818,76.59394
+Tambakawadi,village,17.61561,76.6829
+Saṅgōḷagi,village,17.5234,76.7673
+Gullahalli,village,17.53056,76.52
+Hebali,village,17.58671,76.51273
+Honalli,village,17.59033,76.60085
+Tirtha,village,17.62148,76.53626
+Ingalagi,village,17.06535,76.94569
+Itagi,village,17.23132,76.82593
+Kesaratagi,village,17.27793,76.84928
+Rampurahalli,village,16.88442,77.02103
+Takli,hamlet,17.12111,76.53361
+Shankarawadi,village,17.15184,76.97151
+Shellagi,village,17.43642,77.03234
+Sugura,village,16.92249,76.98787
+Sindagi,village,17.34586,76.78087
+Wagdhari,village,17.58777,76.79847
+Karalagi,village,17.60226,76.77239
+Bilavara,village,16.82321,76.67052
+Gudura,village,16.99148,76.83331
+Hangaraga,village,16.81731,76.57825
+Kasarabhosga,village,16.94878,76.62175
+Kollura,village,16.88168,76.9491
+Lakhnapura,village,16.84779,76.72691
+Yalagoda,village,16.84872,76.62937
+Kodachi,village,16.85276,76.7476
+Bhimapura,village,17.55054,76.35003
+Chandrampalli,village,17.5291,77.46434
+Hatti,village,17.22798,76.22403
+Hosuru,village,17.36699,76.12056
+Shivura,village,17.24059,76.1424
+Sarasamba,village,17.57759,76.41593
+Yakanchi,village,17.09066,76.54494
+Khanapura,village,17.59218,77.18723
+Rikkina Alura,village,17.48421,76.74241
+Dotikola,village,17.48077,77.28675
+Rummanaguda,village,17.47076,77.20028
+Ghattaragi,village,17.0938,76.40895
+Kallura,village,17.14706,76.44066
+Batagera,village,17.13501,77.30164
+Benakanahalli,village,17.06149,77.21792
+Bhankalaga,village,17.0265,77.1608
+Jeratagi,village,17.017,76.4496
+Kadehalli,village,17.06692,76.85974
+Muraganura,village,16.96864,76.47115
+Yatanura,village,17.04136,76.45267
+Sindhanamuda,village,17.08353,77.29506
+Allolli,village,17.11815,77.2342
+Buragapalli,village,16.90284,77.42813
+Chandapura,village,16.98518,77.40511
+Chikka Rajola,village,17.10527,77.40575
+Duganura,village,16.96096,77.3026
+Itakala,village,16.91461,77.38681
+Lingampalli,village,17.08879,77.41311
+Madana,village,17.02218,77.36315
+Nadepalli,village,17.04452,77.44646
+Silarakota,village,17.02153,77.47646
+Bhutapura,village,17.05676,77.30186
+Bidarakheda,village,17.08477,77.3529
+Bijjanahalli,village,17.2154,77.19021
+Tajalapura,village,17.48646,77.33335
+Imadapura,village,17.09918,77.32734
+Karchakheda,village,17.31339,77.42183
+Dummadri,village,16.79767,76.53385
+Malkapalli,village,16.94825,77.33655
+Nachavara,village,16.95873,77.26595
+Javali,village,17.42462,76.53838
+Kammanasirasagi,village,16.94408,76.56439
+Kandagola,village,17.45501,77.07273
+Banahatti,village,16.82304,76.97874
+Belagera,village,16.92727,77.13663
+Konapura,village,16.99472,77.33938
+Halakatta,village,17.01639,77.00509
+Shakapura,village,16.98232,76.73831
+Yanagunta,village,17.04075,76.90606
+Benakepalli,village,17.60919,77.25203
+Bhumyara,village,17.60651,77.16532
+Kotagi,village,17.55228,77.1799
+Salagara Basantapura,village,17.60484,77.29663
+Sangapura,village,17.56464,77.53267
+Shivaramapura,village,17.51649,77.65979
+Sunthana,village,17.43275,77.15787
+Palthia Tanda,village,17.59405,77.30035
+Yanagundi,village,16.89758,77.45045
+Singanahalli,village,16.75493,76.74061
+Bhaktampalli,village,17.3708,77.42916
+Bhantanahalli,village,17.33674,77.30725
+Bhoga Lingadalli,village,17.47337,77.47103
+Bhonasapura,village,17.52015,77.62718
+Chennuru,hamlet,17.54148,77.22816
+Ganapura,village,17.35241,77.43905
+Garagapalli,village,17.36633,77.42373
+Iragapalli,village,17.34239,77.41862
+Jilavarusha,village,17.45584,77.60859
+Kalamandaragi,village,17.6849,76.99345
+Koradampalli,village,17.33247,77.37173
+Kupanura,village,17.36452,77.32252
+Maramanchi,village,17.62585,77.07807
+Marapalli,village,17.52268,77.35172
+Paradara Motakapalli,village,17.39344,77.4128
+Patawada,village,17.63375,77.12172
+Pochavaram,village,17.47925,77.64195
+Ramatirtha,hamlet,17.37736,77.38569
+Ambarakheda,village,16.77302,76.64257
+Gogihala,village,16.86379,76.66722
+Javalaga,village,16.90937,76.65939
+Mallabada,village,16.76217,76.64089
+Nandihalli,village,16.84548,76.65147
+Shivapura,village,16.80261,76.63542
+Khudavandapura,village,17.49513,77.30049
+Hulandagera,village,16.83315,76.96204
+Kalakhora,village,17.63828,76.96059
+Dhuttaraga,village,17.52303,77.10583
+Garampalli,village,17.47615,77.35846
+Gaudanahalli,village,17.48097,77.37944
+Halakoda,village,17.24273,77.39495
+Hulasaguda,village,17.44451,77.14102
+Kanchanala,village,17.42714,77.12064
+Linganagara,hamlet,17.51971,77.62226
+Nimahosalli,village,17.4828,77.39586
+Potangala,village,17.25518,77.4183
+Ranapura,village,17.51334,77.20946
+Rayakoda,village,17.29078,77.28576
+Rudnura,village,17.27828,77.29932
+Seribikanalli,hamlet,17.50716,77.50779
+Shirolli,village,17.25813,77.35054
+Shivareddipalli,village,17.49917,77.637
+Yalmamadi,village,17.55756,77.26682
+Balawada,village,17.14949,76.8057
+Chelagera,village,17.429,76.38875
+Dharmapura,village,17.23288,76.90833
+Gunjababalada,village,17.55045,76.70642
+Jamaga,hamlet,17.70142,76.49838
+Kamanahalli,village,17.5305,76.38098
+Kerura,village,17.48421,76.39195
+Kinni Abbala,village,17.53701,76.42242
+Nadisinnura,village,17.11438,76.7833
+Pala,village,17.26889,76.94602
+Sakkaraga,village,17.54234,76.41281
+Sangolagi,village,17.57597,76.69932
+Saradagi,village,17.16165,76.78177
+Siranura,village,17.23075,76.79529
+Udanuru,village,17.29121,76.7935
+Zapura,village,17.28222,76.92446
+Gogi,village,17.52437,77.05566
+Honnalli,village,17.6377,77.10433
+Muddadaga,village,17.5921,76.83249
+Keri Bhosaga,village,17.39476,76.77913
+Syed Chincholi,village,17.40171,76.7964
+Antapanala,village,17.57154,77.01977
+Bhimanala,hamlet,17.61489,77.02375
+Bolevada,village,17.32506,77.02457
+Dinasi Kuranura,village,17.5878,77.03385
+Itaga,village,17.36067,76.99184
+Kaththalli,village,17.50044,76.9747
+Kavanalli Tanda,village,17.55571,77.06734
+Mahagaon Cross,village,17.51169,76.94406
+Sitanuru,village,17.26492,76.79477
+Yankkanchi,village,17.48945,76.95823
+Arajambaga,village,17.28302,77.12814
+Basavapattana,village,17.12677,76.70376
+Bharatanuru,village,17.34818,77.17638
+Donnuru,village,17.30672,77.11757
+Garura,village,17.22784,76.67337
+Hatagunda,village,17.37059,76.69568
+Hunasi Hadagila,village,17.33804,76.67631
+Indanakalla,village,17.28087,77.08301
+Jivana Maradagi,village,17.42677,77.02848
+Kadanala,hamlet,17.28528,76.64571
+Malaghana,village,17.32861,77.1255
+Malani,village,17.29712,76.68558
+Mattimuda,village,17.2777,77.07615
+Melakunda,village,17.31231,76.69771
+Muchakheda,hamlet,17.29453,77.07261
+Naduvinahalli,village,17.06718,76.8509
+Savatakheda,village,17.41391,77.01131
+Somanathahalli,village,17.05809,76.84476
+Vachcha,village,17.30902,77.05029
+Yalavantagi,village,17.35244,76.70026
+Allapura,village,17.48841,76.43741
+Apachanda,hamlet,17.54386,76.86198
+Hittalatashirura,village,17.38013,76.56161
+Ikkalaki,village,17.49043,76.44687
+Kalakutaga,hamlet,17.62911,76.91653
+Khandala,village,17.68855,76.49556
+Kudaki,village,17.34765,76.55063
+Lengati,village,17.64355,76.85028
+Mogha,village,17.51736,76.44801
+Shirura,village,17.75547,76.53464
+Shrichanda,village,17.53047,76.84217
+Telakuni,village,17.60788,76.57357
+Tugaon,village,17.7588,76.62258
+Bairampalli,village,17.39834,77.51019
+Benakanahalli,village,17.31886,77.30973
+Chintakunta,village,17.39978,77.21994
+Ganjagera,village,17.42331,77.25895
+Huvinahalli,village,17.27939,77.36466
+Kalabhavi,village,17.44948,77.46787
+Kheda Umarga,village,17.43081,76.40792
+Koravi,village,17.38467,77.26934
+Navadagi,village,17.38871,77.22039
+Seri,hamlet,17.43117,77.20038
+Tegalatippi,village,17.33099,77.25717
+Vajiragaon,village,17.40214,77.2351
+Yakapura,village,17.38085,77.36491
+Patapalli,village,17.53008,77.41211
+Amaravadi,hamlet,17.06242,77.34537
+Ashtagi,village,17.45248,76.78218
+Bhimanagara,village,17.16074,77.15726
+Bibballi,village,17.21802,77.28364
+Chitakanapalli,village,17.07245,77.32734
+Gopanapalli,village,17.07107,77.37339
+Habala,village,17.23031,77.36312
+Hala Sultanpura,village,17.44385,76.94846
+Hayyala,village,17.2041,77.37978
+Javaharanagara,village,17.13246,77.34345
+Kachavara,village,17.11388,77.30144
+Kachura,village,17.22778,77.28834
+Kadacharla,village,17.04492,77.37728
+Kadatala,village,17.02491,77.38312
+Kontanapalli,village,17.13542,77.36236
+Kurakunta,village,17.19283,77.35738
+Lakshmasagara,village,17.50088,77.62507
+Madakal,village,17.16406,77.35983
+Madavara,village,17.12068,77.30676
+Muganura,village,17.23571,77.30338
+Nijampura,village,17.36752,76.84867
+Nilahalli,village,17.18709,77.22414
+Rajivanagara,hamlet,17.17997,77.1963
+Rudravara,hamlet,17.04597,77.32685
+Sangavi,village,17.21392,77.16108
+Sangavi,village,17.2205,77.34555
+Somapalli,village,17.14451,77.37013
+Tadateganura,village,17.20405,76.76634
+Taranalli,village,17.20809,77.27053
+Telakura,village,17.22834,77.33752
+Totanalli,village,17.22796,77.18583
+Upaloon,hamlet,17.38848,76.87349
+Yadaga,village,17.22695,77.26871
+Yadahalli,village,17.21509,77.33293
+Arebommanahalli,village,17.21298,77.2421
+Bilakal,village,16.97601,77.29204
+Devanuru,village,16.98698,77.29498
+Gadadana,village,16.96688,77.37151
+Gajalapura,hamlet,17.02633,77.42136
+Gangaravalapalli,village,16.94918,77.45959
+Gaudanahalli,village,16.99289,77.26342
+Gundalli,village,17.03002,77.30829
+Hulagola,village,17.00122,77.24458
+Kadalapura,village,17.06496,77.42571
+Kalakhamba,village,17.09938,77.2321
+Kishtapura,village,16.97284,77.42192
+Kukkunda,village,17.22937,77.24448
+Minahabala,village,17.2288,77.20319
+Mushthalli,village,17.02836,77.28056
+Namavara,village,17.00956,77.27736
+Raghapura,village,17.00343,77.331
+Shakalasapalli,village,16.92777,77.39137
+Tolamamadi,village,16.95231,77.4243
+Turanura,village,17.01093,77.30411
+Venkatapura,village,16.98261,77.37228
+Dandagunda,village,16.96927,77.10731
+Ganganapalli,village,17.3979,77.42125
+Hannikere,village,16.99732,77.06443
+Hudadalli,village,17.45857,77.34231
+Huvinabhavi,village,17.43246,77.29027
+Itaga,village,17.1217,77.13869
+Karadala,village,17.02226,77.08248
+Konchura,village,16.99199,76.99013
+Malagi,hamlet,16.9371,76.93963
+Maradagi,village,16.90169,76.95382
+Maragula,village,17.15291,77.11272
+Sankanuru,village,16.95765,77.08584
+Tarakasapeta,village,16.88743,76.98753
+Turanura,village,16.92561,76.94244
+Yagapura,village,16.91624,77.11449
+Aldihala,hamlet,17.2149,76.96008
+Banabi,village,17.39385,77.06258
+Devanateganura,village,17.1873,76.92584
+Gola,village,17.10765,76.94885
+Herura,village,17.45224,77.02492
+Hulagera,village,17.42864,77.07634
+Katamma Deverahalli,village,17.19366,77.02084
+Mogala,village,17.14061,77.13204
+Revaggi,village,17.48629,77.07978
+Suguru,village,17.40166,77.13563
+Taranalli,village,17.15144,76.91198
+Vatavati,village,17.46936,77.04289
+Shantinagara,village,17.15679,76.94672
+Alura,village,17.40436,76.66397
+Babaleshvara,village,17.67949,76.5833
+Battaraga,village,17.41232,76.56468
+Bolani,village,17.53104,76.67302
+Dannura,village,17.49892,76.66061
+Gadalegaon,village,17.75949,76.55268
+Jamaga,village,17.53754,76.48486
+Jidaga,village,17.5247,76.49487
+Jirahalli,village,17.56055,76.51494
+Lingadalli,village,17.5032,76.35182
+Mamadapura,village,17.57494,76.61781
+Nagalegaon,hamlet,17.56262,76.41967
+Nellura,village,17.49725,76.64706
+Sangolagi,village,17.54546,76.56357
+Shakapura,village,17.54632,76.51507
+Vaijapura,village,17.37203,76.63981
+Hodala,village,17.56287,76.83488
+Kottaraga,village,17.49879,76.82794
+Hire Jevargi,village,17.3299,76.31832
+Ankalaga,village,17.30448,76.49466
+Anura,village,17.19824,76.44016
+Avarada,village,17.21158,76.50945
+Bankalaga,village,17.23286,76.29756
+Batagera,village,17.14513,76.48997
+Dannura,village,17.26061,76.54381
+Guddevadi,village,17.12891,76.43398
+Havalaga,hamlet,17.10662,76.38125
+Hinchagera,village,17.14706,76.39521
+Ingalagi,village,17.22497,76.52298
+Kallura,hamlet,17.1229,76.41808
+Karakanalli,village,17.17233,76.49473
+Matoli,village,17.22948,76.42481
+Shiravala,village,17.22782,76.30856
+Shivapura,village,17.15326,76.3726
+Sonna,village,17.17348,76.324
+Tellura,village,17.18918,76.49504
+Balavadagi,village,16.99951,76.9787
+Chamanuru,village,17.00781,76.92225
+Donagaon,village,17.03076,77.19147
+Hadanura,hamlet,17.30421,77.00449
+Hanumanahalli,village,17.09061,77.29362
+Injepalli,village,17.14644,77.30297
+Jilledapalli,village,17.05917,77.3574
+Kolakunda,village,16.95732,76.93459
+Kundanuru,village,17.0428,76.92685
+Madabula,village,17.27524,77.01618
+Malakuda,village,17.21596,77.14177
+Ranjola,village,17.07873,77.30705
+Shankarajapura,village,16.98588,77.45469
+Anantapura,village,17.07374,77.47208
+Bannuru,hamlet,17.07714,77.42254
+Gundepalli,hamlet,17.08389,77.39999
+Hanganalli,village,17.15858,77.19046
+Indiranagara,village,17.16808,77.33693
+Irnapalli,village,17.10213,77.41522
+Mallabada,village,17.08034,77.45026
+Akhandahalli,village,16.84281,76.51698
+Allapura,village,16.78667,76.39598
+Belura,village,17.07057,76.47678
+Bhosga,village,17.14843,76.55188
+Billada,hamlet,17.01565,76.48194
+Biralahissa,hamlet,16.7637,76.45029
+Channura,village,16.99093,76.80363
+Gavanalli,village,17.04588,76.73604
+Gudura,hamlet,17.01421,76.4936
+Hanchinala,village,16.84283,76.47593
+Haravala,village,17.05889,76.68744
+Hegginala,hamlet,16.97505,76.6657
+Hipparaga Kona,village,17.15735,76.76786
+Honnala,village,16.91557,76.93954
+Hotinamadu,village,16.88757,76.95013
+Itaga,village,17.17329,76.54584
+Jainapura,village,16.93695,76.79574
+Jamakhandi,village,16.80689,76.69996
+Jamberala,village,16.90167,76.49773
+Janivara,village,17.03785,76.71901
+Kachura,village,16.82362,76.6426
+Kakhandaki,village,16.87535,76.64801
+Kattisangavi,village,17.04004,76.82308
+Konnura,village,16.79453,76.68744
+Kudalagi,village,17.08804,76.52392
+Kuralagera,village,16.74394,76.45864
+Madari,village,17.04726,76.86868
+Maganagera,village,16.80912,76.4459
+Mahura,village,17.08828,76.56755
+Malla,village,16.95492,76.92772
+Manashivanagi,village,16.88979,76.4529
+Mandravada,village,17.11702,76.77395
+Mangalura,village,16.83544,76.64144
+Maradagi,village,16.82886,76.7006
+Mavanura,village,16.9922,76.68802
+Mayura,village,17.03071,76.49826
+Mogana Itaga,village,17.13518,76.46666
+Mudabala B.,village,16.88186,76.77652
+Mudabala K.,hamlet,16.85917,76.78575
+Muttakoda,village,16.94182,76.65457
+Narayanapura,village,17.0956,76.43837
+Nedalagi,village,17.00567,76.48183
+Niradagi,village,16.83552,76.69506
+Niralakoda,village,16.96282,76.67509
+Rajavala,village,16.98246,76.93493
+Ramapura,village,16.8754,76.92028
+Saidapura,village,16.87265,76.56848
+Shakapura,village,16.87497,76.47085
+Sidnala,village,17.15256,76.52211
+Sigaratahalli,village,16.91345,76.74898
+Somanathahalli,village,16.88554,76.72425
+Telagabala,village,16.8928,76.50506
+Varchanalli,village,16.85391,76.80568
+Yatnala,village,16.85375,76.4826
+Allagi Tanda,village,17.33924,76.23753
+Hanchanala,village,17.10968,76.50458
+Huvinahalli,village,17.16924,76.60802
+Kirasavalagi,hamlet,17.11471,76.56983
+Saganura,hamlet,17.10218,76.54171
+Sirasagi,village,17.13389,76.56931
+Ummaraga,hamlet,17.09985,76.51977
+Belagumpa,village,17.1039,76.70085
+Mainala,village,17.08863,76.61584
+Raddevadagi,village,17.06746,76.79116
+Shampurahalli,village,16.87647,77.03181
+Chinamalli,village,17.07993,76.58252
+Kekkarasavalagi,village,17.0964,76.58827
+Basaveshwara Nagara,locality,17.12947,76.93119
+Hanumar Nagar,locality,17.12966,76.93826
+Siparkatta,neighbourhood,17.1343,76.93244
+Alstom Colony,locality,17.14626,76.9475
+JP Colony,locality,17.13273,76.95005
+Laxmi Gunj,neighbourhood,17.12377,76.93978
+Sharan Nagar,locality,17.12039,76.93757
+Ashok Nagar,neighbourhood,17.11686,76.94132
+Haralayya Nagar,locality,17.12758,76.93781
+Lohar Galli,locality,17.12718,76.93951
+Bhimshappa Nagar,locality,17.13183,76.93629
+Maddi,locality,17.13239,76.94371
+Chand Bhada,locality,17.12638,76.93981
+Pathan Galli,locality,17.12799,76.94342
+Chunna Bhatti,locality,17.1246,76.94436
+Ramghad,locality,17.153,76.93399
+Old Shahabad,village,17.14115,76.93065
+Bavana Gudi,village,17.58678,77.23645
+Chauki Tanda,village,17.56383,77.29169
+Dharitanda,village,17.62479,77.27124
+Etebarapura,village,17.57483,77.32007
+Gurampalli,village,17.54335,77.31381
+Hulasaguda Tanda,hamlet,17.47125,77.15371
+Rummanaguda Tanda,village,17.46402,77.18574
+Salagara,village,17.59396,77.28659
+Tajalapura,village,17.51219,77.32258
+Gundunayaka Tanda,hamlet,17.57962,77.30358
+Hosahalli,village,17.41746,77.40824
+Javharanagara,village,17.473,77.56734
+Jilavarsha Tanda,village,17.4593,77.58334
+Kodli Tanda,village,17.39335,77.19332
+Kudahalli,village,17.38203,77.25389
+Motimoka Thanda,village,17.53498,77.52094
+Ontichinta,village,17.5316,77.55347
+Ontigudasi Thanda,hamlet,17.53761,77.54265
+Pedda Thanda,village,17.53091,77.57287
+Phatepura,village,17.51318,77.44105
+Venkatapura,village,17.27821,77.40449
+Betajevargi,village,17.57158,76.7841
+Bilagunda,village,17.58493,76.7269
+Bodhanavadi,village,17.56543,76.77727
+Hodalura Tanda,village,17.69858,76.65912
+Linganavadi,village,17.56201,76.80143
+Tolanavadi,village,17.55054,76.77015
+Bommanahalli,village,17.38085,76.61518
+Chincholi Budruk,village,17.62601,76.43213
+Chincholi Khurd,village,17.61896,76.43675
+Gudura,village,17.33208,76.5988
+Jamaga Tanda,village,17.7169,76.50784
+Khanapura,village,17.57323,76.47385
+Kudamuda Tanda,hamlet,17.59363,76.91388
+Kudamuda,village,17.60826,76.91518
+Madaki Tanda,village,17.57474,76.87947
+Nasiravadi,village,17.63899,76.66996
+Nimbarga Tanda,village,17.40676,76.60399
+Sanagunda,village,17.62209,76.72532
+Tellur,village,17.47409,76.69527
+Valavandi,village,17.6406,76.70196
+Gaudappagudi Tanda,village,17.58575,77.34952
+Jangli Pira Tanda,hamlet,17.56877,77.34869
+Kannunayaka Tanda,hamlet,17.57415,77.22756
+Shikaramotakapalli,village,17.54002,77.38357
+Shivarama Nayaka,hamlet,17.57205,77.27945
+Tirumalapura,hamlet,17.54695,77.40031
+Naga Idlayi Tanda,village,17.58308,77.4096
+Tondakal,hamlet,17.46519,76.9418
+Bhandanakeri Tanda,hamlet,17.67611,77.01129
+Bhusanagi,village,17.51504,76.89412
+Chikka Gobbura,village,17.26764,76.68814
+Gutti Tanda,hamlet,17.65931,76.99313
+Kamalapura Tanda,hamlet,17.5967,76.9762
+Kannura,village,17.51717,76.87518
+Navana,village,17.58131,76.96456
+Bommanahalli,village,17.0287,77.07401
+Maguta,village,17.26148,77.04032
+Tari Tanda,village,17.20155,76.95436
+Vaddaravadi,village,17.08609,76.9241
+Koravi Tanda,village,17.40791,77.27868
+Sasaragaon Tanda,hamlet,17.48889,77.2059
+Seri Tanda,village,17.44112,77.18889
+Tadapalli,village,17.43181,77.271
+Arjunagi,village,17.36411,76.4325
+Basanalavadi,village,17.18507,76.65774
+Jhalaki,village,17.44837,76.47902
+Jirahalli Tanda,hamlet,17.55751,76.54061
+Kalaganura,village,17.30574,76.91151
+Kerura,village,17.41829,76.93444
+Kulali,village,17.35342,76.45165
+Kutanura,village,17.07867,76.64075
+Madiyala Tanda,village,17.37337,76.4995
+Sannura Tanda,village,17.2828,77.00385
+Sannuru,village,17.2916,76.98789
+Venkata Bennura,village,17.39196,76.95855
+Alluru,village,17.03429,77.0501
+Indiranagara,village,17.05336,76.68412
+Konkanalli,village,17.19033,77.22813
+Sevalal Nagara,village,17.04168,77.01255
+Subbunayaka Tanda,hamlet,16.93657,77.02147
+Tilagula,village,17.16893,76.81908
+Gobbaravadagi,village,16.92562,76.61537
+Hanchinala,hamlet,16.96925,76.68964
+Karakihalli,village,16.88221,76.60176
+Rasanagi,village,17.07952,76.70672
+Revanura,village,16.99393,76.70829
+Varavi,village,16.90337,76.60066
+Bhimasagara,hamlet,16.95655,77.31695
+Chandanayaka Tanda,village,16.91072,77.10105
+Gaura Khurd.,village,17.24983,76.29147
+Nagarhalli,village,16.76956,76.48736
+Hosuru,village,17.03604,77.13711
+Muttaga,village,17.17128,77.00195
+Butanala,village,17.01478,76.80085
+Avarada,village,16.9718,76.76218
+Mehbub Nagar,suburb,17.34567,76.85836
+Kusanuru Tanda,village,17.28256,76.89237
+Kotnuru,village,17.28974,76.82121
+Dabrabad,village,17.34976,76.79888
+Kubra Colony,hamlet,17.32793,76.78419
+Ashok Nagar,village,17.34575,77.08868
+Tonchi,village,17.40697,77.02659
+Malaghana Thanda,locality,17.33585,77.09817
+Sulahalli,village,17.04716,77.04427
+Gopanapalli,village,17.07051,77.43334
+Kottapalli,village,17.03838,77.4188
+Munkanapallii,village,17.04412,77.35151
+Itkal Tanda,village,16.92046,77.34679
+Malli,village,16.77824,76.49024
+Kadyapura,hamlet,16.82668,76.75085
+Gogi Thanda,village,17.54614,77.0688
+Mungi Thanda,hamlet,16.94112,77.12853
+Hiramani Thanda,hamlet,16.92594,77.14505
+Bhimanayaka Thanda,hamlet,16.92464,77.13366
+Kolakunda Thanda,village,16.96447,77.34999
+Devapura,village,17.01628,77.03732
+Dharmanayaka Thanda,hamlet,16.92906,77.04007
+Kumbarahalli,village,16.93875,77.02312
+Yagapura Tanda,village,16.92296,77.09904
+Chankuniya,village,17.00292,77.38334
+Polakapalli Tanda,village,17.41089,77.44906
+Gadilingahalli,village,17.54918,77.21333
+Gandhi Nagara,village,17.53685,77.2983
+Rajawal,hamlet,17.51189,76.51868
