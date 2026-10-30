@@ -26,9 +26,18 @@ DENOMINATION = {"shaivism": "Shaivam", "shaiva": "Shaivam", "vaishnavism": "Vais
 LOCAL_NAME_KEYS = ["name:ta", "name:ml", "name:kn", "name:te", "name:hi", "name:sa"]
 
 
+import threading
+_local = threading.local()
+
+
+def use_server(url: str) -> None:
+    """Each collector worker talks to its own Overpass server (one request at a time each)."""
+    _local.url = url
+
+
 def _overpass(query: str) -> dict:
     s = session()
-    r = request_with_retry(s, "POST", OVERPASS_URL, data={"data": query})
+    r = request_with_retry(s, "POST", getattr(_local, "url", OVERPASS_URL), data={"data": query})
     return r.json()
 
 

@@ -13,6 +13,7 @@ the oldest data.
 from __future__ import annotations
 
 import argparse
+import os
 import csv
 import json
 import time
@@ -35,13 +36,18 @@ PAUSE_BETWEEN_CALLS = 10     # seconds between two requests to the SAME server
 # one worker per server, so each server still sees one polite request at a time
 WORKERS = {
     "overpass": ("districts", "osm", "places"),
+    "overpass2": ("osm", "places"),            # second public Overpass server, same polite pace
     "wikidata": ("wikidata",),
     "sii": ("sii_index", "sii"),
     "other": ("asi", "geonames", "overture", "datagovin", "google"),
 }
 ORDER = {"districts": 0, "osm": 1, "wikidata": 2, "sii_index": 3, "sii": 4, "places": 5,
          "datagovin": 6, "google": 7, "asi": 6, "geonames": 6, "overture": 6}
-GLOBAL = ("SII", "GOV")   # pseudo "states" for jobs not tied to a state
+GLOBAL = ("SII", "GOV")
+OVERPASS_SERVERS = {
+    "overpass": os.environ.get("OVERPASS_URL", "https://overpass-api.de/api/interpreter"),
+    "overpass2": os.environ.get("OVERPASS_URL_2", "https://overpass.kumi.systems/api/interpreter"),
+}   # pseudo "states" for jobs not tied to a state
 
 
 def load_state() -> dict:
@@ -158,6 +164,8 @@ def run(minutes: float, states: list[str], export_only: bool = False) -> None:
 
     def worker(name, kinds):
         fails_in_a_row = 0
+        if name in OVERPASS_SERVERS:
+            osm.use_server(OVERPASS_SERVERS[name])
         try:
             while time.monotonic() < deadline:
                 with lock:

@@ -240,6 +240,9 @@ def _fill_places(records: list[dict]) -> None:
             r["city"] = idx.find(float(r["latitude"]), float(r["longitude"]), 4000) or ""
 
 
+NOT_TEMPLE_FINAL = re.compile(r"\b(church|cathedral|chapel|mosque|masjid|dargah|school|college|hospital|"
+                              r"clinic|hotel|lodge|bank)\b", re.I)
+TEMPLE_WORD = re.compile(r"temple|kovil|koil|gudi|mandir|devasth|kshetr|alayam\b|basadi", re.I)
 MAP_ONLY = {"Wikidata", "Overture Maps", "GeoNames"}
 
 
@@ -310,6 +313,7 @@ def build_master() -> list[dict]:
             m.add(_upgrade(row), allow_new=add_new_google)
 
     records = [_combine(g) for g in m.groups if g]
+    records = [r for r in records if not (NOT_TEMPLE_FINAL.search(r["name"]) and not TEMPLE_WORD.search(r["name"]))]
     _refine_wikidata_only(records)
     _fill_districts(records)
     _fill_places(records)
