@@ -181,7 +181,12 @@ def run(minutes: float, states: list[str], export_only: bool = False) -> None:
                 if job is None:         # other servers may still unlock work (e.g. OSM -> Wikidata)
                     time.sleep(5)
                     continue
-                fails_in_a_row = _run_one(job, name, fails_in_a_row)
+                try:
+                    fails_in_a_row = _run_one(job, name, fails_in_a_row)
+                except Exception as e:      # bookkeeping error: log it and keep the worker alive
+                    print(f"   worker {name} error: {e}", flush=True)
+                    traceback.print_exc()
+                    fails_in_a_row += 1
                 if fails_in_a_row >= 5:
                     print(f"{name}: 5 failures in a row — pausing this server for today.", flush=True)
                     return
@@ -213,7 +218,8 @@ def run(minutes: float, states: list[str], export_only: bool = False) -> None:
                 now = datetime.now().isoformat(timespec="seconds")
                 st.setdefault("failed", {})[_key(job)] = now
                 st.setdefault("errors", {})[_key(job)] = str(e)[:300]   # visible in the repo
-                st.setdefault("fail_count", {})[_key(job)] = st["fail_count"].get(_key(job), 0) + 1
+                fc = st.setdefault("fail_count", {})
+                fc[_key(job)] = fc.get(_key(job), 0) + 1
                 save_state(st)
             return fails_in_a_row + 1
         finally:
