@@ -132,14 +132,43 @@ OLD_DISTRICTS = {
 }
 
 
+_MODERN: dict[str, tuple] = {}
+
+
+def _modern_districts() -> dict[str, tuple]:
+    """skeleton(modern district name) -> (state code, [name]) from data/state.json."""
+    if not _MODERN:
+        try:
+            import json
+            st = json.loads((DATA / "state.json").read_text())
+            for sc, ds in st.get("districts", {}).items():
+                for d in ds:
+                    _MODERN[skeleton(d["name"])] = (sc, [d["name"]])
+        except Exception:
+            pass
+    return _MODERN
+
+
 def old_district(text: str):
-    t = re.sub(r"\bdistrict\b|\.", "", (text or "").lower()).strip()
+    """Old or modern district name, tolerant of the volumes' spellings and typos
+    ("Tanjavur", "Tiruchirapalli", "South Aroct", "Coimbatore District Same wall")."""
+    t = (text or "").lower()
+    t = re.sub(r"\bdistrict\b.*$", "", t)
+    t = re.sub(r"[.]", "", t).strip()
+    if not t or t.startswith("same"):
+        return None
     if t in OLD_DISTRICTS:
         return OLD_DISTRICTS[t]
     for k, v in OLD_DISTRICTS.items():
-        if k in t:
+        if re.search(rf"\b{re.escape(k)}\b", t):
             return v
-    return None
+    from difflib import SequenceMatcher
+    key = skeleton(t)
+    pool = {skeleton(k): v for k, v in OLD_DISTRICTS.items()}
+    pool.update(_modern_districts())
+    best = max(((SequenceMatcher(None, key, k).ratio(), v) for k, v in pool.items() if k), default=(0, None),
+               key=lambda x: x[0])
+    return best[1] if best[0] >= 0.8 else None
 
 
 # ---------------------------------------------------------------- name matching
@@ -278,8 +307,27 @@ def _load_raw() -> list[dict]:
     rows = []
     for sub in ("ins_osm", "ins_wikidata", "ins_asi", "sii"):
         for p in sorted((RAW / sub).rglob("*.csv")):
-            rows += read_rows(p)
+            part = read_rows(p)
+            if sub == "sii":
+                _inherit_same(part)
+            rows += part
     return rows + load_manual()
+
+
+def _inherit_same(rows: list[dict]) -> None:
+    """SII headings like "Same village, Same Taluk and District" repeat the previous entry's place."""
+    prev = None
+    for r in rows:
+        if prev:
+            for f in ("village", "taluk", "district_old"):
+                v = (r.get(f) or "").strip()
+                if not v or re.match(r"same\b", v, re.I) or re.search(r"\bsame (taluk|zamindari|village|district)\b", v, re.I):
+                    if v or f == "district_old":
+                        r[f] = prev.get(f, "")
+            if re.match(r"same\b", (r.get("village") or ""), re.I):
+                r["village"] = prev.get("village", "")
+        if r.get("district_old") and not re.match(r"same\b", r["district_old"], re.I):
+            prev = r
 
 
 def _places_index():
@@ -384,6 +432,26 @@ GENERIC = re.compile(r"^\s*(sri\s+)?(isvara|iswara|eswara|eshwar|ishvara|siva|sh
                      r"(deva|devar|svamin|swamin|swami|swamy)?(\s+temple)?\s*$", re.I)
 
 
+_KEYS: dict[str, list] = {}
+
+
+def _state_keys(places, state_code):
+    if state_code not in _KEYS:
+        _KEYS[state_code] = [k for k, cs in places.items() if any(c[2] == state_code for c in cs)]
+    return _KEYS[state_code]
+
+
+def _district_keys(places, state_code, modern, district_rel):
+    """Place keys inside the modern districts the old district became (Tanjore -> Thanjavur, Thiruvarur...)."""
+    want = {skeleton(m) for m in modern}
+    ck = (state_code, tuple(sorted(want)))
+    if ck not in _KEYS:
+        rels = {rel for rel, name in district_rel.get(state_code, {}).items()
+                if any(w and (w in skeleton(name) or skeleton(name) in w) for w in want)}
+        _KEYS[ck] = [k for k, cs in places.items() if any(c[2] == state_code and c[3] in rels for c in cs)]
+    return _KEYS[ck]
+
+
 def _link_by_village(r, places, grid, by_district, district_rel, link):
     od = old_district(r.get("district_old") or r.get("district", ""))
     state_code, modern = (od or (None, []))
@@ -394,9 +462,23 @@ def _link_by_village(r, places, grid, by_district, district_rel, link):
     if not vkey:
         return
     cands = [c for c in places.get(vkey, []) if state_code in (None, c[2])]
-    if modern and len(cands) > 1:
-        prefer = [c for c in cands if district_rel.get(c[2], {}).get(c[3], "") in modern]
-        cands = prefer or cands
+    fuzzy = False
+    if not cands and state_code in STATES and len(vkey) >= 5:
+        # spelling variants: Kallidaikkurichchhi ~ Kallidaikurichchi, Divara Hubballi ~ Devarahubballi
+        from difflib import get_close_matches
+        keys = _district_keys(places, state_code, modern, district_rel) if modern else []
+        close = get_close_matches(vkey, keys, n=2, cutoff=0.85)
+        if close and close[0][0] == vkey[0] and (len(close) == 1 or
+                SequenceMatcher(None, vkey, close[0]).ratio() - SequenceMatcher(None, vkey, close[1]).ratio() >= 0.04):
+            cands = [c for c in places[close[0]] if c[2] == state_code]
+            fuzzy = True
+    if modern and cands:
+        # same-named villages exist in many districts: only accept ones inside the old district's area
+        want = {skeleton(m) for m in modern}
+        def in_area(c):
+            dn = skeleton(district_rel.get(c[2], {}).get(c[3], ""))
+            return any(w and dn and (w in dn or dn in w) for w in want)
+        cands = [c for c in cands if in_area(c)]
     dedication = r.get("temple_name", "")
     best = None
     for plat, plon, sc, rel in cands[:5]:
@@ -439,6 +521,6 @@ def _link_by_village(r, places, grid, by_district, district_rel, link):
     if cands:
         plat, plon, sc, rel = cands[0]
         r["latitude"], r["longitude"] = plat, plon
-        r["location_basis"] = "Village (approximate)"
+        r["location_basis"] = "Village (approximate, spelling matched)" if fuzzy else "Village (approximate)"
         r["state"] = r.get("state") or STATES.get(sc, "")
         r["district"] = district_rel.get(sc, {}).get(rel, "") or r.get("district", "")
