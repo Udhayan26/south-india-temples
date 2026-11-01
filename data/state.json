@@ -894,7 +894,7 @@
   "osm:IN-TN:1819773": "2026-09-15T00:00:00",
   "osm:IN-TN:1819774": "2026-09-15T00:00:00",
   "osm:IN-TN:448985": "2026-09-15T00:00:00",
-  "osm:IN-TN:7910817": "2026-09-15T00:00:00",
+  "osm:IN-TN:7910817": "2026-11-01T22:44:42",
   "osm:IN-TN:9537174": "2026-09-15T00:00:00",
   "osm:IN-TN:9538519": "2026-09-15T00:00:00",
   "osm:IN-TN:9602893": "2026-09-15T00:00:00",
@@ -1408,13 +1408,25 @@
   "wikidata:IN-TN:9602893": "2026-10-29T23:00:50"
  },
  "errors": {
+  "osm:IN-TN:10329991": "504 from https://overpass.kumi.systems/api/interpreter",
+  "osm:IN-TN:1819317": "504 from https://overpass.kumi.systems/api/interpreter",
+  "osm:IN-TN:1819586": "502 from https://overpass-api.de/api/interpreter",
+  "osm:IN-TN:1819588": "HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=360)",
   "sii:17/neighbors": "404 Client Error: Not Found for url: https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/neighbors.html"
  },
  "fail_count": {
-  "sii:17/neighbors": 1
+  "osm:IN-TN:10329991": 1,
+  "osm:IN-TN:1819317": 1,
+  "osm:IN-TN:1819586": 1,
+  "osm:IN-TN:1819588": 1,
+  "sii:17/neighbors": 2
  },
  "failed": {
-  "sii:17/neighbors": "2026-10-31T21:52:15",
+  "osm:IN-TN:10329991": "2026-11-01T22:42:17",
+  "osm:IN-TN:1819317": "2026-11-01T23:03:20",
+  "osm:IN-TN:1819586": "2026-11-01T22:45:38",
+  "osm:IN-TN:1819588": "2026-11-01T23:08:47",
+  "sii:17/neighbors": "2026-11-01T22:26:40",
   "wikidata:IN-KA": "2026-10-22T17:26:48",
   "wikidata:IN-KL": "2026-10-22T17:20:32",
   "wikidata:IN-TN": "2026-10-22T17:14:17"

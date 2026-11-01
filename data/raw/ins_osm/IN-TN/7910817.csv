@@ -1,0 +1,5 @@
+inscription_id,title,type,temple_id,temple_name,link_method,location_detail,village,taluk,district,district_old,state,latitude,longitude,location_basis,google_maps_url,king,dynasty,date_text,year_ce,language,script,reference,volume,number,summary,text,image,source,source_url,osm_id,wikidata_id,temple_wikidata_id,last_updated
+,Brahmin street,Tamil-Brahmi / Brahmi inscription,,,,,,,Chennai,,Tamil Nadu,13.021263,80.222264,Exact (mapped),,,,,,,,,,,,,,OpenStreetMap,https://www.openstreetmap.org/way/23634220,way/23634220,,,2026-11-01
+,Brahmin Lane,Tamil-Brahmi / Brahmi inscription,,,,,,,Chennai,,Tamil Nadu,13.020896,80.221697,Exact (mapped),,,,,,,,,,,,,,OpenStreetMap,https://www.openstreetmap.org/way/23634393,way/23634393,,,2026-11-01
+,Telungu Brahmin Street,Tamil-Brahmi / Brahmi inscription,,,,,,,Chennai,,Tamil Nadu,12.982719,80.220658,Exact (mapped),,,,,,,,,,,,,,OpenStreetMap,https://www.openstreetmap.org/way/29503047,way/29503047,,,2026-11-01
+,Brahmin Street,Tamil-Brahmi / Brahmi inscription,,,,,,,Chennai,,Tamil Nadu,12.983211,80.220375,Exact (mapped),,,,,,,,,,,,,,OpenStreetMap,https://www.openstreetmap.org/way/29503165,way/29503165,,,2026-11-01
