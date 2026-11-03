@@ -870,7 +870,7 @@
   "osm:IN-TN:1819211": "2026-09-15T00:00:00",
   "osm:IN-TN:1819212": "2026-09-15T00:00:00",
   "osm:IN-TN:1819213": "2026-09-15T00:00:00",
-  "osm:IN-TN:1819273": "2026-09-15T00:00:00",
+  "osm:IN-TN:1819273": "2026-11-03T01:32:08",
   "osm:IN-TN:1819275": "2026-09-15T00:00:00",
   "osm:IN-TN:1819276": "2026-09-15T00:00:00",
   "osm:IN-TN:1819317": "2026-09-15T00:00:00",
@@ -1409,24 +1409,36 @@
  },
  "errors": {
   "osm:IN-TN:10329991": "504 from https://overpass.kumi.systems/api/interpreter",
+  "osm:IN-TN:1818782": "504 from https://overpass.kumi.systems/api/interpreter",
   "osm:IN-TN:1819317": "504 from https://overpass.kumi.systems/api/interpreter",
+  "osm:IN-TN:1819318": "HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=360)",
+  "osm:IN-TN:1819362": "502 from https://overpass-api.de/api/interpreter",
   "osm:IN-TN:1819586": "502 from https://overpass-api.de/api/interpreter",
   "osm:IN-TN:1819588": "HTTPSConnectionPool(host='overpass-api.de', port=443): Read timed out. (read timeout=360)",
+  "osm:IN-TN:9602893": "504 from https://overpass.kumi.systems/api/interpreter",
   "sii:17/neighbors": "404 Client Error: Not Found for url: https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/neighbors.html"
  },
  "fail_count": {
   "osm:IN-TN:10329991": 1,
+  "osm:IN-TN:1818782": 1,
   "osm:IN-TN:1819317": 1,
+  "osm:IN-TN:1819318": 1,
+  "osm:IN-TN:1819362": 1,
   "osm:IN-TN:1819586": 1,
   "osm:IN-TN:1819588": 1,
-  "sii:17/neighbors": 2
+  "osm:IN-TN:9602893": 1,
+  "sii:17/neighbors": 3
  },
  "failed": {
   "osm:IN-TN:10329991": "2026-11-01T22:42:17",
+  "osm:IN-TN:1818782": "2026-11-03T02:02:21",
   "osm:IN-TN:1819317": "2026-11-01T23:03:20",
+  "osm:IN-TN:1819318": "2026-11-03T01:45:17",
+  "osm:IN-TN:1819362": "2026-11-03T01:25:21",
   "osm:IN-TN:1819586": "2026-11-01T22:45:38",
   "osm:IN-TN:1819588": "2026-11-01T23:08:47",
-  "sii:17/neighbors": "2026-11-01T22:26:40",
+  "osm:IN-TN:9602893": "2026-11-03T01:46:32",
+  "sii:17/neighbors": "2026-11-03T01:18:21",
   "wikidata:IN-KA": "2026-10-22T17:26:48",
   "wikidata:IN-KL": "2026-10-22T17:20:32",
   "wikidata:IN-TN": "2026-10-22T17:14:17"
