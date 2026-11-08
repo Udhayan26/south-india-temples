@@ -103,7 +103,7 @@ def _inscription_row(el, t, lat, lon, state_code, district, today) -> dict:
 def fetch_district(state_code: str, district: dict) -> int:
     area_id = 3600000000 + int(district["rel_id"])
     q = f"""
-[out:json][timeout:900];
+[out:json][timeout:300];
 area(id:{area_id})->.d;
 (
   nwr["amenity"="place_of_worship"]["religion"~"^({RELIGIONS})$"](area.d);
@@ -112,7 +112,9 @@ area(id:{area_id})->.d;
   nwr["historic"~"^(temple|archaeological_site|ruins|monument)$"]["name"~"{TEMPLE_WORDS}",i](area.d);
   nwr["historic"~"^(epigraph|inscription|hero_stone)$"](area.d);
   nwr["memorial"~"^(stele|hero_stone)$"](area.d);
-  nwr["name"~"{INSCRIPTION_WORDS}",i](area.d);
+  nwr["historic"]["name"~"{INSCRIPTION_WORDS}",i](area.d);
+  nwr["memorial"]["name"~"{INSCRIPTION_WORDS}",i](area.d);
+  nwr["inscription"](area.d);
 );
 out center tags;
 """
