@@ -1408,6 +1408,12 @@
   "wikidata:IN-TN:9602893": "2026-10-29T23:00:50"
  },
  "errors": {
+  "osm:IN-KL:1819274": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+  "osm:IN-KL:2018154": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+  "osm:IN-KL:2018247": "504 from https://overpass.kumi.systems/api/interpreter",
+  "osm:IN-KL:2018248": "502 from https://overpass-api.de/api/interpreter",
+  "osm:IN-KL:2018249": "504 from https://overpass.kumi.systems/api/interpreter",
+  "osm:IN-KL:3743996": "HTTPSConnectionPool(host='overpass-api.de', port=443): Max retries exceeded with url: /api/interpreter (Caused by NewConnectionError(\"HTTPSConnection(host='overpass-api.de', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
   "osm:IN-TN:10303764": "HTTPSConnectionPool(host='overpass.kumi.systems', port=443): Read timed out. (read timeout=360)",
   "osm:IN-TN:10329991": "504 from https://overpass.kumi.systems/api/interpreter",
   "osm:IN-TN:10330031": "504 from https://overpass.kumi.systems/api/interpreter",
@@ -1439,6 +1445,12 @@
   "sii:17/neighbors": "404 Client Error: Not Found for url: https://www.whatisindia.com/inscriptions/south_indian_inscriptions/volume_17/neighbors.html"
  },
  "fail_count": {
+  "osm:IN-KL:1819274": 1,
+  "osm:IN-KL:2018154": 1,
+  "osm:IN-KL:2018247": 1,
+  "osm:IN-KL:2018248": 1,
+  "osm:IN-KL:2018249": 1,
+  "osm:IN-KL:3743996": 1,
   "osm:IN-TN:10303764": 1,
   "osm:IN-TN:10329991": 1,
   "osm:IN-TN:10330031": 1,
@@ -1467,9 +1479,15 @@
   "osm:IN-TN:9537174": 1,
   "osm:IN-TN:9538519": 1,
   "osm:IN-TN:9602893": 1,
-  "sii:17/neighbors": 9
+  "sii:17/neighbors": 10
  },
  "failed": {
+  "osm:IN-KL:1819274": "2026-11-10T02:01:03",
+  "osm:IN-KL:2018154": "2026-11-10T02:16:00",
+  "osm:IN-KL:2018247": "2026-11-10T02:01:53",
+  "osm:IN-KL:2018248": "2026-11-10T02:11:34",
+  "osm:IN-KL:2018249": "2026-11-10T02:32:34",
+  "osm:IN-KL:3743996": "2026-11-10T02:31:17",
   "osm:IN-TN:10303764": "2026-11-06T23:52:18",
   "osm:IN-TN:10329991": "2026-11-01T22:42:17",
   "osm:IN-TN:10330031": "2026-11-07T23:03:41",
@@ -1498,7 +1516,7 @@
   "osm:IN-TN:9537174": "2026-11-04T00:16:39",
   "osm:IN-TN:9538519": "2026-11-07T23:05:36",
   "osm:IN-TN:9602893": "2026-11-03T01:46:32",
-  "sii:17/neighbors": "2026-11-08T22:29:41",
+  "sii:17/neighbors": "2026-11-10T01:46:24",
   "wikidata:IN-KA": "2026-10-22T17:26:48",
   "wikidata:IN-KL": "2026-10-22T17:20:32",
   "wikidata:IN-TN": "2026-10-22T17:14:17"
