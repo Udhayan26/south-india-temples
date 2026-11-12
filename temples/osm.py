@@ -38,7 +38,12 @@ def use_server(url: str) -> None:
 def _overpass(query: str) -> dict:
     s = session()
     r = request_with_retry(s, "POST", getattr(_local, "url", OVERPASS_URL), data={"data": query})
-    return r.json()
+    data = r.json()
+    remark = data.get("remark", "")
+    if remark and re.search(r"error|timed out|out of memory|abort", remark, re.I):
+        # Overpass answers HTTP 200 with partial/empty data when a query runs out of time or memory
+        raise RuntimeError(f"Overpass incomplete answer: {remark[:200]}")
+    return data
 
 
 def list_districts(state_code: str) -> list[dict]:
@@ -167,7 +172,13 @@ out center tags;
             last_updated=today,
         )
         rows.append(finish_row(row))
-    write_rows(RAW / "osm" / state_code / f"{district['rel_id']}.csv", rows)
+    path = RAW / "osm" / state_code / f"{district['rel_id']}.csv"
+    if path.exists():
+        before = sum(1 for _ in path.open(encoding="utf-8")) - 1
+        if before >= 20 and len(rows) < before * 0.5:
+            # never replace a district's temples with a suspiciously small answer
+            raise RuntimeError(f"refresh returned {len(rows)} temples, had {before} — kept the old data")
+    write_rows(path, rows)
     write_ins(RAW / "ins_osm" / state_code / f"{district['rel_id']}.csv", ins_rows)
     return len(rows)
 
