@@ -35,9 +35,10 @@ def use_server(url: str) -> None:
     _local.url = url
 
 
-def _overpass(query: str) -> dict:
+def _overpass(query: str, timeout: int = 660) -> dict:
     s = session()
-    r = request_with_retry(s, "POST", getattr(_local, "url", OVERPASS_URL), data={"data": query})
+    r = request_with_retry(s, "POST", getattr(_local, "url", OVERPASS_URL), data={"data": query},
+                           timeout=timeout, tries=2)
     data = r.json()
     remark = data.get("remark", "")
     if remark and re.search(r"error|timed out|out of memory|abort", remark, re.I):
@@ -107,23 +108,36 @@ def _inscription_row(el, t, lat, lon, state_code, district, today) -> dict:
 
 def fetch_district(state_code: str, district: dict) -> int:
     area_id = 3600000000 + int(district["rel_id"])
+    # 1) temples — the plain query that the public servers handle reliably
     q = f"""
-[out:json][timeout:300];
+[out:json][timeout:600];
 area(id:{area_id})->.d;
 (
   nwr["amenity"="place_of_worship"]["religion"~"^({RELIGIONS})$"](area.d);
   nwr["amenity"="place_of_worship"][!"religion"]["name"~"{TEMPLE_WORDS}",i](area.d);
   nwr["building"="temple"][!"amenity"](area.d);
-  nwr["historic"~"^(temple|archaeological_site|ruins|monument)$"]["name"~"{TEMPLE_WORDS}",i](area.d);
+);
+out center tags;
+"""
+    data = _overpass(q, timeout=660)
+    # 2) inscriptions / hero stones — small separate query; if it fails the temples are still saved
+    qi = f"""
+[out:json][timeout:180];
+area(id:{area_id})->.d;
+(
   nwr["historic"~"^(epigraph|inscription|hero_stone)$"](area.d);
   nwr["memorial"~"^(stele|hero_stone)$"](area.d);
-  nwr["historic"]["name"~"{INSCRIPTION_WORDS}",i](area.d);
-  nwr["memorial"]["name"~"{INSCRIPTION_WORDS}",i](area.d);
+  nwr["historic"="memorial"]["name"~"{INSCRIPTION_WORDS}",i](area.d);
   nwr["inscription"](area.d);
 );
 out center tags;
 """
-    data = _overpass(q)
+    ins_ok = True
+    try:
+        data["elements"] = data.get("elements", []) + _overpass(qi, timeout=240).get("elements", [])
+    except Exception as e:
+        ins_ok = False
+        print(f"   inscriptions query skipped: {e}")
     today = date.today().isoformat()
     rows, ins_rows = [], []
     for el in data.get("elements", []):
@@ -179,7 +193,8 @@ out center tags;
             # never replace a district's temples with a suspiciously small answer
             raise RuntimeError(f"refresh returned {len(rows)} temples, had {before} — kept the old data")
     write_rows(path, rows)
-    write_ins(RAW / "ins_osm" / state_code / f"{district['rel_id']}.csv", ins_rows)
+    if ins_ok:
+        write_ins(RAW / "ins_osm" / state_code / f"{district['rel_id']}.csv", ins_rows)
     return len(rows)
 
 
