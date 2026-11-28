@@ -1,11 +1,24 @@
-temple_id,name,name_local,deity,category,religion,special_group,state,district,city,address,pincode,latitude,longitude,google_maps_url,osm_id,wikidata_id,google_place_id,govt_id,operator,phone,website,opening_hours,heritage,inception,image,description,sources,source_count,last_updated
-,Sivan Kovil,,Shiva,Shaivam,hindu,,Tamil Nadu,Theni,,,,9.944299,77.629609,"https://www.google.com/maps/search/?api=1&query=9.944299,77.629609",node/5645202043,,,,,,,,,,,,OpenStreetMap,,2026-10-22
-,,,,,hindu,,Tamil Nadu,Theni,,,,9.688987,77.251809,"https://www.google.com/maps/search/?api=1&query=9.688987,77.251809",node/7109538656,,,,,,,,,,,,OpenStreetMap,,2026-10-22
-,Sri Prajna Dakshinamurti Temple,,,,hindu,,Tamil Nadu,Theni,Theni,"Chatrapatti Road, Theni",,9.997806,77.479063,"https://www.google.com/maps/search/?api=1&query=9.997806,77.479063",way/785531740,,,,,,,,,,,,OpenStreetMap,,2026-10-22
-,,,,,hindu,,Tamil Nadu,Theni,,,,9.802549,77.335769,"https://www.google.com/maps/search/?api=1&query=9.802549,77.335769",way/831548800,,,,,,,,,,,,OpenStreetMap,,2026-10-22
-,Mangaladevi Temple,,Devi (Amman / Shakti),Shaktam,hindu,,Tamil Nadu,Theni,,,,9.597924,77.222033,"https://www.google.com/maps/search/?api=1&query=9.597924,77.222033",way/1052467866,Q10952218,,,,,,,,,Category:Mangala Devi Kannagi Temple,The temple will be only opened for worship on Chitra Poornami by the Forest Dept.,OpenStreetMap,,2026-10-22
-,,,,,hindu,,Tamil Nadu,Theni,,,,10.019337,77.519107,"https://www.google.com/maps/search/?api=1&query=10.019337,77.519107",way/1069912329,,,,,,,,,,,,OpenStreetMap,,2026-10-22
-,,,,,hindu,,Tamil Nadu,Theni,,,,9.67794,77.248218,"https://www.google.com/maps/search/?api=1&query=9.677940,77.248218",way/1094991732,,,,,,,,,,,,OpenStreetMap,,2026-10-22
-,,,,,hindu,,Tamil Nadu,Theni,,,,9.897237,77.278161,"https://www.google.com/maps/search/?api=1&query=9.897237,77.278161",way/1094991738,,,,,,,,,,,,OpenStreetMap,,2026-10-22
-,,,,,hindu,,Tamil Nadu,Theni,,,,9.964811,77.435506,"https://www.google.com/maps/search/?api=1&query=9.964811,77.435506",way/1094991742,,,,,,,,,,,,OpenStreetMap,,2026-10-22
-,,,,,hindu,,Tamil Nadu,Theni,,,,9.615144,77.297216,"https://www.google.com/maps/search/?api=1&query=9.615144,77.297216",way/1153849198,,,,,,,,,,,,OpenStreetMap,,2026-10-22
+temple_id,name,name_local,deity,category,deity_basis,religion,special_group,state,district,city,address,pincode,latitude,longitude,google_maps_url,osm_id,wikidata_id,google_place_id,govt_id,operator,phone,website,opening_hours,heritage,inscription_count,inscription_refs,inception,image,description,sources,source_count,last_updated
+,Sivan Kovil,,Shiva,Shaivam,Guessed from name,hindu,,Tamil Nadu,Theni,,,,9.944299,77.629609,"https://www.google.com/maps/search/?api=1&query=9.944299,77.629609",node/5645202043,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,,,,,,hindu,,Tamil Nadu,Theni,,,,9.688987,77.251809,"https://www.google.com/maps/search/?api=1&query=9.688987,77.251809",node/7109538656,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Ancestral Temple,,,,,hindu,,Tamil Nadu,Theni,,,,9.950932,77.352572,"https://www.google.com/maps/search/?api=1&query=9.950932,77.352572",node/8261162576,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Temple,,,,,hindu,,Tamil Nadu,Theni,,,,10.192368,77.634349,"https://www.google.com/maps/search/?api=1&query=10.192368,77.634349",node/11816626554,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Perumal temple,,Vishnu (Perumal),Vaishnavam,Guessed from name,hindu,,Tamil Nadu,Theni,,,,10.167368,77.620942,"https://www.google.com/maps/search/?api=1&query=10.167368,77.620942",node/11816636686,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Temple,,,,,hindu,,Tamil Nadu,Theni,,,,10.164001,77.688608,"https://www.google.com/maps/search/?api=1&query=10.164001,77.688608",node/11816651681,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Temple,,,,,hindu,,Tamil Nadu,Theni,,,,10.132244,77.469168,"https://www.google.com/maps/search/?api=1&query=10.132244,77.469168",node/11816651683,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Temple,,,,,hindu,,Tamil Nadu,Theni,,,,10.169726,77.649129,"https://www.google.com/maps/search/?api=1&query=10.169726,77.649129",node/11816660802,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Temple,,,,,hindu,,Tamil Nadu,Theni,,,,10.134335,77.54514,"https://www.google.com/maps/search/?api=1&query=10.134335,77.545140",node/11816661997,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Temple,,,,,hindu,,Tamil Nadu,Theni,,,,10.169611,77.689309,"https://www.google.com/maps/search/?api=1&query=10.169611,77.689309",node/11816672440,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Temple,,,,,hindu,,Tamil Nadu,Theni,,,,10.110949,77.412342,"https://www.google.com/maps/search/?api=1&query=10.110949,77.412342",node/11816675721,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Temple,,,,,hindu,,Tamil Nadu,Theni,,,,10.174771,77.651165,"https://www.google.com/maps/search/?api=1&query=10.174771,77.651165",node/11816677574,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Temple,,,,,hindu,,Tamil Nadu,Theni,,,,10.164382,77.691911,"https://www.google.com/maps/search/?api=1&query=10.164382,77.691911",node/11816677875,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Temple,,,,,hindu,,Tamil Nadu,Theni,,,,10.169155,77.653381,"https://www.google.com/maps/search/?api=1&query=10.169155,77.653381",node/11816682069,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Temple,,,,,hindu,,Tamil Nadu,Theni,,,,10.169484,77.68928,"https://www.google.com/maps/search/?api=1&query=10.169484,77.689280",node/11816686076,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Sri Prajna Dakshinamurti Temple,,,,,hindu,,Tamil Nadu,Theni,Theni,"Chatrapatti Road, Theni",,9.997806,77.479063,"https://www.google.com/maps/search/?api=1&query=9.997806,77.479063",way/785531740,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,,,,,,hindu,,Tamil Nadu,Theni,,,,9.802549,77.335769,"https://www.google.com/maps/search/?api=1&query=9.802549,77.335769",way/831548800,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,Mangaladevi Temple,,Devi (Amman / Shakti),Shaktam,Guessed from name,hindu,,Tamil Nadu,Theni,,,,9.597924,77.222033,"https://www.google.com/maps/search/?api=1&query=9.597924,77.222033",way/1052467866,Q10952218,,,,,,,,,,,Category:Mangala Devi Kannagi Temple,The temple will be only opened for worship on Chitra Poornami by the Forest Dept.,OpenStreetMap,,2026-11-28
+,,,,,,hindu,,Tamil Nadu,Theni,,,,10.019337,77.519107,"https://www.google.com/maps/search/?api=1&query=10.019337,77.519107",way/1069912329,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,,,,,,hindu,,Tamil Nadu,Theni,,,,9.67794,77.248218,"https://www.google.com/maps/search/?api=1&query=9.677940,77.248218",way/1094991732,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,,,,,,hindu,,Tamil Nadu,Theni,,,,9.897237,77.278161,"https://www.google.com/maps/search/?api=1&query=9.897237,77.278161",way/1094991738,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,,,,,,hindu,,Tamil Nadu,Theni,,,,9.964811,77.435506,"https://www.google.com/maps/search/?api=1&query=9.964811,77.435506",way/1094991742,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
+,,,,,,hindu,,Tamil Nadu,Theni,,,,9.615144,77.297216,"https://www.google.com/maps/search/?api=1&query=9.615144,77.297216",way/1153849198,,,,,,,,,,,,,,OpenStreetMap,,2026-11-28
